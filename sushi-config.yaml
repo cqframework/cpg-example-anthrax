@@ -16,8 +16,8 @@ releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | re
 license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
 publisher:
-  name:  Centers for Disease Control and Prevention
-  url:  https://cds.ahrq.gov/cdsconnect/artifact/anthrax-post-exposure-prophylaxis
+  name: HL7 International - Clinical Decision Support WG
+  url: http://www.hl7.org/Special/committees/dss/index.cfm
   # email: test@example.org
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
