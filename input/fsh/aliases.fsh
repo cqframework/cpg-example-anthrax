@@ -7,3 +7,4 @@ Alias: $plan-definition-type = http://terminology.hl7.org/CodeSystem/plan-defini
 Alias: $action-type = http://terminology.hl7.org/CodeSystem/action-type
 Alias: $rxnorm = http://www.nlm.nih.gov/research/umls/rxnorm
 Alias: $cvx = http://hl7.org/fhir/sid/cvx
+Alias: $v3-orderableDrugForm = http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm
