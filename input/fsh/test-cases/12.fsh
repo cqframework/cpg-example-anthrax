@@ -1,0 +1,8 @@
+Instance: 12
+InstanceOf: AllergyIntolerance
+Usage: #inline
+* patient = Reference(42)
+* code = $sct#111088007 "Latex (substance)"
+  * text = "Latex (substance)"
+* verificationStatus = $allergyintolerance-verification#confirmed "Confirmed"
+* recordedDate = "2016-05-28T15:00:00.000Z"
