@@ -1,0 +1,10 @@
+Instance: bundle-58
+InstanceOf: Bundle
+Usage: #example
+* type = #collection
+* entry[0].resource = patient-3
+* entry[+].resource = condition-4
+* entry[+].resource = observation-13
+* entry[+].resource = observation-21
+* entry[+].resource = med-request-2
+* entry[+].resource = observation-32
