@@ -66,3 +66,11 @@ RuleSet: AntrhaxExposureDescriptionAndUsage
 * purpose = "Provides clinicians with information for quickly assessing individuals exposed to anthrax unrelated to occupational exposure, for example in bioterrorism events, and provides the recommended post-exposure prophylaxis (PEP) regimen for asymptomatic patients. Includes immediate treatment with antimicrobials and vaccine and follow-up administration of subsequent vaccines to complete the recommended 3-dose vaccination series."
 * usage = "Intended for use by clinicians caring for individuals ≥18 years of age in an outpatient setting."
 
+RuleSet: FHIRRelatedLibraries
+* relatedArtifact[+]
+  * type = #depends-on
+  * resource = $fhir-helpers
+* relatedArtifact[+]
+  * type = #depends-on
+  * resource = $model-definition
+

@@ -6,7 +6,7 @@ Description: "Asymptomatic flag example"
 * subject = Reference(Patient/42)
 * author = Reference(anthrax-example-device)
 * code = $sct#223447008 "Recommendation to document signs and symptoms (procedure)"
-* status = #draft
+* status = #active
 * extension
-  * url = "http://hl7.org/fhir/StructureDefinition/flag-detail"
+  * url = Canonical(flag-detail)
   * valueReference = Reference(Condition/1)

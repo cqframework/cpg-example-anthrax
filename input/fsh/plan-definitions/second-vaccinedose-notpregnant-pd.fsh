@@ -65,18 +65,18 @@ Title: "Anthrax Post Exposure Prophylaxis (PEP) for Adults"
   * action[+]
     * title = "Anthrax Vaccination - 2nd dose"
     * type = $action-type#create "Create"
-    * definitionCanonical = "#VaccineRequest"
+    * definitionCanonical = "#Inline-Vaccine-Request-9"
 * contained[+] = CiprofloxacinRequest
 * contained[+] = DoxycyclineRequest
 * contained[+] = LevofloxacinRequest
 * contained[+] = MoxifloxacinRequest
 * contained[+] = ClindamycinRequest
-* contained[+] = Inline-Instance-Vaccine-Request-9
+* contained[+] = Inline-Vaccine-Request-9
 
-Instance: Inline-Instance-Vaccine-Request-9
+Instance: Inline-Vaccine-Request-9
 InstanceOf: ActivityDefinition
 Usage: #inline
-* insert RequestMetadata(Inline-Instance-Vaccine-Request-9)
+* insert RequestMetadata(Inline-Vaccine-Request-9)
 * insert UseContext
 * identifier.value = "Anthrax_Post_Exposure_Prophylaxis_FHIRv102_CQL_v110/VaccineRequest"
 * name = "Anthrax_Post_Exposure_Prophylaxis_Adults_Vaccine_Request"

@@ -45,38 +45,38 @@ Title: "Anthrax Post Exposure Prophylaxis (PEP) for Adults"
       * selectionBehavior = #at-most-one
       * action[+]
         * type = $action-type#create "Create"
-        * definitionCanonical = "#CiprofloxacinRequest"
+        * definitionCanonical = "#Inline-Ciprofloxacin-Request-5"
       * action[+]
         * type = $action-type#create "Create"
-        * definitionCanonical = "#DoxycyclineRequest"
+        * definitionCanonical = "#Inline-Doxycycline-Request-5"
     * action[+]
       * title = "Second line antimicrobial medications for anthrax post-exposure prophylaxis"
       * groupingBehavior = #visual-group
       * selectionBehavior = #at-most-one
       * action[+]
         * type = $action-type#create "Create"
-        * definitionCanonical = "#LevofloxacinRequest"
+        * definitionCanonical = "#Inline-Levofloxacin-Request-5"
       * action[+]
         * type = $action-type#create "Create"
-        * definitionCanonical = "#MoxifloxacinRequest"
+        * definitionCanonical = "#Inline-Moxifloxacin-Request-5"
       * action[+]
         * type = $action-type#create "Create"
-        * definitionCanonical = "#ClindamycinRequest"
+        * definitionCanonical = "#Inline-Clindamycin-Request-5"
   * action[+]
     * title = "Anthrax Vaccination - 2nd dose"
     * type = $action-type#create "Create"
-    * definitionCanonical = "#VaccineRequest"
-* contained[+] = Inline-Instance-Ciprofloxacin-Request-5
-* contained[+] = Inline-Instance-Doxycycline-Request-5
-* contained[+] = Inline-Instance-Levofloxacin-Request-5
-* contained[+] = Inline-Instance-Moxifloxacin-Request-5
-* contained[+] = Inline-Instance-Clindamycin-Request-5
-* contained[+] = Inline-Instance-Vaccine-Request-5
+    * definitionCanonical = "#Inline-Vaccine-Request-5"
+* contained[+] = Inline-Ciprofloxacin-Request-5
+* contained[+] = Inline-Doxycycline-Request-5
+* contained[+] = Inline-Levofloxacin-Request-5
+* contained[+] = Inline-Moxifloxacin-Request-5
+* contained[+] = Inline-Clindamycin-Request-5
+* contained[+] = Inline-Vaccine-Request-5
 
-Instance: Inline-Instance-Ciprofloxacin-Request-5
+Instance: Inline-Ciprofloxacin-Request-5
 InstanceOf: ActivityDefinition
 Usage: #inline
-* insert RequestMetadata(Inline-Instance-Ciprofloxacin-Request-5)
+* insert RequestMetadata(Inline-Ciprofloxacin-Request-5)
 * insert UseContext
 * identifier.value = "Anthrax_Post_Exposure_Prophylaxis_FHIRv102_CQL_v110/CiprofloxacinRequest"
 * name = "Anthrax_Post_Exposure_Prophylaxis_Adults_Ciprofloxacin_Request"
@@ -99,10 +99,10 @@ Usage: #inline
   * route = $sct#26643006 "Oral Route"
   * method = $sct#421521009 "Swallow - dosing instruction imperative (qualifier value)"
 
-Instance: Inline-Instance-Doxycycline-Request-5
+Instance: Inline-Doxycycline-Request-5
 InstanceOf: ActivityDefinition
 Usage: #inline
-* insert RequestMetadata(Inline-Instance-Doxycycline-Request-5)
+* insert RequestMetadata(Inline-Doxycycline-Request-5)
 * insert UseContext
 * identifier.value = "Anthrax_Post_Exposure_Prophylaxis_FHIRv102_CQL_v110/DoxycyclineRequest"
 * name = "Anthrax_Post_Exposure_Prophylaxis_Adults_Doxycycline_Request"
@@ -124,10 +124,10 @@ Usage: #inline
   * route = $sct#26643006 "Oral Route"
   * method = $sct#421521009 "Swallow - dosing instruction imperative (qualifier value)"
 
-Instance: Inline-Instance-Levofloxacin-Request-5
+Instance: Inline-Levofloxacin-Request-5
 InstanceOf: ActivityDefinition
 Usage: #inline
-* insert RequestMetadata(Inline-Instance-Levofloxacin-Request-5)
+* insert RequestMetadata(Inline-Levofloxacin-Request-5)
 * insert UseContext
 * identifier.value = "Anthrax_Post_Exposure_Prophylaxis_FHIRv102_CQL_v110/LevofloxacinRequest"
 * name = "Anthrax_Post_Exposure_Prophylaxis_Adults_Levofloxacin_Request"
@@ -146,10 +146,10 @@ Usage: #inline
   * route = $sct#26643006 "Oral Route"
   * method = $sct#421521009 "Swallow - dosing instruction imperative (qualifier value)"
 
-Instance: Inline-Instance-Moxifloxacin-Request-5
+Instance: Inline-Moxifloxacin-Request-5
 InstanceOf: ActivityDefinition
 Usage: #inline
-* insert RequestMetadata(Inline-Instance-Moxifloxacin-Request-5)
+* insert RequestMetadata(Inline-Moxifloxacin-Request-5)
 * insert UseContext
 * identifier.value = "Anthrax_Post_Exposure_Prophylaxis_FHIRv102_CQL_v110/MoxifloxacinRequest"
 * name = "Anthrax_Post_Exposure_Prophylaxis_Adults_Moxifloxacin_Request"
@@ -168,10 +168,10 @@ Usage: #inline
   * route = $sct#26643006 "Oral Route"
   * method = $sct#421521009 "Swallow - dosing instruction imperative (qualifier value)"
 
-Instance: Inline-Instance-Clindamycin-Request-5
+Instance: Inline-Clindamycin-Request-5
 InstanceOf: ActivityDefinition
 Usage: #inline
-* insert RequestMetadata(Inline-Instance-Clindamycin-Request-5)
+* insert RequestMetadata(Inline-Clindamycin-Request-5)
 * insert UseContext
 * identifier.value = "Anthrax_Post_Exposure_Prophylaxis_FHIRv102_CQL_v110/ClindamycinRequest"
 * name = "Anthrax_Post_Exposure_Prophylaxis_Adults_Clindamycin_Request"
@@ -190,10 +190,10 @@ Usage: #inline
   * route = $sct#26643006 "Oral Route"
   * method = $sct#421521009 "Swallow - dosing instruction imperative (qualifier value)"
 
-Instance: Inline-Instance-Vaccine-Request-5
+Instance: Inline-Vaccine-Request-5
 InstanceOf: ActivityDefinition
 Usage: #inline
-* insert RequestMetadata(Inline-Instance-Vaccine-Request-5)
+* insert RequestMetadata(Inline-Vaccine-Request-5)
 * insert UseContext
 * identifier.value = "Anthrax_Post_Exposure_Prophylaxis_FHIRv102_CQL_v110/VaccineRequest"
 * name = "Anthrax_Post_Exposure_Prophylaxis_Adults_Vaccine_Request"

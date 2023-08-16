@@ -5,6 +5,7 @@ Title: "Anthrax Post Exposure Prophylaxis (PEP) for Adults FHIRv400 Logic"
 * insert LibraryMetadata(anthrax-post-exposure-prophylaxis-library)
 * insert AntrhaxExposureDescriptionAndUsage
 * insert UseContext
+* insert FHIRRelatedLibraries
 * identifier
   * use = #official
   * value = "Anthrax_Post_Exposure_Prophylaxis_FHIRv400"
@@ -15,16 +16,6 @@ Title: "Anthrax Post Exposure Prophylaxis (PEP) for Adults FHIRv400 Logic"
   * resource = Canonical(cdc-common-logic-library)
   * url = Canonical(cdc-common-logic-library)
   * display = "CDS_Connect_Commons_for_FHIRv400_Library"
-// * relatedArtifact[+]
-//   * type = #depends-on
-//   * resource = Canonical(FHIRHelpers_v400_Library)
-//   * url = Canonical(FHIRHelpers_v400_Library.json)
-//   * display = "FHIRHelpers_v400_Library"
-// * relatedArtifact[+]
-//   * type = #depends-on
-//   * resource = Canonical(FHIRv400_Model_Definition)
-//   * url = Canonical(FHIRv400_Model_Definition.json)
-//   * display = "FHIRv400_Model_Definition"
 * parameter[0]
   * name = #Exposure_Look_Back_Period
   * use = #in

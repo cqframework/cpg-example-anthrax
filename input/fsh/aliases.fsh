@@ -8,3 +8,6 @@ Alias: $action-type = http://terminology.hl7.org/CodeSystem/action-type
 Alias: $rxnorm = http://www.nlm.nih.gov/research/umls/rxnorm
 Alias: $cvx = http://hl7.org/fhir/sid/cvx
 Alias: $v3-orderableDrugForm = http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm
+
+Alias: $fhir-helpers = https://www.hl7.org/fhir/R4/library-fhir-helpers
+Alias: $model-definition = https://www.hl7.org/fhir/R4/library-fhir-model-definition

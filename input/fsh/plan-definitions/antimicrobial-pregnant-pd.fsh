@@ -45,23 +45,23 @@ Title: "Anthrax Post Exposure Prophylaxis (PEP) for Adults"
       * selectionBehavior = #at-most-one
       * action[+]
         * type = $action-type#create "Create"
-        * definitionCanonical = "#CiprofloxacinRequest"
+        * definitionCanonical = "#Inline-CiprofloxacinRequest-1"
       * action[+]
         * type = $action-type#create "Create"
-        * definitionCanonical = "#DoxycyclineRequest"
+        * definitionCanonical = "#Inline-DoxycyclineRequest-1"
     * action[+]
       * title = "Second line antimicrobial medications for anthrax post-exposure prophylaxis"
       * groupingBehavior = #visual-group
       * selectionBehavior = #at-most-one
       * action[+]
         * type = $action-type#create "Create"
-        * definitionCanonical = "#LevofloxacinRequest"
+        * definitionCanonical = "#Inline-LevofloxacinRequest-1"
       * action[+]
         * type = $action-type#create "Create"
-        * definitionCanonical = "#MoxifloxacinRequest"
+        * definitionCanonical = "#Inline-MoxifloxacinRequest-1"
       * action[+]
         * type = $action-type#create "Create"
-        * definitionCanonical = "#ClindamycinRequest"
+        * definitionCanonical = "#Inline-ClindamycinRequest-1"
 * contained[+] = Inline-CiprofloxacinRequest-1
 * contained[+] = Inline-DoxycyclineRequest-1
 * contained[+] = Inline-LevofloxacinRequest-1
