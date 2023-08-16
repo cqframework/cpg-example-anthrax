@@ -1,9 +1,20 @@
 Instance: bundle-54
 InstanceOf: Bundle
 Usage: #example
+Description: "Test Case"
 * type = #collection
-* entry[0].resource = patient-3
-* entry[+].resource = condition-8
-* entry[+].resource = observation-23
-* entry[+].resource = procedure-14
-* entry[+].resource = observation-32
+* entry[+]
+  * fullUrl = Canonical(patient-3)
+  * resource = patient-3
+* entry[+]
+  * fullUrl = Canonical(condition-8)
+  * resource = condition-8
+* entry[+]
+  * fullUrl = Canonical(observation-23)
+  * resource = observation-23
+* entry[+]
+  * fullUrl = Canonical(procedure-14)
+  * resource = procedure-14
+* entry[+]
+  * fullUrl = Canonical(observation-27)
+  * resource = observation-27

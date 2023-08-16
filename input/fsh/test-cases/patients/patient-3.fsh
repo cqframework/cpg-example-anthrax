@@ -1,6 +1,7 @@
 Instance: patient-3
 InstanceOf: Patient
-Usage: #inline
+Usage: #example
+Description: "Test Case"
 * name
   * given = "Jane"
   * family = "Smith"

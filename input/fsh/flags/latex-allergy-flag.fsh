@@ -3,7 +3,7 @@ InstanceOf: Flag
 Usage: #example
 Title: "Latex Allergy Flag"
 Description: "Flag indicating patient has latex allergy"
-* subject = Reference(Patient/42)
+* subject = Reference(Patient/patient-1)
 * author = Reference(anthrax-example-device)
 * code = $sct#370860007 "Verification of allergy status (procedure)"
 * status = #active

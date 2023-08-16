@@ -1,6 +1,7 @@
 Instance: observation-18
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
+Description: "Test Case"
 * status = #final
 * code = $sct#84387000 "Asymptomatic (finding)"
   * text = "Asymptomatic (finding)"

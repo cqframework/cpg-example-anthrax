@@ -1,6 +1,7 @@
-Instance: mediation-statement-1
+Instance: medication-statement-1
 InstanceOf: MedicationStatement
-Usage: #inline
+Usage: #example
+Description: "Test Case"
 * subject = Reference(patient-1)
 * status = #active
 * effectiveDateTime = "2019-05-03T15:00:00.000Z"

@@ -3,7 +3,7 @@ InstanceOf: Flag
 Usage: #example
 Title: "No Asymptomatic Observation Flag"
 Description: "Asymptomatic flag example"
-* subject = Reference(Patient/42)
+* subject = Reference(Patient/patient-1)
 * author = Reference(anthrax-example-device)
 * code = $sct#223447008 "Recommendation to document signs and symptoms (procedure)"
 * status = #active

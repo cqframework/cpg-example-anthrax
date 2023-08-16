@@ -3,7 +3,7 @@ InstanceOf: Flag
 Usage: #example
 Title: "Antimicrobial Allergy Flag"
 Description: "Flag indicating patient allergy to an antimicrobial"
-* subject = Reference(Patient/42)
+* subject = Reference(Patient/patient-1)
 * author = Reference(anthrax-example-device)
 * code = $sct#370860007 "Verification of allergy status (procedure)"
 * status = #active

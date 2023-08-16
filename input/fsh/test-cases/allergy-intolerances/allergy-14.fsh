@@ -1,8 +1,10 @@
-Instance: 10
+Instance: allergy-14
 InstanceOf: AllergyIntolerance
-Usage: #inline
+Usage: #example
+Description: "Test Case"
+* id = "10"
 * patient = Reference(patient-1)
 * code = $rxnorm#404774 "Anthrax Vaccine Absorbed (substance/ingredient)"
   * text = "Anthrax Vaccine Absorbed (substance/ingredient)"
+* clinicalStatus = $allergy-status#active
 * verificationStatus = $allergyintolerance-verification#confirmed "Confirmed"
-* recordedDate = "2016-05-28T15:00:00.000Z"

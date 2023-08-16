@@ -1,9 +1,12 @@
 Instance: observation-26
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
+Description: "Test Case"
 * status = #final
-* code = $sct#84387000 "Asymptomatic (finding)"
-  * text = "Asymptomatic (finding)"
-* subject = Reference(patient-1)
-* effectiveDateTime = "2019-06-03T15:00:00.000Z"
-* issued = "2019-06-03T15:00:00.000Z"
+* code = $loinc#82810-3 "Pregnancy status"
+  * text = "Pregnancy status"
+* subject = Reference(patient-3)
+* effectiveDateTime = "2017-06-03T15:00:00.000Z"
+* issued = "2017-06-03T15:00:00.000Z"
+* valueCodeableConcept = $sct#77386006 "Patient currently pregnant"
+  * text = "Patient currently pregnant"

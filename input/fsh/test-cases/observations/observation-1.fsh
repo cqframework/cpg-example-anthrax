@@ -1,6 +1,7 @@
 Instance: observation-1
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
+Description: "Test Case"
 * status = #final
 * code = $sct#170475009 "Exposure to Bacillus anthracis (event)"
   * text = "Exposure to Bacillus anthracis (event)"

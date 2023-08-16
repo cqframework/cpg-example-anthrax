@@ -202,7 +202,7 @@ Usage: #inline
 * code
   * coding[+] = $sct#69598002 "Anthrax vaccination"
   * coding[+] = $sct#170360005 "Third anthrax vaccination"
-* productCodeableConcept = $cvx#26 "Anthrax vaccine"
+* productCodeableConcept = $cvx#24 "Anthrax vaccine"
 * dosage
   * text = "0.5mL"
   * additionalInstruction[+].text = "Pregnant women at risk for inhalation anthrax should receive the anthrax vaccine regardless of pregnancy trimester."

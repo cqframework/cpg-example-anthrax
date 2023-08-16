@@ -1,9 +1,10 @@
-Instance: Inline-Instance-for-bundle-15-5
+Instance: allergy-11
 InstanceOf: AllergyIntolerance
-Usage: #inline
-* id = "5"
+Usage: #example
+Description: "Test Case"
 * patient = Reference(patient-1)
-* code = $rxnorm#2551 "Ciprofloxacin (substance/ingredient)"
-  * text = "Ciprofloxacin (substance/ingredient)"
+* code = $sct#111088007 "Latex (substance)"
+  * text = "Latex (substance)"
+* clinicalStatus = $allergy-status#active
 * verificationStatus = $allergyintolerance-verification#confirmed "Confirmed"
 * recordedDate = "2016-05-28T15:00:00.000Z"

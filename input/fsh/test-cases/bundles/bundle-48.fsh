@@ -1,11 +1,26 @@
 Instance: bundle-48
 InstanceOf: Bundle
 Usage: #example
+Description: "Test Case"
 * type = #collection
-* entry[0].resource = patient-1
-* entry[+].resource = condition-2
-* entry[+].resource = observation-3
-* entry[+].resource = observation-16
-* entry[+].resource = procedure-6
-* entry[+].resource = Inline-Instance-for-bundle-48-6
-* entry[+].resource = med-request-1
+* entry[+]
+  * fullUrl = Canonical(patient-1)
+  * resource = patient-1
+* entry[+]
+  * fullUrl = Canonical(condition-2)
+  * resource = condition-2
+* entry[+]
+  * fullUrl = Canonical(observation-3)
+  * resource = observation-3
+* entry[+]
+  * fullUrl = Canonical(observation-16)
+  * resource = observation-16
+* entry[+]
+  * fullUrl = Canonical(procedure-6)
+  * resource = procedure-6
+* entry[+]
+  * fullUrl = Canonical(procedure-1)
+  * resource = procedure-1
+* entry[+]
+  * fullUrl = Canonical(med-request-1)
+  * resource = med-request-1

@@ -1,6 +1,7 @@
-Instance: observation-30
+Instance: observation-25
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
+Description: "Test Case"
 * status = #final
 * code = $loinc#82810-3 "Pregnancy status"
   * text = "Pregnancy status"

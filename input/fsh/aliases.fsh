@@ -20,3 +20,5 @@ Alias: $rxnorm = http://www.nlm.nih.gov/research/umls/rxnorm
 Alias: $allergyintolerance-verification = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification
 Alias: $cvx = http://hl7.org/fhir/sid/cvx
 Alias: $loinc = http://loinc.org
+
+Alias: $allergy-status = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical
