@@ -1,6 +1,6 @@
 {
   "resourceType": "Bundle",
-  "id": "Alert missing first, second, and third vaccine doses",
+  "id": "bundle-6",
   "type": "collection",
   "entry": [
     {
@@ -103,7 +103,7 @@
     {
       "resource": {
         "resourceType": "Procedure",
-        "id": 11,
+        "id": "11",
         "subject": {
           "reference": "Patient/eca48b1c-c841-41b3-ac06-4266088dbef2"
         },

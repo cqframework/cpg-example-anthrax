@@ -1,12 +1,12 @@
 {
   "resourceType": "Bundle",
-  "id": "Alert that patient has an exposure Condition but does not have an asymptomatic code",
+  "id": "bundle-16",
   "type": "collection",
   "entry": [
     {
       "resource": {
         "resourceType": "Patient",
-        "id": 42,
+        "id": "42",
         "name": [
           {
             "given": [

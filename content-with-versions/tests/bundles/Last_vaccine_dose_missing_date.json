@@ -1,6 +1,6 @@
 {
   "resourceType": "Bundle",
-  "id": "Last vaccine dose missing date",
+  "id": "bundle-48",
   "type": "collection",
   "entry": [
     {
@@ -125,7 +125,7 @@
     {
       "resource": {
         "resourceType": "Procedure",
-        "id": 11,
+        "id": "11",
         "subject": {
           "reference": "Patient/087efb40-0fa2-4168-b264-d7a8baf562bc"
         },

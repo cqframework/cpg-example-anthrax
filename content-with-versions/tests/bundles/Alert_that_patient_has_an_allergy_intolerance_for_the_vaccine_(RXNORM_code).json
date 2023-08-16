@@ -1,12 +1,12 @@
 {
   "resourceType": "Bundle",
-  "id": "Alert that patient has an allergy intolerance for the vaccine (RXNORM code)",
+  "id": "bundle-14",
   "type": "collection",
   "entry": [
     {
       "resource": {
         "resourceType": "Patient",
-        "id": 42,
+        "id": "42",
         "name": [
           {
             "given": [
