@@ -200,7 +200,7 @@ Usage: #inline
 * title = "Anthrax Post Exposure Prophylaxis (PEP) for Adults: Vaccine Request"
 * kind = #ImmunizationRecommendation
 * code
-  * coding[+] = $sct#69598002 "Anthrax vaccination"
+  * coding[+] = $sct#49598002 "Anthrax vaccination"
   * coding[+] = $sct#170360005 "Third anthrax vaccination"
 * productCodeableConcept = $cvx#24 "Anthrax vaccine"
 * dosage

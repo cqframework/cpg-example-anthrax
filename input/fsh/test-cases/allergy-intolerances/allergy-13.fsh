@@ -2,7 +2,6 @@ Instance: allergy-13
 InstanceOf: AllergyIntolerance
 Usage: #example
 Description: "Test Case"
-* id = "9"
 * patient = Reference(patient-1)
 * code = $cvx#24 "Anthrax vaccine"
   * text = "Anthrax vaccine"
