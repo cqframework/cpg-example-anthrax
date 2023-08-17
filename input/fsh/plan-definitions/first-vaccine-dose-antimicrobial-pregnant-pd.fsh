@@ -1,7 +1,7 @@
 Instance: first-vaccine-dose-antimicrobial-pregnant-pd
 InstanceOf: PlanDefinition
 Usage: #example
-Title: "Anthrax Post Exposure Prophylaxis (PEP) for Adults"
+Title: "First vaccine antimicrobial pregnant"
 * insert PlanDefinitionMetadata(first-vaccine-dose-antimicrobial-pregnant-pd)
 * insert UseContext
 * identifier.value = "Anthrax_Post_Exposure_Prophylaxis_FHIRv102_CQL_v110/OrderSet"
@@ -10,7 +10,7 @@ Title: "Anthrax Post Exposure Prophylaxis (PEP) for Adults"
   * coding[+] = $plan-definition-type#eca-rule "ECA Rule"
   * coding[+] = $plan-definition-type#order-set "Order Set"
 * action
-  * title = "Anthrax Post Exposure Prophylaxis"
+  * title = "Anthrax Post Exposure Prophylaxis 6"
   * groupingBehavior = #logical-group
   * selectionBehavior = #any
   * trigger[+]

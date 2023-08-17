@@ -1,7 +1,7 @@
 Instance: DoxycyclineRequest
 InstanceOf: ActivityDefinition
 Usage: #example
-Title: "Anthrax Post Exposure Prophylaxis (PEP) for Adults: Doxycycline Request"
+Title: "Doxycycline Request"
 * insert RequestMetadata(DoxycyclineRequest)
 * insert UseContext
 * identifier.value = "Anthrax_Post_Exposure_Prophylaxis_FHIRv102_CQL_v110/DoxycyclineRequest"

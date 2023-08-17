@@ -5,35 +5,21 @@
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
 <artifact id="Device/anthrax-example-device" key="Device-anthrax-example-device" name="Anthrax Example Device"/>
-<artifact id="PlanDefinition/antimicrobial-not-pregnant-pd" key="PlanDefinition-antimicrobial-not-pregnant-pd" name="Anthrax Post Exposure Prophylaxis (PEP) for Adults"/>
-<artifact id="PlanDefinition/antimicrobial-pregnant-pd" key="PlanDefinition-antimicrobial-pregnant-pd" name="Anthrax Post Exposure Prophylaxis (PEP) for Adults"/>
-<artifact id="PlanDefinition/first-vaccine-dose-antimicrobial-not-pregnant-pd" key="PlanDefinition-first-vaccine-dose-antimicrobial-not-pregnant-pd" name="Anthrax Post Exposure Prophylaxis (PEP) for Adults"/>
-<artifact id="PlanDefinition/first-vaccine-dose-antimicrobial-pregnant-pd" key="PlanDefinition-first-vaccine-dose-antimicrobial-pregnant-pd" name="Anthrax Post Exposure Prophylaxis (PEP) for Adults"/>
-<artifact id="PlanDefinition/first-vaccine-dose-not-pregnant-pd" key="PlanDefinition-first-vaccine-dose-not-pregnant-pd" name="Anthrax Post Exposure Prophylaxis (PEP) for Adults"/>
-<artifact id="PlanDefinition/first-vaccine-dose-pregnant-pd" key="PlanDefinition-first-vaccine-dose-pregnant-pd" name="Anthrax Post Exposure Prophylaxis (PEP) for Adults"/>
-<artifact id="PlanDefinition/second-vaccinedose-antimicrobial-notpregnant-pd" key="PlanDefinition-second-vaccinedose-antimicrobial-notpregnant-pd" name="Anthrax Post Exposure Prophylaxis (PEP) for Adults"/>
-<artifact id="PlanDefinition/second-vaccinedose-antimicrobial-pregnant-pd" key="PlanDefinition-second-vaccinedose-antimicrobial-pregnant-pd" name="Anthrax Post Exposure Prophylaxis (PEP) for Adults"/>
-<artifact id="PlanDefinition/second-vaccinedose-notpregnant-pd" key="PlanDefinition-second-vaccinedose-notpregnant-pd" name="Anthrax Post Exposure Prophylaxis (PEP) for Adults"/>
-<artifact id="PlanDefinition/second-vaccinedose-pregnant-pd" key="PlanDefinition-second-vaccinedose-pregnant-pd" name="Anthrax Post Exposure Prophylaxis (PEP) for Adults"/>
-<artifact id="PlanDefinition/third-vaccinedose-antimicrobial-notpregnant-pd" key="PlanDefinition-third-vaccinedose-antimicrobial-notpregnant-pd" name="Anthrax Post Exposure Prophylaxis (PEP) for Adults"/>
-<artifact id="PlanDefinition/third-vaccinedose-antimicrobial-pregnant-pd" key="PlanDefinition-third-vaccinedose-antimicrobial-pregnant-pd" name="Anthrax Post Exposure Prophylaxis (PEP) for Adults"/>
-<artifact id="PlanDefinition/third-vaccinedose-notpregnant-pd" key="PlanDefinition-third-vaccinedose-notpregnant-pd" name="Anthrax Post Exposure Prophylaxis (PEP) for Adults"/>
-<artifact id="PlanDefinition/third-vaccinedose-pregnant-pd" key="PlanDefinition-third-vaccinedose-pregnant-pd" name="Anthrax Post Exposure Prophylaxis (PEP) for Adults"/>
 <artifact id="Library/anthrax-post-exposure-prophylaxis-library" key="Library-anthrax-post-exposure-prophylaxis-library" name="Anthrax Post Exposure Prophylaxis (PEP) for Adults FHIRv400 Logic"/>
-<artifact id="ActivityDefinition/CiprofloxacinRequest" key="ActivityDefinition-CiprofloxacinRequest" name="Anthrax Post Exposure Prophylaxis (PEP) for Adults: Ciprofloxacin Request"/>
-<artifact id="ActivityDefinition/ClindamycinRequest" key="ActivityDefinition-ClindamycinRequest" name="Anthrax Post Exposure Prophylaxis (PEP) for Adults: Clindamycin Request"/>
-<artifact id="ActivityDefinition/DoxycyclineRequest" key="ActivityDefinition-DoxycyclineRequest" name="Anthrax Post Exposure Prophylaxis (PEP) for Adults: Doxycycline Request"/>
-<artifact id="ActivityDefinition/LevofloxacinRequest" key="ActivityDefinition-LevofloxacinRequest" name="Anthrax Post Exposure Prophylaxis (PEP) for Adults: Levofloxacin Request"/>
-<artifact id="ActivityDefinition/MoxifloxacinRequest" key="ActivityDefinition-MoxifloxacinRequest" name="Anthrax Post Exposure Prophylaxis (PEP) for Adults: Moxifloxacin Request"/>
-<artifact id="ActivityDefinition/VaccineRequest" key="ActivityDefinition-VaccineRequest" name="Anthrax Post Exposure Prophylaxis (PEP) for Adults: Vaccine Request"/>
 <artifact id="Flag/antimicrobial-allergy-flag" key="Flag-antimicrobial-allergy-flag" name="Antimicrobial Allergy Flag"/>
 <artifact id="Library/cdc-common-logic-library" key="Library-cdc-common-logic-library" name="CDC Common Logic for FHIRv400"/>
 <artifact id="Library/cds-connect-commons-library" key="Library-cds-connect-commons-library" name="CDS Connect Commons for FHIRv400"/>
+<artifact id="ActivityDefinition/CiprofloxacinRequest" key="ActivityDefinition-CiprofloxacinRequest" name="Ciprofloxacin Request"/>
+<artifact id="ActivityDefinition/ClindamycinRequest" key="ActivityDefinition-ClindamycinRequest" name="Clindamycin Request"/>
+<artifact id="ActivityDefinition/DoxycyclineRequest" key="ActivityDefinition-DoxycyclineRequest" name="Doxycycline Request"/>
 <artifact id="DetectedIssue/existing-antimicrobial-detected-issue" key="DetectedIssue-existing-antimicrobial-detected-issue" name="Existing Antimicrobial Detected Issue"/>
 <artifact id="Flag/latex-allergy-flag" key="Flag-latex-allergy-flag" name="Latex Allergy Flag"/>
+<artifact id="ActivityDefinition/LevofloxacinRequest" key="ActivityDefinition-LevofloxacinRequest" name="Levofloxacin Request"/>
+<artifact id="ActivityDefinition/MoxifloxacinRequest" key="ActivityDefinition-MoxifloxacinRequest" name="Moxifloxacin Request"/>
 <artifact id="Flag/no-asymptomatic-observation-flag" key="Flag-no-asymptomatic-observation-flag" name="No Asymptomatic Observation Flag"/>
 <artifact id="Flag/vaccine-allergy-flag" key="Flag-vaccine-allergy-flag" name="Vaccine Allergy Flag"/>
 <artifact id="DetectedIssue/vaccine-history-inconsistencies-detected-issue" key="DetectedIssue-vaccine-history-inconsistencies-detected-issue" name="Vaccine History Inconsistencies Detected Issue"/>
+<artifact id="ActivityDefinition/VaccineRequest" key="ActivityDefinition-VaccineRequest" name="Vaccine Request"/>
 <artifact id="AllergyIntolerance/allergy-1" key="AllergyIntolerance-allergy-1" name="allergy-1"/>
 <artifact id="AllergyIntolerance/allergy-11" key="AllergyIntolerance-allergy-11" name="allergy-11"/>
 <artifact id="AllergyIntolerance/11" key="AllergyIntolerance-11" name="allergy-12"/>
@@ -48,6 +34,8 @@
 <artifact id="AllergyIntolerance/allergy-7" key="AllergyIntolerance-allergy-7" name="allergy-7"/>
 <artifact id="AllergyIntolerance/allergy-8" key="AllergyIntolerance-allergy-8" name="allergy-8"/>
 <artifact id="AllergyIntolerance/allergy-9" key="AllergyIntolerance-allergy-9" name="allergy-9"/>
+<artifact id="PlanDefinition/antimicrobial-not-pregnant-pd" key="PlanDefinition-antimicrobial-not-pregnant-pd" name="antimicrobial not pregnant"/>
+<artifact id="PlanDefinition/antimicrobial-pregnant-pd" key="PlanDefinition-antimicrobial-pregnant-pd" name="antimicrobial pregnant"/>
 <artifact id="Bundle/bundle-1" key="Bundle-bundle-1" name="bundle-1"/>
 <artifact id="Bundle/bundle-10" key="Bundle-bundle-10" name="bundle-10"/>
 <artifact id="Bundle/bundle-11" key="Bundle-bundle-11" name="bundle-11"/>
@@ -121,6 +109,11 @@
 <artifact id="Condition/condition-7" key="Condition-condition-7" name="condition-7"/>
 <artifact id="Condition/condition-8" key="Condition-condition-8" name="condition-8"/>
 <artifact id="Condition/condition-9" key="Condition-condition-9" name="condition-9"/>
+<artifact id="PlanDefinition/first-vaccine-dose-antimicrobial-not-pregnant-pd" key="PlanDefinition-first-vaccine-dose-antimicrobial-not-pregnant-pd" name="first vaccine antimicrobial not pregnant"/>
+<artifact id="PlanDefinition/first-vaccine-dose-antimicrobial-pregnant-pd" key="PlanDefinition-first-vaccine-dose-antimicrobial-pregnant-pd" name="first vaccine antimicrobial pregnant"/>
+<artifact id="PlanDefinition/second-vaccinedose-notpregnant-pd" key="PlanDefinition-second-vaccinedose-notpregnant-pd" name="first vaccine not pregnant"/>
+<artifact id="PlanDefinition/first-vaccine-dose-not-pregnant-pd" key="PlanDefinition-first-vaccine-dose-not-pregnant-pd" name="first vaccine pregnant"/>
+<artifact id="PlanDefinition/first-vaccine-dose-pregnant-pd" key="PlanDefinition-first-vaccine-dose-pregnant-pd" name="first vaccine pregnant"/>
 <artifact id="MedicationRequest/med-request-1" key="MedicationRequest-med-request-1" name="med-request-1"/>
 <artifact id="MedicationRequest/med-request-2" key="MedicationRequest-med-request-2" name="med-request-2"/>
 <artifact id="MedicationRequest/med-request-3" key="MedicationRequest-med-request-3" name="med-request-3"/>
@@ -171,6 +164,13 @@
 <artifact id="Procedure/procedure-7" key="Procedure-procedure-7" name="procedure-7"/>
 <artifact id="Procedure/procedure-8" key="Procedure-procedure-8" name="procedure-8"/>
 <artifact id="Procedure/procedure-9" key="Procedure-procedure-9" name="procedure-9"/>
+<artifact id="PlanDefinition/second-vaccinedose-antimicrobial-notpregnant-pd" key="PlanDefinition-second-vaccinedose-antimicrobial-notpregnant-pd" name="second vaccine antimicrobial not pregnant"/>
+<artifact id="PlanDefinition/second-vaccinedose-antimicrobial-pregnant-pd" key="PlanDefinition-second-vaccinedose-antimicrobial-pregnant-pd" name="second vaccine antimicrobial pregnant"/>
+<artifact id="PlanDefinition/second-vaccinedose-pregnant-pd" key="PlanDefinition-second-vaccinedose-pregnant-pd" name="second vaccine pregnant"/>
+<artifact id="PlanDefinition/third-vaccinedose-antimicrobial-notpregnant-pd" key="PlanDefinition-third-vaccinedose-antimicrobial-notpregnant-pd" name="third vaccine antimicrobial not pregnant"/>
+<artifact id="PlanDefinition/third-vaccinedose-antimicrobial-pregnant-pd" key="PlanDefinition-third-vaccinedose-antimicrobial-pregnant-pd" name="third vaccine antimicrobial pregnant"/>
+<artifact id="PlanDefinition/third-vaccinedose-notpregnant-pd" key="PlanDefinition-third-vaccinedose-notpregnant-pd" name="third vaccine not pregnant"/>
+<artifact id="PlanDefinition/third-vaccinedose-pregnant-pd" key="PlanDefinition-third-vaccinedose-pregnant-pd" name="third vaccine pregnant"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>

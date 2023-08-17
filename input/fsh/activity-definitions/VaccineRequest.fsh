@@ -1,7 +1,7 @@
 Instance: VaccineRequest
 InstanceOf: ActivityDefinition
 Usage: #example
-Title: "Anthrax Post Exposure Prophylaxis (PEP) for Adults: Vaccine Request"
+Title: "Vaccine Request"
 * insert RequestMetadata(VaccineRequest)
 * insert UseContext
 * identifier.value = "Anthrax_Post_Exposure_Prophylaxis_FHIRv102_CQL_v110/VaccineRequest"
