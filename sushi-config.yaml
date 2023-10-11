@@ -6,8 +6,8 @@
 id: hl7.fhir.uv.cpg.anthrax
 canonical: http://hl7.org/fhir/uv/cpg/anthrax
 # where should this url be used? "https://cds.ahrq.gov/cdsconnect/artifact/anthrax-post-exposure-prophylaxis"
-name: CPGAnthraxPostExposureExample
-title: CPG Anthrax Post Exposure Example
+name: CPGExampleAnthraxPostExposure
+title: Clinical Practice Guidelines Example Implementation Guide - Anthrax Post-Exposure Prophylaxis
 description: Example of CPG computable content representing CDC guidelines for patients exposed to Anthrax
 status: active # draft | active | retired | unknown
 version: 1.1.0 # resources use this version
