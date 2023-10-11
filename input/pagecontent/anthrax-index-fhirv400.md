@@ -1,6 +1,6 @@
 ### DetectedIssue Resources
 
-* [DetectedIssue/existing-antimicrobial-detected-issue.html](DetectedIssue-existing-antimicrobial-detected-issue.html)
+* [DetectedIssue_ExistingAntimicrobial_DetectedIssue.html](DetectedIssue-existing-antimicrobial-detected-issue.html)
 * [DetectedIssue_VaccingHistoryInconsistencies_FHIRv400.html](DetectedIssue-vaccine-history-inconsistencies-detected-issue.html)
 
 ### Device Resources
