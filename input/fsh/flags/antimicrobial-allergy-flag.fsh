@@ -9,4 +9,4 @@ Description: "Flag indicating patient allergy to an antimicrobial"
 * status = #active
 * extension
   * url = Canonical(flag-detail)
-  * valueReference = Reference(AllergyIntolerance/5)
+  * valueReference = Reference(AllergyIntolerance/allergy-5)

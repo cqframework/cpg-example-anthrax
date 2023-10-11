@@ -9,4 +9,4 @@ Description: "Asymptomatic flag example"
 * status = #active
 * extension
   * url = Canonical(flag-detail)
-  * valueReference = Reference(Condition/1)
+  * valueReference = Reference(Condition/condition-1)
