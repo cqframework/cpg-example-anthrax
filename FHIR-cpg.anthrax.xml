@@ -7,25 +7,39 @@
 <artifact id="Device/anthrax-example-device" key="Device-anthrax-example-device" name="Anthrax Example Device"/>
 <artifact id="Library/anthrax-post-exposure-prophylaxis-library" key="Library-anthrax-post-exposure-prophylaxis-library" name="Anthrax Post Exposure Prophylaxis (PEP) for Adults FHIRv400 Logic"/>
 <artifact id="Flag/antimicrobial-allergy-flag" key="Flag-antimicrobial-allergy-flag" name="Antimicrobial Allergy Flag"/>
+<artifact id="PlanDefinition/antimicrobial-not-pregnant-pd" key="PlanDefinition-antimicrobial-not-pregnant-pd" name="Antimicrobial not pregnant"/>
+<artifact id="PlanDefinition/antimicrobial-pregnant-pd" key="PlanDefinition-antimicrobial-pregnant-pd" name="Antimicrobial pregnant"/>
 <artifact id="Library/cdc-common-logic-library" key="Library-cdc-common-logic-library" name="CDC Common Logic for FHIRv400"/>
 <artifact id="Library/cds-connect-commons-library" key="Library-cds-connect-commons-library" name="CDS Connect Commons for FHIRv400"/>
 <artifact id="ActivityDefinition/CiprofloxacinRequest" key="ActivityDefinition-CiprofloxacinRequest" name="Ciprofloxacin Request"/>
 <artifact id="ActivityDefinition/ClindamycinRequest" key="ActivityDefinition-ClindamycinRequest" name="Clindamycin Request"/>
 <artifact id="ActivityDefinition/DoxycyclineRequest" key="ActivityDefinition-DoxycyclineRequest" name="Doxycycline Request"/>
 <artifact id="DetectedIssue/existing-antimicrobial-detected-issue" key="DetectedIssue-existing-antimicrobial-detected-issue" name="Existing Antimicrobial Detected Issue"/>
+<artifact id="PlanDefinition/first-vaccine-dose-antimicrobial-not-pregnant-pd" key="PlanDefinition-first-vaccine-dose-antimicrobial-not-pregnant-pd" name="First vaccine antimicrobial not pregnant"/>
+<artifact id="PlanDefinition/first-vaccine-dose-antimicrobial-pregnant-pd" key="PlanDefinition-first-vaccine-dose-antimicrobial-pregnant-pd" name="First vaccine antimicrobial pregnant"/>
+<artifact id="PlanDefinition/first-vaccine-dose-not-pregnant-pd" key="PlanDefinition-first-vaccine-dose-not-pregnant-pd" name="First vaccine not pregnant"/>
+<artifact id="PlanDefinition/second-vaccinedose-notpregnant-pd" key="PlanDefinition-second-vaccinedose-notpregnant-pd" name="First vaccine not pregnant"/>
+<artifact id="PlanDefinition/first-vaccine-dose-pregnant-pd" key="PlanDefinition-first-vaccine-dose-pregnant-pd" name="First vaccine pregnant"/>
 <artifact id="Flag/latex-allergy-flag" key="Flag-latex-allergy-flag" name="Latex Allergy Flag"/>
 <artifact id="ActivityDefinition/LevofloxacinRequest" key="ActivityDefinition-LevofloxacinRequest" name="Levofloxacin Request"/>
 <artifact id="ActivityDefinition/MoxifloxacinRequest" key="ActivityDefinition-MoxifloxacinRequest" name="Moxifloxacin Request"/>
 <artifact id="Flag/no-asymptomatic-observation-flag" key="Flag-no-asymptomatic-observation-flag" name="No Asymptomatic Observation Flag"/>
+<artifact id="PlanDefinition/second-vaccinedose-antimicrobial-notpregnant-pd" key="PlanDefinition-second-vaccinedose-antimicrobial-notpregnant-pd" name="Second vaccine antimicrobial not pregnant"/>
+<artifact id="PlanDefinition/second-vaccinedose-antimicrobial-pregnant-pd" key="PlanDefinition-second-vaccinedose-antimicrobial-pregnant-pd" name="Second vaccine antimicrobial pregnant"/>
+<artifact id="PlanDefinition/second-vaccinedose-pregnant-pd" key="PlanDefinition-second-vaccinedose-pregnant-pd" name="Second vaccine pregnant"/>
+<artifact id="PlanDefinition/third-vaccinedose-antimicrobial-notpregnant-pd" key="PlanDefinition-third-vaccinedose-antimicrobial-notpregnant-pd" name="Third vaccine antimicrobial not pregnant"/>
+<artifact id="PlanDefinition/third-vaccinedose-antimicrobial-pregnant-pd" key="PlanDefinition-third-vaccinedose-antimicrobial-pregnant-pd" name="Third vaccine antimicrobial pregnant"/>
+<artifact id="PlanDefinition/third-vaccinedose-notpregnant-pd" key="PlanDefinition-third-vaccinedose-notpregnant-pd" name="Third vaccine not pregnant"/>
+<artifact id="PlanDefinition/third-vaccinedose-pregnant-pd" key="PlanDefinition-third-vaccinedose-pregnant-pd" name="Third vaccine pregnant"/>
 <artifact id="Flag/vaccine-allergy-flag" key="Flag-vaccine-allergy-flag" name="Vaccine Allergy Flag"/>
 <artifact id="DetectedIssue/vaccine-history-inconsistencies-detected-issue" key="DetectedIssue-vaccine-history-inconsistencies-detected-issue" name="Vaccine History Inconsistencies Detected Issue"/>
 <artifact id="ActivityDefinition/VaccineRequest" key="ActivityDefinition-VaccineRequest" name="Vaccine Request"/>
 <artifact id="AllergyIntolerance/allergy-1" key="AllergyIntolerance-allergy-1" name="allergy-1"/>
+<artifact id="AllergyIntolerance/allergy-10" key="AllergyIntolerance-allergy-10" name="allergy-10"/>
 <artifact id="AllergyIntolerance/allergy-11" key="AllergyIntolerance-allergy-11" name="allergy-11"/>
-<artifact id="AllergyIntolerance/11" key="AllergyIntolerance-11" name="allergy-12"/>
-<artifact id="AllergyIntolerance/9" key="AllergyIntolerance-9" name="allergy-13"/>
-<artifact id="AllergyIntolerance/10" key="AllergyIntolerance-10" name="allergy-14"/>
-<artifact id="AllergyIntolerance/5" key="AllergyIntolerance-5" name="allergy-15"/>
+<artifact id="AllergyIntolerance/allergy-12" key="AllergyIntolerance-allergy-12" name="allergy-12"/>
+<artifact id="AllergyIntolerance/allergy-13" key="AllergyIntolerance-allergy-13" name="allergy-13"/>
+<artifact id="AllergyIntolerance/allergy-14" key="AllergyIntolerance-allergy-14" name="allergy-14"/>
 <artifact id="AllergyIntolerance/allergy-2" key="AllergyIntolerance-allergy-2" name="allergy-2"/>
 <artifact id="AllergyIntolerance/allergy-3" key="AllergyIntolerance-allergy-3" name="allergy-3"/>
 <artifact id="AllergyIntolerance/allergy-4" key="AllergyIntolerance-allergy-4" name="allergy-4"/>
@@ -34,8 +48,6 @@
 <artifact id="AllergyIntolerance/allergy-7" key="AllergyIntolerance-allergy-7" name="allergy-7"/>
 <artifact id="AllergyIntolerance/allergy-8" key="AllergyIntolerance-allergy-8" name="allergy-8"/>
 <artifact id="AllergyIntolerance/allergy-9" key="AllergyIntolerance-allergy-9" name="allergy-9"/>
-<artifact id="PlanDefinition/antimicrobial-not-pregnant-pd" key="PlanDefinition-antimicrobial-not-pregnant-pd" name="antimicrobial not pregnant"/>
-<artifact id="PlanDefinition/antimicrobial-pregnant-pd" key="PlanDefinition-antimicrobial-pregnant-pd" name="antimicrobial pregnant"/>
 <artifact id="Bundle/bundle-1" key="Bundle-bundle-1" name="bundle-1"/>
 <artifact id="Bundle/bundle-10" key="Bundle-bundle-10" name="bundle-10"/>
 <artifact id="Bundle/bundle-11" key="Bundle-bundle-11" name="bundle-11"/>
@@ -101,19 +113,14 @@
 <artifact id="Condition/condition-10" key="Condition-condition-10" name="condition-10"/>
 <artifact id="Condition/condition-11" key="Condition-condition-11" name="condition-11"/>
 <artifact id="Condition/condition-12" key="Condition-condition-12" name="condition-12"/>
-<artifact id="Condition/condition-13" key="Condition-condition-13" name="condition-13"/>
 <artifact id="Condition/condition-2" key="Condition-condition-2" name="condition-2"/>
 <artifact id="Condition/condition-3" key="Condition-condition-3" name="condition-3"/>
 <artifact id="Condition/condition-4" key="Condition-condition-4" name="condition-4"/>
 <artifact id="Condition/condition-5" key="Condition-condition-5" name="condition-5"/>
+<artifact id="Condition/condition-6" key="Condition-condition-6" name="condition-6"/>
 <artifact id="Condition/condition-7" key="Condition-condition-7" name="condition-7"/>
 <artifact id="Condition/condition-8" key="Condition-condition-8" name="condition-8"/>
 <artifact id="Condition/condition-9" key="Condition-condition-9" name="condition-9"/>
-<artifact id="PlanDefinition/first-vaccine-dose-antimicrobial-not-pregnant-pd" key="PlanDefinition-first-vaccine-dose-antimicrobial-not-pregnant-pd" name="first vaccine antimicrobial not pregnant"/>
-<artifact id="PlanDefinition/first-vaccine-dose-antimicrobial-pregnant-pd" key="PlanDefinition-first-vaccine-dose-antimicrobial-pregnant-pd" name="first vaccine antimicrobial pregnant"/>
-<artifact id="PlanDefinition/second-vaccinedose-notpregnant-pd" key="PlanDefinition-second-vaccinedose-notpregnant-pd" name="first vaccine not pregnant"/>
-<artifact id="PlanDefinition/first-vaccine-dose-not-pregnant-pd" key="PlanDefinition-first-vaccine-dose-not-pregnant-pd" name="first vaccine pregnant"/>
-<artifact id="PlanDefinition/first-vaccine-dose-pregnant-pd" key="PlanDefinition-first-vaccine-dose-pregnant-pd" name="first vaccine pregnant"/>
 <artifact id="MedicationRequest/med-request-1" key="MedicationRequest-med-request-1" name="med-request-1"/>
 <artifact id="MedicationRequest/med-request-2" key="MedicationRequest-med-request-2" name="med-request-2"/>
 <artifact id="MedicationRequest/med-request-3" key="MedicationRequest-med-request-3" name="med-request-3"/>
@@ -130,6 +137,7 @@
 <artifact id="Observation/observation-16" key="Observation-observation-16" name="observation-16"/>
 <artifact id="Observation/observation-17" key="Observation-observation-17" name="observation-17"/>
 <artifact id="Observation/observation-18" key="Observation-observation-18" name="observation-18"/>
+<artifact id="Observation/observation-19" key="Observation-observation-19" name="observation-19"/>
 <artifact id="Observation/observation-2" key="Observation-observation-2" name="observation-2"/>
 <artifact id="Observation/observation-20" key="Observation-observation-20" name="observation-20"/>
 <artifact id="Observation/observation-21" key="Observation-observation-21" name="observation-21"/>
@@ -138,24 +146,23 @@
 <artifact id="Observation/observation-24" key="Observation-observation-24" name="observation-24"/>
 <artifact id="Observation/observation-25" key="Observation-observation-25" name="observation-25"/>
 <artifact id="Observation/observation-26" key="Observation-observation-26" name="observation-26"/>
-<artifact id="Observation/observation-27" key="Observation-observation-27" name="observation-27"/>
-<artifact id="Observation/observation-28" key="Observation-observation-28" name="observation-28"/>
 <artifact id="Observation/observation-3" key="Observation-observation-3" name="observation-3"/>
 <artifact id="Observation/observation-4" key="Observation-observation-4" name="observation-4"/>
 <artifact id="Observation/observation-5" key="Observation-observation-5" name="observation-5"/>
 <artifact id="Observation/observation-6" key="Observation-observation-6" name="observation-6"/>
 <artifact id="Observation/observation-7" key="Observation-observation-7" name="observation-7"/>
 <artifact id="Observation/observation-8" key="Observation-observation-8" name="observation-8"/>
+<artifact id="Observation/observation-9" key="Observation-observation-9" name="observation-9"/>
 <artifact id="Patient/patient-1" key="Patient-patient-1" name="patient-1"/>
 <artifact id="Patient/patient-2" key="Patient-patient-2" name="patient-2"/>
 <artifact id="Patient/patient-3" key="Patient-patient-3" name="patient-3"/>
-<artifact id="Condition/patient-6" key="Condition-patient-6" name="patient-6"/>
+<artifact id="Condition/patient-4" key="Condition-patient-4" name="patient-4"/>
 <artifact id="Procedure/procedure-1" key="Procedure-procedure-1" name="procedure-1"/>
 <artifact id="Procedure/procedure-10" key="Procedure-procedure-10" name="procedure-10"/>
+<artifact id="Procedure/procedure-11" key="Procedure-procedure-11" name="procedure-11"/>
 <artifact id="Procedure/procedure-12" key="Procedure-procedure-12" name="procedure-12"/>
 <artifact id="Procedure/procedure-13" key="Procedure-procedure-13" name="procedure-13"/>
 <artifact id="Procedure/procedure-14" key="Procedure-procedure-14" name="procedure-14"/>
-<artifact id="Procedure/procedure-16" key="Procedure-procedure-16" name="procedure-16"/>
 <artifact id="Procedure/procedure-2" key="Procedure-procedure-2" name="procedure-2"/>
 <artifact id="Procedure/procedure-3" key="Procedure-procedure-3" name="procedure-3"/>
 <artifact id="Procedure/procedure-4" key="Procedure-procedure-4" name="procedure-4"/>
@@ -164,13 +171,6 @@
 <artifact id="Procedure/procedure-7" key="Procedure-procedure-7" name="procedure-7"/>
 <artifact id="Procedure/procedure-8" key="Procedure-procedure-8" name="procedure-8"/>
 <artifact id="Procedure/procedure-9" key="Procedure-procedure-9" name="procedure-9"/>
-<artifact id="PlanDefinition/second-vaccinedose-antimicrobial-notpregnant-pd" key="PlanDefinition-second-vaccinedose-antimicrobial-notpregnant-pd" name="second vaccine antimicrobial not pregnant"/>
-<artifact id="PlanDefinition/second-vaccinedose-antimicrobial-pregnant-pd" key="PlanDefinition-second-vaccinedose-antimicrobial-pregnant-pd" name="second vaccine antimicrobial pregnant"/>
-<artifact id="PlanDefinition/second-vaccinedose-pregnant-pd" key="PlanDefinition-second-vaccinedose-pregnant-pd" name="second vaccine pregnant"/>
-<artifact id="PlanDefinition/third-vaccinedose-antimicrobial-notpregnant-pd" key="PlanDefinition-third-vaccinedose-antimicrobial-notpregnant-pd" name="third vaccine antimicrobial not pregnant"/>
-<artifact id="PlanDefinition/third-vaccinedose-antimicrobial-pregnant-pd" key="PlanDefinition-third-vaccinedose-antimicrobial-pregnant-pd" name="third vaccine antimicrobial pregnant"/>
-<artifact id="PlanDefinition/third-vaccinedose-notpregnant-pd" key="PlanDefinition-third-vaccinedose-notpregnant-pd" name="third vaccine not pregnant"/>
-<artifact id="PlanDefinition/third-vaccinedose-pregnant-pd" key="PlanDefinition-third-vaccinedose-pregnant-pd" name="third vaccine pregnant"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>
