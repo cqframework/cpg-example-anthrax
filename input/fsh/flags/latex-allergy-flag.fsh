@@ -9,4 +9,4 @@ Description: "Flag indicating patient has latex allergy"
 * status = #active
 * extension
   * url = Canonical(flag-detail)
-  * valueReference = Reference(AllergyIntolerance/11)
+  * valueReference = Reference(AllergyIntolerance/allergy-11)

@@ -9,4 +9,4 @@ Description: "Flag indicating patient has allergy to a vaccine"
 * status = #active
 * extension
   * url = Canonical(flag-detail)
-  * valueReference = Reference(AllergyIntolerance/9)
+  * valueReference = Reference(AllergyIntolerance/allergy-9)

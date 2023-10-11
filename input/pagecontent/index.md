@@ -31,7 +31,7 @@ This software delivery includes the following directories, which are each descri
 - Library: Library FHIR resources that act as containers for the updated artifact.
 - PlanDefinition: Provides example PlanDefinition FHIR resources produced by the artifact.
 
-* [R4 Example Index](examples-anthrax-index-fhirv400.html)
+* [R4 Example Index](anthrax-index-fhirv400.html)
 
 ##### cql
 The cql directory contains the following subdirectories.
@@ -97,7 +97,7 @@ Each subdirectory contains the FHIR resources in JSON format, as well as a text
 file that captures the results from validating said resources using the
 [FHIR Validator](http://wiki.hl7.org/index.php?title=Using_the_FHIR_Validator). Where
 appropriate, the resources are also validated against the profile available at:
-- [cpg-computablelibrary](StructureDefinition-cpg-computablelibrary.html)
+- [cpg-computablelibrary](http://hl7.org/fhir/uv/cpg/StructureDefinition-cpg-computablelibrary.html)
 
 ##### PlanDefinition
 The artifact CQL has the ability to generate an order set using the FHIR PlanDefinition
@@ -112,5 +112,5 @@ Each subdirectory should contain the FHIR resources in JSON format, as well as a
 file that captures the results from validating said resources using the
 [FHIR Validator](http://wiki.hl7.org/index.php?title=Using_the_FHIR_Validator). Where
 appropriate, the resources are also validated against the profiles available at:
-- [cpg-publishableplandefinition](StructureDefinition-cpg-publishableplandefinition.html)
-- [cpg-publishableactivity](StructureDefinition-cpg-publishableactivity.html)
+- [cpg-publishableplandefinition](http://hl7.org/fhir/uv/cpg/StructureDefinition-cpg-publishableplandefinition.html)
+- [cpg-publishableactivity](http://hl7.org/fhir/uv/cpg/StructureDefinition-cpg-publishableactivity.html)
