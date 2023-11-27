@@ -1,6 +1,6 @@
 Instance: second-vaccinedose-antimicrobial-pregnant-pd
 InstanceOf: PlanDefinition
-Usage: #example
+Usage: #definition
 Title: "Second vaccine antimicrobial pregnant"
 * insert PlanDefinitionMetadata(second-vaccinedose-antimicrobial-pregnant-pd)
 * insert UseContext

@@ -1,6 +1,6 @@
 Instance: vaccine-allergy-flag
 InstanceOf: Flag
-Usage: #example
+Usage: #definition
 Title: "Vaccine Allergy Flag"
 Description: "Flag indicating patient has allergy to a vaccine"
 * subject = Reference(Patient/patient-1)

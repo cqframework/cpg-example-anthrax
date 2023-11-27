@@ -1,6 +1,6 @@
 Instance: third-vaccinedose-pregnant-pd
 InstanceOf: PlanDefinition
-Usage: #example
+Usage: #definition
 Title: "Third vaccine pregnant"
 * insert PlanDefinitionMetadata(third-vaccinedose-pregnant-pd)
 * insert UseContext

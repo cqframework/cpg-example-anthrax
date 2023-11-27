@@ -1,6 +1,6 @@
 Instance: anthrax-post-exposure-prophylaxis-library
 InstanceOf: Library
-Usage: #example
+Usage: #definition
 Title: "Anthrax Post Exposure Prophylaxis (PEP) for Adults FHIRv400 Logic"
 * insert LibraryMetadata(anthrax-post-exposure-prophylaxis-library)
 * insert AntrhaxExposureDescriptionAndUsage

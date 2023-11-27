@@ -1,6 +1,6 @@
 Instance: DoxycyclineRequest
 InstanceOf: ActivityDefinition
-Usage: #example
+Usage: #definition
 Title: "Doxycycline Request"
 * insert RequestMetadata(DoxycyclineRequest)
 * insert UseContext

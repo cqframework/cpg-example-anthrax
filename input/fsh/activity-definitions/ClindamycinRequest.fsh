@@ -1,6 +1,6 @@
 Instance: ClindamycinRequest
 InstanceOf: ActivityDefinition
-Usage: #example
+Usage: #definition
 Title: "Clindamycin Request"
 * insert RequestMetadata(ClindamycinRequest)
 * insert UseContext

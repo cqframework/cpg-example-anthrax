@@ -1,6 +1,6 @@
 Instance: antimicrobial-allergy-flag
 InstanceOf: Flag
-Usage: #example
+Usage: #definition
 Title: "Antimicrobial Allergy Flag"
 Description: "Flag indicating patient allergy to an antimicrobial"
 * subject = Reference(Patient/patient-1)

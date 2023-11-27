@@ -1,6 +1,6 @@
 Instance: MoxifloxacinRequest
 InstanceOf: ActivityDefinition
-Usage: #example
+Usage: #definition
 Title: "Moxifloxacin Request"
 * insert RequestMetadata(MoxifloxacinRequest)
 * insert UseContext

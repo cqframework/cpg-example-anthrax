@@ -1,6 +1,6 @@
 Instance: cdc-common-logic-library
 InstanceOf: Library
-Usage: #example
+Usage: #definition
 Title: "CDC Common Logic for FHIRv400"
 * insert LibraryMetadata(cdc-common-logic-library)
 * insert FHIRRelatedLibraries

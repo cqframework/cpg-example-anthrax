@@ -1,6 +1,6 @@
 Instance: third-vaccinedose-antimicrobial-notpregnant-pd
 InstanceOf: PlanDefinition
-Usage: #example
+Usage: #definition
 Title: "Third vaccine antimicrobial not pregnant"
 * insert PlanDefinitionMetadata(third-vaccinedose-antimicrobial-notpregnant-pd)
 * insert UseContext

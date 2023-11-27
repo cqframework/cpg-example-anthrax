@@ -1,6 +1,6 @@
 Instance: VaccineRequest
 InstanceOf: ActivityDefinition
-Usage: #example
+Usage: #definition
 Title: "Vaccine Request"
 * insert RequestMetadata(VaccineRequest)
 * insert UseContext

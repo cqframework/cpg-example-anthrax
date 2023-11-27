@@ -1,6 +1,6 @@
 Instance: cds-connect-commons-library
 InstanceOf: Library
-Usage: #example
+Usage: #definition
 Title: "CDS Connect Commons for FHIRv400"
 * insert LibraryMetadata(cds-connect-commons-library)
 * insert FHIRRelatedLibraries

@@ -1,6 +1,6 @@
 Instance: no-asymptomatic-observation-flag
 InstanceOf: Flag
-Usage: #example
+Usage: #definition
 Title: "No Asymptomatic Observation Flag"
 Description: "Asymptomatic flag example"
 * subject = Reference(Patient/patient-1)

@@ -1,6 +1,6 @@
 Instance: first-vaccine-dose-antimicrobial-not-pregnant-pd
 InstanceOf: PlanDefinition
-Usage: #example
+Usage: #definition
 Title: "First vaccine antimicrobial not pregnant"
 * insert PlanDefinitionMetadata(first-vaccine-dose-antimicrobial-not-pregnant-pd)
 * insert UseContext

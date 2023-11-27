@@ -1,6 +1,6 @@
 Instance: latex-allergy-flag
 InstanceOf: Flag
-Usage: #example
+Usage: #definition
 Title: "Latex Allergy Flag"
 Description: "Flag indicating patient has latex allergy"
 * subject = Reference(Patient/patient-1)

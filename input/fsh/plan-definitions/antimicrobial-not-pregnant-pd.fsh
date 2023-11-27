@@ -1,6 +1,6 @@
 Instance: antimicrobial-not-pregnant-pd
 InstanceOf: PlanDefinition
-Usage: #example
+Usage: #definition
 Title: "Antimicrobial not pregnant"
 * insert PlanDefinitionMetadata(antimicrobial-not-pregnant-pd)
 * insert UseContext

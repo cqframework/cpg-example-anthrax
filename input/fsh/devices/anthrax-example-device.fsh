@@ -1,6 +1,6 @@
 Instance: anthrax-example-device
 InstanceOf: Device
-Usage: #example
+Usage: #definition
 Title: "Anthrax Example Device"
 Description: "Example device"
 * type = $sct#701002007 "Clinical data collection/management information system application software (physical object)"
