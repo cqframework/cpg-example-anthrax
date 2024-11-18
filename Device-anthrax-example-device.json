@@ -3,7 +3,7 @@
   "id" : "anthrax-example-device",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device anthrax-example-device</b></p><a name=\"anthrax-example-device\"> </a><a name=\"hcanthrax-example-device\"> </a><a name=\"anthrax-example-device-en-US\"> </a><p><b>identifier</b>: Anthrax_Post_Exposure_Prophylaxis_FHIRv400.cql</p><p><b>manufacturer</b>: Centers for Disease Control and Prevention</p><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 701002007}\">Clinical data collection/management information system application software (physical object)</span></p><h3>Versions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value</b></td></tr><tr><td style=\"display: none\">*</td><td>1.1.0</td></tr></table><p><b>url</b>: <a href=\"http://cqframework.org/cpg-example-anthrax//Device/anthrax-example-device\">http://cqframework.org/cpg-example-anthrax//Device/anthrax-example-device</a></p></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device anthrax-example-device</b></p><a name=\"anthrax-example-device\"> </a><a name=\"hcanthrax-example-device\"> </a><a name=\"anthrax-example-device-en-US\"> </a><p><b>identifier</b>: Anthrax_Post_Exposure_Prophylaxis_FHIRv400.cql</p><p><b>manufacturer</b>: Centers for Disease Control and Prevention</p><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 701002007}\">Clinical data collection/management information system application software (physical object)</span></p><h3>Versions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value</b></td></tr><tr><td style=\"display: none\">*</td><td>1.1.0</td></tr></table><p><b>url</b>: <a href=\"http://cqframework.org/cpg-example-anthrax/Device/anthrax-example-device\">http://cqframework.org/cpg-example-anthrax/Device/anthrax-example-device</a></p></div>"
   },
   "identifier" : [{
     "value" : "Anthrax_Post_Exposure_Prophylaxis_FHIRv400.cql"
@@ -19,5 +19,5 @@
   "version" : [{
     "value" : "1.1.0"
   }],
-  "url" : "http://cqframework.org/cpg-example-anthrax//Device/anthrax-example-device"
+  "url" : "http://cqframework.org/cpg-example-anthrax/Device/anthrax-example-device"
 }

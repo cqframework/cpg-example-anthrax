@@ -3,15 +3,15 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="cqframework.cpg-example-anthrax"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide cqframework.cpg-example-anthrax</b></p><a name="cqframework.cpg-example-anthrax"> </a><a name="hccqframework.cpg-example-anthrax"> </a><a name="cqframework.cpg-example-anthrax-en-US"> </a><h2>CPGExampleAnthraxPostExposure</h2><p>The official URL for this implementation guide is: </p><pre>http://cqframework.org/cpg-example-anthrax//ImplementationGuide/cqframework.cpg-example-anthrax</pre><div><p>Example of CPG computable content representing CDC guidelines for patients exposed to Anthrax</p>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide cqframework.cpg-example-anthrax</b></p><a name="cqframework.cpg-example-anthrax"> </a><a name="hccqframework.cpg-example-anthrax"> </a><a name="cqframework.cpg-example-anthrax-en-US"> </a><h2>CPGExampleAnthraxPostExposure</h2><p>The official URL for this implementation guide is: </p><pre>http://cqframework.org/cpg-example-anthrax/ImplementationGuide/cqframework.cpg-example-anthrax</pre><div><p>Example of CPG computable content representing CDC guidelines for patients exposed to Anthrax</p>
 </div></div>
   </text>
-  <url value="http://cqframework.org/cpg-example-anthrax//ImplementationGuide/cqframework.cpg-example-anthrax"/>
+  <url value="http://cqframework.org/cpg-example-anthrax/ImplementationGuide/cqframework.cpg-example-anthrax"/>
   <version value="1.1.0"/>
   <name value="CPGExampleAnthraxPostExposure"/>
   <title value="Clinical Practice Guidelines Example Implementation Guide - Anthrax Post-Exposure Prophylaxis"/>
   <status value="active"/>
-  <date value="2024-11-18T16:39:04+00:00"/>
+  <date value="2024-11-18T16:43:41+00:00"/>
   <publisher value="HL7 International - Clinical Decision Support WG"/>
   <contact>
     <name value="HL7 International - Clinical Decision Support WG"/>
@@ -186,7 +186,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="http://cqframework.org/cpg-example-anthrax//history.html"/>
+        <valueString value="http://cqframework.org/cpg-example-anthrax/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -397,7 +397,7 @@
         <valueCode value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="http://cqframework.org/cpg-example-anthrax//history.html"/>
+        <valueString value="http://cqframework.org/cpg-example-anthrax/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">

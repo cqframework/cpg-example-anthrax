@@ -3,7 +3,7 @@
   "id" : "bundle-57",
   "type" : "collection",
   "entry" : [{
-    "fullUrl" : "http://cqframework.org/cpg-example-anthrax//Patient/patient-1",
+    "fullUrl" : "http://cqframework.org/cpg-example-anthrax/Patient/patient-1",
     "resource" : {
       "resourceType" : "Patient",
       "id" : "patient-1",
@@ -20,7 +20,7 @@
     }
   },
   {
-    "fullUrl" : "http://cqframework.org/cpg-example-anthrax//Condition/condition-12",
+    "fullUrl" : "http://cqframework.org/cpg-example-anthrax/Condition/condition-12",
     "resource" : {
       "resourceType" : "Condition",
       "id" : "condition-12",
@@ -55,7 +55,7 @@
     }
   },
   {
-    "fullUrl" : "http://cqframework.org/cpg-example-anthrax//Observation/observation-6",
+    "fullUrl" : "http://cqframework.org/cpg-example-anthrax/Observation/observation-6",
     "resource" : {
       "resourceType" : "Observation",
       "id" : "observation-6",
@@ -80,7 +80,7 @@
     }
   },
   {
-    "fullUrl" : "http://cqframework.org/cpg-example-anthrax//Observation/observation-18",
+    "fullUrl" : "http://cqframework.org/cpg-example-anthrax/Observation/observation-18",
     "resource" : {
       "resourceType" : "Observation",
       "id" : "observation-18",
@@ -105,7 +105,7 @@
     }
   },
   {
-    "fullUrl" : "http://cqframework.org/cpg-example-anthrax//MedicationRequest/med-request-1",
+    "fullUrl" : "http://cqframework.org/cpg-example-anthrax/MedicationRequest/med-request-1",
     "resource" : {
       "resourceType" : "MedicationRequest",
       "id" : "med-request-1",

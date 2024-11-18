@@ -3,7 +3,7 @@
   "id" : "bundle-24",
   "type" : "collection",
   "entry" : [{
-    "fullUrl" : "http://cqframework.org/cpg-example-anthrax//Patient/patient-1",
+    "fullUrl" : "http://cqframework.org/cpg-example-anthrax/Patient/patient-1",
     "resource" : {
       "resourceType" : "Patient",
       "id" : "patient-1",
@@ -20,7 +20,7 @@
     }
   },
   {
-    "fullUrl" : "http://cqframework.org/cpg-example-anthrax//Observation/observation-17",
+    "fullUrl" : "http://cqframework.org/cpg-example-anthrax/Observation/observation-17",
     "resource" : {
       "resourceType" : "Observation",
       "id" : "observation-17",

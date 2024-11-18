@@ -10,11 +10,11 @@
   fhir:id [ fhir:v "bundle-1"] ; # 
   fhir:type [ fhir:v "collection"] ; # 
   fhir:entry ( [
-     fhir:fullUrl [ fhir:v "http://cqframework.org/cpg-example-anthrax//Patient/patient-2"^^xsd:anyURI ] ;
-     fhir:resource ( <http://cqframework.org/cpg-example-anthrax//Patient/patient-2> )
+     fhir:fullUrl [ fhir:v "http://cqframework.org/cpg-example-anthrax/Patient/patient-2"^^xsd:anyURI ] ;
+     fhir:resource ( <http://cqframework.org/cpg-example-anthrax/Patient/patient-2> )
   ] ) . # 
 
-<http://cqframework.org/cpg-example-anthrax//Patient/patient-2> a fhir:Patient ;
+<http://cqframework.org/cpg-example-anthrax/Patient/patient-2> a fhir:Patient ;
   fhir:id [ fhir:v "patient-2"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;

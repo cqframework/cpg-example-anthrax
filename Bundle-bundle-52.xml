@@ -4,7 +4,7 @@
   <id value="bundle-52"/>
   <type value="collection"/>
   <entry>
-    <fullUrl value="http://cqframework.org/cpg-example-anthrax//Patient/patient-3"/>
+    <fullUrl value="http://cqframework.org/cpg-example-anthrax/Patient/patient-3"/>
     <resource>
       <Patient>
         <id value="patient-3"/>
@@ -21,7 +21,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://cqframework.org/cpg-example-anthrax//Condition/condition-4"/>
+    <fullUrl value="http://cqframework.org/cpg-example-anthrax/Condition/condition-4"/>
     <resource>
       <Condition>
         <id value="condition-4"/>
@@ -56,7 +56,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://cqframework.org/cpg-example-anthrax//Observation/observation-13"/>
+    <fullUrl value="http://cqframework.org/cpg-example-anthrax/Observation/observation-13"/>
     <resource>
       <Observation>
         <id value="observation-13"/>
@@ -81,7 +81,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://cqframework.org/cpg-example-anthrax//Observation/observation-21"/>
+    <fullUrl value="http://cqframework.org/cpg-example-anthrax/Observation/observation-21"/>
     <resource>
       <Observation>
         <id value="observation-21"/>
@@ -106,7 +106,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://cqframework.org/cpg-example-anthrax//Observation/observation-19"/>
+    <fullUrl value="http://cqframework.org/cpg-example-anthrax/Observation/observation-19"/>
     <resource>
       <Observation>
         <id value="observation-19"/>

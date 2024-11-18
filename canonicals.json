@@ -1,12 +1,5 @@
 [
   {
-    "id" : "cqframework.cpg-example-anthrax",
-    "type" : "ImplementationGuide",
-    "url" : "http://cqframework.org/cpg-example-anthrax//ImplementationGuide/cqframework.cpg-example-anthrax",
-    "version" : "1.1.0",
-    "name" : "CPGExampleAnthraxPostExposure"
-  },
-  {
     "id" : "CiprofloxacinRequest",
     "type" : "ActivityDefinition",
     "url" : "http://cqframework.org/cpg-example-anthrax/ActivityDefinition/CiprofloxacinRequest",
@@ -47,6 +40,13 @@
     "url" : "http://cqframework.org/cpg-example-anthrax/ActivityDefinition/VaccineRequest",
     "version" : "1.1.0",
     "name" : "Anthrax_Post_Exposure_Prophylaxis_Adults_Vaccine_Request"
+  },
+  {
+    "id" : "cqframework.cpg-example-anthrax",
+    "type" : "ImplementationGuide",
+    "url" : "http://cqframework.org/cpg-example-anthrax/ImplementationGuide/cqframework.cpg-example-anthrax",
+    "version" : "1.1.0",
+    "name" : "CPGExampleAnthraxPostExposure"
   },
   {
     "id" : "anthrax-post-exposure-prophylaxis-library",

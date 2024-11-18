@@ -584,7 +584,7 @@ define function GoalLookBack(GoalList List&lt;Goal&gt;, LookBack System.Quantity
       <code value="logic-library"/>
     </coding>
   </type>
-  <date value="2024-11-18T16:39:04+00:00"/>
+  <date value="2024-11-18T16:43:41+00:00"/>
   <publisher value="HL7 International - Clinical Decision Support WG"/>
   <contact>
     <name value="HL7 International - Clinical Decision Support WG"/>

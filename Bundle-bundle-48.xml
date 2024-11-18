@@ -4,7 +4,7 @@
   <id value="bundle-48"/>
   <type value="collection"/>
   <entry>
-    <fullUrl value="http://cqframework.org/cpg-example-anthrax//Patient/patient-1"/>
+    <fullUrl value="http://cqframework.org/cpg-example-anthrax/Patient/patient-1"/>
     <resource>
       <Patient>
         <id value="patient-1"/>
@@ -21,7 +21,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://cqframework.org/cpg-example-anthrax//Condition/condition-2"/>
+    <fullUrl value="http://cqframework.org/cpg-example-anthrax/Condition/condition-2"/>
     <resource>
       <Condition>
         <id value="condition-2"/>
@@ -56,7 +56,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://cqframework.org/cpg-example-anthrax//Observation/observation-3"/>
+    <fullUrl value="http://cqframework.org/cpg-example-anthrax/Observation/observation-3"/>
     <resource>
       <Observation>
         <id value="observation-3"/>
@@ -81,7 +81,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://cqframework.org/cpg-example-anthrax//Observation/observation-16"/>
+    <fullUrl value="http://cqframework.org/cpg-example-anthrax/Observation/observation-16"/>
     <resource>
       <Observation>
         <id value="observation-16"/>
@@ -106,7 +106,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://cqframework.org/cpg-example-anthrax//Procedure/procedure-6"/>
+    <fullUrl value="http://cqframework.org/cpg-example-anthrax/Procedure/procedure-6"/>
     <resource>
       <Procedure>
         <id value="procedure-6"/>
@@ -130,7 +130,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://cqframework.org/cpg-example-anthrax//Procedure/procedure-1"/>
+    <fullUrl value="http://cqframework.org/cpg-example-anthrax/Procedure/procedure-1"/>
     <resource>
       <Procedure>
         <id value="procedure-1"/>
@@ -154,7 +154,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://cqframework.org/cpg-example-anthrax//MedicationRequest/med-request-1"/>
+    <fullUrl value="http://cqframework.org/cpg-example-anthrax/MedicationRequest/med-request-1"/>
     <resource>
       <MedicationRequest>
         <id value="med-request-1"/>

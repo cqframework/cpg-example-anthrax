@@ -3,7 +3,7 @@
   "id" : "bundle-27",
   "type" : "collection",
   "entry" : [{
-    "fullUrl" : "http://cqframework.org/cpg-example-anthrax//Patient/patient-1",
+    "fullUrl" : "http://cqframework.org/cpg-example-anthrax/Patient/patient-1",
     "resource" : {
       "resourceType" : "Patient",
       "id" : "patient-1",
@@ -20,7 +20,7 @@
     }
   },
   {
-    "fullUrl" : "http://cqframework.org/cpg-example-anthrax//Condition/condition-3",
+    "fullUrl" : "http://cqframework.org/cpg-example-anthrax/Condition/condition-3",
     "resource" : {
       "resourceType" : "Condition",
       "id" : "condition-3",
@@ -55,7 +55,7 @@
     }
   },
   {
-    "fullUrl" : "http://cqframework.org/cpg-example-anthrax//Observation/observation-4",
+    "fullUrl" : "http://cqframework.org/cpg-example-anthrax/Observation/observation-4",
     "resource" : {
       "resourceType" : "Observation",
       "id" : "observation-4",
@@ -80,7 +80,7 @@
     }
   },
   {
-    "fullUrl" : "http://cqframework.org/cpg-example-anthrax//Observation/observation-17",
+    "fullUrl" : "http://cqframework.org/cpg-example-anthrax/Observation/observation-17",
     "resource" : {
       "resourceType" : "Observation",
       "id" : "observation-17",
@@ -105,7 +105,7 @@
     }
   },
   {
-    "fullUrl" : "http://cqframework.org/cpg-example-anthrax//AllergyIntolerance/allergy-1",
+    "fullUrl" : "http://cqframework.org/cpg-example-anthrax/AllergyIntolerance/allergy-1",
     "resource" : {
       "resourceType" : "AllergyIntolerance",
       "id" : "allergy-1",

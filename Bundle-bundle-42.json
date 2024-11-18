@@ -3,7 +3,7 @@
   "id" : "bundle-42",
   "type" : "collection",
   "entry" : [{
-    "fullUrl" : "http://cqframework.org/cpg-example-anthrax//Patient/patient-1",
+    "fullUrl" : "http://cqframework.org/cpg-example-anthrax/Patient/patient-1",
     "resource" : {
       "resourceType" : "Patient",
       "id" : "patient-1",
@@ -20,7 +20,7 @@
     }
   },
   {
-    "fullUrl" : "http://cqframework.org/cpg-example-anthrax//Condition/condition-1",
+    "fullUrl" : "http://cqframework.org/cpg-example-anthrax/Condition/condition-1",
     "resource" : {
       "resourceType" : "Condition",
       "id" : "condition-1",
@@ -55,7 +55,7 @@
     }
   },
   {
-    "fullUrl" : "http://cqframework.org/cpg-example-anthrax//Observation/observation-1",
+    "fullUrl" : "http://cqframework.org/cpg-example-anthrax/Observation/observation-1",
     "resource" : {
       "resourceType" : "Observation",
       "id" : "observation-1",
@@ -80,7 +80,7 @@
     }
   },
   {
-    "fullUrl" : "http://cqframework.org/cpg-example-anthrax//Observation/observation-2",
+    "fullUrl" : "http://cqframework.org/cpg-example-anthrax/Observation/observation-2",
     "resource" : {
       "resourceType" : "Observation",
       "id" : "observation-2",
@@ -105,7 +105,7 @@
     }
   },
   {
-    "fullUrl" : "http://cqframework.org/cpg-example-anthrax//Procedure/procedure-10",
+    "fullUrl" : "http://cqframework.org/cpg-example-anthrax/Procedure/procedure-10",
     "resource" : {
       "resourceType" : "Procedure",
       "id" : "procedure-10",
@@ -129,7 +129,7 @@
     }
   },
   {
-    "fullUrl" : "http://cqframework.org/cpg-example-anthrax//Procedure/procedure-1",
+    "fullUrl" : "http://cqframework.org/cpg-example-anthrax/Procedure/procedure-1",
     "resource" : {
       "resourceType" : "Procedure",
       "id" : "procedure-1",
@@ -153,7 +153,7 @@
     }
   },
   {
-    "fullUrl" : "http://cqframework.org/cpg-example-anthrax//Procedure/procedure-5",
+    "fullUrl" : "http://cqframework.org/cpg-example-anthrax/Procedure/procedure-5",
     "resource" : {
       "resourceType" : "Procedure",
       "id" : "procedure-5",
@@ -177,7 +177,7 @@
     }
   },
   {
-    "fullUrl" : "http://cqframework.org/cpg-example-anthrax//Procedure/procedure-2",
+    "fullUrl" : "http://cqframework.org/cpg-example-anthrax/Procedure/procedure-2",
     "resource" : {
       "resourceType" : "Procedure",
       "id" : "procedure-2",

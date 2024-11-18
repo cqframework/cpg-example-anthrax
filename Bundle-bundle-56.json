@@ -3,7 +3,7 @@
   "id" : "bundle-56",
   "type" : "collection",
   "entry" : [{
-    "fullUrl" : "http://cqframework.org/cpg-example-anthrax//Patient/patient-3",
+    "fullUrl" : "http://cqframework.org/cpg-example-anthrax/Patient/patient-3",
     "resource" : {
       "resourceType" : "Patient",
       "id" : "patient-3",
@@ -20,7 +20,7 @@
     }
   },
   {
-    "fullUrl" : "http://cqframework.org/cpg-example-anthrax//Condition/condition-9",
+    "fullUrl" : "http://cqframework.org/cpg-example-anthrax/Condition/condition-9",
     "resource" : {
       "resourceType" : "Condition",
       "id" : "condition-9",
@@ -55,7 +55,7 @@
     }
   },
   {
-    "fullUrl" : "http://cqframework.org/cpg-example-anthrax//Observation/observation-14",
+    "fullUrl" : "http://cqframework.org/cpg-example-anthrax/Observation/observation-14",
     "resource" : {
       "resourceType" : "Observation",
       "id" : "observation-14",
@@ -80,7 +80,7 @@
     }
   },
   {
-    "fullUrl" : "http://cqframework.org/cpg-example-anthrax//Observation/observation-24",
+    "fullUrl" : "http://cqframework.org/cpg-example-anthrax/Observation/observation-24",
     "resource" : {
       "resourceType" : "Observation",
       "id" : "observation-24",
@@ -105,7 +105,7 @@
     }
   },
   {
-    "fullUrl" : "http://cqframework.org/cpg-example-anthrax//Procedure/procedure-12",
+    "fullUrl" : "http://cqframework.org/cpg-example-anthrax/Procedure/procedure-12",
     "resource" : {
       "resourceType" : "Procedure",
       "id" : "procedure-12",
@@ -129,7 +129,7 @@
     }
   },
   {
-    "fullUrl" : "http://cqframework.org/cpg-example-anthrax//Procedure/procedure-11",
+    "fullUrl" : "http://cqframework.org/cpg-example-anthrax/Procedure/procedure-11",
     "resource" : {
       "resourceType" : "Procedure",
       "id" : "procedure-11",
@@ -153,7 +153,7 @@
     }
   },
   {
-    "fullUrl" : "http://cqframework.org/cpg-example-anthrax//Observation/observation-19",
+    "fullUrl" : "http://cqframework.org/cpg-example-anthrax/Observation/observation-19",
     "resource" : {
       "resourceType" : "Observation",
       "id" : "observation-19",
