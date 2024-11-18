@@ -4,7 +4,7 @@
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: cqframework.cpg-example-anthrax
-canonical: http://cqframework.org/cpg-example-anthrax/
+canonical: http://cqframework.org/cpg-example-anthrax
 # where should this url be used? "https://cds.ahrq.gov/cdsconnect/artifact/anthrax-post-exposure-prophylaxis"
 name: CPGExampleAnthraxPostExposure
 title: Clinical Practice Guidelines Example Implementation Guide - Anthrax Post-Exposure Prophylaxis
