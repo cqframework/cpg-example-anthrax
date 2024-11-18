@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="bundle-15"/>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-1"/>
+    <resource>
+      <Patient>
+        <id value="patient-1"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Patient_patient-1"> </a><p class="res-header-id"><b>Generated Narrative: Patient patient-1</b></p><a name="patient-1"> </a><a name="hcpatient-1"> </a><a name="patient-1-en-US"> </a><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">John Smith  Male, DoB: 2000-01-01</p><hr/></div>
+        </text>
+        <name>
+          <family value="Smith"/>
+          <given value="John"/>
+        </name>
+        <gender value="male"/>
+        <birthDate value="2000-01-01"/>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/uv/cpg/anthrax/Condition/condition-3"/>
+    <resource>
+      <Condition>
+        <id value="condition-3"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Condition_condition-3"> </a><p class="res-header-id"><b>Generated Narrative: Condition condition-3</b></p><a name="condition-3"> </a><a name="hccondition-3"> </a><a name="condition-3-en-US"> </a><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span></p><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/sid/icd-10-cm Z20.810}">Contact with and (suspected) exposure to anthrax</span></p><p><b>subject</b>: <a href="Patient-patient-1.html">John Smith  Male, DoB: 2000-01-01</a></p><p><b>onset</b>: 2019-06-03 15:00:00+0000</p></div>
+        </text>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+          </coding>
+        </clinicalStatus>
+        <verificationStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+            <code value="confirmed"/>
+          </coding>
+        </verificationStatus>
+        <code>
+          <coding>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+            <code value="Z20.810"/>
+            <display value="Contact with and (suspected) exposure to anthrax"/>
+          </coding>
+          <text value="Contact with and (suspected) exposure to anthrax"/>
+        </code>
+        <subject>
+          <reference value="Patient/patient-1"/>
+        </subject>
+        <onsetDateTime value="2019-06-03T15:00:00.000Z"/>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-4"/>
+    <resource>
+      <Observation>
+        <id value="observation-4"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_observation-4"> </a><p class="res-header-id"><b>Generated Narrative: Observation observation-4</b></p><a name="observation-4"> </a><a name="hcobservation-4"> </a><a name="observation-4-en-US"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 170475009}">Exposure to Bacillus anthracis (event)</span></p><p><b>subject</b>: <a href="Patient-patient-1.html">John Smith  Male, DoB: 2000-01-01</a></p><p><b>effective</b>: 2019-06-03 15:00:00+0000</p><p><b>issued</b>: 2019-06-03 15:00:00+0000</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="170475009"/>
+            <display value="Exposure to Bacillus anthracis (event)"/>
+          </coding>
+          <text value="Exposure to Bacillus anthracis (event)"/>
+        </code>
+        <subject>
+          <reference value="Patient/patient-1"/>
+        </subject>
+        <effectiveDateTime value="2019-06-03T15:00:00.000Z"/>
+        <issued value="2019-06-03T15:00:00.000Z"/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-17"/>
+    <resource>
+      <Observation>
+        <id value="observation-17"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_observation-17"> </a><p class="res-header-id"><b>Generated Narrative: Observation observation-17</b></p><a name="observation-17"> </a><a name="hcobservation-17"> </a><a name="observation-17-en-US"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 84387000}">Asymptomatic (finding)</span></p><p><b>subject</b>: <a href="Patient-patient-1.html">John Smith  Male, DoB: 2000-01-01</a></p><p><b>effective</b>: 2019-06-03 15:00:00+0000</p><p><b>issued</b>: 2019-06-03 15:00:00+0000</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="84387000"/>
+            <display value="Asymptomatic (finding)"/>
+          </coding>
+          <text value="Asymptomatic (finding)"/>
+        </code>
+        <subject>
+          <reference value="Patient/patient-1"/>
+        </subject>
+        <effectiveDateTime value="2019-06-03T15:00:00.000Z"/>
+        <issued value="2019-06-03T15:00:00.000Z"/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/uv/cpg/anthrax/AllergyIntolerance/allergy-10"/>
+    <resource>
+      <AllergyIntolerance>
+        <id value="allergy-10"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="AllergyIntolerance_allergy-10"> </a><p class="res-header-id"><b>Generated Narrative: AllergyIntolerance allergy-10</b></p><a name="allergy-10"> </a><a name="hcallergy-10"> </a><a name="allergy-10-en-US"> </a><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-verification confirmed}">Confirmed</span></p><p><b>code</b>: <span title="Codes:{http://www.nlm.nih.gov/research/umls/rxnorm 2551}">ciprofloxacin</span></p><p><b>patient</b>: <a href="Patient-patient-1.html">John Smith  Male, DoB: 2000-01-01</a></p><p><b>recordedDate</b>: 2016-05-28 15:00:00+0000</p></div>
+        </text>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
+            <code value="active"/>
+          </coding>
+        </clinicalStatus>
+        <verificationStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"/>
+            <code value="confirmed"/>
+            <display value="Confirmed"/>
+          </coding>
+        </verificationStatus>
+        <code>
+          <coding>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="2551"/>
+            <display value="ciprofloxacin"/>
+          </coding>
+          <text value="ciprofloxacin"/>
+        </code>
+        <patient>
+          <reference value="Patient/patient-1"/>
+        </patient>
+        <recordedDate value="2016-05-28T15:00:00.000Z"/>
+      </AllergyIntolerance>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/uv/cpg/anthrax/AllergyIntolerance/allergy-5"/>
+    <resource>
+      <AllergyIntolerance>
+        <id value="allergy-5"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="AllergyIntolerance_allergy-5"> </a><p class="res-header-id"><b>Generated Narrative: AllergyIntolerance allergy-5</b></p><a name="allergy-5"> </a><a name="hcallergy-5"> </a><a name="allergy-5-en-US"> </a><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-verification confirmed}">Confirmed</span></p><p><b>code</b>: <span title="Codes:{http://www.nlm.nih.gov/research/umls/rxnorm 3640}">doxycycline</span></p><p><b>patient</b>: <a href="Patient-patient-1.html">John Smith  Male, DoB: 2000-01-01</a></p><p><b>recordedDate</b>: 2015-05-28 15:00:00+0000</p></div>
+        </text>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
+            <code value="active"/>
+          </coding>
+        </clinicalStatus>
+        <verificationStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"/>
+            <code value="confirmed"/>
+            <display value="Confirmed"/>
+          </coding>
+        </verificationStatus>
+        <code>
+          <coding>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="3640"/>
+            <display value="doxycycline"/>
+          </coding>
+          <text value="doxycycline"/>
+        </code>
+        <patient>
+          <reference value="Patient/patient-1"/>
+        </patient>
+        <recordedDate value="2015-05-28T15:00:00.000Z"/>
+      </AllergyIntolerance>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/uv/cpg/anthrax/AllergyIntolerance/allergy-6"/>
+    <resource>
+      <AllergyIntolerance>
+        <id value="allergy-6"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="AllergyIntolerance_allergy-6"> </a><p class="res-header-id"><b>Generated Narrative: AllergyIntolerance allergy-6</b></p><a name="allergy-6"> </a><a name="hcallergy-6"> </a><a name="allergy-6-en-US"> </a><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-verification confirmed}">Confirmed</span></p><p><b>code</b>: <span title="Codes:{http://www.nlm.nih.gov/research/umls/rxnorm 82122}">levofloxacin</span></p><p><b>patient</b>: <a href="Patient-patient-1.html">John Smith  Male, DoB: 2000-01-01</a></p><p><b>recordedDate</b>: 2014-05-28 15:00:00+0000</p></div>
+        </text>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
+            <code value="active"/>
+          </coding>
+        </clinicalStatus>
+        <verificationStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"/>
+            <code value="confirmed"/>
+            <display value="Confirmed"/>
+          </coding>
+        </verificationStatus>
+        <code>
+          <coding>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="82122"/>
+            <display value="levofloxacin"/>
+          </coding>
+          <text value="levofloxacin"/>
+        </code>
+        <patient>
+          <reference value="Patient/patient-1"/>
+        </patient>
+        <recordedDate value="2014-05-28T15:00:00.000Z"/>
+      </AllergyIntolerance>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/uv/cpg/anthrax/AllergyIntolerance/allergy-7"/>
+    <resource>
+      <AllergyIntolerance>
+        <id value="allergy-7"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="AllergyIntolerance_allergy-7"> </a><p class="res-header-id"><b>Generated Narrative: AllergyIntolerance allergy-7</b></p><a name="allergy-7"> </a><a name="hcallergy-7"> </a><a name="allergy-7-en-US"> </a><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-verification confirmed}">Confirmed</span></p><p><b>code</b>: <span title="Codes:{http://www.nlm.nih.gov/research/umls/rxnorm 139462}">moxifloxacin</span></p><p><b>patient</b>: <a href="Patient-patient-1.html">John Smith  Male, DoB: 2000-01-01</a></p><p><b>recordedDate</b>: 2013-05-28 15:00:00+0000</p></div>
+        </text>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
+            <code value="active"/>
+          </coding>
+        </clinicalStatus>
+        <verificationStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"/>
+            <code value="confirmed"/>
+            <display value="Confirmed"/>
+          </coding>
+        </verificationStatus>
+        <code>
+          <coding>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="139462"/>
+            <display value="moxifloxacin"/>
+          </coding>
+          <text value="moxifloxacin"/>
+        </code>
+        <patient>
+          <reference value="Patient/patient-1"/>
+        </patient>
+        <recordedDate value="2013-05-28T15:00:00.000Z"/>
+      </AllergyIntolerance>
+    </resource>
+  </entry>
+</Bundle>

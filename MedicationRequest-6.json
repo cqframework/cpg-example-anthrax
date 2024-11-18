@@ -1,0 +1,21 @@
+{
+  "resourceType" : "MedicationRequest",
+  "id" : "6",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest 6</b></p><a name=\"6\"> </a><a name=\"hc6\"> </a><a name=\"6-en-US\"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title=\"Codes:{http://www.nlm.nih.gov/research/umls/rxnorm 311787}\">moxifloxacin HCl 400 MG Oral Tablet</span></p><p><b>subject</b>: <a href=\"Patient-patient-1.html\">John Smith  Male, DoB: 2000-01-01</a></p></div>"
+  },
+  "status" : "active",
+  "intent" : "proposal",
+  "medicationCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "code" : "311787",
+      "display" : "moxifloxacin HCl 400 MG Oral Tablet"
+    }],
+    "text" : "moxifloxacin HCl 400 MG Oral Tablet"
+  },
+  "subject" : {
+    "reference" : "Patient/patient-1"
+  }
+}

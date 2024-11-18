@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Home - Clinical Practice Guidelines Example Implementation Guide - Anthrax Post-Exposure Prophylaxis v1.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+    <link rel="stylesheet" href="assets/css/cqf.css"/>
+
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"1"}
+    h3,h4,h5,h6{--heading-prefix:"1"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+
+<div id="family-nav">
+  <a no-external="true" id="family-logo" href="https://github.com/cqframework"><img src="assets/images/cqf.png" alt="Visit the CQF github organization website" height="50"/> </a>
+</div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Clinical Practice Guidelines Example Implementation Guide - Anthrax Post-Exposure Prophylaxis</span>
+            <br/>
+            <span style="display:inline-block;">1.1.0 - ci-build
+
+
+
+  <img src="assets/images/001.svg" alt="International flag" title="International" height="16"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="anthrax-index-fhirv400.html">Artifacts</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Home</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">Clinical Practice Guidelines Example Implementation Guide - Anthrax Post-Exposure Prophylaxis - Local Development build (v1.1.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="http://hl7.org/fhir/uv/cpg/anthrax/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Home</h2>
+  
+
+
+
+
+
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://hl7.org/fhir/uv/cpg/anthrax/ImplementationGuide/hl7.fhir.uv.cpg.anthrax<button data-clipboard-text="http://hl7.org/fhir/uv/cpg/anthrax/ImplementationGuide/hl7.fhir.uv.cpg.anthrax" title="Click to copy URL" class="btn-copy"></button></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">1.1.0<button data-clipboard-text="http://hl7.org/fhir/uv/cpg/anthrax/ImplementationGuide/hl7.fhir.uv.cpg.anthrax|1.1.0" title="Click to copy versioned URL" class="btn-copy"></button></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2024-11-18
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">CPGExampleAnthraxPostExposure</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div>
+  <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown. -->
+</div>
+<h3 id="readme">README</h3>
+<p>This README.txt file describes the contents of this software delivery. Unless otherwise noted,
+this software carries an Apache 2.0 license.</p>
+
+<p>(c) 2019 The MITRE Corporation. All Rights Reserved. Approved for Public Release: 19-2048. Distribution Unlimited.</p>
+
+<p>The examples in this section were funded by CDC Contract No. HHSM-500-2012-00008I Task Order No. 200-2016-F-89363</p>
+
+<h4 id="overview">Overview</h4>
+<p>The contents of these directories constitute the updates made to the Anthrax Post-Exposure
+Prophylaxis CDS Artifact as part of Task 1 of Part 2 of the Adapting Emergency Preparedness
+and Response Guidelines to the Digital Age (Clinical Decision Support) project. During Part
+1 of said project, an Anthrax Post-Exposure Prophylaxis CDS Artifact was developed and validated
+by the Health FFRDC (operated by The MITRE Corporation). The updates made to the CDS Artifact
+are in response to feedback regarding the desire to include the most recent Fast Healthcare
+Interoperability Resources (FHIR) specification and standards.</p>
+
+<h4 id="description">Description</h4>
+<p>Provides information for treating patients greater than or equal to 18 years old exposed to anthrax within the past 60 days, who do not have anthrax.</p>
+
+<p>For patients that may be symptomatic, the artifacts flag the need to conduct a full diagnostic evaluation to rule out anthrax before proceeding with post-exposure prophylaxis (PEP)</p>
+
+<p>For patients who are asymptomatic (not displaying signs and symptoms of anthrax), the artifacts provide a recommended PEP regimen</p>
+
+<h4 id="contents">Contents</h4>
+<p>This software delivery includes the following directories, which are each described below.</p>
+<ul>
+  <li>cql: Contains the Clinical Quality Language (CQL) code that constitutes the updated artifact.</li>
+  <li>DetectedIssue: Provides example DetectedIssue FHIR resources produced by the artifact.</li>
+  <li>Device: Provides example Device FHIR resources produced by the artifact.</li>
+  <li>Flag: Provides example Flag FHIR resources produced by the artifact.</li>
+  <li>Library: Library FHIR resources that act as containers for the updated artifact.</li>
+  <li>
+    <p>PlanDefinition: Provides example PlanDefinition FHIR resources produced by the artifact.</p>
+  </li>
+  <li><a href="anthrax-index-fhirv400.html">R4 Example Index</a></li>
+</ul>
+
+<h5 id="cql">cql</h5>
+<p>The cql directory contains the following subdirectories.</p>
+<ul>
+  <li>cql/FHIRv102: CQL code for version of artifact that uses a FHIR DSTU2 (v1.0.2) data model.</li>
+  <li>cql/FHIRv300: CQL code for version of artifact that uses a FHIR STU3 (v3.0.0) data model.</li>
+  <li>cql/FHIRv400: CQL code for version of artifact that uses a FHIR R4 (v4.0.0) data model.</li>
+</ul>
+
+<p>Each subdirectory contains versions of the following CQL libraries:</p>
+<ul>
+  <li>Anthrax_Post_Exposure_Prophylaxis: The main body of the artifact CQL.</li>
+  <li>CDS_Connect_Commons: An open-source CQL library with commonly-used functions.</li>
+  <li>CDC_Common_Logic: A CQL library with commonly-used functions specific to this task.</li>
+  <li>FHIR_Helpers: An open-source CQL library for helping with the FHIR data model.</li>
+</ul>
+
+<p>In addition, each subdirectory may contain one or more text files with version-specific
+information.</p>
+
+<h5 id="detectedissue">DetectedIssue</h5>
+<p>The artifact CQL has the ability to generate one or more alerts using the FHIR DetectedIssue
+resource. The DetectedIssue directory contains examples of the different types of alerts
+which can be generated by the CQL. The DetectedIssue directory contains the following
+subdirectories:</p>
+<ul>
+  <li>resources/DetectedIssue/FHIRv102: Example DetectedIssue alerts in FHIR DSTU2 (v1.0.2) format.</li>
+  <li>resources/DetectedIssue/FHIRv300: Example DetectedIssue alerts in FHIR STU3 (v3.0.0) format.</li>
+  <li>resources/DetectedIssue/FHIRv400: Example DetectedIssue alerts in FHIR R4 (v4.0.0) format.</li>
+</ul>
+
+<p>Each subdirectory should contain the FHIR resources in JSON format, as well as a text
+file that captures the results from validating said resources using the
+<a href="http://wiki.hl7.org/index.php?title=Using_the_FHIR_Validator">FHIR Validator</a>.</p>
+
+<h5 id="device">Device</h5>
+<p>The artifact CQL uses a FHIR Device resource to identify itself in the other FHIR resources
+that it produces. The Device directory contains the following subdirectories:</p>
+<ul>
+  <li>resources/Device/FHIRv102: Device resource in FHIR DSTU2 (v1.0.2) format.</li>
+  <li>resources/Device/FHIRv300: Device resource in FHIR STU3 (v3.0.0) format.</li>
+  <li>resources/Device/FHIRv400: Device resource in FHIR R4 (v4.0.0) format.</li>
+</ul>
+
+<p>Each subdirectory should contain the FHIR resources in JSON format, as well as a text
+file that captures the results from validating said resources using the
+<a href="http://wiki.hl7.org/index.php?title=Using_the_FHIR_Validator">FHIR Validator</a>.</p>
+
+<h5 id="flag">Flag</h5>
+<p>The artifact CQL has the ability to generate one or more alerts using the FHIR Flag
+resource. The Flag directory contains examples of the different types of alerts
+which can be generated by the CQL. The Flag directory contains the following
+subdirectories:</p>
+<ul>
+  <li>resources/Flag/FHIRv102: Example Flag alerts in FHIR DSTU2 (v1.0.2) format.</li>
+  <li>resources/Flag/FHIRv300: Example Flag alerts in FHIR STU3 (v3.0.0) format.</li>
+  <li>resources/Flag/FHIRv400: Example Flag alerts in FHIR R4 (v4.0.0) format.</li>
+</ul>
+
+<p>Each subdirectory should contain the FHIR resources in JSON format, as well as a text
+file that captures the results from validating said resources using the
+<a href="http://wiki.hl7.org/index.php?title=Using_the_FHIR_Validator">FHIR Validator</a>.</p>
+
+<h5 id="library">Library</h5>
+<p>FHIR Library resources were generated using the updated artifact CQL, and act as formatted
+containers for the artifact and provide key information in context. The Library directory
+contains the following subdirectories:</p>
+<ul>
+  <li>resources/Library/FHIRv102: Library resources in FHIR DSTU2 (v1.0.2) format.</li>
+  <li>resources/Library/FHIRv300: Library resources in FHIR STU3 (v3.0.0) format.</li>
+  <li>resources/Library/FHIRv400: Library resources in FHIR R4 (v4.0.0) format.</li>
+</ul>
+
+<p>Each subdirectory contains the FHIR resources in JSON format, as well as a text
+file that captures the results from validating said resources using the
+<a href="http://wiki.hl7.org/index.php?title=Using_the_FHIR_Validator">FHIR Validator</a>. Where
+appropriate, the resources are also validated against the profile available at:</p>
+<ul>
+  <li><a name="l475">​</a><a href="http://hl7.org/fhir/uv/cpg/StructureDefinition-cpg-computablelibrary.html">cpg-computablelibrary</a></li>
+</ul>
+
+<h5 id="plandefinition">PlanDefinition</h5>
+<p>The artifact CQL has the ability to generate an order set using the FHIR PlanDefinition
+and ActivityDefinition resources (the latter or which are contained in the former). The
+PlanDefinition directory contains examples of the different types of order sets which can
+be generated by the CQL. The PlanDefinition directory contains the following subdirectories:</p>
+<ul>
+  <li>resources/PlanDefinition/FHIRv102: Example PlanDefinition resources in FHIR DSTU2 (v1.0.2) format.</li>
+  <li>resources/PlanDefinition/FHIRv300: Example PlanDefinition resources in FHIR STU3 (v3.0.0) format.</li>
+  <li>resources/PlanDefinition/FHIRv400: Example PlanDefinition resources in FHIR R4 (v4.0.0) format.</li>
+</ul>
+
+<p>Each subdirectory should contain the FHIR resources in JSON format, as well as a text
+file that captures the results from validating said resources using the
+<a href="http://wiki.hl7.org/index.php?title=Using_the_FHIR_Validator">FHIR Validator</a>. Where
+appropriate, the resources are also validated against the profiles available at:</p>
+<ul>
+  <li><a name="l506">​</a><a href="http://hl7.org/fhir/uv/cpg/StructureDefinition-cpg-publishableplandefinition.html">cpg-publishableplandefinition</a></li>
+  <li><a name="l510">​</a><a href="http://hl7.org/fhir/uv/cpg/StructureDefinition-cpg-publishableactivity.html">cpg-publishableactivity</a></li>
+</ul>
+
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; (c) 2019 The MITRE Corporation <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/dss/index.cfm">HL7 International - Clinical Decision Support WG</a>.  Package hl7.fhir.uv.cpg.anthrax#1.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Nov 18, 2024 16:30+0000">2024-11-18</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"><a name="l565">​</a>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+| <a style="color: #81BEF7" href="http://hl7.org/fhir/uv/cpg/anthrax/history.html" target="_blank">Version History</a> | <a rel="license" style="color: #81BEF7" href="license.html">License</a>
+  <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | -->
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+  
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

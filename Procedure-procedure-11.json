@@ -1,0 +1,21 @@
+{
+  "resourceType" : "Procedure",
+  "id" : "procedure-11",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Procedure procedure-11</b></p><a name=\"procedure-11\"> </a><a name=\"hcprocedure-11\"> </a><a name=\"procedure-11-en-US\"> </a><p><b>status</b>: Completed</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 170339008}\">Second anthrax vaccination</span></p><p><b>subject</b>: <a href=\"Patient-patient-3.html\">Jane Smith  Female, DoB: 2000-01-01</a></p><p><b>performed</b>: 2019-05-20 15:00:00+0000</p></div>"
+  },
+  "status" : "completed",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "170339008",
+      "display" : "Second anthrax vaccination"
+    }],
+    "text" : "Second anthrax vaccination"
+  },
+  "subject" : {
+    "reference" : "Patient/patient-3"
+  },
+  "performedDateTime" : "2019-05-20T15:00:00.000Z"
+}

@@ -1,0 +1,58 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-24> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "bundle-24"] ; # 
+  fhir:type [ fhir:v "collection"] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-1> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-17"^^xsd:anyURI ] ;
+     fhir:resource ( <http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-17> )
+  ] ) . # 
+
+<http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-1> a fhir:Patient ;
+  fhir:id [ fhir:v "patient-1"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_patient-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient patient-1</b></p><a name=\"patient-1\"> </a><a name=\"hcpatient-1\"> </a><a name=\"patient-1-en-US\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">John Smith  Male, DoB: 2000-01-01</p><hr/></div>"
+  ] ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Smith" ] ;
+     fhir:given ( [ fhir:v "John" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [ fhir:v "2000-01-01"^^xsd:date] . # 
+
+<http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-17> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-17"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_observation-17\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-17</b></p><a name=\"observation-17\"> </a><a name=\"hcobservation-17\"> </a><a name=\"observation-17-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 84387000}\">Asymptomatic (finding)</span></p><p><b>subject</b>: <a href=\"Patient-patient-1.html\">John Smith  Male, DoB: 2000-01-01</a></p><p><b>effective</b>: 2019-06-03 15:00:00+0000</p><p><b>issued</b>: 2019-06-03 15:00:00+0000</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:84387000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "84387000" ] ;
+       fhir:display [ fhir:v "Asymptomatic (finding)" ]
+     ] ) ;
+     fhir:text [ fhir:v "Asymptomatic (finding)" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-1> ;
+     fhir:reference [ fhir:v "Patient/patient-1" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2019-06-03T15:00:00.000Z"^^xsd:dateTime] ; # 
+  fhir:issued [ fhir:v "2019-06-03T15:00:00.000Z"^^xsd:dateTime] . # 
+
+# -------------------------------------------------------------------------------------
+

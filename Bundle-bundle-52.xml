@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="bundle-52"/>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-3"/>
+    <resource>
+      <Patient>
+        <id value="patient-3"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Patient_patient-3"> </a><p class="res-header-id"><b>Generated Narrative: Patient patient-3</b></p><a name="patient-3"> </a><a name="hcpatient-3"> </a><a name="patient-3-en-US"> </a><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Jane Smith  Female, DoB: 2000-01-01</p><hr/></div>
+        </text>
+        <name>
+          <family value="Smith"/>
+          <given value="Jane"/>
+        </name>
+        <gender value="female"/>
+        <birthDate value="2000-01-01"/>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/uv/cpg/anthrax/Condition/condition-4"/>
+    <resource>
+      <Condition>
+        <id value="condition-4"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Condition_condition-4"> </a><p class="res-header-id"><b>Generated Narrative: Condition condition-4</b></p><a name="condition-4"> </a><a name="hccondition-4"> </a><a name="condition-4-en-US"> </a><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span></p><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/sid/icd-10-cm Z20.810}">Contact with and (suspected) exposure to anthrax</span></p><p><b>subject</b>: <a href="Patient-patient-3.html">Jane Smith  Female, DoB: 2000-01-01</a></p><p><b>onset</b>: 2019-06-02 15:00:00+0000</p></div>
+        </text>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+          </coding>
+        </clinicalStatus>
+        <verificationStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+            <code value="confirmed"/>
+          </coding>
+        </verificationStatus>
+        <code>
+          <coding>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+            <code value="Z20.810"/>
+            <display value="Contact with and (suspected) exposure to anthrax"/>
+          </coding>
+          <text value="Contact with and (suspected) exposure to anthrax"/>
+        </code>
+        <subject>
+          <reference value="Patient/patient-3"/>
+        </subject>
+        <onsetDateTime value="2019-06-02T15:00:00.000Z"/>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-13"/>
+    <resource>
+      <Observation>
+        <id value="observation-13"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_observation-13"> </a><p class="res-header-id"><b>Generated Narrative: Observation observation-13</b></p><a name="observation-13"> </a><a name="hcobservation-13"> </a><a name="observation-13-en-US"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 170475009}">Exposure to Bacillus anthracis (event)</span></p><p><b>subject</b>: <a href="Patient-patient-3.html">Jane Smith  Female, DoB: 2000-01-01</a></p><p><b>effective</b>: 2019-06-02 15:00:00+0000</p><p><b>issued</b>: 2018-07-18 00:00:00+0000</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="170475009"/>
+            <display value="Exposure to Bacillus anthracis (event)"/>
+          </coding>
+          <text value="Exposure to Bacillus anthracis (event)"/>
+        </code>
+        <subject>
+          <reference value="Patient/patient-3"/>
+        </subject>
+        <effectiveDateTime value="2019-06-02T15:00:00.000Z"/>
+        <issued value="2018-07-18T00:00:00.000Z"/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-21"/>
+    <resource>
+      <Observation>
+        <id value="observation-21"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_observation-21"> </a><p class="res-header-id"><b>Generated Narrative: Observation observation-21</b></p><a name="observation-21"> </a><a name="hcobservation-21"> </a><a name="observation-21-en-US"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 84387000}">Asymptomatic (finding)</span></p><p><b>subject</b>: <a href="Patient-patient-3.html">Jane Smith  Female, DoB: 2000-01-01</a></p><p><b>effective</b>: 2019-06-03 15:00:00+0000</p><p><b>issued</b>: 2018-07-19 00:00:00+0000</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="84387000"/>
+            <display value="Asymptomatic (finding)"/>
+          </coding>
+          <text value="Asymptomatic (finding)"/>
+        </code>
+        <subject>
+          <reference value="Patient/patient-3"/>
+        </subject>
+        <effectiveDateTime value="2019-06-03T15:00:00.000Z"/>
+        <issued value="2018-07-19T00:00:00.000Z"/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-19"/>
+    <resource>
+      <Observation>
+        <id value="observation-19"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_observation-19"> </a><p class="res-header-id"><b>Generated Narrative: Observation observation-19</b></p><a name="observation-19"> </a><a name="hcobservation-19"> </a><a name="observation-19-en-US"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://loinc.org 82810-3}">Pregnancy status</span></p><p><b>subject</b>: <a href="Patient-patient-3.html">Jane Smith  Female, DoB: 2000-01-01</a></p><p><b>effective</b>: 2019-04-03 15:00:00+0000</p><p><b>issued</b>: 2019-04-03 15:00:00+0000</p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct 77386006}">Patient currently pregnant</span></p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="82810-3"/>
+            <display value="Pregnancy status"/>
+          </coding>
+          <text value="Pregnancy status"/>
+        </code>
+        <subject>
+          <reference value="Patient/patient-3"/>
+        </subject>
+        <effectiveDateTime value="2019-04-03T15:00:00.000Z"/>
+        <issued value="2019-04-03T15:00:00.000Z"/>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="77386006"/>
+            <display value="Patient currently pregnant"/>
+          </coding>
+          <text value="Patient currently pregnant"/>
+        </valueCodeableConcept>
+      </Observation>
+    </resource>
+  </entry>
+</Bundle>

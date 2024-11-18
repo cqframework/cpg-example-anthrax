@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="bundle-16"/>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-1"/>
+    <resource>
+      <Patient>
+        <id value="patient-1"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Patient_patient-1"> </a><p class="res-header-id"><b>Generated Narrative: Patient patient-1</b></p><a name="patient-1"> </a><a name="hcpatient-1"> </a><a name="patient-1-en-US"> </a><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">John Smith  Male, DoB: 2000-01-01</p><hr/></div>
+        </text>
+        <name>
+          <family value="Smith"/>
+          <given value="John"/>
+        </name>
+        <gender value="male"/>
+        <birthDate value="2000-01-01"/>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/uv/cpg/anthrax/Condition/condition-3"/>
+    <resource>
+      <Condition>
+        <id value="condition-3"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Condition_condition-3"> </a><p class="res-header-id"><b>Generated Narrative: Condition condition-3</b></p><a name="condition-3"> </a><a name="hccondition-3"> </a><a name="condition-3-en-US"> </a><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span></p><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/sid/icd-10-cm Z20.810}">Contact with and (suspected) exposure to anthrax</span></p><p><b>subject</b>: <a href="Patient-patient-1.html">John Smith  Male, DoB: 2000-01-01</a></p><p><b>onset</b>: 2019-06-03 15:00:00+0000</p></div>
+        </text>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+          </coding>
+        </clinicalStatus>
+        <verificationStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+            <code value="confirmed"/>
+          </coding>
+        </verificationStatus>
+        <code>
+          <coding>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+            <code value="Z20.810"/>
+            <display value="Contact with and (suspected) exposure to anthrax"/>
+          </coding>
+          <text value="Contact with and (suspected) exposure to anthrax"/>
+        </code>
+        <subject>
+          <reference value="Patient/patient-1"/>
+        </subject>
+        <onsetDateTime value="2019-06-03T15:00:00.000Z"/>
+      </Condition>
+    </resource>
+  </entry>
+</Bundle>

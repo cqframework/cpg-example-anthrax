@@ -1,0 +1,180 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-60> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "bundle-60"] ; # 
+  fhir:type [ fhir:v "collection"] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-3"^^xsd:anyURI ] ;
+     fhir:resource ( <http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-3> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://hl7.org/fhir/uv/cpg/anthrax/Condition/condition-8"^^xsd:anyURI ] ;
+     fhir:resource ( <http://hl7.org/fhir/uv/cpg/anthrax/Condition/condition-8> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-23"^^xsd:anyURI ] ;
+     fhir:resource ( <http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-23> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://hl7.org/fhir/uv/cpg/anthrax/Procedure/procedure-14"^^xsd:anyURI ] ;
+     fhir:resource ( <http://hl7.org/fhir/uv/cpg/anthrax/Procedure/procedure-14> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://hl7.org/fhir/uv/cpg/anthrax/MedicationRequest/med-request-2"^^xsd:anyURI ] ;
+     fhir:resource ( <http://hl7.org/fhir/uv/cpg/anthrax/MedicationRequest/med-request-2> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-19"^^xsd:anyURI ] ;
+     fhir:resource ( <http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-19> )
+  ] ) . # 
+
+<http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-3> a fhir:Patient ;
+  fhir:id [ fhir:v "patient-3"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_patient-3\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient patient-3</b></p><a name=\"patient-3\"> </a><a name=\"hcpatient-3\"> </a><a name=\"patient-3-en-US\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Jane Smith  Female, DoB: 2000-01-01</p><hr/></div>"
+  ] ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Smith" ] ;
+     fhir:given ( [ fhir:v "Jane" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [ fhir:v "2000-01-01"^^xsd:date] . # 
+
+<http://hl7.org/fhir/uv/cpg/anthrax/Condition/condition-8> a fhir:Condition ;
+  fhir:id [ fhir:v "condition-8"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_condition-8\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition condition-8</b></p><a name=\"condition-8\"> </a><a name=\"hccondition-8\"> </a><a name=\"condition-8-en-US\"> </a><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/sid/icd-10-cm Z20.810}\">Contact with and (suspected) exposure to anthrax</span></p><p><b>subject</b>: <a href=\"Patient-patient-3.html\">Jane Smith  Female, DoB: 2000-01-01</a></p><p><b>onset</b>: 2019-05-20 15:00:00+0000</p></div>"
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/sid/icd-10-cm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "Z20.810" ] ;
+       fhir:display [ fhir:v "Contact with and (suspected) exposure to anthrax" ]
+     ] ) ;
+     fhir:text [ fhir:v "Contact with and (suspected) exposure to anthrax" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-3> ;
+     fhir:reference [ fhir:v "Patient/patient-3" ]
+  ] ; # 
+  fhir:onset [ fhir:v "2019-05-20T15:00:00.000Z"^^xsd:dateTime] . # 
+
+<http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-23> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-23"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_observation-23\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-23</b></p><a name=\"observation-23\"> </a><a name=\"hcobservation-23\"> </a><a name=\"observation-23-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 84387000}\">Asymptomatic (finding)</span></p><p><b>subject</b>: <a href=\"Patient-patient-3.html\">Jane Smith  Female, DoB: 2000-01-01</a></p><p><b>effective</b>: 2019-05-20 15:00:00+0000</p><p><b>issued</b>: 2018-07-19 00:00:00+0000</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:84387000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "84387000" ] ;
+       fhir:display [ fhir:v "Asymptomatic (finding)" ]
+     ] ) ;
+     fhir:text [ fhir:v "Asymptomatic (finding)" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-3> ;
+     fhir:reference [ fhir:v "Patient/patient-3" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2019-05-20T15:00:00.000Z"^^xsd:dateTime] ; # 
+  fhir:issued [ fhir:v "2018-07-19T00:00:00.000Z"^^xsd:dateTime] . # 
+
+<http://hl7.org/fhir/uv/cpg/anthrax/Procedure/procedure-14> a fhir:Procedure ;
+  fhir:id [ fhir:v "procedure-14"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Procedure_procedure-14\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Procedure procedure-14</b></p><a name=\"procedure-14\"> </a><a name=\"hcprocedure-14\"> </a><a name=\"procedure-14-en-US\"> </a><p><b>status</b>: Completed</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 170338000}\">First anthrax vaccination</span></p><p><b>subject</b>: <a href=\"Patient-patient-3.html\">Jane Smith  Female, DoB: 2000-01-01</a></p><p><b>performed</b>: 2019-05-20 15:00:00+0000</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:170338000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "170338000" ] ;
+       fhir:display [ fhir:v "First anthrax vaccination" ]
+     ] ) ;
+     fhir:text [ fhir:v "First anthrax vaccination" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-3> ;
+     fhir:reference [ fhir:v "Patient/patient-3" ]
+  ] ; # 
+  fhir:performed [ fhir:v "2019-05-20T15:00:00.000Z"^^xsd:dateTime] . # 
+
+<http://hl7.org/fhir/uv/cpg/anthrax/MedicationRequest/med-request-2> a fhir:MedicationRequest ;
+  fhir:id [ fhir:v "med-request-2"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_med-request-2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest med-request-2</b></p><a name=\"med-request-2\"> </a><a name=\"hcmed-request-2\"> </a><a name=\"med-request-2-en-US\"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title=\"Codes:{http://www.nlm.nih.gov/research/umls/rxnorm 309309}\">Ciprofloxacin 500 MG Oral Tablet</span></p><p><b>subject</b>: <a href=\"Patient-patient-3.html\">Jane Smith  Female, DoB: 2000-01-01</a></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "proposal"] ; # 
+  fhir:medication [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "309309" ] ;
+       fhir:display [ fhir:v "Ciprofloxacin 500 MG Oral Tablet" ]
+     ] ) ;
+     fhir:text [ fhir:v "Ciprofloxacin 500 MG Oral Tablet" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-3> ;
+     fhir:reference [ fhir:v "Patient/patient-3" ]
+  ] . # 
+
+<http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-19> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-19"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_observation-19\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-19</b></p><a name=\"observation-19\"> </a><a name=\"hcobservation-19\"> </a><a name=\"observation-19-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 82810-3}\">Pregnancy status</span></p><p><b>subject</b>: <a href=\"Patient-patient-3.html\">Jane Smith  Female, DoB: 2000-01-01</a></p><p><b>effective</b>: 2019-04-03 15:00:00+0000</p><p><b>issued</b>: 2019-04-03 15:00:00+0000</p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 77386006}\">Patient currently pregnant</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:82810-3 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "82810-3" ] ;
+       fhir:display [ fhir:v "Pregnancy status" ]
+     ] ) ;
+     fhir:text [ fhir:v "Pregnancy status" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-3> ;
+     fhir:reference [ fhir:v "Patient/patient-3" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2019-04-03T15:00:00.000Z"^^xsd:dateTime] ; # 
+  fhir:issued [ fhir:v "2019-04-03T15:00:00.000Z"^^xsd:dateTime] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:77386006 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "77386006" ] ;
+       fhir:display [ fhir:v "Patient currently pregnant" ]
+     ] ) ;
+     fhir:text [ fhir:v "Patient currently pregnant" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

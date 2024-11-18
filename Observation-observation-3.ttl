@@ -1,0 +1,36 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-3> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "observation-3"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-3</b></p><a name=\"observation-3\"> </a><a name=\"hcobservation-3\"> </a><a name=\"observation-3-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 170475009}\">Exposure to Bacillus anthracis (event)</span></p><p><b>subject</b>: <a href=\"Patient-patient-1.html\">John Smith  Male, DoB: 2000-01-01</a></p><p><b>effective</b>: 2019-05-06 15:00:00+0000</p><p><b>issued</b>: 2018-07-18 00:00:00+0000</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:170475009 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "170475009" ] ;
+       fhir:display [ fhir:v "Exposure to Bacillus anthracis (event)" ]
+     ] ) ;
+     fhir:text [ fhir:v "Exposure to Bacillus anthracis (event)" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-1> ;
+     fhir:reference [ fhir:v "Patient/patient-1" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2019-05-06T15:00:00.000Z"^^xsd:dateTime] ; # 
+  fhir:issued [ fhir:v "2018-07-18T00:00:00.000Z"^^xsd:dateTime] . # 
+
+<http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-1> a fhir:uv .
+
+# -------------------------------------------------------------------------------------
+

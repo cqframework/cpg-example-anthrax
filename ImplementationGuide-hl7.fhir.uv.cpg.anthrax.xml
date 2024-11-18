@@ -1,0 +1,2397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="hl7.fhir.uv.cpg.anthrax"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide hl7.fhir.uv.cpg.anthrax</b></p><a name="hl7.fhir.uv.cpg.anthrax"> </a><a name="hchl7.fhir.uv.cpg.anthrax"> </a><a name="hl7.fhir.uv.cpg.anthrax-en-US"> </a><h2>CPGExampleAnthraxPostExposure</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/uv/cpg/anthrax/ImplementationGuide/hl7.fhir.uv.cpg.anthrax</pre><div><p>Example of CPG computable content representing CDC guidelines for patients exposed to Anthrax</p>
+</div></div>
+  </text>
+  <url value="http://hl7.org/fhir/uv/cpg/anthrax/ImplementationGuide/hl7.fhir.uv.cpg.anthrax"/>
+  <version value="1.1.0"/>
+  <name value="CPGExampleAnthraxPostExposure"/>
+  <title value="Clinical Practice Guidelines Example Implementation Guide - Anthrax Post-Exposure Prophylaxis"/>
+  <status value="active"/>
+  <date value="2024-11-18T16:30:23+00:00"/>
+  <publisher value="HL7 International - Clinical Decision Support WG"/>
+  <contact>
+    <name value="HL7 International - Clinical Decision Support WG"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/dss/index.cfm"/>
+    </telecom>
+  </contact>
+  <description value="Example of CPG computable content representing CDC guidelines for patients exposed to Anthrax"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <packageId value="hl7.fhir.uv.cpg.anthrax"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.1"/>
+  <dependsOn id="hl7tx">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
+    </extension>
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+    <packageId value="hl7.terminology.r4"/>
+    <version value="6.0.2"/>
+  </dependsOn>
+  <dependsOn id="hl7ext">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"/>
+    </extension>
+    <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+    <packageId value="hl7.fhir.uv.extensions.r4"/>
+    <version value="5.1.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_uv_cpg">
+    <uri value="http://hl7.org/fhir/uv/cpg/ImplementationGuide/hl7.fhir.uv.cpg"/>
+    <packageId value="hl7.fhir.uv.cpg"/>
+    <version value="current"/>
+  </dependsOn>
+  <definition>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="(c) 2019 The MITRE Corporation"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="ci-build"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-binary"/>
+      </extension>
+      <extension url="value">
+        <valueString value="./input/cql"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/uv/cpg/anthrax/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
+      <valueCode value="hl7.fhir.uv.tools.r4#0.3.0"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="(c) 2019 The MITRE Corporation"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="ci-build"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-binary"/>
+      </extension>
+      <extension url="value">
+        <valueString value="./input/cql"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/uv/cpg/anthrax/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/allergy-1"/>
+      </reference>
+      <name value="allergy-1"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/allergy-10"/>
+      </reference>
+      <name value="allergy-10"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/allergy-11"/>
+      </reference>
+      <name value="allergy-11"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/allergy-12"/>
+      </reference>
+      <name value="allergy-12"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/allergy-13"/>
+      </reference>
+      <name value="allergy-13"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/allergy-14"/>
+      </reference>
+      <name value="allergy-14"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/allergy-2"/>
+      </reference>
+      <name value="allergy-2"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/allergy-3"/>
+      </reference>
+      <name value="allergy-3"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/allergy-4"/>
+      </reference>
+      <name value="allergy-4"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/allergy-5"/>
+      </reference>
+      <name value="allergy-5"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/allergy-6"/>
+      </reference>
+      <name value="allergy-6"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/allergy-7"/>
+      </reference>
+      <name value="allergy-7"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/allergy-8"/>
+      </reference>
+      <name value="allergy-8"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/allergy-9"/>
+      </reference>
+      <name value="allergy-9"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/anthrax-example-device"/>
+      </reference>
+      <name value="Anthrax Example Device"/>
+      <description value="Example device"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Library"/>
+      </extension>
+      <reference>
+        <reference value="Library/anthrax-post-exposure-prophylaxis-library"/>
+      </reference>
+      <name value="Anthrax Post Exposure Prophylaxis (PEP) for Adults FHIRv400 Logic"/>
+      <description value="Clinical decision support logic for Anthrax Post Exposure Prophylaxis (PEP) for Adults based on the following Centers for Disease Control and Prevention reports: \n- Hendricks, K.A. et al., Centers for Disease Control and Prevention Expert Panel Meetings on Prevention and Treatment of Anthrax in Adults. Emerg Infect Dis, 20(20), Feb 2014. \n - Hendricks, K.A. et al., Centers for Disease Control and Prevention Expert Panel Meetings on Prevention and Treatment of Anthrax in Adults: Technical Report. Emerg Infect Dis. 20(20), Feb 2014. \n- Emergent BioSolutions, BioThrax Anthrax Vaccine Adsorbed (http://www.biothrax.com/whatisbiothrax/). \n- Centers for Disease Control and Prevention, Ciprofloxacin for Post-Exposure Prophylaxis of Anthrax: Emergency Use Instructions for Healthcare Providers, 2017. \n- Centers for Disease Control and Prevention. Doxycyxcline for Post-Exposure Prophylaxis of Anthrax: Emergency Use Instructions for Healthcare Providers, 2017. \n- Public Health Information Network Vocabulary Access and Distribution System (PHIN VADS), PHVS_SignsSymptoms_Anthrax (OID 2.16.840.1.114222.4.11.3212), 2009. \n- Meanye-Delman D et al., Special Considerations for Prophylaxis for and Treatment of Anthrax in Pregnant and Postpartum Women, Emerg Infect Dis, 20(2), 2014. \n- Meanye-Delman D et al., Special Considerations for Prophylaxis for and Treatment of Anthrax in Pregnant and Postpartum Women: Technical Report, Emerg Infect Dis, 20(2), 2014. \n- Wright, J.G et al., Use of Anthrax Vaccine in the United States: Recommendations of the Advisory Committee on Immunization Practices (ACIP), 2009, Morbidity and Mortality Weeklly Report, July 23, 2010 / 59(RR06); 1-30."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Flag"/>
+      </extension>
+      <reference>
+        <reference value="Flag/antimicrobial-allergy-flag"/>
+      </reference>
+      <name value="Antimicrobial Allergy Flag"/>
+      <description value="Flag indicating patient allergy to an antimicrobial"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/antimicrobial-not-pregnant-pd"/>
+      </reference>
+      <name value="Antimicrobial not pregnant"/>
+      <description value="Provides information for treating patients greater than or equal to 18 years old exposed to anthrax within the past 60 days, who do not have anthrax. It is divided into two parts: \n- Part #1: For patients that may be symptomatic to flag the need to conduct a full diagnostic evaluation to rule out anthrax before proceeding with post-exposure prophylaxis (PEP) \n- Part #2: For patients  who are  asymptomatic (not displaying signs and symptoms of anthrax), it provides recommended PEP regimen"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/antimicrobial-pregnant-pd"/>
+      </reference>
+      <name value="Antimicrobial pregnant"/>
+      <description value="Provides information for treating patients greater than or equal to 18 years old exposed to anthrax within the past 60 days, who do not have anthrax. It is divided into two parts: \n- Part #1: For patients that may be symptomatic to flag the need to conduct a full diagnostic evaluation to rule out anthrax before proceeding with post-exposure prophylaxis (PEP) \n- Part #2: For patients  who are  asymptomatic (not displaying signs and symptoms of anthrax), it provides recommended PEP regimen"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-1"/>
+      </reference>
+      <name value="bundle-1"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-10"/>
+      </reference>
+      <name value="bundle-10"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-11"/>
+      </reference>
+      <name value="bundle-11"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-12"/>
+      </reference>
+      <name value="bundle-12"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-13"/>
+      </reference>
+      <name value="bundle-13"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-14"/>
+      </reference>
+      <name value="bundle-14"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-15"/>
+      </reference>
+      <name value="bundle-15"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-16"/>
+      </reference>
+      <name value="bundle-16"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-17"/>
+      </reference>
+      <name value="bundle-17"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-18"/>
+      </reference>
+      <name value="bundle-18"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-19"/>
+      </reference>
+      <name value="bundle-19"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-2"/>
+      </reference>
+      <name value="bundle-2"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-20"/>
+      </reference>
+      <name value="bundle-20"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-21"/>
+      </reference>
+      <name value="bundle-21"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-22"/>
+      </reference>
+      <name value="bundle-22"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-23"/>
+      </reference>
+      <name value="bundle-23"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-24"/>
+      </reference>
+      <name value="bundle-24"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-25"/>
+      </reference>
+      <name value="bundle-25"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-26"/>
+      </reference>
+      <name value="bundle-26"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-27"/>
+      </reference>
+      <name value="bundle-27"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-28"/>
+      </reference>
+      <name value="bundle-28"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-29"/>
+      </reference>
+      <name value="bundle-29"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-3"/>
+      </reference>
+      <name value="bundle-3"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-30"/>
+      </reference>
+      <name value="bundle-30"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-31"/>
+      </reference>
+      <name value="bundle-31"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-32"/>
+      </reference>
+      <name value="bundle-32"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-33"/>
+      </reference>
+      <name value="bundle-33"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-34"/>
+      </reference>
+      <name value="bundle-34"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-35"/>
+      </reference>
+      <name value="bundle-35"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-36"/>
+      </reference>
+      <name value="bundle-36"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-37"/>
+      </reference>
+      <name value="bundle-37"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-38"/>
+      </reference>
+      <name value="bundle-38"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-39"/>
+      </reference>
+      <name value="bundle-39"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-4"/>
+      </reference>
+      <name value="bundle-4"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-40"/>
+      </reference>
+      <name value="bundle-40"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-41"/>
+      </reference>
+      <name value="bundle-41"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-42"/>
+      </reference>
+      <name value="bundle-42"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-44"/>
+      </reference>
+      <name value="bundle-44"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-45"/>
+      </reference>
+      <name value="bundle-45"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-46"/>
+      </reference>
+      <name value="bundle-46"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-47"/>
+      </reference>
+      <name value="bundle-47"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-48"/>
+      </reference>
+      <name value="bundle-48"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-49"/>
+      </reference>
+      <name value="bundle-49"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-5"/>
+      </reference>
+      <name value="bundle-5"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-50"/>
+      </reference>
+      <name value="bundle-50"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-51"/>
+      </reference>
+      <name value="bundle-51"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-52"/>
+      </reference>
+      <name value="bundle-52"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-53"/>
+      </reference>
+      <name value="bundle-53"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-54"/>
+      </reference>
+      <name value="bundle-54"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-55"/>
+      </reference>
+      <name value="bundle-55"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-56"/>
+      </reference>
+      <name value="bundle-56"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-57"/>
+      </reference>
+      <name value="bundle-57"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-58"/>
+      </reference>
+      <name value="bundle-58"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-59"/>
+      </reference>
+      <name value="bundle-59"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-6"/>
+      </reference>
+      <name value="bundle-6"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-60"/>
+      </reference>
+      <name value="bundle-60"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-61"/>
+      </reference>
+      <name value="bundle-61"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-62"/>
+      </reference>
+      <name value="bundle-62"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-7"/>
+      </reference>
+      <name value="bundle-7"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-8"/>
+      </reference>
+      <name value="bundle-8"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-9"/>
+      </reference>
+      <name value="bundle-9"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Library"/>
+      </extension>
+      <reference>
+        <reference value="Library/cdc-common-logic-library"/>
+      </reference>
+      <name value="CDC Common Logic for FHIRv400"/>
+      <description value="A library containing common logic used by CDC CDS artifacts"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Library"/>
+      </extension>
+      <reference>
+        <reference value="Library/cds-connect-commons-library"/>
+      </reference>
+      <name value="CDS Connect Commons for FHIRv400"/>
+      <description value="A library containing common methods used by CDS Connect-developed artifacts"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/CiprofloxacinRequest"/>
+      </reference>
+      <name value="Ciprofloxacin Request"/>
+      <description value="In 2009, the US Advisory Committee on Immunization Practices recommended in addition to antimicrobial therapy, a 3-dose series of Anthrax Vaccine Adsorbed (AVA) BioThrax (Emergent BioSolutions Inc., Rockville, MD, USA) for long-term protection after exposure to anthrax  in individuals without any previous vaccine. After exposure to aerosolized B. anthracis spores, antimicrobial therapy should be initiated as soon as possible. Ideally, the first dose of vaccine should be administered within 10 days. ACIP recommends a post exposure regimen of 60 days of appropriate antimicrobial prophylaxis (covered previously) combined with 3 subcutaneous doses of AVA (administered at 0, 2, and 4 weeks post exposure) as the most effective protection against inhalation anthrax for previously unvaccinated persons aged ≥18 years who have been exposed to aerosolized B. anthracis spores. In general, the peak serologic response to anthrax vaccine occurs 10–14 days after the third dose. (Wright, J.G et al., Morbidity and Mortality Weekly Report, July 23, 2010 / 59(RR06); 1-30). Additionally, the Advisory Committee on Immunization Practices subsequently reviewed all safety data available as of March 2008, including the final results of a retrospective study, and concluded that AVA is safe to administer to anthrax-exposed women during pregnancy. In the setting of an anthrax event that poses a high risk for exposure to aerosolized B. anthracis spores, pregnancy is neither a precaution nor a contraindication to vaccination. Pregnant women at risk for inhalation anthrax should receive AVA and antimicrobial drug therapy regardless of pregnancy trimester (Meanye-Delman D et al., Emerg Infect Dis, 20(2), 2014)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/ClindamycinRequest"/>
+      </reference>
+      <name value="Clindamycin Request"/>
+      <description value="In 2009, the US Advisory Committee on Immunization Practices recommended in addition to antimicrobial therapy, a 3-dose series of Anthrax Vaccine Adsorbed (AVA) BioThrax (Emergent BioSolutions Inc., Rockville, MD, USA) for long-term protection after exposure to anthrax  in individuals without any previous vaccine. After exposure to aerosolized B. anthracis spores, antimicrobial therapy should be initiated as soon as possible. Ideally, the first dose of vaccine should be administered within 10 days. ACIP recommends a post exposure regimen of 60 days of appropriate antimicrobial prophylaxis (covered previously) combined with 3 subcutaneous doses of AVA (administered at 0, 2, and 4 weeks post exposure) as the most effective protection against inhalation anthrax for previously unvaccinated persons aged ≥18 years who have been exposed to aerosolized B. anthracis spores. In general, the peak serologic response to anthrax vaccine occurs 10–14 days after the third dose. (Wright, J.G et al., Morbidity and Mortality Weekly Report, July 23, 2010 / 59(RR06); 1-30). Additionally, the Advisory Committee on Immunization Practices subsequently reviewed all safety data available as of March 2008, including the final results of a retrospective study, and concluded that AVA is safe to administer to anthrax-exposed women during pregnancy. In the setting of an anthrax event that poses a high risk for exposure to aerosolized B. anthracis spores, pregnancy is neither a precaution nor a contraindication to vaccination. Pregnant women at risk for inhalation anthrax should receive AVA and antimicrobial drug therapy regardless of pregnancy trimester (Meanye-Delman D et al., Emerg Infect Dis, 20(2), 2014)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/condition-1"/>
+      </reference>
+      <name value="condition-1"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/condition-10"/>
+      </reference>
+      <name value="condition-10"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/condition-11"/>
+      </reference>
+      <name value="condition-11"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/condition-12"/>
+      </reference>
+      <name value="condition-12"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/condition-2"/>
+      </reference>
+      <name value="condition-2"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/condition-3"/>
+      </reference>
+      <name value="condition-3"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/condition-4"/>
+      </reference>
+      <name value="condition-4"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/condition-5"/>
+      </reference>
+      <name value="condition-5"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/condition-6"/>
+      </reference>
+      <name value="condition-6"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/condition-7"/>
+      </reference>
+      <name value="condition-7"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/condition-8"/>
+      </reference>
+      <name value="condition-8"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/condition-9"/>
+      </reference>
+      <name value="condition-9"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/DoxycyclineRequest"/>
+      </reference>
+      <name value="Doxycycline Request"/>
+      <description value="In 2009, the US Advisory Committee on Immunization Practices recommended in addition to antimicrobial therapy, a 3-dose series of Anthrax Vaccine Adsorbed (AVA) BioThrax (Emergent BioSolutions Inc., Rockville, MD, USA) for long-term protection after exposure to anthrax  in individuals without any previous vaccine. After exposure to aerosolized B. anthracis spores, antimicrobial therapy should be initiated as soon as possible. Ideally, the first dose of vaccine should be administered within 10 days. ACIP recommends a post exposure regimen of 60 days of appropriate antimicrobial prophylaxis (covered previously) combined with 3 subcutaneous doses of AVA (administered at 0, 2, and 4 weeks post exposure) as the most effective protection against inhalation anthrax for previously unvaccinated persons aged ≥18 years who have been exposed to aerosolized B. anthracis spores. In general, the peak serologic response to anthrax vaccine occurs 10–14 days after the third dose. (Wright, J.G et al., Morbidity and Mortality Weekly Report, July 23, 2010 / 59(RR06); 1-30). Additionally, the Advisory Committee on Immunization Practices subsequently reviewed all safety data available as of March 2008, including the final results of a retrospective study, and concluded that AVA is safe to administer to anthrax-exposed women during pregnancy. In the setting of an anthrax event that poses a high risk for exposure to aerosolized B. anthracis spores, pregnancy is neither a precaution nor a contraindication to vaccination. Pregnant women at risk for inhalation anthrax should receive AVA and antimicrobial drug therapy regardless of pregnancy trimester (Meanye-Delman D et al., Emerg Infect Dis, 20(2), 2014)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DetectedIssue"/>
+      </extension>
+      <reference>
+        <reference value="DetectedIssue/existing-antimicrobial-detected-issue"/>
+      </reference>
+      <name value="Existing Antimicrobial Detected Issue"/>
+      <description value="Detected active antimicrobial prescription"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/first-vaccine-dose-antimicrobial-not-pregnant-pd"/>
+      </reference>
+      <name value="First vaccine antimicrobial not pregnant"/>
+      <description value="Provides information for treating patients greater than or equal to 18 years old exposed to anthrax within the past 60 days, who do not have anthrax. It is divided into two parts: \n- Part #1: For patients that may be symptomatic to flag the need to conduct a full diagnostic evaluation to rule out anthrax before proceeding with post-exposure prophylaxis (PEP) \n- Part #2: For patients  who are  asymptomatic (not displaying signs and symptoms of anthrax), it provides recommended PEP regimen"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/first-vaccine-dose-antimicrobial-pregnant-pd"/>
+      </reference>
+      <name value="First vaccine antimicrobial pregnant"/>
+      <description value="Provides information for treating patients greater than or equal to 18 years old exposed to anthrax within the past 60 days, who do not have anthrax. It is divided into two parts: \n- Part #1: For patients that may be symptomatic to flag the need to conduct a full diagnostic evaluation to rule out anthrax before proceeding with post-exposure prophylaxis (PEP) \n- Part #2: For patients  who are  asymptomatic (not displaying signs and symptoms of anthrax), it provides recommended PEP regimen"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/first-vaccine-dose-not-pregnant-pd"/>
+      </reference>
+      <name value="First vaccine not pregnant"/>
+      <description value="Provides information for treating patients greater than or equal to 18 years old exposed to anthrax within the past 60 days, who do not have anthrax. It is divided into two parts: \n- Part #1: For patients that may be symptomatic to flag the need to conduct a full diagnostic evaluation to rule out anthrax before proceeding with post-exposure prophylaxis (PEP) \n- Part #2: For patients  who are  asymptomatic (not displaying signs and symptoms of anthrax), it provides recommended PEP regimen"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/second-vaccinedose-notpregnant-pd"/>
+      </reference>
+      <name value="First vaccine not pregnant"/>
+      <description value="Provides information for treating patients greater than or equal to 18 years old exposed to anthrax within the past 60 days, who do not have anthrax. It is divided into two parts: \n- Part #1: For patients that may be symptomatic to flag the need to conduct a full diagnostic evaluation to rule out anthrax before proceeding with post-exposure prophylaxis (PEP) \n- Part #2: For patients  who are  asymptomatic (not displaying signs and symptoms of anthrax), it provides recommended PEP regimen"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/first-vaccine-dose-pregnant-pd"/>
+      </reference>
+      <name value="First vaccine pregnant"/>
+      <description value="Provides information for treating patients greater than or equal to 18 years old exposed to anthrax within the past 60 days, who do not have anthrax. It is divided into two parts: \n- Part #1: For patients that may be symptomatic to flag the need to conduct a full diagnostic evaluation to rule out anthrax before proceeding with post-exposure prophylaxis (PEP) \n- Part #2: For patients  who are  asymptomatic (not displaying signs and symptoms of anthrax), it provides recommended PEP regimen"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Flag"/>
+      </extension>
+      <reference>
+        <reference value="Flag/latex-allergy-flag"/>
+      </reference>
+      <name value="Latex Allergy Flag"/>
+      <description value="Flag indicating patient has latex allergy"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/LevofloxacinRequest"/>
+      </reference>
+      <name value="Levofloxacin Request"/>
+      <description value="In 2009, the US Advisory Committee on Immunization Practices recommended in addition to antimicrobial therapy, a 3-dose series of Anthrax Vaccine Adsorbed (AVA) BioThrax (Emergent BioSolutions Inc., Rockville, MD, USA) for long-term protection after exposure to anthrax  in individuals without any previous vaccine. After exposure to aerosolized B. anthracis spores, antimicrobial therapy should be initiated as soon as possible. Ideally, the first dose of vaccine should be administered within 10 days. ACIP recommends a post exposure regimen of 60 days of appropriate antimicrobial prophylaxis (covered previously) combined with 3 subcutaneous doses of AVA (administered at 0, 2, and 4 weeks post exposure) as the most effective protection against inhalation anthrax for previously unvaccinated persons aged ≥18 years who have been exposed to aerosolized B. anthracis spores. In general, the peak serologic response to anthrax vaccine occurs 10–14 days after the third dose. (Wright, J.G et al., Morbidity and Mortality Weekly Report, July 23, 2010 / 59(RR06); 1-30). Additionally, the Advisory Committee on Immunization Practices subsequently reviewed all safety data available as of March 2008, including the final results of a retrospective study, and concluded that AVA is safe to administer to anthrax-exposed women during pregnancy. In the setting of an anthrax event that poses a high risk for exposure to aerosolized B. anthracis spores, pregnancy is neither a precaution nor a contraindication to vaccination. Pregnant women at risk for inhalation anthrax should receive AVA and antimicrobial drug therapy regardless of pregnancy trimester (Meanye-Delman D et al., Emerg Infect Dis, 20(2), 2014)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/med-request-1"/>
+      </reference>
+      <name value="med-request-1"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/med-request-2"/>
+      </reference>
+      <name value="med-request-2"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/med-request-3"/>
+      </reference>
+      <name value="med-request-3"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/5"/>
+      </reference>
+      <name value="med-request-4"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/6"/>
+      </reference>
+      <name value="med-request-5"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationStatement"/>
+      </extension>
+      <reference>
+        <reference value="MedicationStatement/medication-statement-1"/>
+      </reference>
+      <name value="medication-statement-1"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/MoxifloxacinRequest"/>
+      </reference>
+      <name value="Moxifloxacin Request"/>
+      <description value="In 2009, the US Advisory Committee on Immunization Practices recommended in addition to antimicrobial therapy, a 3-dose series of Anthrax Vaccine Adsorbed (AVA) BioThrax (Emergent BioSolutions Inc., Rockville, MD, USA) for long-term protection after exposure to anthrax  in individuals without any previous vaccine. After exposure to aerosolized B. anthracis spores, antimicrobial therapy should be initiated as soon as possible. Ideally, the first dose of vaccine should be administered within 10 days. ACIP recommends a post exposure regimen of 60 days of appropriate antimicrobial prophylaxis (covered previously) combined with 3 subcutaneous doses of AVA (administered at 0, 2, and 4 weeks post exposure) as the most effective protection against inhalation anthrax for previously unvaccinated persons aged ≥18 years who have been exposed to aerosolized B. anthracis spores. In general, the peak serologic response to anthrax vaccine occurs 10–14 days after the third dose. (Wright, J.G et al., Morbidity and Mortality Weekly Report, July 23, 2010 / 59(RR06); 1-30). Additionally, the Advisory Committee on Immunization Practices subsequently reviewed all safety data available as of March 2008, including the final results of a retrospective study, and concluded that AVA is safe to administer to anthrax-exposed women during pregnancy. In the setting of an anthrax event that poses a high risk for exposure to aerosolized B. anthracis spores, pregnancy is neither a precaution nor a contraindication to vaccination. Pregnant women at risk for inhalation anthrax should receive AVA and antimicrobial drug therapy regardless of pregnancy trimester (Meanye-Delman D et al., Emerg Infect Dis, 20(2), 2014)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Flag"/>
+      </extension>
+      <reference>
+        <reference value="Flag/no-asymptomatic-observation-flag"/>
+      </reference>
+      <name value="No Asymptomatic Observation Flag"/>
+      <description value="Asymptomatic flag example"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-1"/>
+      </reference>
+      <name value="observation-1"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-10"/>
+      </reference>
+      <name value="observation-10"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-11"/>
+      </reference>
+      <name value="observation-11"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-12"/>
+      </reference>
+      <name value="observation-12"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-13"/>
+      </reference>
+      <name value="observation-13"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-14"/>
+      </reference>
+      <name value="observation-14"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-15"/>
+      </reference>
+      <name value="observation-15"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-16"/>
+      </reference>
+      <name value="observation-16"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-17"/>
+      </reference>
+      <name value="observation-17"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-18"/>
+      </reference>
+      <name value="observation-18"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-19"/>
+      </reference>
+      <name value="observation-19"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-2"/>
+      </reference>
+      <name value="observation-2"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-20"/>
+      </reference>
+      <name value="observation-20"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-21"/>
+      </reference>
+      <name value="observation-21"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-22"/>
+      </reference>
+      <name value="observation-22"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-23"/>
+      </reference>
+      <name value="observation-23"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-24"/>
+      </reference>
+      <name value="observation-24"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-25"/>
+      </reference>
+      <name value="observation-25"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-26"/>
+      </reference>
+      <name value="observation-26"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-3"/>
+      </reference>
+      <name value="observation-3"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-4"/>
+      </reference>
+      <name value="observation-4"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-5"/>
+      </reference>
+      <name value="observation-5"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-6"/>
+      </reference>
+      <name value="observation-6"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-7"/>
+      </reference>
+      <name value="observation-7"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-8"/>
+      </reference>
+      <name value="observation-8"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-9"/>
+      </reference>
+      <name value="observation-9"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/patient-1"/>
+      </reference>
+      <name value="patient-1"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/patient-2"/>
+      </reference>
+      <name value="patient-2"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/patient-3"/>
+      </reference>
+      <name value="patient-3"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/patient-4"/>
+      </reference>
+      <name value="patient-4"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/procedure-1"/>
+      </reference>
+      <name value="procedure-1"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/procedure-10"/>
+      </reference>
+      <name value="procedure-10"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/procedure-11"/>
+      </reference>
+      <name value="procedure-11"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/procedure-12"/>
+      </reference>
+      <name value="procedure-12"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/procedure-13"/>
+      </reference>
+      <name value="procedure-13"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/procedure-14"/>
+      </reference>
+      <name value="procedure-14"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/procedure-2"/>
+      </reference>
+      <name value="procedure-2"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/procedure-3"/>
+      </reference>
+      <name value="procedure-3"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/procedure-4"/>
+      </reference>
+      <name value="procedure-4"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/procedure-5"/>
+      </reference>
+      <name value="procedure-5"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/procedure-6"/>
+      </reference>
+      <name value="procedure-6"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/procedure-7"/>
+      </reference>
+      <name value="procedure-7"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/procedure-8"/>
+      </reference>
+      <name value="procedure-8"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/procedure-9"/>
+      </reference>
+      <name value="procedure-9"/>
+      <description value="Test Case"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/second-vaccinedose-antimicrobial-notpregnant-pd"/>
+      </reference>
+      <name value="Second vaccine antimicrobial not pregnant"/>
+      <description value="Provides information for treating patients greater than or equal to 18 years old exposed to anthrax within the past 60 days, who do not have anthrax. It is divided into two parts: \n- Part #1: For patients that may be symptomatic to flag the need to conduct a full diagnostic evaluation to rule out anthrax before proceeding with post-exposure prophylaxis (PEP) \n- Part #2: For patients  who are  asymptomatic (not displaying signs and symptoms of anthrax), it provides recommended PEP regimen"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/second-vaccinedose-antimicrobial-pregnant-pd"/>
+      </reference>
+      <name value="Second vaccine antimicrobial pregnant"/>
+      <description value="Provides information for treating patients greater than or equal to 18 years old exposed to anthrax within the past 60 days, who do not have anthrax. It is divided into two parts: \n- Part #1: For patients that may be symptomatic to flag the need to conduct a full diagnostic evaluation to rule out anthrax before proceeding with post-exposure prophylaxis (PEP) \n- Part #2: For patients  who are  asymptomatic (not displaying signs and symptoms of anthrax), it provides recommended PEP regimen"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/second-vaccinedose-pregnant-pd"/>
+      </reference>
+      <name value="Second vaccine pregnant"/>
+      <description value="Provides information for treating patients greater than or equal to 18 years old exposed to anthrax within the past 60 days, who do not have anthrax. It is divided into two parts: \n- Part #1: For patients that may be symptomatic to flag the need to conduct a full diagnostic evaluation to rule out anthrax before proceeding with post-exposure prophylaxis (PEP) \n- Part #2: For patients  who are  asymptomatic (not displaying signs and symptoms of anthrax), it provides recommended PEP regimen"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/third-vaccinedose-antimicrobial-notpregnant-pd"/>
+      </reference>
+      <name value="Third vaccine antimicrobial not pregnant"/>
+      <description value="Provides information for treating patients greater than or equal to 18 years old exposed to anthrax within the past 60 days, who do not have anthrax. It is divided into two parts: \n- Part #1: For patients that may be symptomatic to flag the need to conduct a full diagnostic evaluation to rule out anthrax before proceeding with post-exposure prophylaxis (PEP) \n- Part #2: For patients  who are  asymptomatic (not displaying signs and symptoms of anthrax), it provides recommended PEP regimen"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/third-vaccinedose-antimicrobial-pregnant-pd"/>
+      </reference>
+      <name value="Third vaccine antimicrobial pregnant"/>
+      <description value="Provides information for treating patients greater than or equal to 18 years old exposed to anthrax within the past 60 days, who do not have anthrax. It is divided into two parts: \n- Part #1: For patients that may be symptomatic to flag the need to conduct a full diagnostic evaluation to rule out anthrax before proceeding with post-exposure prophylaxis (PEP) \n- Part #2: For patients  who are  asymptomatic (not displaying signs and symptoms of anthrax), it provides recommended PEP regimen"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/third-vaccinedose-notpregnant-pd"/>
+      </reference>
+      <name value="Third vaccine not pregnant"/>
+      <description value="Provides information for treating patients greater than or equal to 18 years old exposed to anthrax within the past 60 days, who do not have anthrax. It is divided into two parts: \n- Part #1: For patients that may be symptomatic to flag the need to conduct a full diagnostic evaluation to rule out anthrax before proceeding with post-exposure prophylaxis (PEP) \n- Part #2: For patients  who are  asymptomatic (not displaying signs and symptoms of anthrax), it provides recommended PEP regimen"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/third-vaccinedose-pregnant-pd"/>
+      </reference>
+      <name value="Third vaccine pregnant"/>
+      <description value="Provides information for treating patients greater than or equal to 18 years old exposed to anthrax within the past 60 days, who do not have anthrax. It is divided into two parts: \n- Part #1: For patients that may be symptomatic to flag the need to conduct a full diagnostic evaluation to rule out anthrax before proceeding with post-exposure prophylaxis (PEP) \n- Part #2: For patients  who are  asymptomatic (not displaying signs and symptoms of anthrax), it provides recommended PEP regimen"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Flag"/>
+      </extension>
+      <reference>
+        <reference value="Flag/vaccine-allergy-flag"/>
+      </reference>
+      <name value="Vaccine Allergy Flag"/>
+      <description value="Flag indicating patient has allergy to a vaccine"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DetectedIssue"/>
+      </extension>
+      <reference>
+        <reference value="DetectedIssue/vaccine-history-inconsistencies-detected-issue"/>
+      </reference>
+      <name value="Vaccine History Inconsistencies Detected Issue"/>
+      <description value="Detected that the patient has inconsistent vaccine history"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/VaccineRequest"/>
+      </reference>
+      <name value="Vaccine Request"/>
+      <description value="In 2009, the US Advisory Committee on Immunization Practices recommended in addition to antimicrobial therapy, a 3-dose series of Anthrax Vaccine Adsorbed (AVA) BioThrax (Emergent BioSolutions Inc., Rockville, MD, USA) for long-term protection after exposure to anthrax  in individuals without any previous vaccine. After exposure to aerosolized B. anthracis spores, antimicrobial therapy should be initiated as soon as possible. Ideally, the first dose of vaccine should be administered within 10 days. ACIP recommends a post exposure regimen of 60 days of appropriate antimicrobial prophylaxis (covered previously) combined with 3 subcutaneous doses of AVA (administered at 0, 2, and 4 weeks post exposure) as the most effective protection against inhalation anthrax for previously unvaccinated persons aged ≥18 years who have been exposed to aerosolized B. anthracis spores. In general, the peak serologic response to anthrax vaccine occurs 10–14 days after the third dose. (Wright, J.G et al., Morbidity and Mortality Weekly Report, July 23, 2010 / 59(RR06); 1-30). Additionally, the Advisory Committee on Immunization Practices subsequently reviewed all safety data available as of March 2008, including the final results of a retrospective study, and concluded that AVA is safe to administer to anthrax-exposed women during pregnancy. In the setting of an anthrax event that poses a high risk for exposure to aerosolized B. anthracis spores, pregnancy is neither a precaution nor a contraindication to vaccination. Pregnant women at risk for inhalation anthrax should receive AVA and antimicrobial drug therapy regardless of pregnancy trimester (Meanye-Delman D et al., Emerg Infect Dis, 20(2), 2014)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <page>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+        <valueUrl value="toc.html"/>
+      </extension>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="index.html"/>
+        </extension>
+        <nameUrl value="index.html"/>
+        <title value="Home"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="anthrax-index-fhirv400.html"/>
+        </extension>
+        <nameUrl value="anthrax-index-fhirv400.html"/>
+        <title value="Anthrax Index Fhirv 400"/>
+        <generation value="markdown"/>
+      </page>
+    </page>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/maps"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="fsh-generated/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="template/config"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code value="path-tx-cache"/>
+      <value value="input-cache/txcache"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

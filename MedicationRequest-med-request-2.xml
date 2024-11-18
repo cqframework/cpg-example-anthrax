@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationRequest xmlns="http://hl7.org/fhir">
+  <id value="med-request-2"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: MedicationRequest med-request-2</b></p><a name="med-request-2"> </a><a name="hcmed-request-2"> </a><a name="med-request-2-en-US"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title="Codes:{http://www.nlm.nih.gov/research/umls/rxnorm 309309}">Ciprofloxacin 500 MG Oral Tablet</span></p><p><b>subject</b>: <a href="Patient-patient-3.html">Jane Smith  Female, DoB: 2000-01-01</a></p></div>
+  </text>
+  <status value="active"/>
+  <intent value="proposal"/>
+  <medicationCodeableConcept>
+    <coding>
+      <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+      <code value="309309"/>
+      <display value="Ciprofloxacin 500 MG Oral Tablet"/>
+    </coding>
+    <text value="Ciprofloxacin 500 MG Oral Tablet"/>
+  </medicationCodeableConcept>
+  <subject>
+    <reference value="Patient/patient-3"/>
+  </subject>
+</MedicationRequest>

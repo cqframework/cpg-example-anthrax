@@ -1,0 +1,30 @@
+{
+  "resourceType" : "Observation",
+  "id" : "observation-26",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-26</b></p><a name=\"observation-26\"> </a><a name=\"hcobservation-26\"> </a><a name=\"observation-26-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 82810-3}\">Pregnancy status</span></p><p><b>subject</b>: <a href=\"Patient-patient-3.html\">Jane Smith  Female, DoB: 2000-01-01</a></p><p><b>effective</b>: 2017-06-03 15:00:00+0000</p><p><b>issued</b>: 2017-06-03 15:00:00+0000</p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 77386006}\">Patient currently pregnant</span></p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "82810-3",
+      "display" : "Pregnancy status"
+    }],
+    "text" : "Pregnancy status"
+  },
+  "subject" : {
+    "reference" : "Patient/patient-3"
+  },
+  "effectiveDateTime" : "2017-06-03T15:00:00.000Z",
+  "issued" : "2017-06-03T15:00:00.000Z",
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "77386006",
+      "display" : "Patient currently pregnant"
+    }],
+    "text" : "Patient currently pregnant"
+  }
+}

@@ -1,0 +1,851 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="urn:hl7-org:elm:r1" xmlns:t="urn:hl7-org:elm-types:r1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:fhir="http://hl7.org/fhir" xmlns:qdm43="urn:healthit-gov:qdm:v4_3" xmlns:qdm53="urn:healthit-gov:qdm:v5_3" xmlns:a="urn:hl7-org:cql-annotations:r1">
+   <annotation translatorOptions="EnableAnnotations,EnableLocators,DisableListDemotion,DisableListPromotion" signatureLevel="None" xsi:type="a:CqlToElmInfo"/>
+   <annotation xsi:type="a:Annotation">
+      <a:s r="129">
+         <a:s>/*  Library: CDC Common Logic for FHIRv400
+    Author: CMS Alliance to Modernize Healthcare, operated by THE MITRE Corporation.
+
+    (C) 2019 The MITRE Corporation. All Rights Reserved. Approved for Public Release: 19-2048. Distribution Unlimited.
+*/
+library CDC_Common_Logic_FHIRv400 version '1.0.0'</a:s>
+      </a:s>
+   </annotation>
+   <identifier id="CDC_Common_Logic_FHIRv400" system="http://hl7.org/fhir/uv/cpg/anthrax" version="1.0.0"/>
+   <schemaIdentifier id="urn:hl7-org:elm" version="r1"/>
+   <usings>
+      <def localIdentifier="System" uri="urn:hl7-org:elm-types:r1"/>
+      <def localId="1" locator="8:1-8:26" localIdentifier="FHIR" uri="http://hl7.org/fhir" version="4.0.0">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="1">
+               <a:s>using </a:s>
+               <a:s>
+                  <a:s>FHIR</a:s>
+               </a:s>
+               <a:s> version '4.0.0'</a:s>
+            </a:s>
+         </annotation>
+      </def>
+   </usings>
+   <includes>
+      <def localId="2" locator="11:1-11:54" localIdentifier="FHIRHelpers" path="http://hl7.org/fhir/FHIRHelpers" version="4.0.0">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="2">
+               <a:s>// Include the FHIRHelpers library for simplifying interacton w/ the FHIR data model
+include </a:s>
+               <a:s>
+                  <a:s>FHIRHelpers</a:s>
+               </a:s>
+               <a:s> version '4.0.0' called FHIRHelpers</a:s>
+            </a:s>
+         </annotation>
+      </def>
+   </includes>
+   <statements>
+      <def localId="17" locator="18:1-19:73" name="ConceptText" context="Unfiltered" accessLevel="Public" xsi:type="FunctionDef">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="17">
+               <a:s>/**
+ * Converts a codeable concept to text.
+ * @param c - a FHIR codeable concept
+ * @returns {System.String} a CQL String of text
+ */
+define function ConceptText(c FHIR.CodeableConcept):
+  </a:s>
+               <a:s r="16">
+                  <a:s r="16">
+                     <a:s>Coalesce(</a:s>
+                     <a:s r="6">
+                        <a:s r="5">
+                           <a:s r="4">
+                              <a:s>c</a:s>
+                           </a:s>
+                           <a:s>.</a:s>
+                           <a:s r="5">
+                              <a:s>text</a:s>
+                           </a:s>
+                        </a:s>
+                        <a:s>.</a:s>
+                        <a:s r="6">
+                           <a:s>value</a:s>
+                        </a:s>
+                     </a:s>
+                     <a:s>, </a:s>
+                     <a:s r="15">
+                        <a:s>Coalesce(</a:s>
+                        <a:s r="14">
+                           <a:s>
+                              <a:s r="9">
+                                 <a:s r="8">
+                                    <a:s>(</a:s>
+                                    <a:s r="8">
+                                       <a:s r="7">
+                                          <a:s>c</a:s>
+                                       </a:s>
+                                       <a:s>.</a:s>
+                                       <a:s r="8">
+                                          <a:s>coding</a:s>
+                                       </a:s>
+                                    </a:s>
+                                    <a:s>)</a:s>
+                                 </a:s>
+                                 <a:s> c2</a:s>
+                              </a:s>
+                           </a:s>
+                           <a:s> </a:s>
+                           <a:s r="13">
+                              <a:s>return </a:s>
+                              <a:s r="12">
+                                 <a:s r="11">
+                                    <a:s r="10">
+                                       <a:s>c2</a:s>
+                                    </a:s>
+                                    <a:s>.</a:s>
+                                    <a:s r="11">
+                                       <a:s>display</a:s>
+                                    </a:s>
+                                 </a:s>
+                                 <a:s>.</a:s>
+                                 <a:s r="12">
+                                    <a:s>value</a:s>
+                                 </a:s>
+                              </a:s>
+                           </a:s>
+                        </a:s>
+                        <a:s>)</a:s>
+                     </a:s>
+                     <a:s>)</a:s>
+                  </a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="16" locator="19:3-19:73" xsi:type="Coalesce">
+            <operand localId="6" locator="19:12-19:23" path="value" xsi:type="Property">
+               <source localId="5" locator="19:12-19:17" path="text" xsi:type="Property">
+                  <source localId="4" locator="19:12" name="c" xsi:type="OperandRef"/>
+               </source>
+            </operand>
+            <operand localId="15" locator="19:26-19:72" xsi:type="Coalesce">
+               <operand localId="14" locator="19:35-19:71" xsi:type="Query">
+                  <source localId="9" locator="19:35-19:47" alias="c2">
+                     <expression localId="8" locator="19:35-19:44" path="coding" xsi:type="Property">
+                        <source localId="7" locator="19:36" name="c" xsi:type="OperandRef"/>
+                     </expression>
+                  </source>
+                  <return localId="13" locator="19:49-19:71">
+                     <expression localId="12" locator="19:56-19:71" path="value" xsi:type="Property">
+                        <source localId="11" locator="19:56-19:65" path="display" scope="c2" xsi:type="Property"/>
+                     </expression>
+                  </return>
+               </operand>
+            </operand>
+         </expression>
+         <operand name="c">
+            <operandTypeSpecifier localId="3" locator="18:31-18:50" name="fhir:CodeableConcept" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+      </def>
+      <def localId="22" locator="26:1-27:19" name="DateText" context="Unfiltered" accessLevel="Public" xsi:type="FunctionDef">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="22">
+               <a:s>/**
+  * Converts a FHIR Date to text.
+  * @param d - a FHIR Date
+  * @returns {System.String} a CQL String of text
+ */
+define function DateText(d FHIR.date):
+  </a:s>
+               <a:s r="21">
+                  <a:s r="21">
+                     <a:s>ToString(</a:s>
+                     <a:s r="20">
+                        <a:s r="19">
+                           <a:s>d</a:s>
+                        </a:s>
+                        <a:s>.</a:s>
+                        <a:s r="20">
+                           <a:s>value</a:s>
+                        </a:s>
+                     </a:s>
+                     <a:s>)</a:s>
+                  </a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="21" locator="27:3-27:19" xsi:type="ToString">
+            <operand localId="20" locator="27:12-27:18" path="value" xsi:type="Property">
+               <source localId="19" locator="27:12" name="d" xsi:type="OperandRef"/>
+            </operand>
+         </expression>
+         <operand name="d">
+            <operandTypeSpecifier localId="18" locator="26:28-26:36" name="fhir:date" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+      </def>
+      <def localId="27" locator="34:1-35:19" name="DateTimeText" context="Unfiltered" accessLevel="Public" xsi:type="FunctionDef">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="27">
+               <a:s>/**
+  * Converts a FHIR DateTime to text.
+  * @param d - a FHIR DateTime
+  * @returns {System.String} a CQL String of text
+ */
+define function DateTimeText(d FHIR.dateTime):
+  </a:s>
+               <a:s r="26">
+                  <a:s r="26">
+                     <a:s>ToString(</a:s>
+                     <a:s r="25">
+                        <a:s r="24">
+                           <a:s>d</a:s>
+                        </a:s>
+                        <a:s>.</a:s>
+                        <a:s r="25">
+                           <a:s>value</a:s>
+                        </a:s>
+                     </a:s>
+                     <a:s>)</a:s>
+                  </a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="26" locator="35:3-35:19" xsi:type="ToString">
+            <operand localId="25" locator="35:12-35:18" path="value" xsi:type="Property">
+               <source localId="24" locator="35:12" name="d" xsi:type="OperandRef"/>
+            </operand>
+         </expression>
+         <operand name="d">
+            <operandTypeSpecifier localId="23" locator="34:32-34:44" name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+      </def>
+      <def localId="36" locator="42:1-47:3" name="FormatCode" context="Unfiltered" accessLevel="Public" xsi:type="FunctionDef">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="36">
+               <a:s>/**
+  * Converts a CQL Code to a Tuple containing the system, code, and display fields.
+  * @param d - a CQL code
+  * @returns {Tuple} a Tuple
+ */
+define function FormatCode(c System.Code):
+  </a:s>
+               <a:s r="35">
+                  <a:s r="35">
+                     <a:s>{
+    </a:s>
+                     <a:s>
+                        <a:s>system: </a:s>
+                        <a:s r="30">
+                           <a:s r="29">
+                              <a:s>c</a:s>
+                           </a:s>
+                           <a:s>.</a:s>
+                           <a:s r="30">
+                              <a:s>system</a:s>
+                           </a:s>
+                        </a:s>
+                     </a:s>
+                     <a:s>,
+    </a:s>
+                     <a:s>
+                        <a:s>code: </a:s>
+                        <a:s r="32">
+                           <a:s r="31">
+                              <a:s>c</a:s>
+                           </a:s>
+                           <a:s>.</a:s>
+                           <a:s r="32">
+                              <a:s>code</a:s>
+                           </a:s>
+                        </a:s>
+                     </a:s>
+                     <a:s>,
+    </a:s>
+                     <a:s>
+                        <a:s>display: </a:s>
+                        <a:s r="34">
+                           <a:s r="33">
+                              <a:s>c</a:s>
+                           </a:s>
+                           <a:s>.</a:s>
+                           <a:s r="34">
+                              <a:s>display</a:s>
+                           </a:s>
+                        </a:s>
+                     </a:s>
+                     <a:s>
+  }</a:s>
+                  </a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="35" locator="43:3-47:3" xsi:type="Tuple">
+            <element name="system">
+               <value localId="30" locator="44:13-44:20" path="system" xsi:type="Property">
+                  <source localId="29" locator="44:13" name="c" xsi:type="OperandRef"/>
+               </value>
+            </element>
+            <element name="code">
+               <value localId="32" locator="45:11-45:16" path="code" xsi:type="Property">
+                  <source localId="31" locator="45:11" name="c" xsi:type="OperandRef"/>
+               </value>
+            </element>
+            <element name="display">
+               <value localId="34" locator="46:14-46:22" path="display" xsi:type="Property">
+                  <source localId="33" locator="46:14" name="c" xsi:type="OperandRef"/>
+               </value>
+            </element>
+         </expression>
+         <operand name="c">
+            <operandTypeSpecifier localId="28" locator="42:30-42:40" name="t:Code" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+      </def>
+      <def localId="44" locator="55:1-56:26" name="GenerateLocalReference" context="Unfiltered" accessLevel="Public" xsi:type="FunctionDef">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="44">
+               <a:s>/**
+  * Forms a local refernce using a type and an id string
+  * @param type - A String specifying the resource type of the reference
+  * @param id - A String specifying the resource id of the reference
+  * @returns {System.String} a string of text containing the local reference
+ */
+define function GenerateLocalReference(type System.String, id System.String):
+  </a:s>
+               <a:s r="43">
+                  <a:s r="43">
+                     <a:s>Combine(</a:s>
+                     <a:s r="42">
+                        <a:s>{</a:s>
+                        <a:s r="39">
+                           <a:s>type</a:s>
+                        </a:s>
+                        <a:s>, </a:s>
+                        <a:s r="40">
+                           <a:s>'/'</a:s>
+                        </a:s>
+                        <a:s>, </a:s>
+                        <a:s r="41">
+                           <a:s>id</a:s>
+                        </a:s>
+                        <a:s>}</a:s>
+                     </a:s>
+                     <a:s>)</a:s>
+                  </a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="43" locator="56:3-56:26" xsi:type="Combine">
+            <source localId="42" locator="56:11-56:25" xsi:type="List">
+               <element localId="39" locator="56:12-56:15" name="type" xsi:type="OperandRef"/>
+               <element localId="40" locator="56:18-56:20" valueType="t:String" value="/" xsi:type="Literal"/>
+               <element localId="41" locator="56:23-56:24" name="id" xsi:type="OperandRef"/>
+            </source>
+         </expression>
+         <operand name="type">
+            <operandTypeSpecifier localId="37" locator="55:45-55:57" name="t:String" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+         <operand name="id">
+            <operandTypeSpecifier localId="38" locator="55:63-55:75" name="t:String" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+      </def>
+      <def localId="52" locator="63:1-64:28" name="CullNullStrings" context="Unfiltered" accessLevel="Public" xsi:type="FunctionDef">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="52">
+               <a:s>/**
+  * Removes null entries from a list of strings
+  * @param list - A list of strings
+  * @returns {List&lt;System.String>} the input list with the null entries removed
+ */
+define function CullNullStrings(list List&lt;System.String>):
+  </a:s>
+               <a:s r="51">
+                  <a:s r="51">
+                     <a:s>
+                        <a:s r="48">
+                           <a:s r="47">
+                              <a:s>
+                                 <a:s>list</a:s>
+                              </a:s>
+                           </a:s>
+                           <a:s> L</a:s>
+                        </a:s>
+                     </a:s>
+                     <a:s> </a:s>
+                     <a:s r="50">
+                        <a:s>where </a:s>
+                        <a:s r="50">
+                           <a:s r="49">
+                              <a:s>L</a:s>
+                           </a:s>
+                           <a:s> is not null</a:s>
+                        </a:s>
+                     </a:s>
+                  </a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="51" locator="64:3-64:28" xsi:type="Query">
+            <source localId="48" locator="64:3-64:8" alias="L">
+               <expression localId="47" locator="64:3-64:6" name="list" xsi:type="OperandRef"/>
+            </source>
+            <where localId="50" locator="64:10-64:28" xsi:type="Not">
+               <operand locator="64:16-64:28" xsi:type="IsNull">
+                  <operand localId="49" locator="64:16" name="L" xsi:type="AliasRef"/>
+               </operand>
+            </where>
+         </expression>
+         <operand name="list">
+            <operandTypeSpecifier localId="46" locator="63:38-63:56" xsi:type="ListTypeSpecifier">
+               <elementType localId="45" locator="63:43-63:55" name="t:String" xsi:type="NamedTypeSpecifier"/>
+            </operandTypeSpecifier>
+         </operand>
+      </def>
+      <def localId="65" locator="72:1-73:77" name="FindConditionDate" context="Unfiltered" accessLevel="Public" xsi:type="FunctionDef">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="65">
+               <a:s>/**
+  * Finds the first non-null meaningful date that can be associated with this Condition.  This will look through the
+  * following fields in the following order: onsetDateTime.value, onsetPeriod.start, assertedDate.
+  * @param Cond - a Condition
+  * @returns {System.DateTime} the first non-null meaningful date, or null if non is found
+ */
+define function FindConditionDate(Cond Condition):
+  </a:s>
+               <a:s r="64">
+                  <a:s r="64">
+                     <a:s>Coalesce(</a:s>
+                     <a:s r="56">
+                        <a:s r="55">
+                           <a:s r="54">
+                              <a:s>Cond</a:s>
+                           </a:s>
+                           <a:s>.</a:s>
+                           <a:s r="55">
+                              <a:s>onset</a:s>
+                           </a:s>
+                        </a:s>
+                        <a:s>.</a:s>
+                        <a:s r="56">
+                           <a:s>value</a:s>
+                        </a:s>
+                     </a:s>
+                     <a:s>, </a:s>
+                     <a:s r="60">
+                        <a:s r="59">
+                           <a:s r="58">
+                              <a:s r="57">
+                                 <a:s>Cond</a:s>
+                              </a:s>
+                              <a:s>.</a:s>
+                              <a:s r="58">
+                                 <a:s>onset</a:s>
+                              </a:s>
+                           </a:s>
+                           <a:s>.</a:s>
+                           <a:s r="59">
+                              <a:s>start</a:s>
+                           </a:s>
+                        </a:s>
+                        <a:s>.</a:s>
+                        <a:s r="60">
+                           <a:s>value</a:s>
+                        </a:s>
+                     </a:s>
+                     <a:s>, </a:s>
+                     <a:s r="63">
+                        <a:s r="62">
+                           <a:s r="61">
+                              <a:s>Cond</a:s>
+                           </a:s>
+                           <a:s>.</a:s>
+                           <a:s r="62">
+                              <a:s>recordedDate</a:s>
+                           </a:s>
+                        </a:s>
+                        <a:s>.</a:s>
+                        <a:s r="63">
+                           <a:s>value</a:s>
+                        </a:s>
+                     </a:s>
+                     <a:s>)</a:s>
+                  </a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="64" locator="73:3-73:77" xsi:type="Coalesce">
+            <operand asType="t:DateTime" xsi:type="As">
+               <operand localId="56" locator="73:12-73:27" path="value" xsi:type="Property">
+                  <source localId="55" locator="73:12-73:21" path="onset" xsi:type="Property">
+                     <source localId="54" locator="73:12-73:15" name="Cond" xsi:type="OperandRef"/>
+                  </source>
+               </operand>
+            </operand>
+            <operand localId="60" locator="73:30-73:51" path="value" xsi:type="Property">
+               <source localId="59" locator="73:30-73:45" path="start" xsi:type="Property">
+                  <source localId="58" locator="73:30-73:39" path="onset" xsi:type="Property">
+                     <source localId="57" locator="73:30-73:33" name="Cond" xsi:type="OperandRef"/>
+                  </source>
+               </source>
+            </operand>
+            <operand localId="63" locator="73:54-73:76" path="value" xsi:type="Property">
+               <source localId="62" locator="73:54-73:70" path="recordedDate" xsi:type="Property">
+                  <source localId="61" locator="73:54-73:57" name="Cond" xsi:type="OperandRef"/>
+               </source>
+            </operand>
+         </expression>
+         <operand name="Cond">
+            <operandTypeSpecifier localId="53" locator="72:40-72:48" name="fhir:Condition" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+      </def>
+      <def localId="89" locator="81:1-82:87" name="MostRecentCondition" context="Unfiltered" accessLevel="Public" xsi:type="FunctionDef">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="89">
+               <a:s>/**
+  * Finds the most recent Condition in list by examining the following fields in
+  * the following order: onsetDateTime.value, onsetPeriod.start, assertedDate.
+  * @param CondList - a list of Conditions
+  * @returns {Condition} the most recent Condition in the list
+ */
+define function MostRecentCondition(CondList List&lt;Condition>):
+  </a:s>
+               <a:s r="88">
+                  <a:s r="88">
+                     <a:s>Last(</a:s>
+                     <a:s r="87">
+                        <a:s>
+                           <a:s r="69">
+                              <a:s r="68">
+                                 <a:s>
+                                    <a:s>CondList</a:s>
+                                 </a:s>
+                              </a:s>
+                              <a:s> C</a:s>
+                           </a:s>
+                        </a:s>
+                        <a:s> </a:s>
+                        <a:s r="86">
+                           <a:s>sort by </a:s>
+                           <a:s r="85">
+                              <a:s r="84">
+                                 <a:s>Coalesce(</a:s>
+                                 <a:s r="78">
+                                    <a:s r="77">
+                                       <a:s>onset</a:s>
+                                    </a:s>
+                                    <a:s>.</a:s>
+                                    <a:s r="78">
+                                       <a:s>value</a:s>
+                                    </a:s>
+                                 </a:s>
+                                 <a:s>, </a:s>
+                                 <a:s r="81">
+                                    <a:s r="80">
+                                       <a:s r="79">
+                                          <a:s>onset</a:s>
+                                       </a:s>
+                                       <a:s>.</a:s>
+                                       <a:s r="80">
+                                          <a:s>start</a:s>
+                                       </a:s>
+                                    </a:s>
+                                    <a:s>.</a:s>
+                                    <a:s r="81">
+                                       <a:s>value</a:s>
+                                    </a:s>
+                                 </a:s>
+                                 <a:s>, </a:s>
+                                 <a:s r="83">
+                                    <a:s r="82">
+                                       <a:s>recordedDate</a:s>
+                                    </a:s>
+                                    <a:s>.</a:s>
+                                    <a:s r="83">
+                                       <a:s>value</a:s>
+                                    </a:s>
+                                 </a:s>
+                                 <a:s>)</a:s>
+                              </a:s>
+                           </a:s>
+                        </a:s>
+                     </a:s>
+                     <a:s>)</a:s>
+                  </a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="88" locator="82:3-82:87" xsi:type="Last">
+            <source localId="87" locator="82:8-82:86" xsi:type="Query">
+               <source localId="69" locator="82:8-82:17" alias="C">
+                  <expression localId="68" locator="82:8-82:15" name="CondList" xsi:type="OperandRef"/>
+               </source>
+               <sort localId="86" locator="82:19-82:86">
+                  <by localId="85" locator="82:27-82:86" direction="asc" xsi:type="ByExpression">
+                     <expression localId="84" locator="82:27-82:86" xsi:type="Coalesce">
+                        <operand asType="t:DateTime" xsi:type="As">
+                           <operand localId="78" locator="82:36-82:46" path="value" xsi:type="Property">
+                              <source localId="77" locator="82:36-82:40" name="onset" xsi:type="IdentifierRef"/>
+                           </operand>
+                        </operand>
+                        <operand localId="81" locator="82:49-82:65" path="value" xsi:type="Property">
+                           <source localId="80" locator="82:49-82:59" path="start" xsi:type="Property">
+                              <source localId="79" locator="82:49-82:53" name="onset" xsi:type="IdentifierRef"/>
+                           </source>
+                        </operand>
+                        <operand localId="83" locator="82:68-82:85" path="value" xsi:type="Property">
+                           <source localId="82" locator="82:68-82:79" name="recordedDate" xsi:type="IdentifierRef"/>
+                        </operand>
+                     </expression>
+                  </by>
+               </sort>
+            </source>
+         </expression>
+         <operand name="CondList">
+            <operandTypeSpecifier localId="67" locator="81:46-81:60" xsi:type="ListTypeSpecifier">
+               <elementType localId="66" locator="81:51-81:59" name="fhir:Condition" xsi:type="NamedTypeSpecifier"/>
+            </operandTypeSpecifier>
+         </operand>
+      </def>
+      <def localId="99" locator="91:1-92:60" name="FindProcedureDate" context="Unfiltered" accessLevel="Public" xsi:type="FunctionDef">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="99">
+               <a:s>/**
+  * Finds the first non-null meaningful date that can be associated with this Procedure.
+  * This will look through the following fields in the following order: performedDateTime.value,
+  * performedPeriod.start.
+  * @param Proc - a Procedure
+  * @returns {System.DateTime} the first non-null meaningful date, or null if non is found
+ */
+define function FindProcedureDate(Proc Procedure):
+  </a:s>
+               <a:s r="98">
+                  <a:s r="98">
+                     <a:s>Coalesce(</a:s>
+                     <a:s r="93">
+                        <a:s r="92">
+                           <a:s r="91">
+                              <a:s>Proc</a:s>
+                           </a:s>
+                           <a:s>.</a:s>
+                           <a:s r="92">
+                              <a:s>performed</a:s>
+                           </a:s>
+                        </a:s>
+                        <a:s>.</a:s>
+                        <a:s r="93">
+                           <a:s>value</a:s>
+                        </a:s>
+                     </a:s>
+                     <a:s>, </a:s>
+                     <a:s r="97">
+                        <a:s r="96">
+                           <a:s r="95">
+                              <a:s r="94">
+                                 <a:s>Proc</a:s>
+                              </a:s>
+                              <a:s>.</a:s>
+                              <a:s r="95">
+                                 <a:s>performed</a:s>
+                              </a:s>
+                           </a:s>
+                           <a:s>.</a:s>
+                           <a:s r="96">
+                              <a:s>start</a:s>
+                           </a:s>
+                        </a:s>
+                        <a:s>.</a:s>
+                        <a:s r="97">
+                           <a:s>value</a:s>
+                        </a:s>
+                     </a:s>
+                     <a:s>)</a:s>
+                  </a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="98" locator="92:3-92:60" xsi:type="Coalesce">
+            <operand asType="t:DateTime" xsi:type="As">
+               <operand localId="93" locator="92:12-92:31" path="value" xsi:type="Property">
+                  <source localId="92" locator="92:12-92:25" path="performed" xsi:type="Property">
+                     <source localId="91" locator="92:12-92:15" name="Proc" xsi:type="OperandRef"/>
+                  </source>
+               </operand>
+            </operand>
+            <operand localId="97" locator="92:34-92:59" path="value" xsi:type="Property">
+               <source localId="96" locator="92:34-92:53" path="start" xsi:type="Property">
+                  <source localId="95" locator="92:34-92:47" path="performed" xsi:type="Property">
+                     <source localId="94" locator="92:34-92:37" name="Proc" xsi:type="OperandRef"/>
+                  </source>
+               </source>
+            </operand>
+         </expression>
+         <operand name="Proc">
+            <operandTypeSpecifier localId="90" locator="91:40-91:48" name="fhir:Procedure" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+      </def>
+      <def localId="119" locator="100:1-101:75" name="MostRecentProcedure" context="Unfiltered" accessLevel="Public" xsi:type="FunctionDef">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="119">
+               <a:s>/**
+  * Finds the most recent Procedure in list by examining the following fields in
+  * the following order: performedDateTime.value, performedPeriod.start.
+  * @param CondList - a list of Procedures
+  * @returns {Procedure} the most recent Procedure in the list
+ */
+define function MostRecentProcedure(ProcList List&lt;Procedure>):
+  </a:s>
+               <a:s r="118">
+                  <a:s r="118">
+                     <a:s>Last(</a:s>
+                     <a:s r="117">
+                        <a:s>
+                           <a:s r="103">
+                              <a:s r="102">
+                                 <a:s>
+                                    <a:s>ProcList</a:s>
+                                 </a:s>
+                              </a:s>
+                              <a:s> P</a:s>
+                           </a:s>
+                        </a:s>
+                        <a:s> </a:s>
+                        <a:s r="116">
+                           <a:s>sort by </a:s>
+                           <a:s r="115">
+                              <a:s r="114">
+                                 <a:s>Coalesce(</a:s>
+                                 <a:s r="110">
+                                    <a:s r="109">
+                                       <a:s>performed</a:s>
+                                    </a:s>
+                                    <a:s>.</a:s>
+                                    <a:s r="110">
+                                       <a:s>value</a:s>
+                                    </a:s>
+                                 </a:s>
+                                 <a:s>, </a:s>
+                                 <a:s r="113">
+                                    <a:s r="112">
+                                       <a:s r="111">
+                                          <a:s>performed</a:s>
+                                       </a:s>
+                                       <a:s>.</a:s>
+                                       <a:s r="112">
+                                          <a:s>start</a:s>
+                                       </a:s>
+                                    </a:s>
+                                    <a:s>.</a:s>
+                                    <a:s r="113">
+                                       <a:s>value</a:s>
+                                    </a:s>
+                                 </a:s>
+                                 <a:s>)</a:s>
+                              </a:s>
+                           </a:s>
+                        </a:s>
+                     </a:s>
+                     <a:s>)</a:s>
+                  </a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="118" locator="101:3-101:75" xsi:type="Last">
+            <source localId="117" locator="101:8-101:74" xsi:type="Query">
+               <source localId="103" locator="101:8-101:17" alias="P">
+                  <expression localId="102" locator="101:8-101:15" name="ProcList" xsi:type="OperandRef"/>
+               </source>
+               <sort localId="116" locator="101:19-101:74">
+                  <by localId="115" locator="101:27-101:74" direction="asc" xsi:type="ByExpression">
+                     <expression localId="114" locator="101:27-101:74" xsi:type="Coalesce">
+                        <operand asType="t:DateTime" xsi:type="As">
+                           <operand localId="110" locator="101:36-101:50" path="value" xsi:type="Property">
+                              <source localId="109" locator="101:36-101:44" name="performed" xsi:type="IdentifierRef"/>
+                           </operand>
+                        </operand>
+                        <operand localId="113" locator="101:53-101:73" path="value" xsi:type="Property">
+                           <source localId="112" locator="101:53-101:67" path="start" xsi:type="Property">
+                              <source localId="111" locator="101:53-101:61" name="performed" xsi:type="IdentifierRef"/>
+                           </source>
+                        </operand>
+                     </expression>
+                  </by>
+               </sort>
+            </source>
+         </expression>
+         <operand name="ProcList">
+            <operandTypeSpecifier localId="101" locator="100:46-100:60" xsi:type="ListTypeSpecifier">
+               <elementType localId="100" locator="100:51-100:59" name="fhir:Procedure" xsi:type="NamedTypeSpecifier"/>
+            </operandTypeSpecifier>
+         </operand>
+      </def>
+      <def localId="129" locator="110:1-111:72" name="MedicationStatementDate" context="Unfiltered" accessLevel="Public" xsi:type="FunctionDef">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="129">
+               <a:s>/**
+  * Finds the first non-null meaningful date that can be associated with this MedicationStatement.
+  * This will look through the following fields in the following order: effectiveDateTime,
+  * s.effectivePeriod.&quot;start&quot;.
+  * @param Proc - a MedicationStatement
+  * @returns {System.String} the first non-null meaningful date, or null if non is found
+ */
+define function MedicationStatementDate(s FHIR.MedicationStatement):
+  </a:s>
+               <a:s r="128">
+                  <a:s r="128">
+                     <a:s>Coalesce(</a:s>
+                     <a:s r="123">
+                        <a:s>DateTimeText(</a:s>
+                        <a:s r="122">
+                           <a:s r="121">
+                              <a:s>s</a:s>
+                           </a:s>
+                           <a:s>.</a:s>
+                           <a:s r="122">
+                              <a:s>effective</a:s>
+                           </a:s>
+                        </a:s>
+                        <a:s>)</a:s>
+                     </a:s>
+                     <a:s>, </a:s>
+                     <a:s r="127">
+                        <a:s>DateTimeText(</a:s>
+                        <a:s r="126">
+                           <a:s r="125">
+                              <a:s r="124">
+                                 <a:s>s</a:s>
+                              </a:s>
+                              <a:s>.</a:s>
+                              <a:s r="125">
+                                 <a:s>effective</a:s>
+                              </a:s>
+                           </a:s>
+                           <a:s>.</a:s>
+                           <a:s r="126">
+                              <a:s>&quot;start&quot;</a:s>
+                           </a:s>
+                        </a:s>
+                        <a:s>)</a:s>
+                     </a:s>
+                     <a:s>)</a:s>
+                  </a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="128" locator="111:3-111:72" xsi:type="Coalesce">
+            <operand localId="123" locator="111:12-111:36" name="DateTimeText" xsi:type="FunctionRef">
+               <operand asType="fhir:dateTime" xsi:type="As">
+                  <operand localId="122" locator="111:25-111:35" path="effective" xsi:type="Property">
+                     <source localId="121" locator="111:25" name="s" xsi:type="OperandRef"/>
+                  </operand>
+               </operand>
+            </operand>
+            <operand localId="127" locator="111:39-111:71" name="DateTimeText" xsi:type="FunctionRef">
+               <operand localId="126" locator="111:52-111:70" path="start" xsi:type="Property">
+                  <source localId="125" locator="111:52-111:62" path="effective" xsi:type="Property">
+                     <source localId="124" locator="111:52" name="s" xsi:type="OperandRef"/>
+                  </source>
+               </operand>
+            </operand>
+         </expression>
+         <operand name="s">
+            <operandTypeSpecifier localId="120" locator="110:43-110:66" name="fhir:MedicationStatement" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+      </def>
+   </statements>
+</library>

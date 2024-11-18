@@ -1,0 +1,44 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/cpg/anthrax/Condition/condition-10> a fhir:Condition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "condition-10"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition condition-10</b></p><a name=\"condition-10\"> </a><a name=\"hccondition-10\"> </a><a name=\"condition-10-en-US\"> </a><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/sid/icd-10-cm Z20.810}\">Contact with and (suspected) exposure to anthrax</span></p><p><b>subject</b>: <a href=\"Patient-patient-1.html\">John Smith  Male, DoB: 2000-01-01</a></p><p><b>onset</b>: 2019-05-20 15:00:00+0000</p></div>"
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/sid/icd-10-cm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "Z20.810" ] ;
+       fhir:display [ fhir:v "Contact with and (suspected) exposure to anthrax" ]
+     ] ) ;
+     fhir:text [ fhir:v "Contact with and (suspected) exposure to anthrax" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-1> ;
+     fhir:reference [ fhir:v "Patient/patient-1" ]
+  ] ; # 
+  fhir:onset [ fhir:v "2019-05-20T15:00:00.000Z"^^xsd:dateTime] . # 
+
+<http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-1> a fhir:uv .
+
+# -------------------------------------------------------------------------------------
+

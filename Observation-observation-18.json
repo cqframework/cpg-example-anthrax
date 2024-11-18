@@ -1,0 +1,22 @@
+{
+  "resourceType" : "Observation",
+  "id" : "observation-18",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-18</b></p><a name=\"observation-18\"> </a><a name=\"hcobservation-18\"> </a><a name=\"observation-18-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 84387000}\">Asymptomatic (finding)</span></p><p><b>subject</b>: <a href=\"Patient-patient-1.html\">John Smith  Male, DoB: 2000-01-01</a></p><p><b>effective</b>: 2019-06-03 15:00:00+0000</p><p><b>issued</b>: 2018-07-19 00:00:00+0000</p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "84387000",
+      "display" : "Asymptomatic (finding)"
+    }],
+    "text" : "Asymptomatic (finding)"
+  },
+  "subject" : {
+    "reference" : "Patient/patient-1"
+  },
+  "effectiveDateTime" : "2019-06-03T15:00:00.000Z",
+  "issued" : "2018-07-19T00:00:00.000Z"
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="observation-7"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation observation-7</b></p><a name="observation-7"> </a><a name="hcobservation-7"> </a><a name="observation-7-en-US"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 170475009}">Exposure to Bacillus anthracis (event)</span></p><p><b>subject</b>: <a href="Patient-patient-1.html">John Smith  Male, DoB: 2000-01-01</a></p><p><b>effective</b>: 2019-06-03 15:00:00+0000</p><p><b>issued</b>: 2018-07-18 00:00:00+0000</p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="170475009"/>
+      <display value="Exposure to Bacillus anthracis (event)"/>
+    </coding>
+    <text value="Exposure to Bacillus anthracis (event)"/>
+  </code>
+  <subject>
+    <reference value="Patient/patient-1"/>
+  </subject>
+  <effectiveDateTime value="2019-06-03T15:00:00.000Z"/>
+  <issued value="2018-07-18T00:00:00.000Z"/>
+</Observation>

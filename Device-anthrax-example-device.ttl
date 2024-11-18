@@ -1,0 +1,34 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/cpg/anthrax/Device/anthrax-example-device> a fhir:Device ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "anthrax-example-device"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device anthrax-example-device</b></p><a name=\"anthrax-example-device\"> </a><a name=\"hcanthrax-example-device\"> </a><a name=\"anthrax-example-device-en-US\"> </a><p><b>identifier</b>: Anthrax_Post_Exposure_Prophylaxis_FHIRv400.cql</p><p><b>manufacturer</b>: Centers for Disease Control and Prevention</p><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 701002007}\">Clinical data collection/management information system application software (physical object)</span></p><h3>Versions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value</b></td></tr><tr><td style=\"display: none\">*</td><td>1.1.0</td></tr></table><p><b>url</b>: <a href=\"http://hl7.org/fhir/uv/cpg/anthrax/Device/anthrax-example-device\">http://hl7.org/fhir/uv/cpg/anthrax/Device/anthrax-example-device</a></p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "Anthrax_Post_Exposure_Prophylaxis_FHIRv400.cql" ]
+  ] ) ; # 
+  fhir:manufacturer [ fhir:v "Centers for Disease Control and Prevention"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a sct:701002007 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "701002007" ] ;
+       fhir:display [ fhir:v "Clinical data collection/management information system application software (physical object)" ]
+     ] )
+  ] ; # 
+  fhir:version ( [
+     fhir:value [ fhir:v "1.1.0" ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/anthrax/Device/anthrax-example-device"^^xsd:anyURI] . # 
+
+# -------------------------------------------------------------------------------------
+

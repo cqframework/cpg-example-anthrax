@@ -1,0 +1,22 @@
+{
+  "resourceType" : "Observation",
+  "id" : "observation-10",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-10</b></p><a name=\"observation-10\"> </a><a name=\"hcobservation-10\"> </a><a name=\"observation-10-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 170475009}\">Exposure to Bacillus anthracis (event)</span></p><p><b>subject</b>: <a href=\"Patient-patient-1.html\">John Smith  Male, DoB: 2000-01-01</a></p><p><b>effective</b>: 2019-05-17 15:00:00+0000</p><p><b>issued</b>: 2019-05-17 15:00:00+0000</p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "170475009",
+      "display" : "Exposure to Bacillus anthracis (event)"
+    }],
+    "text" : "Exposure to Bacillus anthracis (event)"
+  },
+  "subject" : {
+    "reference" : "Patient/patient-1"
+  },
+  "effectiveDateTime" : "2019-05-17T15:00:00.000Z",
+  "issued" : "2019-05-17T15:00:00.000Z"
+}

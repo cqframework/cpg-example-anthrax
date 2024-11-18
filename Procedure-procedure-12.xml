@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Procedure xmlns="http://hl7.org/fhir">
+  <id value="procedure-12"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Procedure procedure-12</b></p><a name="procedure-12"> </a><a name="hcprocedure-12"> </a><a name="procedure-12-en-US"> </a><p><b>status</b>: Completed</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 170338000}">First anthrax vaccination</span></p><p><b>subject</b>: <a href="Patient-patient-3.html">Jane Smith  Female, DoB: 2000-01-01</a></p><p><b>performed</b>: 2019-05-06 15:00:00+0000</p></div>
+  </text>
+  <status value="completed"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="170338000"/>
+      <display value="First anthrax vaccination"/>
+    </coding>
+    <text value="First anthrax vaccination"/>
+  </code>
+  <subject>
+    <reference value="Patient/patient-3"/>
+  </subject>
+  <performedDateTime value="2019-05-06T15:00:00.000Z"/>
+</Procedure>

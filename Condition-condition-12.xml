@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="condition-12"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Condition condition-12</b></p><a name="condition-12"> </a><a name="hccondition-12"> </a><a name="condition-12-en-US"> </a><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span></p><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/sid/icd-10-cm Z20.810}">Contact with and (suspected) exposure to anthrax</span></p><p><b>subject</b>: <a href="Patient-patient-1.html">John Smith  Male, DoB: 2000-01-01</a></p><p><b>onset</b>: 2019-06-02 15:00:00+0000</p></div>
+  </text>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+      <code value="active"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+      <code value="confirmed"/>
+    </coding>
+  </verificationStatus>
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <code value="Z20.810"/>
+      <display value="Contact with and (suspected) exposure to anthrax"/>
+    </coding>
+    <text value="Contact with and (suspected) exposure to anthrax"/>
+  </code>
+  <subject>
+    <reference value="Patient/patient-1"/>
+  </subject>
+  <onsetDateTime value="2019-06-02T15:00:00.000Z"/>
+</Condition>

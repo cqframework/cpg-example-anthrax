@@ -1,0 +1,34 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/cpg/anthrax/MedicationRequest/5> a fhir:MedicationRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "5"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest 5</b></p><a name=\"5\"> </a><a name=\"hc5\"> </a><a name=\"5-en-US\"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title=\"Codes:{http://www.nlm.nih.gov/research/umls/rxnorm 311296}\">Levofloxacin 750 MG Oral Tablet</span></p><p><b>subject</b>: <a href=\"Patient-patient-1.html\">John Smith  Male, DoB: 2000-01-01</a></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "proposal"] ; # 
+  fhir:medication [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "311296" ] ;
+       fhir:display [ fhir:v "Levofloxacin 750 MG Oral Tablet" ]
+     ] ) ;
+     fhir:text [ fhir:v "Levofloxacin 750 MG Oral Tablet" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-1> ;
+     fhir:reference [ fhir:v "Patient/patient-1" ]
+  ] . # 
+
+<http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-1> a fhir:uv .
+
+# -------------------------------------------------------------------------------------
+

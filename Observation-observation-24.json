@@ -1,0 +1,22 @@
+{
+  "resourceType" : "Observation",
+  "id" : "observation-24",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-24</b></p><a name=\"observation-24\"> </a><a name=\"hcobservation-24\"> </a><a name=\"observation-24-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 84387000}\">Asymptomatic (finding)</span></p><p><b>subject</b>: <a href=\"Patient-patient-3.html\">Jane Smith  Female, DoB: 2000-01-01</a></p><p><b>effective</b>: 2019-05-06 15:00:00+0000</p><p><b>issued</b>: 2018-07-19 00:00:00+0000</p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "84387000",
+      "display" : "Asymptomatic (finding)"
+    }],
+    "text" : "Asymptomatic (finding)"
+  },
+  "subject" : {
+    "reference" : "Patient/patient-3"
+  },
+  "effectiveDateTime" : "2019-05-06T15:00:00.000Z",
+  "issued" : "2018-07-19T00:00:00.000Z"
+}

@@ -1,0 +1,45 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/cpg/anthrax/AllergyIntolerance/allergy-5> a fhir:AllergyIntolerance ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "allergy-5"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: AllergyIntolerance allergy-5</b></p><a name=\"allergy-5\"> </a><a name=\"hcallergy-5\"> </a><a name=\"allergy-5-en-US\"> </a><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-verification confirmed}\">Confirmed</span></p><p><b>code</b>: <span title=\"Codes:{http://www.nlm.nih.gov/research/umls/rxnorm 3640}\">doxycycline</span></p><p><b>patient</b>: <a href=\"Patient-patient-1.html\">John Smith  Male, DoB: 2000-01-01</a></p><p><b>recordedDate</b>: 2015-05-28 15:00:00+0000</p></div>"
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ] ;
+       fhir:display [ fhir:v "Confirmed" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "3640" ] ;
+       fhir:display [ fhir:v "doxycycline" ]
+     ] ) ;
+     fhir:text [ fhir:v "doxycycline" ]
+  ] ; # 
+  fhir:patient [
+     fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-1> ;
+     fhir:reference [ fhir:v "Patient/patient-1" ]
+  ] ; # 
+  fhir:recordedDate [ fhir:v "2015-05-28T15:00:00.000Z"^^xsd:dateTime] . # 
+
+<http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-1> a fhir:uv .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="bundle-24"/>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-1"/>
+    <resource>
+      <Patient>
+        <id value="patient-1"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Patient_patient-1"> </a><p class="res-header-id"><b>Generated Narrative: Patient patient-1</b></p><a name="patient-1"> </a><a name="hcpatient-1"> </a><a name="patient-1-en-US"> </a><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">John Smith  Male, DoB: 2000-01-01</p><hr/></div>
+        </text>
+        <name>
+          <family value="Smith"/>
+          <given value="John"/>
+        </name>
+        <gender value="male"/>
+        <birthDate value="2000-01-01"/>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-17"/>
+    <resource>
+      <Observation>
+        <id value="observation-17"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_observation-17"> </a><p class="res-header-id"><b>Generated Narrative: Observation observation-17</b></p><a name="observation-17"> </a><a name="hcobservation-17"> </a><a name="observation-17-en-US"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 84387000}">Asymptomatic (finding)</span></p><p><b>subject</b>: <a href="Patient-patient-1.html">John Smith  Male, DoB: 2000-01-01</a></p><p><b>effective</b>: 2019-06-03 15:00:00+0000</p><p><b>issued</b>: 2019-06-03 15:00:00+0000</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="84387000"/>
+            <display value="Asymptomatic (finding)"/>
+          </coding>
+          <text value="Asymptomatic (finding)"/>
+        </code>
+        <subject>
+          <reference value="Patient/patient-1"/>
+        </subject>
+        <effectiveDateTime value="2019-06-03T15:00:00.000Z"/>
+        <issued value="2019-06-03T15:00:00.000Z"/>
+      </Observation>
+    </resource>
+  </entry>
+</Bundle>

@@ -1,0 +1,34 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/cpg/anthrax/MedicationStatement/medication-statement-1> a fhir:MedicationStatement ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "medication-statement-1"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationStatement medication-statement-1</b></p><a name=\"medication-statement-1\"> </a><a name=\"hcmedication-statement-1\"> </a><a name=\"medication-statement-1-en-US\"> </a><p><b>status</b>: Active</p><p><b>medication</b>: <span title=\"Codes:{http://www.nlm.nih.gov/research/umls/rxnorm 309309}\">Ciprofloxacin 500 MG Oral Tablet</span></p><p><b>subject</b>: <a href=\"Patient-patient-1.html\">John Smith  Male, DoB: 2000-01-01</a></p><p><b>effective</b>: 2019-05-03 15:00:00+0000</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:medication [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "309309" ] ;
+       fhir:display [ fhir:v "Ciprofloxacin 500 MG Oral Tablet" ]
+     ] ) ;
+     fhir:text [ fhir:v "Ciprofloxacin 500 MG Oral Tablet" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-1> ;
+     fhir:reference [ fhir:v "Patient/patient-1" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2019-05-03T15:00:00.000Z"^^xsd:dateTime] . # 
+
+<http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-1> a fhir:uv .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AllergyIntolerance xmlns="http://hl7.org/fhir">
+  <id value="allergy-7"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: AllergyIntolerance allergy-7</b></p><a name="allergy-7"> </a><a name="hcallergy-7"> </a><a name="allergy-7-en-US"> </a><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-verification confirmed}">Confirmed</span></p><p><b>code</b>: <span title="Codes:{http://www.nlm.nih.gov/research/umls/rxnorm 139462}">moxifloxacin</span></p><p><b>patient</b>: <a href="Patient-patient-1.html">John Smith  Male, DoB: 2000-01-01</a></p><p><b>recordedDate</b>: 2013-05-28 15:00:00+0000</p></div>
+  </text>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
+      <code value="active"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"/>
+      <code value="confirmed"/>
+      <display value="Confirmed"/>
+    </coding>
+  </verificationStatus>
+  <code>
+    <coding>
+      <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+      <code value="139462"/>
+      <display value="moxifloxacin"/>
+    </coding>
+    <text value="moxifloxacin"/>
+  </code>
+  <patient>
+    <reference value="Patient/patient-1"/>
+  </patient>
+  <recordedDate value="2013-05-28T15:00:00.000Z"/>
+</AllergyIntolerance>

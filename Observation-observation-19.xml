@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="observation-19"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation observation-19</b></p><a name="observation-19"> </a><a name="hcobservation-19"> </a><a name="observation-19-en-US"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://loinc.org 82810-3}">Pregnancy status</span></p><p><b>subject</b>: <a href="Patient-patient-3.html">Jane Smith  Female, DoB: 2000-01-01</a></p><p><b>effective</b>: 2019-04-03 15:00:00+0000</p><p><b>issued</b>: 2019-04-03 15:00:00+0000</p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct 77386006}">Patient currently pregnant</span></p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="82810-3"/>
+      <display value="Pregnancy status"/>
+    </coding>
+    <text value="Pregnancy status"/>
+  </code>
+  <subject>
+    <reference value="Patient/patient-3"/>
+  </subject>
+  <effectiveDateTime value="2019-04-03T15:00:00.000Z"/>
+  <issued value="2019-04-03T15:00:00.000Z"/>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="77386006"/>
+      <display value="Patient currently pregnant"/>
+    </coding>
+    <text value="Patient currently pregnant"/>
+  </valueCodeableConcept>
+</Observation>

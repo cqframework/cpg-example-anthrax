@@ -1,0 +1,33 @@
+{
+  "resourceType" : "AllergyIntolerance",
+  "id" : "allergy-1",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: AllergyIntolerance allergy-1</b></p><a name=\"allergy-1\"> </a><a name=\"hcallergy-1\"> </a><a name=\"allergy-1-en-US\"> </a><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-verification confirmed}\">Confirmed</span></p><p><b>code</b>: <span title=\"Codes:{http://www.nlm.nih.gov/research/umls/rxnorm 404774}\">Fibromyalgia (disorder)</span></p><p><b>patient</b>: <a href=\"Patient-patient-1.html\">John Smith  Male, DoB: 2000-01-01</a></p><p><b>recordedDate</b>: 2018-12-03 16:00:00+0000</p></div>"
+  },
+  "clinicalStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+      "code" : "active"
+    }]
+  },
+  "verificationStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+      "code" : "confirmed",
+      "display" : "Confirmed"
+    }]
+  },
+  "code" : {
+    "coding" : [{
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "code" : "404774",
+      "display" : "Fibromyalgia (disorder)"
+    }],
+    "text" : "Fibromyalgia (disorder)"
+  },
+  "patient" : {
+    "reference" : "Patient/patient-1"
+  },
+  "recordedDate" : "2018-12-03T16:00:00.000Z"
+}

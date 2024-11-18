@@ -1,0 +1,21 @@
+{
+  "resourceType" : "MedicationRequest",
+  "id" : "5",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest 5</b></p><a name=\"5\"> </a><a name=\"hc5\"> </a><a name=\"5-en-US\"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title=\"Codes:{http://www.nlm.nih.gov/research/umls/rxnorm 311296}\">Levofloxacin 750 MG Oral Tablet</span></p><p><b>subject</b>: <a href=\"Patient-patient-1.html\">John Smith  Male, DoB: 2000-01-01</a></p></div>"
+  },
+  "status" : "active",
+  "intent" : "proposal",
+  "medicationCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "code" : "311296",
+      "display" : "Levofloxacin 750 MG Oral Tablet"
+    }],
+    "text" : "Levofloxacin 750 MG Oral Tablet"
+  },
+  "subject" : {
+    "reference" : "Patient/patient-1"
+  }
+}

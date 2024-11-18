@@ -1,0 +1,877 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>CDS Connect Commons for FHIRv400 - XML Representation - Clinical Practice Guidelines Example Implementation Guide - Anthrax Post-Exposure Prophylaxis v1.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+    <link rel="stylesheet" href="assets/css/cqf.css"/>
+
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"3.23"}
+    h3,h4,h5,h6{--heading-prefix:"3.23"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+
+<div id="family-nav">
+  <a no-external="true" id="family-logo" href="https://github.com/cqframework"><img src="assets/images/cqf.png" alt="Visit the CQF github organization website" height="50"/> </a>
+</div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Clinical Practice Guidelines Example Implementation Guide - Anthrax Post-Exposure Prophylaxis</span>
+            <br/>
+            <span style="display:inline-block;">1.1.0 - ci-build
+
+
+
+  <img src="assets/images/001.svg" alt="International flag" title="International" height="16"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="anthrax-index-fhirv400.html">Artifacts</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>CDS Connect Commons for FHIRv400</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 7" class="col-12">
+  <!-- ReleaseHeader --><p id="publish-box">Clinical Practice Guidelines Example Implementation Guide - Anthrax Post-Exposure Prophylaxis - Local Development build (v1.1.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="http://hl7.org/fhir/uv/cpg/anthrax/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="Library-cds-connect-commons-library.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li class="active">
+      <a href="#">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Library-cds-connect-commons-library.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Library-cds-connect-commons-library.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: CDS Connect Commons for FHIRv400 - XML Representation</h2>
+
+  <table class="colsd">
+    <tr>
+
+      <td colspan="2">
+        
+          Draft
+          
+            as of 2024-11-18
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="Library-cds-connect-commons-library.xml" no-download="true">Raw xml</a> | <a download="null" href="Library-cds-connect-commons-library.xml">Download</a></p>
+
+    <!-- insert intro if present -->
+  
+
+
+
+  <pre style="white-space: pre; text-wrap: nowrap; width: auto;" class="xml"><code style="white-space: pre; text-wrap: nowrap;">
+&lt;<a href="http://hl7.org/fhir/R4/library.html#Library">Library</a> xmlns="http://hl7.org/fhir"&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="cds-connect-commons-library"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.text">text</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="generated"/&gt;
+    &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p class="res-header-id"&gt;&lt;b&gt;Generated Narrative: Library cds-connect-commons-library&lt;/b&gt;&lt;/p&gt;&lt;a name="cds-connect-commons-library"&gt; &lt;/a&gt;&lt;a name="hccds-connect-commons-library"&gt; &lt;/a&gt;&lt;a name="cds-connect-commons-library-en-US"&gt; &lt;/a&gt;&lt;h2&gt;Participants&lt;/h2&gt;&lt;table class="grid"&gt;&lt;tr&gt;&lt;td&gt;Author&lt;/td&gt;&lt;td&gt;Alliance to Modernize Healthcare FFRDC&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Endorser&lt;/td&gt;&lt;td&gt;Centers for Disease Control and Prevention&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h2&gt;Contents&lt;/h2&gt;&lt;p&gt;&lt;code&gt;text/cql&lt;/code&gt;&lt;/p&gt;&lt;pre&gt;&lt;code&gt;// CDS Connect Commons for FHIRv400
+// Change log:
+// - 1.3.1:
+//   - Changed C.dateRecorded to C.dateRecorded.value in ConditionLookBack
+//   - Changed G.statusDate to G.statusDate.value in GoalLookBack
+// - 1.3.2:
+//   - Added NotCancelled() and EncounterLookback() functions.
+library CDS_Connect_Commons_for_FHIRv400 version '1.3.2'
+
+using FHIR version '4.0.0'
+
+// Include the FHIRHelpers library for simplifying interacton w/ the FHIR data model
+include FHIRHelpers version '4.0.0' called FHIRHelpers
+
+codesystem &amp;quot;Condition Verification Status Codes&amp;quot;: 'http://terminology.hl7.org/CodeSystem/condition-ver-status'
+codesystem &amp;quot;Condition Clinical Status Codes&amp;quot;: 'http://terminology.hl7.org/CodeSystem/condition-clinical'
+codesystem &amp;quot;AllergyIntolerance Verification Status Codes&amp;quot;: 'http://terminology.hl7.org/CodeSystem/allergyintolerance-verification'
+
+code &amp;quot;Condition verificationStatus confirmed code&amp;quot;: 'confirmed' from &amp;quot;Condition Verification Status Codes&amp;quot; display 'Confirmed'
+code &amp;quot;Condition clinicalStatus active code&amp;quot;: 'active' from &amp;quot;Condition Clinical Status Codes&amp;quot; display 'Active'
+code &amp;quot;Condition clinicalStatus recurrence code&amp;quot;: 'recurrence' from &amp;quot;Condition Clinical Status Codes&amp;quot; display 'Recurrence'
+code &amp;quot;Condition clinicalStatus relapse code&amp;quot;: 'relapse' from &amp;quot;Condition Clinical Status Codes&amp;quot; display 'Relapse'
+code &amp;quot;AllergyIntolerance verificationStatus confirmed code&amp;quot;: 'confirmed' from &amp;quot;AllergyIntolerance Verification Status Codes&amp;quot; display 'Confirmed'
+
+// -------------------------------------------------- GENERAL ---------------------------------------------------------
+
+/**
+ * A null-safe version of ToConcept.  Whereas FHIRHelpers.ToConcept will take a null argument and produce a
+ * System.Concept that is empty, this implementation returns null instead.
+ * @param C - a FHIR CodeableConcept
+ * @returns {System.Concept} a CQL Concept or null if null was passed in
+ */
+define function NullSafeToConcept(Cpt FHIR.CodeableConcept):
+  if Cpt is not null then FHIRHelpers.ToConcept(Cpt) else null
+
+/**
+ * A null-safe version of ToInterval for Period.  Whereas FHIRHelpers.ToInterval will take a null argument and produce a
+ * System.Interval that is empty, this implementation returns null instead.
+ * @param P - a FHIR Period
+ * @returns {System.Interval} a CQL Interval or null if null was passed in
+ */
+define function NullSafePeriodToInterval(Pd FHIR.Period):
+  if Pd is not null then Interval[Pd.&amp;quot;start&amp;quot;.value, Pd.&amp;quot;end&amp;quot;.value] else null
+
+/**
+ * A null-safe version of ToInterval for Range.  Whereas FHIRHelpers.ToInterval will take a null argument and produce a
+ * System.Interval that is empty, this implementation returns null instead.
+ * @param P - a FHIR Range
+ * @returns {System.Interval} a CQL Interval or null if null was passed in
+ */
+define function NullSafeRangeToInterval(Rg FHIR.Range):
+  if Rg is not null
+    then Interval[NullSafeToQuantity(Rg.low), NullSafeToQuantity(Rg.high)]
+  else null
+
+/**
+ * Same as NullSafePeriodToInterval; kept for backward compatibility.  [Deprecated]
+ * @param P - a FHIR Period
+ * @returns {System.Interval} a CQL Interval or null if null was passed in
+ */
+define function NullSafeToInterval(Pd FHIR.Period):
+  NullSafePeriodToInterval(Pd)
+
+/**
+ * A null-safe version of ToQuantity.  Whereas FHIRHelpers.ToQuantity will take a null argument and produce a
+ * System.Quantity that is empty, this implementation returns null instead.
+ * @param C - a FHIR Quantity
+ * @returns {System.Quantity} a CQL Quantity or null if null was passed in
+ */
+define function NullSafeToQuantity(Qty FHIR.Quantity):
+  if Qty is not null then
+    System.Quantity {
+      value: Qty.value.value,
+      unit: Coalesce(Qty.unit.value, Qty.code.value)
+    }
+  else null
+
+// -------------------------------------------------- OBSERVATIONS -----------------------------------------------------
+
+/**
+ * Filters Observations by a concept rather than by a ValueSet.  In CQL 1.3, this will be built into the retrieve,
+ * but for now, we must use a query where clause.
+ * @param Koncept - the concept to filter on (intentionally mispelled to avoid naming clashes)
+ * @returns {List&amp;lt;Observation&amp;gt;} a list of Observations matching the concept, or null if null was passed in
+ */
+define function ObservationsByConcept(Koncept System.Concept):
+  [Observation] O where NullSafeToConcept(O.code) ~ Koncept
+
+/**
+ * Observations that are complete and verified. In FHIR R4, there are two statuses that indicate this state: 'final'
+ * and 'amended'.
+ * @see https://www.hl7.org/fhir/valueset-observation-status.html
+ * @param ObsList - a list of Observations
+ * @returns {List&amp;lt;Observation&amp;gt;} a list of verified Observations, or null if null was passed in
+ */
+define function Verified(ObsList List&amp;lt;Observation&amp;gt;):
+  ObsList O where O.status.value in {'final', 'amended'}
+
+/**
+ * Observations that have quantity values recorded in the requested unit.
+ * @param ObsList - a list of Observations
+ * @param Unit - the unit to require in the Observations quantity value
+ * @returns {List&amp;lt;Observation&amp;gt;} a list of Observations with the required unit, or null if null was passed in
+ */
+define function WithUnit(ObsList List&amp;lt;Observation&amp;gt;, Unit String):
+  ObsList O where O.value.unit.value = Unit or O.value.code.value = Unit
+
+/**
+ * Observations with an effective or issued date in the specified &amp;quot;look back&amp;quot; period.  For example, LDL-C Tests in the
+ * last 6 years.
+ * TODO: Rename to LookBack once the execution engine supports overloaded functions.
+ * @param ObsList - a list of Observations
+ * @returns {List&amp;lt;Observation&amp;gt;} a list of Observations with effective or issued date specified lookback period, or null
+ * if null was passed in
+ */
+define function ObservationLookBack(ObsList List&amp;lt;Observation&amp;gt;, LookBack System.Quantity):
+  ObsList O
+    let LookBackInterval: Interval[Now() - LookBack, Now()]
+    where O.effective.value in LookBackInterval
+      or NullSafeToInterval(O.effective) overlaps LookBackInterval
+      or O.issued.value in LookBackInterval
+
+/**
+ * The most recent observation.  For each Observation, this algorithm will use the FindDate function, which uses the
+ * first non-null date value from these fields: effectiveDateTime, effectivePeriod.end, effectivePeriod.start, issued.
+ * The found date will be used to compare Observations and determine the most recent one.
+ * @see FindDate(Observation)
+ * @param ObsList - a list of Observations
+ * @returns {Observation} the most recent Observation from the list, or null if null was passed in
+ */
+define function MostRecent(ObsList List&amp;lt;Observation&amp;gt;):
+  Last(ObsList O sort by Coalesce(effective.value, effective.&amp;quot;end&amp;quot;.value, effective.&amp;quot;start&amp;quot;.value, issued.value))
+
+/**
+ * Extracts the quantity value from an Observation, returning it as a CQL Quantity
+ * @param Obs - an observation
+ * @returns {System.Quantity} the Observation's value as a quantity, or null if there is no quantity value
+ */
+define function QuantityValue(Obs Observation):
+  NullSafeToQuantity(Obs.value)
+
+/**
+ * Extracts the CodeableConcept value from an Observation, returning it as a CQL Concept
+ * @param Obs - an observation
+ * @returns {System.Concept} the Observation's value as a concept, or null if there is no CodeabeConcept value
+ */
+define function ConceptValue(Obs Observation):
+  NullSafeToConcept(Obs.value)
+
+/**
+ * Finds the first non-null meaningful date that can be associated with this Observation.  This will look through the
+ * following fields in the following order: effectiveDateTime, effectivePeriod.end, effectivePeriod.start, issued.
+ * @param Obs - an Observation
+ * @returns {System.DateTime} the first non-null meaningful date, or null if non is found
+ */
+define function FindDate(Obs Observation):
+  Coalesce(Obs.effective.value, Obs.effective.&amp;quot;end&amp;quot;.value, Obs.effective.&amp;quot;start&amp;quot;.value, Obs.issued.value)
+
+// TODO: Confirm that this works as expected
+/**
+ * The highest observation.
+ * The value will be used to compare Observations and determine the highest one.
+ * @param ObsList - a list of Observations
+ * @returns {System.Quantity} the quantity with the highest value from the list, or null if null was passed in
+ */
+define function HighestObservation(ObsList List&amp;lt;Observation&amp;gt;):
+  Max(ObsList O return NullSafeToQuantity(O.value))
+
+
+// -------------------------------------------------- CONDITIONS -------------------------------------------------------
+
+/**
+ * Filters Conditions by a concept rather than by a ValueSet.  In CQL 1.3, this will be built into the retrieve,
+ * but for now, we must use a query where clause.
+ * @param Koncept - the concept to filter on (intentionally mispelled to avoid naming clashes)
+ * @returns {List&amp;lt;Observation&amp;gt;} a list of Conditions matching the concept, or null if null was passed in
+ */
+define function ConditionsByConcept(Koncept System.Concept):
+  [Condition] C where NullSafeToConcept(C.code) ~ Koncept
+
+/**
+ * Conditions that are confirmed. In FHIR R4, this is reflected by verificationStatus: 'confirmed'.
+ * @see https://www.hl7.org/fhir/valueset-condition-ver-status.html
+ * @param CondList - a list of Conditions
+ * @returns {List&amp;lt;Condition&amp;gt;} a list of confirmed Conditions, or null if null was passed in
+ */
+define function Confirmed(CondList List&amp;lt;Condition&amp;gt;):
+  CondList C where C.verificationStatus.coding ~ &amp;quot;Condition verificationStatus confirmed code&amp;quot;
+
+/**
+ * Conditions that are active. In FHIR R4, this is reflected by clinicalStatus: 'active' and the absence of any
+ * abatement information (i.e., if it abated, it is no longer active).
+ * TODO: Rename to Active once the execution engine supports overloaded functions.
+ * @see https://www.hl7.org/fhir/valueset-condition-clinical.html
+ * @param CondList - a list of Conditions
+ * @returns {List&amp;lt;Condition&amp;gt;} a list of active Conditions, or null if null was passed in
+ */
+define function ActiveCondition(CondList List&amp;lt;Condition&amp;gt;):
+  CondList C
+    where C.clinicalStatus.coding ~ &amp;quot;Condition clinicalStatus active code&amp;quot;
+      and C.abatement is null
+
+/**
+ * Conditions that are active or recurring. In FHIR R4, this is reflected by clinicalStatus: 'active', 'recurrence', or 'relapse'.
+ * We do not check for null abatement information because it may have dates from when the now recurring condition
+ * initially went into remission.
+ * @see https://www.hl7.org/fhir/valueset-condition-clinical.html
+ * @param CondList - a list of Conditions
+ * @returns {List&amp;lt;Condition&amp;gt;} a list of active or recurring Conditions, or null if null was passed in
+ */
+define function ActiveOrRecurring(CondList List&amp;lt;Condition&amp;gt;):
+  CondList C where C.clinicalStatus.coding ~ &amp;quot;Condition clinicalStatus active code&amp;quot;
+    or C.clinicalStatus.coding ~ &amp;quot;Condition clinicalStatus recurrence code&amp;quot;
+    or C.clinicalStatus.coding ~ &amp;quot;Condition clinicalStatus relapse code&amp;quot;
+
+/**
+ * Conditions with an onset or recorded date in the specified &amp;quot;look back&amp;quot; period.  For example, pregnancy in
+ * the last 42 weeks.
+ * TODO: Rename to LookBack once the execution engine supports overloaded functions.
+ * @param CondList - a list of Conditions
+ * @returns {List&amp;lt;Condition&amp;gt;} a list of Conditions with onset or recorded date specified lookback period, or null
+ * if null was passed in
+ */
+define function ConditionLookBack(CondList List&amp;lt;Condition&amp;gt;, LookBack System.Quantity):
+  CondList C
+    let LookBackInterval: Interval[Now() - LookBack, Now()]
+    where C.onset.value in LookBackInterval
+      or NullSafeToInterval(C.onset) overlaps LookBackInterval
+      or C.recordedDate.value in LookBackInterval
+      // TODO Confirm these are the correct fields to use
+
+// -------------------------------------------------- PROCEDURES -------------------------------------------------------
+
+ /**
+  * Filters Procedures by a concept rather than by a ValueSet.  In CQL 1.3, this will be built into the retrieve,
+  * but for now, we must use a query where clause.
+  * @param Koncept - the concept to filter on (intentionally mispelled to avoid naming clashes)
+  * @returns {List&amp;lt;Procedure&amp;gt;} a list of Procedures matching the concept, or null if null was passed in
+  */
+ define function ProceduresByConcept(Koncept System.Concept):
+   [Procedure] P where NullSafeToConcept(P.code) ~ Koncept
+
+/**
+ * Procedures that are completed. In FHIR R4, this is reflected by status: 'completed'.  In addition, the
+ * notDone flag must be checked to ensure it is not 'true'.
+ * @see https://www.hl7.org/fhir/valueset-event-status.html
+ * @param ProcList - a list of Procedures
+ * @returns {List&amp;lt;Procedure&amp;gt;} a list of completed Procedures, or null if null was passed in
+ */
+define function Completed(ProcList List&amp;lt;Procedure&amp;gt;):
+  ProcList P
+    where P.status.value = 'completed'
+
+/**
+ * Procedures that are in progress. In FHIR R4, this is reflected by status: 'in-progress'.  In addition, the
+ * notDone flag must be checked to ensure it is not 'true'.
+ * @see https://www.hl7.org/fhir/valueset-event-status.html
+ * @param ProcList - a list of Procedures
+ * @returns {List&amp;lt;Procedure&amp;gt;} a list of completed Procedures, or null if null was passed in
+ */
+define function ProcedureInProgress(ProcList List&amp;lt;Procedure&amp;gt;):
+  ProcList P
+    where P.status.value = 'in-progress'
+
+/**
+ * Procedures that actually happened or are happening. In FHIR R4, there are a few properties that negate the
+ * procedure, most notably when status is 'entered-in-error' or notDone is true.
+ * @see https://www.hl7.org/fhir/valueset-event-status.html
+ * @param ProcList - a list of Procedures
+ * @returns {List&amp;lt;Procedure&amp;gt;} a list of Procedures that actually happened or are happening, or null if null was passed in
+ */
+define function ProcedurePerformance(ProcList List&amp;lt;Procedure&amp;gt;):
+  ProcList P
+    where P.status.value != 'entered-in-error'
+
+/**
+ * Procedures performed in the specified &amp;quot;look back&amp;quot; period.  For example, PCIs performed in the
+ * past 2 weeks.
+ * TODO: Rename to LookBack once the execution engine supports overloaded functions.
+ * @param ProcList - a list of Procedures
+ * @param LookBack - the lookback period for when the procedure was performed
+ * @returns {List&amp;lt;Procedure&amp;gt;} a list of Procedures performed in the look back period, or null if null
+ * was passed in
+ */
+define function ProcedureLookBack(ProcList List&amp;lt;Procedure&amp;gt;, LookBack System.Quantity):
+  ProcList P
+    let LookBackInterval: Interval[Now() - LookBack, Now()]
+    where P.performed.value in LookBackInterval
+      or NullSafeToInterval(P.performed) overlaps LookBackInterval
+
+// Note: ProcedureRequest and ReferralRequest resources have been replaced in FHIR R4 with the ServiceRequest resource.
+// TODO: When needed, come back and ServiceRequest helper functions.
+// // ---------------------------------------------- PROCEDUREREQUESTS ----------------------------------------------------
+
+//  /**
+//   * Filters ProcedureRequests by a concept rather than by a ValueSet.  In CQL 1.3, this will be built into the retrieve,
+//   * but for now, we must use a query where clause.
+//   * @param Koncept - the concept to filter on (intentionally mispelled to avoid naming clashes)
+//   * @returns {List&amp;lt;ProcedureRequest&amp;gt;} a list of ProcedureRequests matching the concept, or null if null was passed in
+//   */
+//  define function ProcedureRequestsByConcept(Koncept System.Concept):
+//    [ProcedureRequest] P where NullSafeToConcept(P.code) ~ Koncept
+
+// /**
+//  * ProcedureRequests that are accepted, in progress, or completed. In FHIR DSTU2, this is reflected by the corresponding
+//  * status status values.
+//  * @see http://hl7.org/fhir/DSTU2/valueset-procedure-request-status.html
+//  * @param ProcReqList - a list of ProcedureRequests
+//  * @returns {List&amp;lt;ProcedureRequest&amp;gt;} a list of accepted, in-progress, or completed ProcedureRequests,
+//  * or null if null was passed in
+//  */
+// define function ProcedureRequestAcceptedOrInProgressOrCompleted(ProcReqList List&amp;lt;ProcedureRequest&amp;gt;):
+//   ProcReqList P
+//     where P.status.value in List{'accepted', 'in-progress', 'completed'}
+
+// /**
+//  * ProcedureRequests ordered in the specified &amp;quot;look back&amp;quot; period.  For example, PCIs ordered in the
+//  * past 2 weeks.
+//  * TODO: Rename to LookBack once the execution engine supports overloaded functions.
+//  * @param ProcReqList - a list of ProcedureRequests
+//  * @param LookBack - the lookback period for when the procedure was ordered
+//  * @returns {List&amp;lt;ProcedureRequest&amp;gt;} a list of ProcedureRequests ordered in the look back period, or null if null
+//  * was passed in
+//  */
+// define function ProcedureRequestLookBack(ProcReqList List&amp;lt;ProcedureRequest&amp;gt;, LookBack System.Quantity):
+//   ProcReqList P
+//     where P.authoredOn.value in Interval[Now() - LookBack, Now()]
+
+// // ----------------------------------------------- REFERRALREQUESTS ----------------------------------------------------
+
+//  /**
+//   * Filters ReferralRequests by a concept rather than by a ValueSet.  In CQL 1.3, this will be built into the retrieve,
+//   * but for now, we must use a query where clause.
+//   * @param Koncept - the concept to filter on (intentionally mispelled to avoid naming clashes)
+//   * @returns {List&amp;lt;ReferralRequest&amp;gt;} a list of ReferralRequests matching the concept, or null if null was passed in
+//   */
+//  define function ReferralRequestsByServiceRequestedConcept(Koncept System.Concept):
+//    [ReferralRequest] R
+//    where exists((R.serviceRequested) SRC where NullSafeToConcept(SRC) ~ Koncept)
+
+// /**
+//  * ReferralRequests that are accepted, active, or completed. In FHIR DSTU2, this is reflected by the corresponding
+//  * status status values.
+//  * @see http://hl7.org/fhir/DSTU2/valueset-referralstatus.html
+//  * @param ReferralList - a list of ReferralRequests
+//  * @returns {List&amp;lt;ReferralRequest&amp;gt;} a list of accepted, active, or completed ReferralRequests,
+//  * or null if null was passed in
+//  */
+// define function ReferralRequestAcceptedOrActiveOrCompleted(ReferralList List&amp;lt;ReferralRequest&amp;gt;):
+//   ReferralList R
+//     where R.status.value in List{'accepted', 'active', 'completed'}
+
+// /**
+//  * ReferralRequests requested in the specified &amp;quot;look back&amp;quot; period.  For example, pace make insertions referrals sent
+//  * in the past 2 weeks.
+//  * TODO: Rename to LookBack once the execution engine supports overloaded functions.
+//  * @param ReferralList - a list of ReferralRequests
+//  * @param LookBack - the lookback period for when the referral was sent
+//  * @returns {List&amp;lt;ReferralRequest&amp;gt;} a list of ReferralRequests sent in the look back period, or null if null
+//  * was passed in
+//  */
+// define function ReferralRequestLookBack(ReferralList List&amp;lt;ReferralRequest&amp;gt;, LookBack System.Quantity):
+//   ReferralList R
+//     where R.authoredOn.value in Interval[Now() - LookBack, Now()]
+
+// -------------------------------------------------- MEDICATIONS ------------------------------------------------------
+
+/**
+ * Filters MedicationStatements by a concept rather than by a ValueSet.  In CQL 1.3, this will be built into the retrieve,
+ * but for now, we must use a query where clause.
+ * @param Koncept - the concept to filter on (intentionally mispelled to avoid naming clashes)
+ * @returns {List&amp;lt;MedicationStatement&amp;gt;} a list of MedicationStatement matching the concept, or null if null was passed in
+ */
+define function MedicationStatementsByConcept(Koncept System.Concept):
+  [MedicationStatement] M where NullSafeToConcept(M.medication) ~ Koncept
+
+/**
+ * Filters MedicationRequests by a concept rather than by a ValueSet.  In CQL 1.3, this will be built into the retrieve,
+ * but for now, we must use a query where clause.
+ * @param Koncept - the concept to filter on (intentionally mispelled to avoid naming clashes)
+ * @returns {List&amp;lt;MedicationRequest&amp;gt;} a list of MedicationRequests matching the concept, or null if null was passed in
+ */
+define function MedicationRequestsByConcept(Koncept System.Concept):
+  [MedicationRequest] M where NullSafeToConcept(M.medication) ~ Koncept
+
+/**
+ * Medications that are active, according to a statement, but not necessarily verified via a prescription.  For example,
+ * medications that a patient has self-reported to be taking.  In FHIR R4, this is reflected by MedicationStatement
+ * with status 'active', no flag indicating it wasn't taken, and no end date or an end date in the future.
+ * TODO: Rename to Active once the execution engine supports overloaded functions.
+ * @see https://www.hl7.org/fhir/valueset-medication-statement-status.html
+ * @param MedList - a list of MedicationStatements
+ * @returns {List&amp;lt;MedicationStatement&amp;gt;} a list of active medication statements, or null if null was passed in
+ */
+define function ActiveMedicationStatement(MedList List&amp;lt;MedicationStatement&amp;gt;):
+  MedList M
+    let EffectivePeriod: NullSafeToInterval(M.effective)
+    where M.status.value = 'active'
+      and (end of EffectivePeriod is null or end of EffectivePeriod after Now())
+
+/**
+ * Medications that are active or completed, according to a statement, but not necessarily verified via a prescription.
+ * For example, medications that a patient has self-reported to be taking.  In FHIR R4, this is reflected by
+ * MedicationStatement with status 'active' or 'completed', and no flag indicating it wasn't taken.
+ * TODO: Rename to ActiveOrCompleted once the execution engine supports overloaded functions.
+ * @see https://www.hl7.org/fhir/valueset-medication-statement-status.html
+ * @param MedList - a list of MedicationStatements
+ * @returns {List&amp;lt;MedicationStatement&amp;gt;} a list of active or completed medication statements, or null if null was passed
+ *   in
+ */
+define function ActiveOrCompletedMedicationStatement(MedList List&amp;lt;MedicationStatement&amp;gt;):
+  MedList M
+    where M.status.value = 'active'
+      or M.status.value = 'completed'
+
+/**
+* Medications that are active, according to a prescription.  In FHIR R4, this is reflected by MedicationRequest
+* with status 'active' and no dateEnded.  There is currently an open question in the FHIR chat to determine if this
+* is the right approach.
+* @see https://www.hl7.org/fhir/valueset-medicationrequest-status.html
+* @param MedList - a list of MedicationRequests
+* @returns {List&amp;lt;MedicationRequest&amp;gt;} a list of active medication orders, or null if null was passed in
+*/
+define function ActiveMedicationRequest(MedList List&amp;lt;MedicationRequest&amp;gt;):
+  MedList M
+    where M.status.value = 'active'
+
+/**
+* Medications that are active or completed, according to a prescription.  In FHIR R4, this is reflected by MedicationRequest
+* with status 'active' or 'completed'
+* @see https://www.hl7.org/fhir/valueset-medicationrequest-status.html
+* @param MedList - a list of MedicationRequests
+* @returns {List&amp;lt;MedicationRequest&amp;gt;} a list of active medication orders, or null if null was passed in
+*/
+define function ActiveOrCompletedMedicationRequest(MedList List&amp;lt;MedicationRequest&amp;gt;):
+  MedList M
+    where M.status.value = 'active'
+      or M.status.value = 'completed'
+
+/**
+* Medications that are active, completed, or stopped, according to a prescription.  In FHIR R4, this is reflected by
+* MedicationRequest with status 'active', 'completed', or 'stopped'
+* @see https://www.hl7.org/fhir/valueset-medicationrequest-status.html
+* @param MedList - a list of MedicationRequests
+* @returns {List&amp;lt;MedicationRequest&amp;gt;} a list of active medication orders, or null if null was passed in
+*/
+define function ActiveCompletedOrStoppedMedicationRequest(MedList List&amp;lt;MedicationRequest&amp;gt;):
+  MedList M
+    where M.status.value = 'active'
+      or M.status.value = 'completed'
+      or M.status.value = 'stopped'
+
+/**
+ * MedicationStatement with an effective date in the specified &amp;quot;look back&amp;quot; period.  For example, statements about opioid
+ * use in the last 180 days.
+ * TODO: Rename to LookBack once the execution engine supports overloaded functions.
+ * @param MedList - a list of MedicationStatements
+ * @param LookBack - a duration Quantity indicating how far back to look for MedicationStatements
+ * @returns {List&amp;lt;MedicationStatement&amp;gt;} a list of MedicationStatements with effective date in the specified lookback
+ * period, or null if null was passed in
+ */
+define function MedicationStatementLookBack(MedList List&amp;lt;MedicationStatement&amp;gt;, LookBack System.Quantity):
+  MedList M
+    let LookBackInterval: Interval[Now() - LookBack, Now()]
+    where M.effective.value in LookBackInterval
+      or NullSafeToInterval(M.effective) overlaps LookBackInterval
+
+/**
+ * MedicationRequests with a written date in the specified &amp;quot;look back&amp;quot; period.  For example, opioid orders in the last
+ * 180 days.
+ * TODO: Rename to LookBack once the execution engine supports overloaded functions.
+ * @param OrderList - a list of MedicationRequests
+ * @param LookBack - a duration Quantity indicating how far back to look for MedicationRequests
+ * @returns {List&amp;lt;MedicationRequest&amp;gt;} a list of MedicationRequests with written date in the specified lookback period,
+ * or null if null was passed in
+ */
+define function MedicationRequestLookBack(MedList List&amp;lt;MedicationRequest&amp;gt;, LookBack System.Quantity):
+  MedList M where M.authoredOn.value in Interval[Now() - LookBack, Now()]
+
+// -------------------------------------------------- ENCOUNTERS ------------------------------------------------------
+
+/**
+ * Filters Encounters by a concept rather than by a ValueSet.  In CQL 1.3, this will be built into the retrieve,
+ * but for now, we must use a query where clause.
+ * @param Koncept - the concept to filter on (intentionally mispelled to avoid naming clashes)
+ * @returns {List&amp;lt;Encounter&amp;gt;} a list of Encounters matching the concept, or null if null was passed in
+ */
+define function EncountersByConcept(Koncept System.Concept):
+  [Encounter] E where exists( (E.type) ET where NullSafeToConcept(ET) ~ Koncept )
+
+/**
+ * Encounters that are in progress. In FHIR R4, this is reflected by status: 'in-progress'.
+ * @see https://www.hl7.org/fhir/valueset-encounter-status.html
+ * @param EncList - a list of Encounters
+ * @returns {List&amp;lt;Encounter&amp;gt;} a list of in progress encounters, or null if null was passed in
+ */
+define function InProgress(EncList List&amp;lt;Encounter&amp;gt;):
+  EncList E
+    where E.status.value = 'in-progress'
+
+/**
+ * Encounters that have not been cancelled. In FHIR R4, this is reflected by  andy status other 
+ * than: 'cancelled'.
+ * @see https://www.hl7.org/fhir/valueset-encounter-status.html
+ * @param EncList - a list of Encounters
+ * @returns {List&amp;lt;Encounter&amp;gt;} a list of in progress encounters, or null if null was passed in
+ */
+define function NotCancelled(EncList List&amp;lt;Encounter&amp;gt;):
+  EncList E
+    where E.status.value != 'cancelled'
+
+/**
+ * Encounters performed in the specified &amp;quot;look back&amp;quot; period.
+ * TODO: Rename to LookBack once the execution engine supports overloaded functions.
+ * @param EncList - a list of Encounters
+ * @param LookBack - the lookback period for when the encounter occurred
+ * @returns {List&amp;lt;Encounter&amp;gt;} a list of Encounters occurring during the look back period, or null if null
+ * was passed in
+ */
+define function EncounterLookBack(EncList List&amp;lt;Encounter&amp;gt;, LookBack System.Quantity):
+  EncList E
+    let LookBackInterval: Interval[Now() - LookBack, Now()]
+    where NullSafeToInterval(E.period) overlaps LookBackInterval
+
+// -------------------------------------------------- ALLERGY INTOLERANCES ---------------------------------------------
+
+/**
+ * Filters AllergyIntolerances by a concept rather than by a ValueSet.  In CQL 1.3, this will be built into the retrieve,
+ * but for now, we must use a query where clause.
+ * @param Koncept - the concept to filter on (intentionally mispelled to avoid naming clashes)
+ * @returns {List&amp;lt;AllergyIntolerance&amp;gt;} a list of Allergy Intolerances matching the concept, or null if null was passed in
+ */
+define function AllergyIntolerancesByConcept(Koncept System.Concept):
+  [AllergyIntolerance] A where NullSafeToConcept(A.code) ~ Koncept
+
+/**
+* AllergyIntolerances that are active or confirmed.  In FHIR R4, this is reflected by AllergyIntolerance
+* with verificationStatus 'active' or 'confirmed'
+* @see https://www.hl7.org/fhir/valueset-allergyintolerance-verification.html
+* @param AllergyIntolList - a list of AllergyIntolerances
+* @returns {List&amp;lt;AllergyIntolerance&amp;gt;} a list of active or confirmed allergy intolerances, or null if null was passed in
+*/
+define function ConfirmedAllergyIntolerance(AllergyIntolList List&amp;lt;AllergyIntolerance&amp;gt;):
+  AllergyIntolList A
+    where A.verificationStatus.coding ~ &amp;quot;AllergyIntolerance verificationStatus confirmed code&amp;quot;
+
+// -------------------------------------------------------- GOALS ------------------------------------------------------
+
+/**
+ * Goals with a start, target, or status date in the specified &amp;quot;look back&amp;quot; period.  For example, Pain Management Goals
+ * in the last 2 years.
+ * TODO: Rename to LookBack once the execution engine supports overloaded functions.
+ * @param GoalList - a list of Goals
+ * @returns {List&amp;lt;Goal&amp;gt;} a list of Goals with a start, target, or status date in the specified lookback period, or null
+ * if null was passed in
+ */
+define function GoalLookBack(GoalList List&amp;lt;Goal&amp;gt;, LookBack System.Quantity):
+  GoalList G
+    let LookBackInterval: Interval[Now() - LookBack, Now()]
+    where G.start.value in LookBackInterval
+      or G.target.dueD in LookBackInterval
+      or G.start.value in LookBackInterval
+      or G.statusDate.value in LookBackInterval
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;code&gt;No Content&lt;/code&gt; (&lt;code&gt;application/elm+xml&lt;/code&gt;)&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+  &lt;/text&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.url">url</a>
+       <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://hl7.org/fhir/uv/cpg/anthrax/Library/cds-connect-commons-library"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.identifier">identifier</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="official"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="CDS_Connect_Commons_for_FHIRv400"/&gt;
+  &lt;/identifier&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="1.1.0"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="CDS_Connect_Commons_for_FHIRv400_Library"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="CDS Connect Commons for FHIRv400"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="draft"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.experimental">experimental</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.type">type</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://terminology.hl7.org/CodeSystem/library-type"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="logic-library"/&gt;
+    &lt;/coding&gt;
+  &lt;/type&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>="2024-11-18T16:30:23+00:00"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="HL7 International - Clinical Decision Support WG"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.contact">contact</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="HL7 International - Clinical Decision Support WG"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="url"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="http://www.hl7.org/Special/committees/dss/index.cfm"/&gt;
+    &lt;/telecom&gt;
+  &lt;/contact&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.description">description</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>="A library containing common methods used by CDS Connect-developed artifacts"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.jurisdiction">jurisdiction</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://unstats.un.org/unsd/methods/m49/m49.htm"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="001"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="World"/&gt;
+    &lt;/coding&gt;
+  &lt;/jurisdiction&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.topic">topic</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Anthrax"/&gt;
+  &lt;/topic&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.topic">topic</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Emergency Medicine"/&gt;
+  &lt;/topic&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.topic">topic</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Post-Exposure Prophylaxis"/&gt;
+  &lt;/topic&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.author">author</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Alliance to Modernize Healthcare FFRDC"/&gt;
+  &lt;/author&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.endorser">endorser</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Centers for Disease Control and Prevention"/&gt;
+  &lt;/endorser&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.content">content</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.contentType">contentType</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="text/cql"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.data">data</a>
+          <a href="http://hl7.org/fhir/R4/datatypes.html#base64Binary">value</a>="Ly8gQ0RTIENvbm5lY3QgQ29tbW9ucyBmb3IgRkhJUnY0MDAKLy8gQ2hhbmdlIGxvZzoKLy8gLSAxLjMuMToKLy8gICAtIENoYW5nZWQgQy5kYXRlUmVjb3JkZWQgdG8gQy5kYXRlUmVjb3JkZWQudmFsdWUgaW4gQ29uZGl0aW9uTG9va0JhY2sKLy8gICAtIENoYW5nZWQgRy5zdGF0dXNEYXRlIHRvIEcuc3RhdHVzRGF0ZS52YWx1ZSBpbiBHb2FsTG9va0JhY2sKLy8gLSAxLjMuMjoKLy8gICAtIEFkZGVkIE5vdENhbmNlbGxlZCgpIGFuZCBFbmNvdW50ZXJMb29rYmFjaygpIGZ1bmN0aW9ucy4KbGlicmFyeSBDRFNfQ29ubmVjdF9Db21tb25zX2Zvcl9GSElSdjQwMCB2ZXJzaW9uICcxLjMuMicKCnVzaW5nIEZISVIgdmVyc2lvbiAnNC4wLjAnCgovLyBJbmNsdWRlIHRoZSBGSElSSGVscGVycyBsaWJyYXJ5IGZvciBzaW1wbGlmeWluZyBpbnRlcmFjdG9uIHcvIHRoZSBGSElSIGRhdGEgbW9kZWwKaW5jbHVkZSBGSElSSGVscGVycyB2ZXJzaW9uICc0LjAuMCcgY2FsbGVkIEZISVJIZWxwZXJzCgpjb2Rlc3lzdGVtICJDb25kaXRpb24gVmVyaWZpY2F0aW9uIFN0YXR1cyBDb2RlcyI6ICdodHRwOi8vdGVybWlub2xvZ3kuaGw3Lm9yZy9Db2RlU3lzdGVtL2NvbmRpdGlvbi12ZXItc3RhdHVzJwpjb2Rlc3lzdGVtICJDb25kaXRpb24gQ2xpbmljYWwgU3RhdHVzIENvZGVzIjogJ2h0dHA6Ly90ZXJtaW5vbG9neS5obDcub3JnL0NvZGVTeXN0ZW0vY29uZGl0aW9uLWNsaW5pY2FsJwpjb2Rlc3lzdGVtICJBbGxlcmd5SW50b2xlcmFuY2UgVmVyaWZpY2F0aW9uIFN0YXR1cyBDb2RlcyI6ICdodHRwOi8vdGVybWlub2xvZ3kuaGw3Lm9yZy9Db2RlU3lzdGVtL2FsbGVyZ3lpbnRvbGVyYW5jZS12ZXJpZmljYXRpb24nCgpjb2RlICJDb25kaXRpb24gdmVyaWZpY2F0aW9uU3RhdHVzIGNvbmZpcm1lZCBjb2RlIjogJ2NvbmZpcm1lZCcgZnJvbSAiQ29uZGl0aW9uIFZlcmlmaWNhdGlvbiBTdGF0dXMgQ29kZXMiIGRpc3BsYXkgJ0NvbmZpcm1lZCcKY29kZSAiQ29uZGl0aW9uIGNsaW5pY2FsU3RhdHVzIGFjdGl2ZSBjb2RlIjogJ2FjdGl2ZScgZnJvbSAiQ29uZGl0aW9uIENsaW5pY2FsIFN0YXR1cyBDb2RlcyIgZGlzcGxheSAnQWN0aXZlJwpjb2RlICJDb25kaXRpb24gY2xpbmljYWxTdGF0dXMgcmVjdXJyZW5jZSBjb2RlIjogJ3JlY3VycmVuY2UnIGZyb20gIkNvbmRpdGlvbiBDbGluaWNhbCBTdGF0dXMgQ29kZXMiIGRpc3BsYXkgJ1JlY3VycmVuY2UnCmNvZGUgIkNvbmRpdGlvbiBjbGluaWNhbFN0YXR1cyByZWxhcHNlIGNvZGUiOiAncmVsYXBzZScgZnJvbSAiQ29uZGl0aW9uIENsaW5pY2FsIFN0YXR1cyBDb2RlcyIgZGlzcGxheSAnUmVsYXBzZScKY29kZSAiQWxsZXJneUludG9sZXJhbmNlIHZlcmlmaWNhdGlvblN0YXR1cyBjb25maXJtZWQgY29kZSI6ICdjb25maXJtZWQnIGZyb20gIkFsbGVyZ3lJbnRvbGVyYW5jZSBWZXJpZmljYXRpb24gU3RhdHVzIENvZGVzIiBkaXNwbGF5ICdDb25maXJtZWQnCgovLyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSBHRU5FUkFMIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQoKLyoqCiAqIEEgbnVsbC1zYWZlIHZlcnNpb24gb2YgVG9Db25jZXB0LiAgV2hlcmVhcyBGSElSSGVscGVycy5Ub0NvbmNlcHQgd2lsbCB0YWtlIGEgbnVsbCBhcmd1bWVudCBhbmQgcHJvZHVjZSBhCiAqIFN5c3RlbS5Db25jZXB0IHRoYXQgaXMgZW1wdHksIHRoaXMgaW1wbGVtZW50YXRpb24gcmV0dXJucyBudWxsIGluc3RlYWQuCiAqIEBwYXJhbSBDIC0gYSBGSElSIENvZGVhYmxlQ29uY2VwdAogKiBAcmV0dXJucyB7U3lzdGVtLkNvbmNlcHR9IGEgQ1FMIENvbmNlcHQgb3IgbnVsbCBpZiBudWxsIHdhcyBwYXNzZWQgaW4KICovCmRlZmluZSBmdW5jdGlvbiBOdWxsU2FmZVRvQ29uY2VwdChDcHQgRkhJUi5Db2RlYWJsZUNvbmNlcHQpOgogIGlmIENwdCBpcyBub3QgbnVsbCB0aGVuIEZISVJIZWxwZXJzLlRvQ29uY2VwdChDcHQpIGVsc2UgbnVsbAoKLyoqCiAqIEEgbnVsbC1zYWZlIHZlcnNpb24gb2YgVG9JbnRlcnZhbCBmb3IgUGVyaW9kLiAgV2hlcmVhcyBGSElSSGVscGVycy5Ub0ludGVydmFsIHdpbGwgdGFrZSBhIG51bGwgYXJndW1lbnQgYW5kIHByb2R1Y2UgYQogKiBTeXN0ZW0uSW50ZXJ2YWwgdGhhdCBpcyBlbXB0eSwgdGhpcyBpbXBsZW1lbnRhdGlvbiByZXR1cm5zIG51bGwgaW5zdGVhZC4KICogQHBhcmFtIFAgLSBhIEZISVIgUGVyaW9kCiAqIEByZXR1cm5zIHtTeXN0ZW0uSW50ZXJ2YWx9IGEgQ1FMIEludGVydmFsIG9yIG51bGwgaWYgbnVsbCB3YXMgcGFzc2VkIGluCiAqLwpkZWZpbmUgZnVuY3Rpb24gTnVsbFNhZmVQZXJpb2RUb0ludGVydmFsKFBkIEZISVIuUGVyaW9kKToKICBpZiBQZCBpcyBub3QgbnVsbCB0aGVuIEludGVydmFsW1BkLiJzdGFydCIudmFsdWUsIFBkLiJlbmQiLnZhbHVlXSBlbHNlIG51bGwKCi8qKgogKiBBIG51bGwtc2FmZSB2ZXJzaW9uIG9mIFRvSW50ZXJ2YWwgZm9yIFJhbmdlLiAgV2hlcmVhcyBGSElSSGVscGVycy5Ub0ludGVydmFsIHdpbGwgdGFrZSBhIG51bGwgYXJndW1lbnQgYW5kIHByb2R1Y2UgYQogKiBTeXN0ZW0uSW50ZXJ2YWwgdGhhdCBpcyBlbXB0eSwgdGhpcyBpbXBsZW1lbnRhdGlvbiByZXR1cm5zIG51bGwgaW5zdGVhZC4KICogQHBhcmFtIFAgLSBhIEZISVIgUmFuZ2UKICogQHJldHVybnMge1N5c3RlbS5JbnRlcnZhbH0gYSBDUUwgSW50ZXJ2YWwgb3IgbnVsbCBpZiBudWxsIHdhcyBwYXNzZWQgaW4KICovCmRlZmluZSBmdW5jdGlvbiBOdWxsU2FmZVJhbmdlVG9JbnRlcnZhbChSZyBGSElSLlJhbmdlKToKICBpZiBSZyBpcyBub3QgbnVsbAogICAgdGhlbiBJbnRlcnZhbFtOdWxsU2FmZVRvUXVhbnRpdHkoUmcubG93KSwgTnVsbFNhZmVUb1F1YW50aXR5KFJnLmhpZ2gpXQogIGVsc2UgbnVsbAoKLyoqCiAqIFNhbWUgYXMgTnVsbFNhZmVQZXJpb2RUb0ludGVydmFsOyBrZXB0IGZvciBiYWNrd2FyZCBjb21wYXRpYmlsaXR5LiAgW0RlcHJlY2F0ZWRdCiAqIEBwYXJhbSBQIC0gYSBGSElSIFBlcmlvZAogKiBAcmV0dXJucyB7U3lzdGVtLkludGVydmFsfSBhIENRTCBJbnRlcnZhbCBvciBudWxsIGlmIG51bGwgd2FzIHBhc3NlZCBpbgogKi8KZGVmaW5lIGZ1bmN0aW9uIE51bGxTYWZlVG9JbnRlcnZhbChQZCBGSElSLlBlcmlvZCk6CiAgTnVsbFNhZmVQZXJpb2RUb0ludGVydmFsKFBkKQoKLyoqCiAqIEEgbnVsbC1zYWZlIHZlcnNpb24gb2YgVG9RdWFudGl0eS4gIFdoZXJlYXMgRkhJUkhlbHBlcnMuVG9RdWFudGl0eSB3aWxsIHRha2UgYSBudWxsIGFyZ3VtZW50IGFuZCBwcm9kdWNlIGEKICogU3lzdGVtLlF1YW50aXR5IHRoYXQgaXMgZW1wdHksIHRoaXMgaW1wbGVtZW50YXRpb24gcmV0dXJucyBudWxsIGluc3RlYWQuCiAqIEBwYXJhbSBDIC0gYSBGSElSIFF1YW50aXR5CiAqIEByZXR1cm5zIHtTeXN0ZW0uUXVhbnRpdHl9IGEgQ1FMIFF1YW50aXR5IG9yIG51bGwgaWYgbnVsbCB3YXMgcGFzc2VkIGluCiAqLwpkZWZpbmUgZnVuY3Rpb24gTnVsbFNhZmVUb1F1YW50aXR5KFF0eSBGSElSLlF1YW50aXR5KToKICBpZiBRdHkgaXMgbm90IG51bGwgdGhlbgogICAgU3lzdGVtLlF1YW50aXR5IHsKICAgICAgdmFsdWU6IFF0eS52YWx1ZS52YWx1ZSwKICAgICAgdW5pdDogQ29hbGVzY2UoUXR5LnVuaXQudmFsdWUsIFF0eS5jb2RlLnZhbHVlKQogICAgfQogIGVsc2UgbnVsbAoKLy8gLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0gT0JTRVJWQVRJT05TIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCgovKioKICogRmlsdGVycyBPYnNlcnZhdGlvbnMgYnkgYSBjb25jZXB0IHJhdGhlciB0aGFuIGJ5IGEgVmFsdWVTZXQuICBJbiBDUUwgMS4zLCB0aGlzIHdpbGwgYmUgYnVpbHQgaW50byB0aGUgcmV0cmlldmUsCiAqIGJ1dCBmb3Igbm93LCB3ZSBtdXN0IHVzZSBhIHF1ZXJ5IHdoZXJlIGNsYXVzZS4KICogQHBhcmFtIEtvbmNlcHQgLSB0aGUgY29uY2VwdCB0byBmaWx0ZXIgb24gKGludGVudGlvbmFsbHkgbWlzcGVsbGVkIHRvIGF2b2lkIG5hbWluZyBjbGFzaGVzKQogKiBAcmV0dXJucyB7TGlzdDxPYnNlcnZhdGlvbj59IGEgbGlzdCBvZiBPYnNlcnZhdGlvbnMgbWF0Y2hpbmcgdGhlIGNvbmNlcHQsIG9yIG51bGwgaWYgbnVsbCB3YXMgcGFzc2VkIGluCiAqLwpkZWZpbmUgZnVuY3Rpb24gT2JzZXJ2YXRpb25zQnlDb25jZXB0KEtvbmNlcHQgU3lzdGVtLkNvbmNlcHQpOgogIFtPYnNlcnZhdGlvbl0gTyB3aGVyZSBOdWxsU2FmZVRvQ29uY2VwdChPLmNvZGUpIH4gS29uY2VwdAoKLyoqCiAqIE9ic2VydmF0aW9ucyB0aGF0IGFyZSBjb21wbGV0ZSBhbmQgdmVyaWZpZWQuIEluIEZISVIgUjQsIHRoZXJlIGFyZSB0d28gc3RhdHVzZXMgdGhhdCBpbmRpY2F0ZSB0aGlzIHN0YXRlOiAnZmluYWwnCiAqIGFuZCAnYW1lbmRlZCcuCiAqIEBzZWUgaHR0cHM6Ly93d3cuaGw3Lm9yZy9maGlyL3ZhbHVlc2V0LW9ic2VydmF0aW9uLXN0YXR1cy5odG1sCiAqIEBwYXJhbSBPYnNMaXN0IC0gYSBsaXN0IG9mIE9ic2VydmF0aW9ucwogKiBAcmV0dXJucyB7TGlzdDxPYnNlcnZhdGlvbj59IGEgbGlzdCBvZiB2ZXJpZmllZCBPYnNlcnZhdGlvbnMsIG9yIG51bGwgaWYgbnVsbCB3YXMgcGFzc2VkIGluCiAqLwpkZWZpbmUgZnVuY3Rpb24gVmVyaWZpZWQoT2JzTGlzdCBMaXN0PE9ic2VydmF0aW9uPik6CiAgT2JzTGlzdCBPIHdoZXJlIE8uc3RhdHVzLnZhbHVlIGluIHsnZmluYWwnLCAnYW1lbmRlZCd9CgovKioKICogT2JzZXJ2YXRpb25zIHRoYXQgaGF2ZSBxdWFudGl0eSB2YWx1ZXMgcmVjb3JkZWQgaW4gdGhlIHJlcXVlc3RlZCB1bml0LgogKiBAcGFyYW0gT2JzTGlzdCAtIGEgbGlzdCBvZiBPYnNlcnZhdGlvbnMKICogQHBhcmFtIFVuaXQgLSB0aGUgdW5pdCB0byByZXF1aXJlIGluIHRoZSBPYnNlcnZhdGlvbnMgcXVhbnRpdHkgdmFsdWUKICogQHJldHVybnMge0xpc3Q8T2JzZXJ2YXRpb24+fSBhIGxpc3Qgb2YgT2JzZXJ2YXRpb25zIHdpdGggdGhlIHJlcXVpcmVkIHVuaXQsIG9yIG51bGwgaWYgbnVsbCB3YXMgcGFzc2VkIGluCiAqLwpkZWZpbmUgZnVuY3Rpb24gV2l0aFVuaXQoT2JzTGlzdCBMaXN0PE9ic2VydmF0aW9uPiwgVW5pdCBTdHJpbmcpOgogIE9ic0xpc3QgTyB3aGVyZSBPLnZhbHVlLnVuaXQudmFsdWUgPSBVbml0IG9yIE8udmFsdWUuY29kZS52YWx1ZSA9IFVuaXQKCi8qKgogKiBPYnNlcnZhdGlvbnMgd2l0aCBhbiBlZmZlY3RpdmUgb3IgaXNzdWVkIGRhdGUgaW4gdGhlIHNwZWNpZmllZCAibG9vayBiYWNrIiBwZXJpb2QuICBGb3IgZXhhbXBsZSwgTERMLUMgVGVzdHMgaW4gdGhlCiAqIGxhc3QgNiB5ZWFycy4KICogVE9ETzogUmVuYW1lIHRvIExvb2tCYWNrIG9uY2UgdGhlIGV4ZWN1dGlvbiBlbmdpbmUgc3VwcG9ydHMgb3ZlcmxvYWRlZCBmdW5jdGlvbnMuCiAqIEBwYXJhbSBPYnNMaXN0IC0gYSBsaXN0IG9mIE9ic2VydmF0aW9ucwogKiBAcmV0dXJucyB7TGlzdDxPYnNlcnZhdGlvbj59IGEgbGlzdCBvZiBPYnNlcnZhdGlvbnMgd2l0aCBlZmZlY3RpdmUgb3IgaXNzdWVkIGRhdGUgc3BlY2lmaWVkIGxvb2tiYWNrIHBlcmlvZCwgb3IgbnVsbAogKiBpZiBudWxsIHdhcyBwYXNzZWQgaW4KICovCmRlZmluZSBmdW5jdGlvbiBPYnNlcnZhdGlvbkxvb2tCYWNrKE9ic0xpc3QgTGlzdDxPYnNlcnZhdGlvbj4sIExvb2tCYWNrIFN5c3RlbS5RdWFudGl0eSk6CiAgT2JzTGlzdCBPCiAgICBsZXQgTG9va0JhY2tJbnRlcnZhbDogSW50ZXJ2YWxbTm93KCkgLSBMb29rQmFjaywgTm93KCldCiAgICB3aGVyZSBPLmVmZmVjdGl2ZS52YWx1ZSBpbiBMb29rQmFja0ludGVydmFsCiAgICAgIG9yIE51bGxTYWZlVG9JbnRlcnZhbChPLmVmZmVjdGl2ZSkgb3ZlcmxhcHMgTG9va0JhY2tJbnRlcnZhbAogICAgICBvciBPLmlzc3VlZC52YWx1ZSBpbiBMb29rQmFja0ludGVydmFsCgovKioKICogVGhlIG1vc3QgcmVjZW50IG9ic2VydmF0aW9uLiAgRm9yIGVhY2ggT2JzZXJ2YXRpb24sIHRoaXMgYWxnb3JpdGhtIHdpbGwgdXNlIHRoZSBGaW5kRGF0ZSBmdW5jdGlvbiwgd2hpY2ggdXNlcyB0aGUKICogZmlyc3Qgbm9uLW51bGwgZGF0ZSB2YWx1ZSBmcm9tIHRoZXNlIGZpZWxkczogZWZmZWN0aXZlRGF0ZVRpbWUsIGVmZmVjdGl2ZVBlcmlvZC5lbmQsIGVmZmVjdGl2ZVBlcmlvZC5zdGFydCwgaXNzdWVkLgogKiBUaGUgZm91bmQgZGF0ZSB3aWxsIGJlIHVzZWQgdG8gY29tcGFyZSBPYnNlcnZhdGlvbnMgYW5kIGRldGVybWluZSB0aGUgbW9zdCByZWNlbnQgb25lLgogKiBAc2VlIEZpbmREYXRlKE9ic2VydmF0aW9uKQogKiBAcGFyYW0gT2JzTGlzdCAtIGEgbGlzdCBvZiBPYnNlcnZhdGlvbnMKICogQHJldHVybnMge09ic2VydmF0aW9ufSB0aGUgbW9zdCByZWNlbnQgT2JzZXJ2YXRpb24gZnJvbSB0aGUgbGlzdCwgb3IgbnVsbCBpZiBudWxsIHdhcyBwYXNzZWQgaW4KICovCmRlZmluZSBmdW5jdGlvbiBNb3N0UmVjZW50KE9ic0xpc3QgTGlzdDxPYnNlcnZhdGlvbj4pOgogIExhc3QoT2JzTGlzdCBPIHNvcnQgYnkgQ29hbGVzY2UoZWZmZWN0aXZlLnZhbHVlLCBlZmZlY3RpdmUuImVuZCIudmFsdWUsIGVmZmVjdGl2ZS4ic3RhcnQiLnZhbHVlLCBpc3N1ZWQudmFsdWUpKQoKLyoqCiAqIEV4dHJhY3RzIHRoZSBxdWFudGl0eSB2YWx1ZSBmcm9tIGFuIE9ic2VydmF0aW9uLCByZXR1cm5pbmcgaXQgYXMgYSBDUUwgUXVhbnRpdHkKICogQHBhcmFtIE9icyAtIGFuIG9ic2VydmF0aW9uCiAqIEByZXR1cm5zIHtTeXN0ZW0uUXVhbnRpdHl9IHRoZSBPYnNlcnZhdGlvbidzIHZhbHVlIGFzIGEgcXVhbnRpdHksIG9yIG51bGwgaWYgdGhlcmUgaXMgbm8gcXVhbnRpdHkgdmFsdWUKICovCmRlZmluZSBmdW5jdGlvbiBRdWFudGl0eVZhbHVlKE9icyBPYnNlcnZhdGlvbik6CiAgTnVsbFNhZmVUb1F1YW50aXR5KE9icy52YWx1ZSkKCi8qKgogKiBFeHRyYWN0cyB0aGUgQ29kZWFibGVDb25jZXB0IHZhbHVlIGZyb20gYW4gT2JzZXJ2YXRpb24sIHJldHVybmluZyBpdCBhcyBhIENRTCBDb25jZXB0CiAqIEBwYXJhbSBPYnMgLSBhbiBvYnNlcnZhdGlvbgogKiBAcmV0dXJucyB7U3lzdGVtLkNvbmNlcHR9IHRoZSBPYnNlcnZhdGlvbidzIHZhbHVlIGFzIGEgY29uY2VwdCwgb3IgbnVsbCBpZiB0aGVyZSBpcyBubyBDb2RlYWJlQ29uY2VwdCB2YWx1ZQogKi8KZGVmaW5lIGZ1bmN0aW9uIENvbmNlcHRWYWx1ZShPYnMgT2JzZXJ2YXRpb24pOgogIE51bGxTYWZlVG9Db25jZXB0KE9icy52YWx1ZSkKCi8qKgogKiBGaW5kcyB0aGUgZmlyc3Qgbm9uLW51bGwgbWVhbmluZ2Z1bCBkYXRlIHRoYXQgY2FuIGJlIGFzc29jaWF0ZWQgd2l0aCB0aGlzIE9ic2VydmF0aW9uLiAgVGhpcyB3aWxsIGxvb2sgdGhyb3VnaCB0aGUKICogZm9sbG93aW5nIGZpZWxkcyBpbiB0aGUgZm9sbG93aW5nIG9yZGVyOiBlZmZlY3RpdmVEYXRlVGltZSwgZWZmZWN0aXZlUGVyaW9kLmVuZCwgZWZmZWN0aXZlUGVyaW9kLnN0YXJ0LCBpc3N1ZWQuCiAqIEBwYXJhbSBPYnMgLSBhbiBPYnNlcnZhdGlvbgogKiBAcmV0dXJucyB7U3lzdGVtLkRhdGVUaW1lfSB0aGUgZmlyc3Qgbm9uLW51bGwgbWVhbmluZ2Z1bCBkYXRlLCBvciBudWxsIGlmIG5vbiBpcyBmb3VuZAogKi8KZGVmaW5lIGZ1bmN0aW9uIEZpbmREYXRlKE9icyBPYnNlcnZhdGlvbik6CiAgQ29hbGVzY2UoT2JzLmVmZmVjdGl2ZS52YWx1ZSwgT2JzLmVmZmVjdGl2ZS4iZW5kIi52YWx1ZSwgT2JzLmVmZmVjdGl2ZS4ic3RhcnQiLnZhbHVlLCBPYnMuaXNzdWVkLnZhbHVlKQoKLy8gVE9ETzogQ29uZmlybSB0aGF0IHRoaXMgd29ya3MgYXMgZXhwZWN0ZWQKLyoqCiAqIFRoZSBoaWdoZXN0IG9ic2VydmF0aW9uLgogKiBUaGUgdmFsdWUgd2lsbCBiZSB1c2VkIHRvIGNvbXBhcmUgT2JzZXJ2YXRpb25zIGFuZCBkZXRlcm1pbmUgdGhlIGhpZ2hlc3Qgb25lLgogKiBAcGFyYW0gT2JzTGlzdCAtIGEgbGlzdCBvZiBPYnNlcnZhdGlvbnMKICogQHJldHVybnMge1N5c3RlbS5RdWFudGl0eX0gdGhlIHF1YW50aXR5IHdpdGggdGhlIGhpZ2hlc3QgdmFsdWUgZnJvbSB0aGUgbGlzdCwgb3IgbnVsbCBpZiBudWxsIHdhcyBwYXNzZWQgaW4KICovCmRlZmluZSBmdW5jdGlvbiBIaWdoZXN0T2JzZXJ2YXRpb24oT2JzTGlzdCBMaXN0PE9ic2VydmF0aW9uPik6CiAgTWF4KE9ic0xpc3QgTyByZXR1cm4gTnVsbFNhZmVUb1F1YW50aXR5KE8udmFsdWUpKQoKCi8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tIENPTkRJVElPTlMgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQoKLyoqCiAqIEZpbHRlcnMgQ29uZGl0aW9ucyBieSBhIGNvbmNlcHQgcmF0aGVyIHRoYW4gYnkgYSBWYWx1ZVNldC4gIEluIENRTCAxLjMsIHRoaXMgd2lsbCBiZSBidWlsdCBpbnRvIHRoZSByZXRyaWV2ZSwKICogYnV0IGZvciBub3csIHdlIG11c3QgdXNlIGEgcXVlcnkgd2hlcmUgY2xhdXNlLgogKiBAcGFyYW0gS29uY2VwdCAtIHRoZSBjb25jZXB0IHRvIGZpbHRlciBvbiAoaW50ZW50aW9uYWxseSBtaXNwZWxsZWQgdG8gYXZvaWQgbmFtaW5nIGNsYXNoZXMpCiAqIEByZXR1cm5zIHtMaXN0PE9ic2VydmF0aW9uPn0gYSBsaXN0IG9mIENvbmRpdGlvbnMgbWF0Y2hpbmcgdGhlIGNvbmNlcHQsIG9yIG51bGwgaWYgbnVsbCB3YXMgcGFzc2VkIGluCiAqLwpkZWZpbmUgZnVuY3Rpb24gQ29uZGl0aW9uc0J5Q29uY2VwdChLb25jZXB0IFN5c3RlbS5Db25jZXB0KToKICBbQ29uZGl0aW9uXSBDIHdoZXJlIE51bGxTYWZlVG9Db25jZXB0KEMuY29kZSkgfiBLb25jZXB0CgovKioKICogQ29uZGl0aW9ucyB0aGF0IGFyZSBjb25maXJtZWQuIEluIEZISVIgUjQsIHRoaXMgaXMgcmVmbGVjdGVkIGJ5IHZlcmlmaWNhdGlvblN0YXR1czogJ2NvbmZpcm1lZCcuCiAqIEBzZWUgaHR0cHM6Ly93d3cuaGw3Lm9yZy9maGlyL3ZhbHVlc2V0LWNvbmRpdGlvbi12ZXItc3RhdHVzLmh0bWwKICogQHBhcmFtIENvbmRMaXN0IC0gYSBsaXN0IG9mIENvbmRpdGlvbnMKICogQHJldHVybnMge0xpc3Q8Q29uZGl0aW9uPn0gYSBsaXN0IG9mIGNvbmZpcm1lZCBDb25kaXRpb25zLCBvciBudWxsIGlmIG51bGwgd2FzIHBhc3NlZCBpbgogKi8KZGVmaW5lIGZ1bmN0aW9uIENvbmZpcm1lZChDb25kTGlzdCBMaXN0PENvbmRpdGlvbj4pOgogIENvbmRMaXN0IEMgd2hlcmUgQy52ZXJpZmljYXRpb25TdGF0dXMuY29kaW5nIH4gIkNvbmRpdGlvbiB2ZXJpZmljYXRpb25TdGF0dXMgY29uZmlybWVkIGNvZGUiCgovKioKICogQ29uZGl0aW9ucyB0aGF0IGFyZSBhY3RpdmUuIEluIEZISVIgUjQsIHRoaXMgaXMgcmVmbGVjdGVkIGJ5IGNsaW5pY2FsU3RhdHVzOiAnYWN0aXZlJyBhbmQgdGhlIGFic2VuY2Ugb2YgYW55CiAqIGFiYXRlbWVudCBpbmZvcm1hdGlvbiAoaS5lLiwgaWYgaXQgYWJhdGVkLCBpdCBpcyBubyBsb25nZXIgYWN0aXZlKS4KICogVE9ETzogUmVuYW1lIHRvIEFjdGl2ZSBvbmNlIHRoZSBleGVjdXRpb24gZW5naW5lIHN1cHBvcnRzIG92ZXJsb2FkZWQgZnVuY3Rpb25zLgogKiBAc2VlIGh0dHBzOi8vd3d3LmhsNy5vcmcvZmhpci92YWx1ZXNldC1jb25kaXRpb24tY2xpbmljYWwuaHRtbAogKiBAcGFyYW0gQ29uZExpc3QgLSBhIGxpc3Qgb2YgQ29uZGl0aW9ucwogKiBAcmV0dXJucyB7TGlzdDxDb25kaXRpb24+fSBhIGxpc3Qgb2YgYWN0aXZlIENvbmRpdGlvbnMsIG9yIG51bGwgaWYgbnVsbCB3YXMgcGFzc2VkIGluCiAqLwpkZWZpbmUgZnVuY3Rpb24gQWN0aXZlQ29uZGl0aW9uKENvbmRMaXN0IExpc3Q8Q29uZGl0aW9uPik6CiAgQ29uZExpc3QgQwogICAgd2hlcmUgQy5jbGluaWNhbFN0YXR1cy5jb2RpbmcgfiAiQ29uZGl0aW9uIGNsaW5pY2FsU3RhdHVzIGFjdGl2ZSBjb2RlIgogICAgICBhbmQgQy5hYmF0ZW1lbnQgaXMgbnVsbAoKLyoqCiAqIENvbmRpdGlvbnMgdGhhdCBhcmUgYWN0aXZlIG9yIHJlY3VycmluZy4gSW4gRkhJUiBSNCwgdGhpcyBpcyByZWZsZWN0ZWQgYnkgY2xpbmljYWxTdGF0dXM6ICdhY3RpdmUnLCAncmVjdXJyZW5jZScsIG9yICdyZWxhcHNlJy4KICogV2UgZG8gbm90IGNoZWNrIGZvciBudWxsIGFiYXRlbWVudCBpbmZvcm1hdGlvbiBiZWNhdXNlIGl0IG1heSBoYXZlIGRhdGVzIGZyb20gd2hlbiB0aGUgbm93IHJlY3VycmluZyBjb25kaXRpb24KICogaW5pdGlhbGx5IHdlbnQgaW50byByZW1pc3Npb24uCiAqIEBzZWUgaHR0cHM6Ly93d3cuaGw3Lm9yZy9maGlyL3ZhbHVlc2V0LWNvbmRpdGlvbi1jbGluaWNhbC5odG1sCiAqIEBwYXJhbSBDb25kTGlzdCAtIGEgbGlzdCBvZiBDb25kaXRpb25zCiAqIEByZXR1cm5zIHtMaXN0PENvbmRpdGlvbj59IGEgbGlzdCBvZiBhY3RpdmUgb3IgcmVjdXJyaW5nIENvbmRpdGlvbnMsIG9yIG51bGwgaWYgbnVsbCB3YXMgcGFzc2VkIGluCiAqLwpkZWZpbmUgZnVuY3Rpb24gQWN0aXZlT3JSZWN1cnJpbmcoQ29uZExpc3QgTGlzdDxDb25kaXRpb24+KToKICBDb25kTGlzdCBDIHdoZXJlIEMuY2xpbmljYWxTdGF0dXMuY29kaW5nIH4gIkNvbmRpdGlvbiBjbGluaWNhbFN0YXR1cyBhY3RpdmUgY29kZSIKICAgIG9yIEMuY2xpbmljYWxTdGF0dXMuY29kaW5nIH4gIkNvbmRpdGlvbiBjbGluaWNhbFN0YXR1cyByZWN1cnJlbmNlIGNvZGUiCiAgICBvciBDLmNsaW5pY2FsU3RhdHVzLmNvZGluZyB+ICJDb25kaXRpb24gY2xpbmljYWxTdGF0dXMgcmVsYXBzZSBjb2RlIgoKLyoqCiAqIENvbmRpdGlvbnMgd2l0aCBhbiBvbnNldCBvciByZWNvcmRlZCBkYXRlIGluIHRoZSBzcGVjaWZpZWQgImxvb2sgYmFjayIgcGVyaW9kLiAgRm9yIGV4YW1wbGUsIHByZWduYW5jeSBpbgogKiB0aGUgbGFzdCA0MiB3ZWVrcy4KICogVE9ETzogUmVuYW1lIHRvIExvb2tCYWNrIG9uY2UgdGhlIGV4ZWN1dGlvbiBlbmdpbmUgc3VwcG9ydHMgb3ZlcmxvYWRlZCBmdW5jdGlvbnMuCiAqIEBwYXJhbSBDb25kTGlzdCAtIGEgbGlzdCBvZiBDb25kaXRpb25zCiAqIEByZXR1cm5zIHtMaXN0PENvbmRpdGlvbj59IGEgbGlzdCBvZiBDb25kaXRpb25zIHdpdGggb25zZXQgb3IgcmVjb3JkZWQgZGF0ZSBzcGVjaWZpZWQgbG9va2JhY2sgcGVyaW9kLCBvciBudWxsCiAqIGlmIG51bGwgd2FzIHBhc3NlZCBpbgogKi8KZGVmaW5lIGZ1bmN0aW9uIENvbmRpdGlvbkxvb2tCYWNrKENvbmRMaXN0IExpc3Q8Q29uZGl0aW9uPiwgTG9va0JhY2sgU3lzdGVtLlF1YW50aXR5KToKICBDb25kTGlzdCBDCiAgICBsZXQgTG9va0JhY2tJbnRlcnZhbDogSW50ZXJ2YWxbTm93KCkgLSBMb29rQmFjaywgTm93KCldCiAgICB3aGVyZSBDLm9uc2V0LnZhbHVlIGluIExvb2tCYWNrSW50ZXJ2YWwKICAgICAgb3IgTnVsbFNhZmVUb0ludGVydmFsKEMub25zZXQpIG92ZXJsYXBzIExvb2tCYWNrSW50ZXJ2YWwKICAgICAgb3IgQy5yZWNvcmRlZERhdGUudmFsdWUgaW4gTG9va0JhY2tJbnRlcnZhbAogICAgICAvLyBUT0RPIENvbmZpcm0gdGhlc2UgYXJlIHRoZSBjb3JyZWN0IGZpZWxkcyB0byB1c2UKCi8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tIFBST0NFRFVSRVMgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQoKIC8qKgogICogRmlsdGVycyBQcm9jZWR1cmVzIGJ5IGEgY29uY2VwdCByYXRoZXIgdGhhbiBieSBhIFZhbHVlU2V0LiAgSW4gQ1FMIDEuMywgdGhpcyB3aWxsIGJlIGJ1aWx0IGludG8gdGhlIHJldHJpZXZlLAogICogYnV0IGZvciBub3csIHdlIG11c3QgdXNlIGEgcXVlcnkgd2hlcmUgY2xhdXNlLgogICogQHBhcmFtIEtvbmNlcHQgLSB0aGUgY29uY2VwdCB0byBmaWx0ZXIgb24gKGludGVudGlvbmFsbHkgbWlzcGVsbGVkIHRvIGF2b2lkIG5hbWluZyBjbGFzaGVzKQogICogQHJldHVybnMge0xpc3Q8UHJvY2VkdXJlPn0gYSBsaXN0IG9mIFByb2NlZHVyZXMgbWF0Y2hpbmcgdGhlIGNvbmNlcHQsIG9yIG51bGwgaWYgbnVsbCB3YXMgcGFzc2VkIGluCiAgKi8KIGRlZmluZSBmdW5jdGlvbiBQcm9jZWR1cmVzQnlDb25jZXB0KEtvbmNlcHQgU3lzdGVtLkNvbmNlcHQpOgogICBbUHJvY2VkdXJlXSBQIHdoZXJlIE51bGxTYWZlVG9Db25jZXB0KFAuY29kZSkgfiBLb25jZXB0CgovKioKICogUHJvY2VkdXJlcyB0aGF0IGFyZSBjb21wbGV0ZWQuIEluIEZISVIgUjQsIHRoaXMgaXMgcmVmbGVjdGVkIGJ5IHN0YXR1czogJ2NvbXBsZXRlZCcuICBJbiBhZGRpdGlvbiwgdGhlCiAqIG5vdERvbmUgZmxhZyBtdXN0IGJlIGNoZWNrZWQgdG8gZW5zdXJlIGl0IGlzIG5vdCAndHJ1ZScuCiAqIEBzZWUgaHR0cHM6Ly93d3cuaGw3Lm9yZy9maGlyL3ZhbHVlc2V0LWV2ZW50LXN0YXR1cy5odG1sCiAqIEBwYXJhbSBQcm9jTGlzdCAtIGEgbGlzdCBvZiBQcm9jZWR1cmVzCiAqIEByZXR1cm5zIHtMaXN0PFByb2NlZHVyZT59IGEgbGlzdCBvZiBjb21wbGV0ZWQgUHJvY2VkdXJlcywgb3IgbnVsbCBpZiBudWxsIHdhcyBwYXNzZWQgaW4KICovCmRlZmluZSBmdW5jdGlvbiBDb21wbGV0ZWQoUHJvY0xpc3QgTGlzdDxQcm9jZWR1cmU+KToKICBQcm9jTGlzdCBQCiAgICB3aGVyZSBQLnN0YXR1cy52YWx1ZSA9ICdjb21wbGV0ZWQnCgovKioKICogUHJvY2VkdXJlcyB0aGF0IGFyZSBpbiBwcm9ncmVzcy4gSW4gRkhJUiBSNCwgdGhpcyBpcyByZWZsZWN0ZWQgYnkgc3RhdHVzOiAnaW4tcHJvZ3Jlc3MnLiAgSW4gYWRkaXRpb24sIHRoZQogKiBub3REb25lIGZsYWcgbXVzdCBiZSBjaGVja2VkIHRvIGVuc3VyZSBpdCBpcyBub3QgJ3RydWUnLgogKiBAc2VlIGh0dHBzOi8vd3d3LmhsNy5vcmcvZmhpci92YWx1ZXNldC1ldmVudC1zdGF0dXMuaHRtbAogKiBAcGFyYW0gUHJvY0xpc3QgLSBhIGxpc3Qgb2YgUHJvY2VkdXJlcwogKiBAcmV0dXJucyB7TGlzdDxQcm9jZWR1cmU+fSBhIGxpc3Qgb2YgY29tcGxldGVkIFByb2NlZHVyZXMsIG9yIG51bGwgaWYgbnVsbCB3YXMgcGFzc2VkIGluCiAqLwpkZWZpbmUgZnVuY3Rpb24gUHJvY2VkdXJlSW5Qcm9ncmVzcyhQcm9jTGlzdCBMaXN0PFByb2NlZHVyZT4pOgogIFByb2NMaXN0IFAKICAgIHdoZXJlIFAuc3RhdHVzLnZhbHVlID0gJ2luLXByb2dyZXNzJwoKLyoqCiAqIFByb2NlZHVyZXMgdGhhdCBhY3R1YWxseSBoYXBwZW5lZCBvciBhcmUgaGFwcGVuaW5nLiBJbiBGSElSIFI0LCB0aGVyZSBhcmUgYSBmZXcgcHJvcGVydGllcyB0aGF0IG5lZ2F0ZSB0aGUKICogcHJvY2VkdXJlLCBtb3N0IG5vdGFibHkgd2hlbiBzdGF0dXMgaXMgJ2VudGVyZWQtaW4tZXJyb3InIG9yIG5vdERvbmUgaXMgdHJ1ZS4KICogQHNlZSBodHRwczovL3d3dy5obDcub3JnL2ZoaXIvdmFsdWVzZXQtZXZlbnQtc3RhdHVzLmh0bWwKICogQHBhcmFtIFByb2NMaXN0IC0gYSBsaXN0IG9mIFByb2NlZHVyZXMKICogQHJldHVybnMge0xpc3Q8UHJvY2VkdXJlPn0gYSBsaXN0IG9mIFByb2NlZHVyZXMgdGhhdCBhY3R1YWxseSBoYXBwZW5lZCBvciBhcmUgaGFwcGVuaW5nLCBvciBudWxsIGlmIG51bGwgd2FzIHBhc3NlZCBpbgogKi8KZGVmaW5lIGZ1bmN0aW9uIFByb2NlZHVyZVBlcmZvcm1hbmNlKFByb2NMaXN0IExpc3Q8UHJvY2VkdXJlPik6CiAgUHJvY0xpc3QgUAogICAgd2hlcmUgUC5zdGF0dXMudmFsdWUgIT0gJ2VudGVyZWQtaW4tZXJyb3InCgovKioKICogUHJvY2VkdXJlcyBwZXJmb3JtZWQgaW4gdGhlIHNwZWNpZmllZCAibG9vayBiYWNrIiBwZXJpb2QuICBGb3IgZXhhbXBsZSwgUENJcyBwZXJmb3JtZWQgaW4gdGhlCiAqIHBhc3QgMiB3ZWVrcy4KICogVE9ETzogUmVuYW1lIHRvIExvb2tCYWNrIG9uY2UgdGhlIGV4ZWN1dGlvbiBlbmdpbmUgc3VwcG9ydHMgb3ZlcmxvYWRlZCBmdW5jdGlvbnMuCiAqIEBwYXJhbSBQcm9jTGlzdCAtIGEgbGlzdCBvZiBQcm9jZWR1cmVzCiAqIEBwYXJhbSBMb29rQmFjayAtIHRoZSBsb29rYmFjayBwZXJpb2QgZm9yIHdoZW4gdGhlIHByb2NlZHVyZSB3YXMgcGVyZm9ybWVkCiAqIEByZXR1cm5zIHtMaXN0PFByb2NlZHVyZT59IGEgbGlzdCBvZiBQcm9jZWR1cmVzIHBlcmZvcm1lZCBpbiB0aGUgbG9vayBiYWNrIHBlcmlvZCwgb3IgbnVsbCBpZiBudWxsCiAqIHdhcyBwYXNzZWQgaW4KICovCmRlZmluZSBmdW5jdGlvbiBQcm9jZWR1cmVMb29rQmFjayhQcm9jTGlzdCBMaXN0PFByb2NlZHVyZT4sIExvb2tCYWNrIFN5c3RlbS5RdWFudGl0eSk6CiAgUHJvY0xpc3QgUAogICAgbGV0IExvb2tCYWNrSW50ZXJ2YWw6IEludGVydmFsW05vdygpIC0gTG9va0JhY2ssIE5vdygpXQogICAgd2hlcmUgUC5wZXJmb3JtZWQudmFsdWUgaW4gTG9va0JhY2tJbnRlcnZhbAogICAgICBvciBOdWxsU2FmZVRvSW50ZXJ2YWwoUC5wZXJmb3JtZWQpIG92ZXJsYXBzIExvb2tCYWNrSW50ZXJ2YWwKCi8vIE5vdGU6IFByb2NlZHVyZVJlcXVlc3QgYW5kIFJlZmVycmFsUmVxdWVzdCByZXNvdXJjZXMgaGF2ZSBiZWVuIHJlcGxhY2VkIGluIEZISVIgUjQgd2l0aCB0aGUgU2VydmljZVJlcXVlc3QgcmVzb3VyY2UuCi8vIFRPRE86IFdoZW4gbmVlZGVkLCBjb21lIGJhY2sgYW5kIFNlcnZpY2VSZXF1ZXN0IGhlbHBlciBmdW5jdGlvbnMuCi8vIC8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0gUFJPQ0VEVVJFUkVRVUVTVFMgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQoKLy8gIC8qKgovLyAgICogRmlsdGVycyBQcm9jZWR1cmVSZXF1ZXN0cyBieSBhIGNvbmNlcHQgcmF0aGVyIHRoYW4gYnkgYSBWYWx1ZVNldC4gIEluIENRTCAxLjMsIHRoaXMgd2lsbCBiZSBidWlsdCBpbnRvIHRoZSByZXRyaWV2ZSwKLy8gICAqIGJ1dCBmb3Igbm93LCB3ZSBtdXN0IHVzZSBhIHF1ZXJ5IHdoZXJlIGNsYXVzZS4KLy8gICAqIEBwYXJhbSBLb25jZXB0IC0gdGhlIGNvbmNlcHQgdG8gZmlsdGVyIG9uIChpbnRlbnRpb25hbGx5IG1pc3BlbGxlZCB0byBhdm9pZCBuYW1pbmcgY2xhc2hlcykKLy8gICAqIEByZXR1cm5zIHtMaXN0PFByb2NlZHVyZVJlcXVlc3Q+fSBhIGxpc3Qgb2YgUHJvY2VkdXJlUmVxdWVzdHMgbWF0Y2hpbmcgdGhlIGNvbmNlcHQsIG9yIG51bGwgaWYgbnVsbCB3YXMgcGFzc2VkIGluCi8vICAgKi8KLy8gIGRlZmluZSBmdW5jdGlvbiBQcm9jZWR1cmVSZXF1ZXN0c0J5Q29uY2VwdChLb25jZXB0IFN5c3RlbS5Db25jZXB0KToKLy8gICAgW1Byb2NlZHVyZVJlcXVlc3RdIFAgd2hlcmUgTnVsbFNhZmVUb0NvbmNlcHQoUC5jb2RlKSB+IEtvbmNlcHQKCi8vIC8qKgovLyAgKiBQcm9jZWR1cmVSZXF1ZXN0cyB0aGF0IGFyZSBhY2NlcHRlZCwgaW4gcHJvZ3Jlc3MsIG9yIGNvbXBsZXRlZC4gSW4gRkhJUiBEU1RVMiwgdGhpcyBpcyByZWZsZWN0ZWQgYnkgdGhlIGNvcnJlc3BvbmRpbmcKLy8gICogc3RhdHVzIHN0YXR1cyB2YWx1ZXMuCi8vICAqIEBzZWUgaHR0cDovL2hsNy5vcmcvZmhpci9EU1RVMi92YWx1ZXNldC1wcm9jZWR1cmUtcmVxdWVzdC1zdGF0dXMuaHRtbAovLyAgKiBAcGFyYW0gUHJvY1JlcUxpc3QgLSBhIGxpc3Qgb2YgUHJvY2VkdXJlUmVxdWVzdHMKLy8gICogQHJldHVybnMge0xpc3Q8UHJvY2VkdXJlUmVxdWVzdD59IGEgbGlzdCBvZiBhY2NlcHRlZCwgaW4tcHJvZ3Jlc3MsIG9yIGNvbXBsZXRlZCBQcm9jZWR1cmVSZXF1ZXN0cywKLy8gICogb3IgbnVsbCBpZiBudWxsIHdhcyBwYXNzZWQgaW4KLy8gICovCi8vIGRlZmluZSBmdW5jdGlvbiBQcm9jZWR1cmVSZXF1ZXN0QWNjZXB0ZWRPckluUHJvZ3Jlc3NPckNvbXBsZXRlZChQcm9jUmVxTGlzdCBMaXN0PFByb2NlZHVyZVJlcXVlc3Q+KToKLy8gICBQcm9jUmVxTGlzdCBQCi8vICAgICB3aGVyZSBQLnN0YXR1cy52YWx1ZSBpbiBMaXN0eydhY2NlcHRlZCcsICdpbi1wcm9ncmVzcycsICdjb21wbGV0ZWQnfQoKLy8gLyoqCi8vICAqIFByb2NlZHVyZVJlcXVlc3RzIG9yZGVyZWQgaW4gdGhlIHNwZWNpZmllZCAibG9vayBiYWNrIiBwZXJpb2QuICBGb3IgZXhhbXBsZSwgUENJcyBvcmRlcmVkIGluIHRoZQovLyAgKiBwYXN0IDIgd2Vla3MuCi8vICAqIFRPRE86IFJlbmFtZSB0byBMb29rQmFjayBvbmNlIHRoZSBleGVjdXRpb24gZW5naW5lIHN1cHBvcnRzIG92ZXJsb2FkZWQgZnVuY3Rpb25zLgovLyAgKiBAcGFyYW0gUHJvY1JlcUxpc3QgLSBhIGxpc3Qgb2YgUHJvY2VkdXJlUmVxdWVzdHMKLy8gICogQHBhcmFtIExvb2tCYWNrIC0gdGhlIGxvb2tiYWNrIHBlcmlvZCBmb3Igd2hlbiB0aGUgcHJvY2VkdXJlIHdhcyBvcmRlcmVkCi8vICAqIEByZXR1cm5zIHtMaXN0PFByb2NlZHVyZVJlcXVlc3Q+fSBhIGxpc3Qgb2YgUHJvY2VkdXJlUmVxdWVzdHMgb3JkZXJlZCBpbiB0aGUgbG9vayBiYWNrIHBlcmlvZCwgb3IgbnVsbCBpZiBudWxsCi8vICAqIHdhcyBwYXNzZWQgaW4KLy8gICovCi8vIGRlZmluZSBmdW5jdGlvbiBQcm9jZWR1cmVSZXF1ZXN0TG9va0JhY2soUHJvY1JlcUxpc3QgTGlzdDxQcm9jZWR1cmVSZXF1ZXN0PiwgTG9va0JhY2sgU3lzdGVtLlF1YW50aXR5KToKLy8gICBQcm9jUmVxTGlzdCBQCi8vICAgICB3aGVyZSBQLmF1dGhvcmVkT24udmFsdWUgaW4gSW50ZXJ2YWxbTm93KCkgLSBMb29rQmFjaywgTm93KCldCgovLyAvLyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSBSRUZFUlJBTFJFUVVFU1RTIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KCi8vICAvKioKLy8gICAqIEZpbHRlcnMgUmVmZXJyYWxSZXF1ZXN0cyBieSBhIGNvbmNlcHQgcmF0aGVyIHRoYW4gYnkgYSBWYWx1ZVNldC4gIEluIENRTCAxLjMsIHRoaXMgd2lsbCBiZSBidWlsdCBpbnRvIHRoZSByZXRyaWV2ZSwKLy8gICAqIGJ1dCBmb3Igbm93LCB3ZSBtdXN0IHVzZSBhIHF1ZXJ5IHdoZXJlIGNsYXVzZS4KLy8gICAqIEBwYXJhbSBLb25jZXB0IC0gdGhlIGNvbmNlcHQgdG8gZmlsdGVyIG9uIChpbnRlbnRpb25hbGx5IG1pc3BlbGxlZCB0byBhdm9pZCBuYW1pbmcgY2xhc2hlcykKLy8gICAqIEByZXR1cm5zIHtMaXN0PFJlZmVycmFsUmVxdWVzdD59IGEgbGlzdCBvZiBSZWZlcnJhbFJlcXVlc3RzIG1hdGNoaW5nIHRoZSBjb25jZXB0LCBvciBudWxsIGlmIG51bGwgd2FzIHBhc3NlZCBpbgovLyAgICovCi8vICBkZWZpbmUgZnVuY3Rpb24gUmVmZXJyYWxSZXF1ZXN0c0J5U2VydmljZVJlcXVlc3RlZENvbmNlcHQoS29uY2VwdCBTeXN0ZW0uQ29uY2VwdCk6Ci8vICAgIFtSZWZlcnJhbFJlcXVlc3RdIFIKLy8gICAgd2hlcmUgZXhpc3RzKChSLnNlcnZpY2VSZXF1ZXN0ZWQpIFNSQyB3aGVyZSBOdWxsU2FmZVRvQ29uY2VwdChTUkMpIH4gS29uY2VwdCkKCi8vIC8qKgovLyAgKiBSZWZlcnJhbFJlcXVlc3RzIHRoYXQgYXJlIGFjY2VwdGVkLCBhY3RpdmUsIG9yIGNvbXBsZXRlZC4gSW4gRkhJUiBEU1RVMiwgdGhpcyBpcyByZWZsZWN0ZWQgYnkgdGhlIGNvcnJlc3BvbmRpbmcKLy8gICogc3RhdHVzIHN0YXR1cyB2YWx1ZXMuCi8vICAqIEBzZWUgaHR0cDovL2hsNy5vcmcvZmhpci9EU1RVMi92YWx1ZXNldC1yZWZlcnJhbHN0YXR1cy5odG1sCi8vICAqIEBwYXJhbSBSZWZlcnJhbExpc3QgLSBhIGxpc3Qgb2YgUmVmZXJyYWxSZXF1ZXN0cwovLyAgKiBAcmV0dXJucyB7TGlzdDxSZWZlcnJhbFJlcXVlc3Q+fSBhIGxpc3Qgb2YgYWNjZXB0ZWQsIGFjdGl2ZSwgb3IgY29tcGxldGVkIFJlZmVycmFsUmVxdWVzdHMsCi8vICAqIG9yIG51bGwgaWYgbnVsbCB3YXMgcGFzc2VkIGluCi8vICAqLwovLyBkZWZpbmUgZnVuY3Rpb24gUmVmZXJyYWxSZXF1ZXN0QWNjZXB0ZWRPckFjdGl2ZU9yQ29tcGxldGVkKFJlZmVycmFsTGlzdCBMaXN0PFJlZmVycmFsUmVxdWVzdD4pOgovLyAgIFJlZmVycmFsTGlzdCBSCi8vICAgICB3aGVyZSBSLnN0YXR1cy52YWx1ZSBpbiBMaXN0eydhY2NlcHRlZCcsICdhY3RpdmUnLCAnY29tcGxldGVkJ30KCi8vIC8qKgovLyAgKiBSZWZlcnJhbFJlcXVlc3RzIHJlcXVlc3RlZCBpbiB0aGUgc3BlY2lmaWVkICJsb29rIGJhY2siIHBlcmlvZC4gIEZvciBleGFtcGxlLCBwYWNlIG1ha2UgaW5zZXJ0aW9ucyByZWZlcnJhbHMgc2VudAovLyAgKiBpbiB0aGUgcGFzdCAyIHdlZWtzLgovLyAgKiBUT0RPOiBSZW5hbWUgdG8gTG9va0JhY2sgb25jZSB0aGUgZXhlY3V0aW9uIGVuZ2luZSBzdXBwb3J0cyBvdmVybG9hZGVkIGZ1bmN0aW9ucy4KLy8gICogQHBhcmFtIFJlZmVycmFsTGlzdCAtIGEgbGlzdCBvZiBSZWZlcnJhbFJlcXVlc3RzCi8vICAqIEBwYXJhbSBMb29rQmFjayAtIHRoZSBsb29rYmFjayBwZXJpb2QgZm9yIHdoZW4gdGhlIHJlZmVycmFsIHdhcyBzZW50Ci8vICAqIEByZXR1cm5zIHtMaXN0PFJlZmVycmFsUmVxdWVzdD59IGEgbGlzdCBvZiBSZWZlcnJhbFJlcXVlc3RzIHNlbnQgaW4gdGhlIGxvb2sgYmFjayBwZXJpb2QsIG9yIG51bGwgaWYgbnVsbAovLyAgKiB3YXMgcGFzc2VkIGluCi8vICAqLwovLyBkZWZpbmUgZnVuY3Rpb24gUmVmZXJyYWxSZXF1ZXN0TG9va0JhY2soUmVmZXJyYWxMaXN0IExpc3Q8UmVmZXJyYWxSZXF1ZXN0PiwgTG9va0JhY2sgU3lzdGVtLlF1YW50aXR5KToKLy8gICBSZWZlcnJhbExpc3QgUgovLyAgICAgd2hlcmUgUi5hdXRob3JlZE9uLnZhbHVlIGluIEludGVydmFsW05vdygpIC0gTG9va0JhY2ssIE5vdygpXQoKLy8gLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0gTUVESUNBVElPTlMgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCgovKioKICogRmlsdGVycyBNZWRpY2F0aW9uU3RhdGVtZW50cyBieSBhIGNvbmNlcHQgcmF0aGVyIHRoYW4gYnkgYSBWYWx1ZVNldC4gIEluIENRTCAxLjMsIHRoaXMgd2lsbCBiZSBidWlsdCBpbnRvIHRoZSByZXRyaWV2ZSwKICogYnV0IGZvciBub3csIHdlIG11c3QgdXNlIGEgcXVlcnkgd2hlcmUgY2xhdXNlLgogKiBAcGFyYW0gS29uY2VwdCAtIHRoZSBjb25jZXB0IHRvIGZpbHRlciBvbiAoaW50ZW50aW9uYWxseSBtaXNwZWxsZWQgdG8gYXZvaWQgbmFtaW5nIGNsYXNoZXMpCiAqIEByZXR1cm5zIHtMaXN0PE1lZGljYXRpb25TdGF0ZW1lbnQ+fSBhIGxpc3Qgb2YgTWVkaWNhdGlvblN0YXRlbWVudCBtYXRjaGluZyB0aGUgY29uY2VwdCwgb3IgbnVsbCBpZiBudWxsIHdhcyBwYXNzZWQgaW4KICovCmRlZmluZSBmdW5jdGlvbiBNZWRpY2F0aW9uU3RhdGVtZW50c0J5Q29uY2VwdChLb25jZXB0IFN5c3RlbS5Db25jZXB0KToKICBbTWVkaWNhdGlvblN0YXRlbWVudF0gTSB3aGVyZSBOdWxsU2FmZVRvQ29uY2VwdChNLm1lZGljYXRpb24pIH4gS29uY2VwdAoKLyoqCiAqIEZpbHRlcnMgTWVkaWNhdGlvblJlcXVlc3RzIGJ5IGEgY29uY2VwdCByYXRoZXIgdGhhbiBieSBhIFZhbHVlU2V0LiAgSW4gQ1FMIDEuMywgdGhpcyB3aWxsIGJlIGJ1aWx0IGludG8gdGhlIHJldHJpZXZlLAogKiBidXQgZm9yIG5vdywgd2UgbXVzdCB1c2UgYSBxdWVyeSB3aGVyZSBjbGF1c2UuCiAqIEBwYXJhbSBLb25jZXB0IC0gdGhlIGNvbmNlcHQgdG8gZmlsdGVyIG9uIChpbnRlbnRpb25hbGx5IG1pc3BlbGxlZCB0byBhdm9pZCBuYW1pbmcgY2xhc2hlcykKICogQHJldHVybnMge0xpc3Q8TWVkaWNhdGlvblJlcXVlc3Q+fSBhIGxpc3Qgb2YgTWVkaWNhdGlvblJlcXVlc3RzIG1hdGNoaW5nIHRoZSBjb25jZXB0LCBvciBudWxsIGlmIG51bGwgd2FzIHBhc3NlZCBpbgogKi8KZGVmaW5lIGZ1bmN0aW9uIE1lZGljYXRpb25SZXF1ZXN0c0J5Q29uY2VwdChLb25jZXB0IFN5c3RlbS5Db25jZXB0KToKICBbTWVkaWNhdGlvblJlcXVlc3RdIE0gd2hlcmUgTnVsbFNhZmVUb0NvbmNlcHQoTS5tZWRpY2F0aW9uKSB+IEtvbmNlcHQKCi8qKgogKiBNZWRpY2F0aW9ucyB0aGF0IGFyZSBhY3RpdmUsIGFjY29yZGluZyB0byBhIHN0YXRlbWVudCwgYnV0IG5vdCBuZWNlc3NhcmlseSB2ZXJpZmllZCB2aWEgYSBwcmVzY3JpcHRpb24uICBGb3IgZXhhbXBsZSwKICogbWVkaWNhdGlvbnMgdGhhdCBhIHBhdGllbnQgaGFzIHNlbGYtcmVwb3J0ZWQgdG8gYmUgdGFraW5nLiAgSW4gRkhJUiBSNCwgdGhpcyBpcyByZWZsZWN0ZWQgYnkgTWVkaWNhdGlvblN0YXRlbWVudAogKiB3aXRoIHN0YXR1cyAnYWN0aXZlJywgbm8gZmxhZyBpbmRpY2F0aW5nIGl0IHdhc24ndCB0YWtlbiwgYW5kIG5vIGVuZCBkYXRlIG9yIGFuIGVuZCBkYXRlIGluIHRoZSBmdXR1cmUuCiAqIFRPRE86IFJlbmFtZSB0byBBY3RpdmUgb25jZSB0aGUgZXhlY3V0aW9uIGVuZ2luZSBzdXBwb3J0cyBvdmVybG9hZGVkIGZ1bmN0aW9ucy4KICogQHNlZSBodHRwczovL3d3dy5obDcub3JnL2ZoaXIvdmFsdWVzZXQtbWVkaWNhdGlvbi1zdGF0ZW1lbnQtc3RhdHVzLmh0bWwKICogQHBhcmFtIE1lZExpc3QgLSBhIGxpc3Qgb2YgTWVkaWNhdGlvblN0YXRlbWVudHMKICogQHJldHVybnMge0xpc3Q8TWVkaWNhdGlvblN0YXRlbWVudD59IGEgbGlzdCBvZiBhY3RpdmUgbWVkaWNhdGlvbiBzdGF0ZW1lbnRzLCBvciBudWxsIGlmIG51bGwgd2FzIHBhc3NlZCBpbgogKi8KZGVmaW5lIGZ1bmN0aW9uIEFjdGl2ZU1lZGljYXRpb25TdGF0ZW1lbnQoTWVkTGlzdCBMaXN0PE1lZGljYXRpb25TdGF0ZW1lbnQ+KToKICBNZWRMaXN0IE0KICAgIGxldCBFZmZlY3RpdmVQZXJpb2Q6IE51bGxTYWZlVG9JbnRlcnZhbChNLmVmZmVjdGl2ZSkKICAgIHdoZXJlIE0uc3RhdHVzLnZhbHVlID0gJ2FjdGl2ZScKICAgICAgYW5kIChlbmQgb2YgRWZmZWN0aXZlUGVyaW9kIGlzIG51bGwgb3IgZW5kIG9mIEVmZmVjdGl2ZVBlcmlvZCBhZnRlciBOb3coKSkKCi8qKgogKiBNZWRpY2F0aW9ucyB0aGF0IGFyZSBhY3RpdmUgb3IgY29tcGxldGVkLCBhY2NvcmRpbmcgdG8gYSBzdGF0ZW1lbnQsIGJ1dCBub3QgbmVjZXNzYXJpbHkgdmVyaWZpZWQgdmlhIGEgcHJlc2NyaXB0aW9uLgogKiBGb3IgZXhhbXBsZSwgbWVkaWNhdGlvbnMgdGhhdCBhIHBhdGllbnQgaGFzIHNlbGYtcmVwb3J0ZWQgdG8gYmUgdGFraW5nLiAgSW4gRkhJUiBSNCwgdGhpcyBpcyByZWZsZWN0ZWQgYnkKICogTWVkaWNhdGlvblN0YXRlbWVudCB3aXRoIHN0YXR1cyAnYWN0aXZlJyBvciAnY29tcGxldGVkJywgYW5kIG5vIGZsYWcgaW5kaWNhdGluZyBpdCB3YXNuJ3QgdGFrZW4uCiAqIFRPRE86IFJlbmFtZSB0byBBY3RpdmVPckNvbXBsZXRlZCBvbmNlIHRoZSBleGVjdXRpb24gZW5naW5lIHN1cHBvcnRzIG92ZXJsb2FkZWQgZnVuY3Rpb25zLgogKiBAc2VlIGh0dHBzOi8vd3d3LmhsNy5vcmcvZmhpci92YWx1ZXNldC1tZWRpY2F0aW9uLXN0YXRlbWVudC1zdGF0dXMuaHRtbAogKiBAcGFyYW0gTWVkTGlzdCAtIGEgbGlzdCBvZiBNZWRpY2F0aW9uU3RhdGVtZW50cwogKiBAcmV0dXJucyB7TGlzdDxNZWRpY2F0aW9uU3RhdGVtZW50Pn0gYSBsaXN0IG9mIGFjdGl2ZSBvciBjb21wbGV0ZWQgbWVkaWNhdGlvbiBzdGF0ZW1lbnRzLCBvciBudWxsIGlmIG51bGwgd2FzIHBhc3NlZAogKiAgIGluCiAqLwpkZWZpbmUgZnVuY3Rpb24gQWN0aXZlT3JDb21wbGV0ZWRNZWRpY2F0aW9uU3RhdGVtZW50KE1lZExpc3QgTGlzdDxNZWRpY2F0aW9uU3RhdGVtZW50Pik6CiAgTWVkTGlzdCBNCiAgICB3aGVyZSBNLnN0YXR1cy52YWx1ZSA9ICdhY3RpdmUnCiAgICAgIG9yIE0uc3RhdHVzLnZhbHVlID0gJ2NvbXBsZXRlZCcKCi8qKgoqIE1lZGljYXRpb25zIHRoYXQgYXJlIGFjdGl2ZSwgYWNjb3JkaW5nIHRvIGEgcHJlc2NyaXB0aW9uLiAgSW4gRkhJUiBSNCwgdGhpcyBpcyByZWZsZWN0ZWQgYnkgTWVkaWNhdGlvblJlcXVlc3QKKiB3aXRoIHN0YXR1cyAnYWN0aXZlJyBhbmQgbm8gZGF0ZUVuZGVkLiAgVGhlcmUgaXMgY3VycmVudGx5IGFuIG9wZW4gcXVlc3Rpb24gaW4gdGhlIEZISVIgY2hhdCB0byBkZXRlcm1pbmUgaWYgdGhpcwoqIGlzIHRoZSByaWdodCBhcHByb2FjaC4KKiBAc2VlIGh0dHBzOi8vd3d3LmhsNy5vcmcvZmhpci92YWx1ZXNldC1tZWRpY2F0aW9ucmVxdWVzdC1zdGF0dXMuaHRtbAoqIEBwYXJhbSBNZWRMaXN0IC0gYSBsaXN0IG9mIE1lZGljYXRpb25SZXF1ZXN0cwoqIEByZXR1cm5zIHtMaXN0PE1lZGljYXRpb25SZXF1ZXN0Pn0gYSBsaXN0IG9mIGFjdGl2ZSBtZWRpY2F0aW9uIG9yZGVycywgb3IgbnVsbCBpZiBudWxsIHdhcyBwYXNzZWQgaW4KKi8KZGVmaW5lIGZ1bmN0aW9uIEFjdGl2ZU1lZGljYXRpb25SZXF1ZXN0KE1lZExpc3QgTGlzdDxNZWRpY2F0aW9uUmVxdWVzdD4pOgogIE1lZExpc3QgTQogICAgd2hlcmUgTS5zdGF0dXMudmFsdWUgPSAnYWN0aXZlJwoKLyoqCiogTWVkaWNhdGlvbnMgdGhhdCBhcmUgYWN0aXZlIG9yIGNvbXBsZXRlZCwgYWNjb3JkaW5nIHRvIGEgcHJlc2NyaXB0aW9uLiAgSW4gRkhJUiBSNCwgdGhpcyBpcyByZWZsZWN0ZWQgYnkgTWVkaWNhdGlvblJlcXVlc3QKKiB3aXRoIHN0YXR1cyAnYWN0aXZlJyBvciAnY29tcGxldGVkJwoqIEBzZWUgaHR0cHM6Ly93d3cuaGw3Lm9yZy9maGlyL3ZhbHVlc2V0LW1lZGljYXRpb25yZXF1ZXN0LXN0YXR1cy5odG1sCiogQHBhcmFtIE1lZExpc3QgLSBhIGxpc3Qgb2YgTWVkaWNhdGlvblJlcXVlc3RzCiogQHJldHVybnMge0xpc3Q8TWVkaWNhdGlvblJlcXVlc3Q+fSBhIGxpc3Qgb2YgYWN0aXZlIG1lZGljYXRpb24gb3JkZXJzLCBvciBudWxsIGlmIG51bGwgd2FzIHBhc3NlZCBpbgoqLwpkZWZpbmUgZnVuY3Rpb24gQWN0aXZlT3JDb21wbGV0ZWRNZWRpY2F0aW9uUmVxdWVzdChNZWRMaXN0IExpc3Q8TWVkaWNhdGlvblJlcXVlc3Q+KToKICBNZWRMaXN0IE0KICAgIHdoZXJlIE0uc3RhdHVzLnZhbHVlID0gJ2FjdGl2ZScKICAgICAgb3IgTS5zdGF0dXMudmFsdWUgPSAnY29tcGxldGVkJwoKLyoqCiogTWVkaWNhdGlvbnMgdGhhdCBhcmUgYWN0aXZlLCBjb21wbGV0ZWQsIG9yIHN0b3BwZWQsIGFjY29yZGluZyB0byBhIHByZXNjcmlwdGlvbi4gIEluIEZISVIgUjQsIHRoaXMgaXMgcmVmbGVjdGVkIGJ5CiogTWVkaWNhdGlvblJlcXVlc3Qgd2l0aCBzdGF0dXMgJ2FjdGl2ZScsICdjb21wbGV0ZWQnLCBvciAnc3RvcHBlZCcKKiBAc2VlIGh0dHBzOi8vd3d3LmhsNy5vcmcvZmhpci92YWx1ZXNldC1tZWRpY2F0aW9ucmVxdWVzdC1zdGF0dXMuaHRtbAoqIEBwYXJhbSBNZWRMaXN0IC0gYSBsaXN0IG9mIE1lZGljYXRpb25SZXF1ZXN0cwoqIEByZXR1cm5zIHtMaXN0PE1lZGljYXRpb25SZXF1ZXN0Pn0gYSBsaXN0IG9mIGFjdGl2ZSBtZWRpY2F0aW9uIG9yZGVycywgb3IgbnVsbCBpZiBudWxsIHdhcyBwYXNzZWQgaW4KKi8KZGVmaW5lIGZ1bmN0aW9uIEFjdGl2ZUNvbXBsZXRlZE9yU3RvcHBlZE1lZGljYXRpb25SZXF1ZXN0KE1lZExpc3QgTGlzdDxNZWRpY2F0aW9uUmVxdWVzdD4pOgogIE1lZExpc3QgTQogICAgd2hlcmUgTS5zdGF0dXMudmFsdWUgPSAnYWN0aXZlJwogICAgICBvciBNLnN0YXR1cy52YWx1ZSA9ICdjb21wbGV0ZWQnCiAgICAgIG9yIE0uc3RhdHVzLnZhbHVlID0gJ3N0b3BwZWQnCgovKioKICogTWVkaWNhdGlvblN0YXRlbWVudCB3aXRoIGFuIGVmZmVjdGl2ZSBkYXRlIGluIHRoZSBzcGVjaWZpZWQgImxvb2sgYmFjayIgcGVyaW9kLiAgRm9yIGV4YW1wbGUsIHN0YXRlbWVudHMgYWJvdXQgb3Bpb2lkCiAqIHVzZSBpbiB0aGUgbGFzdCAxODAgZGF5cy4KICogVE9ETzogUmVuYW1lIHRvIExvb2tCYWNrIG9uY2UgdGhlIGV4ZWN1dGlvbiBlbmdpbmUgc3VwcG9ydHMgb3ZlcmxvYWRlZCBmdW5jdGlvbnMuCiAqIEBwYXJhbSBNZWRMaXN0IC0gYSBsaXN0IG9mIE1lZGljYXRpb25TdGF0ZW1lbnRzCiAqIEBwYXJhbSBMb29rQmFjayAtIGEgZHVyYXRpb24gUXVhbnRpdHkgaW5kaWNhdGluZyBob3cgZmFyIGJhY2sgdG8gbG9vayBmb3IgTWVkaWNhdGlvblN0YXRlbWVudHMKICogQHJldHVybnMge0xpc3Q8TWVkaWNhdGlvblN0YXRlbWVudD59IGEgbGlzdCBvZiBNZWRpY2F0aW9uU3RhdGVtZW50cyB3aXRoIGVmZmVjdGl2ZSBkYXRlIGluIHRoZSBzcGVjaWZpZWQgbG9va2JhY2sKICogcGVyaW9kLCBvciBudWxsIGlmIG51bGwgd2FzIHBhc3NlZCBpbgogKi8KZGVmaW5lIGZ1bmN0aW9uIE1lZGljYXRpb25TdGF0ZW1lbnRMb29rQmFjayhNZWRMaXN0IExpc3Q8TWVkaWNhdGlvblN0YXRlbWVudD4sIExvb2tCYWNrIFN5c3RlbS5RdWFudGl0eSk6CiAgTWVkTGlzdCBNCiAgICBsZXQgTG9va0JhY2tJbnRlcnZhbDogSW50ZXJ2YWxbTm93KCkgLSBMb29rQmFjaywgTm93KCldCiAgICB3aGVyZSBNLmVmZmVjdGl2ZS52YWx1ZSBpbiBMb29rQmFja0ludGVydmFsCiAgICAgIG9yIE51bGxTYWZlVG9JbnRlcnZhbChNLmVmZmVjdGl2ZSkgb3ZlcmxhcHMgTG9va0JhY2tJbnRlcnZhbAoKLyoqCiAqIE1lZGljYXRpb25SZXF1ZXN0cyB3aXRoIGEgd3JpdHRlbiBkYXRlIGluIHRoZSBzcGVjaWZpZWQgImxvb2sgYmFjayIgcGVyaW9kLiAgRm9yIGV4YW1wbGUsIG9waW9pZCBvcmRlcnMgaW4gdGhlIGxhc3QKICogMTgwIGRheXMuCiAqIFRPRE86IFJlbmFtZSB0byBMb29rQmFjayBvbmNlIHRoZSBleGVjdXRpb24gZW5naW5lIHN1cHBvcnRzIG92ZXJsb2FkZWQgZnVuY3Rpb25zLgogKiBAcGFyYW0gT3JkZXJMaXN0IC0gYSBsaXN0IG9mIE1lZGljYXRpb25SZXF1ZXN0cwogKiBAcGFyYW0gTG9va0JhY2sgLSBhIGR1cmF0aW9uIFF1YW50aXR5IGluZGljYXRpbmcgaG93IGZhciBiYWNrIHRvIGxvb2sgZm9yIE1lZGljYXRpb25SZXF1ZXN0cwogKiBAcmV0dXJucyB7TGlzdDxNZWRpY2F0aW9uUmVxdWVzdD59IGEgbGlzdCBvZiBNZWRpY2F0aW9uUmVxdWVzdHMgd2l0aCB3cml0dGVuIGRhdGUgaW4gdGhlIHNwZWNpZmllZCBsb29rYmFjayBwZXJpb2QsCiAqIG9yIG51bGwgaWYgbnVsbCB3YXMgcGFzc2VkIGluCiAqLwpkZWZpbmUgZnVuY3Rpb24gTWVkaWNhdGlvblJlcXVlc3RMb29rQmFjayhNZWRMaXN0IExpc3Q8TWVkaWNhdGlvblJlcXVlc3Q+LCBMb29rQmFjayBTeXN0ZW0uUXVhbnRpdHkpOgogIE1lZExpc3QgTSB3aGVyZSBNLmF1dGhvcmVkT24udmFsdWUgaW4gSW50ZXJ2YWxbTm93KCkgLSBMb29rQmFjaywgTm93KCldCgovLyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSBFTkNPVU5URVJTIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQoKLyoqCiAqIEZpbHRlcnMgRW5jb3VudGVycyBieSBhIGNvbmNlcHQgcmF0aGVyIHRoYW4gYnkgYSBWYWx1ZVNldC4gIEluIENRTCAxLjMsIHRoaXMgd2lsbCBiZSBidWlsdCBpbnRvIHRoZSByZXRyaWV2ZSwKICogYnV0IGZvciBub3csIHdlIG11c3QgdXNlIGEgcXVlcnkgd2hlcmUgY2xhdXNlLgogKiBAcGFyYW0gS29uY2VwdCAtIHRoZSBjb25jZXB0IHRvIGZpbHRlciBvbiAoaW50ZW50aW9uYWxseSBtaXNwZWxsZWQgdG8gYXZvaWQgbmFtaW5nIGNsYXNoZXMpCiAqIEByZXR1cm5zIHtMaXN0PEVuY291bnRlcj59IGEgbGlzdCBvZiBFbmNvdW50ZXJzIG1hdGNoaW5nIHRoZSBjb25jZXB0LCBvciBudWxsIGlmIG51bGwgd2FzIHBhc3NlZCBpbgogKi8KZGVmaW5lIGZ1bmN0aW9uIEVuY291bnRlcnNCeUNvbmNlcHQoS29uY2VwdCBTeXN0ZW0uQ29uY2VwdCk6CiAgW0VuY291bnRlcl0gRSB3aGVyZSBleGlzdHMoIChFLnR5cGUpIEVUIHdoZXJlIE51bGxTYWZlVG9Db25jZXB0KEVUKSB+IEtvbmNlcHQgKQoKLyoqCiAqIEVuY291bnRlcnMgdGhhdCBhcmUgaW4gcHJvZ3Jlc3MuIEluIEZISVIgUjQsIHRoaXMgaXMgcmVmbGVjdGVkIGJ5IHN0YXR1czogJ2luLXByb2dyZXNzJy4KICogQHNlZSBodHRwczovL3d3dy5obDcub3JnL2ZoaXIvdmFsdWVzZXQtZW5jb3VudGVyLXN0YXR1cy5odG1sCiAqIEBwYXJhbSBFbmNMaXN0IC0gYSBsaXN0IG9mIEVuY291bnRlcnMKICogQHJldHVybnMge0xpc3Q8RW5jb3VudGVyPn0gYSBsaXN0IG9mIGluIHByb2dyZXNzIGVuY291bnRlcnMsIG9yIG51bGwgaWYgbnVsbCB3YXMgcGFzc2VkIGluCiAqLwpkZWZpbmUgZnVuY3Rpb24gSW5Qcm9ncmVzcyhFbmNMaXN0IExpc3Q8RW5jb3VudGVyPik6CiAgRW5jTGlzdCBFCiAgICB3aGVyZSBFLnN0YXR1cy52YWx1ZSA9ICdpbi1wcm9ncmVzcycKCi8qKgogKiBFbmNvdW50ZXJzIHRoYXQgaGF2ZSBub3QgYmVlbiBjYW5jZWxsZWQuIEluIEZISVIgUjQsIHRoaXMgaXMgcmVmbGVjdGVkIGJ5ICBhbmR5IHN0YXR1cyBvdGhlciAKICogdGhhbjogJ2NhbmNlbGxlZCcuCiAqIEBzZWUgaHR0cHM6Ly93d3cuaGw3Lm9yZy9maGlyL3ZhbHVlc2V0LWVuY291bnRlci1zdGF0dXMuaHRtbAogKiBAcGFyYW0gRW5jTGlzdCAtIGEgbGlzdCBvZiBFbmNvdW50ZXJzCiAqIEByZXR1cm5zIHtMaXN0PEVuY291bnRlcj59IGEgbGlzdCBvZiBpbiBwcm9ncmVzcyBlbmNvdW50ZXJzLCBvciBudWxsIGlmIG51bGwgd2FzIHBhc3NlZCBpbgogKi8KZGVmaW5lIGZ1bmN0aW9uIE5vdENhbmNlbGxlZChFbmNMaXN0IExpc3Q8RW5jb3VudGVyPik6CiAgRW5jTGlzdCBFCiAgICB3aGVyZSBFLnN0YXR1cy52YWx1ZSAhPSAnY2FuY2VsbGVkJwoKLyoqCiAqIEVuY291bnRlcnMgcGVyZm9ybWVkIGluIHRoZSBzcGVjaWZpZWQgImxvb2sgYmFjayIgcGVyaW9kLgogKiBUT0RPOiBSZW5hbWUgdG8gTG9va0JhY2sgb25jZSB0aGUgZXhlY3V0aW9uIGVuZ2luZSBzdXBwb3J0cyBvdmVybG9hZGVkIGZ1bmN0aW9ucy4KICogQHBhcmFtIEVuY0xpc3QgLSBhIGxpc3Qgb2YgRW5jb3VudGVycwogKiBAcGFyYW0gTG9va0JhY2sgLSB0aGUgbG9va2JhY2sgcGVyaW9kIGZvciB3aGVuIHRoZSBlbmNvdW50ZXIgb2NjdXJyZWQKICogQHJldHVybnMge0xpc3Q8RW5jb3VudGVyPn0gYSBsaXN0IG9mIEVuY291bnRlcnMgb2NjdXJyaW5nIGR1cmluZyB0aGUgbG9vayBiYWNrIHBlcmlvZCwgb3IgbnVsbCBpZiBudWxsCiAqIHdhcyBwYXNzZWQgaW4KICovCmRlZmluZSBmdW5jdGlvbiBFbmNvdW50ZXJMb29rQmFjayhFbmNMaXN0IExpc3Q8RW5jb3VudGVyPiwgTG9va0JhY2sgU3lzdGVtLlF1YW50aXR5KToKICBFbmNMaXN0IEUKICAgIGxldCBMb29rQmFja0ludGVydmFsOiBJbnRlcnZhbFtOb3coKSAtIExvb2tCYWNrLCBOb3coKV0KICAgIHdoZXJlIE51bGxTYWZlVG9JbnRlcnZhbChFLnBlcmlvZCkgb3ZlcmxhcHMgTG9va0JhY2tJbnRlcnZhbAoKLy8gLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0gQUxMRVJHWSBJTlRPTEVSQU5DRVMgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCgovKioKICogRmlsdGVycyBBbGxlcmd5SW50b2xlcmFuY2VzIGJ5IGEgY29uY2VwdCByYXRoZXIgdGhhbiBieSBhIFZhbHVlU2V0LiAgSW4gQ1FMIDEuMywgdGhpcyB3aWxsIGJlIGJ1aWx0IGludG8gdGhlIHJldHJpZXZlLAogKiBidXQgZm9yIG5vdywgd2UgbXVzdCB1c2UgYSBxdWVyeSB3aGVyZSBjbGF1c2UuCiAqIEBwYXJhbSBLb25jZXB0IC0gdGhlIGNvbmNlcHQgdG8gZmlsdGVyIG9uIChpbnRlbnRpb25hbGx5IG1pc3BlbGxlZCB0byBhdm9pZCBuYW1pbmcgY2xhc2hlcykKICogQHJldHVybnMge0xpc3Q8QWxsZXJneUludG9sZXJhbmNlPn0gYSBsaXN0IG9mIEFsbGVyZ3kgSW50b2xlcmFuY2VzIG1hdGNoaW5nIHRoZSBjb25jZXB0LCBvciBudWxsIGlmIG51bGwgd2FzIHBhc3NlZCBpbgogKi8KZGVmaW5lIGZ1bmN0aW9uIEFsbGVyZ3lJbnRvbGVyYW5jZXNCeUNvbmNlcHQoS29uY2VwdCBTeXN0ZW0uQ29uY2VwdCk6CiAgW0FsbGVyZ3lJbnRvbGVyYW5jZV0gQSB3aGVyZSBOdWxsU2FmZVRvQ29uY2VwdChBLmNvZGUpIH4gS29uY2VwdAoKLyoqCiogQWxsZXJneUludG9sZXJhbmNlcyB0aGF0IGFyZSBhY3RpdmUgb3IgY29uZmlybWVkLiAgSW4gRkhJUiBSNCwgdGhpcyBpcyByZWZsZWN0ZWQgYnkgQWxsZXJneUludG9sZXJhbmNlCiogd2l0aCB2ZXJpZmljYXRpb25TdGF0dXMgJ2FjdGl2ZScgb3IgJ2NvbmZpcm1lZCcKKiBAc2VlIGh0dHBzOi8vd3d3LmhsNy5vcmcvZmhpci92YWx1ZXNldC1hbGxlcmd5aW50b2xlcmFuY2UtdmVyaWZpY2F0aW9uLmh0bWwKKiBAcGFyYW0gQWxsZXJneUludG9sTGlzdCAtIGEgbGlzdCBvZiBBbGxlcmd5SW50b2xlcmFuY2VzCiogQHJldHVybnMge0xpc3Q8QWxsZXJneUludG9sZXJhbmNlPn0gYSBsaXN0IG9mIGFjdGl2ZSBvciBjb25maXJtZWQgYWxsZXJneSBpbnRvbGVyYW5jZXMsIG9yIG51bGwgaWYgbnVsbCB3YXMgcGFzc2VkIGluCiovCmRlZmluZSBmdW5jdGlvbiBDb25maXJtZWRBbGxlcmd5SW50b2xlcmFuY2UoQWxsZXJneUludG9sTGlzdCBMaXN0PEFsbGVyZ3lJbnRvbGVyYW5jZT4pOgogIEFsbGVyZ3lJbnRvbExpc3QgQQogICAgd2hlcmUgQS52ZXJpZmljYXRpb25TdGF0dXMuY29kaW5nIH4gIkFsbGVyZ3lJbnRvbGVyYW5jZSB2ZXJpZmljYXRpb25TdGF0dXMgY29uZmlybWVkIGNvZGUiCgovLyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSBHT0FMUyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KCi8qKgogKiBHb2FscyB3aXRoIGEgc3RhcnQsIHRhcmdldCwgb3Igc3RhdHVzIGRhdGUgaW4gdGhlIHNwZWNpZmllZCAibG9vayBiYWNrIiBwZXJpb2QuICBGb3IgZXhhbXBsZSwgUGFpbiBNYW5hZ2VtZW50IEdvYWxzCiAqIGluIHRoZSBsYXN0IDIgeWVhcnMuCiAqIFRPRE86IFJlbmFtZSB0byBMb29rQmFjayBvbmNlIHRoZSBleGVjdXRpb24gZW5naW5lIHN1cHBvcnRzIG92ZXJsb2FkZWQgZnVuY3Rpb25zLgogKiBAcGFyYW0gR29hbExpc3QgLSBhIGxpc3Qgb2YgR29hbHMKICogQHJldHVybnMge0xpc3Q8R29hbD59IGEgbGlzdCBvZiBHb2FscyB3aXRoIGEgc3RhcnQsIHRhcmdldCwgb3Igc3RhdHVzIGRhdGUgaW4gdGhlIHNwZWNpZmllZCBsb29rYmFjayBwZXJpb2QsIG9yIG51bGwKICogaWYgbnVsbCB3YXMgcGFzc2VkIGluCiAqLwpkZWZpbmUgZnVuY3Rpb24gR29hbExvb2tCYWNrKEdvYWxMaXN0IExpc3Q8R29hbD4sIExvb2tCYWNrIFN5c3RlbS5RdWFudGl0eSk6CiAgR29hbExpc3QgRwogICAgbGV0IExvb2tCYWNrSW50ZXJ2YWw6IEludGVydmFsW05vdygpIC0gTG9va0JhY2ssIE5vdygpXQogICAgd2hlcmUgRy5zdGFydC52YWx1ZSBpbiBMb29rQmFja0ludGVydmFsCiAgICAgIG9yIEcudGFyZ2V0LmR1ZUQgaW4gTG9va0JhY2tJbnRlcnZhbAogICAgICBvciBHLnN0YXJ0LnZhbHVlIGluIExvb2tCYWNrSW50ZXJ2YWwKICAgICAgb3IgRy5zdGF0dXNEYXRlLnZhbHVlIGluIExvb2tCYWNrSW50ZXJ2YWwK"/&gt;
+  &lt;/content&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.content">content</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.contentType">contentType</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="application/elm+xml"/&gt;
+  &lt;/content&gt;
+&lt;/Library&gt;</code></pre>
+
+
+    <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; (c) 2019 The MITRE Corporation <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/dss/index.cfm">HL7 International - Clinical Decision Support WG</a>.  Package hl7.fhir.uv.cpg.anthrax#1.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Nov 18, 2024 16:30+0000">2024-11-18</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"><a name="l558">​</a>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+| <a style="color: #81BEF7" href="http://hl7.org/fhir/uv/cpg/anthrax/history.html" target="_blank">Version History</a> | <a rel="license" style="color: #81BEF7" href="license.html">License</a>
+  <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | -->
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+  
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

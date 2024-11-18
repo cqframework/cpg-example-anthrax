@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="observation-21"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation observation-21</b></p><a name="observation-21"> </a><a name="hcobservation-21"> </a><a name="observation-21-en-US"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 84387000}">Asymptomatic (finding)</span></p><p><b>subject</b>: <a href="Patient-patient-3.html">Jane Smith  Female, DoB: 2000-01-01</a></p><p><b>effective</b>: 2019-06-03 15:00:00+0000</p><p><b>issued</b>: 2018-07-19 00:00:00+0000</p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="84387000"/>
+      <display value="Asymptomatic (finding)"/>
+    </coding>
+    <text value="Asymptomatic (finding)"/>
+  </code>
+  <subject>
+    <reference value="Patient/patient-3"/>
+  </subject>
+  <effectiveDateTime value="2019-06-03T15:00:00.000Z"/>
+  <issued value="2018-07-19T00:00:00.000Z"/>
+</Observation>

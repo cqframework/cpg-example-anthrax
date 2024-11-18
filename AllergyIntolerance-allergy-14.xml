@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AllergyIntolerance xmlns="http://hl7.org/fhir">
+  <id value="allergy-14"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: AllergyIntolerance allergy-14</b></p><a name="allergy-14"> </a><a name="hcallergy-14"> </a><a name="allergy-14-en-US"> </a><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-verification confirmed}">Confirmed</span></p><p><b>code</b>: <span title="Codes:{http://www.nlm.nih.gov/research/umls/rxnorm 404774}">Anthrax Vaccine Absorbed (substance/ingredient)</span></p><p><b>patient</b>: <a href="Patient-patient-1.html">John Smith  Male, DoB: 2000-01-01</a></p></div>
+  </text>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
+      <code value="active"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"/>
+      <code value="confirmed"/>
+      <display value="Confirmed"/>
+    </coding>
+  </verificationStatus>
+  <code>
+    <coding>
+      <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+      <code value="404774"/>
+      <display value="Anthrax Vaccine Absorbed (substance/ingredient)"/>
+    </coding>
+    <text value="Anthrax Vaccine Absorbed (substance/ingredient)"/>
+  </code>
+  <patient>
+    <reference value="Patient/patient-1"/>
+  </patient>
+</AllergyIntolerance>
