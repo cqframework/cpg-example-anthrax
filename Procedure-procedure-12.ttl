@@ -6,7 +6,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/uv/cpg/anthrax/Procedure/procedure-12> a fhir:Procedure ;
+<http://cqframework.org/cpg-example-anthrax/Procedure/procedure-12> a fhir:Procedure ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "procedure-12"] ; # 
   fhir:text [
@@ -24,12 +24,10 @@
      fhir:text [ fhir:v "First anthrax vaccination" ]
   ] ; # 
   fhir:subject [
-     fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-3> ;
+     fhir:link <http://cqframework.org/cpg-example-anthrax/Patient/patient-3> ;
      fhir:reference [ fhir:v "Patient/patient-3" ]
   ] ; # 
   fhir:performed [ fhir:v "2019-05-06T15:00:00.000Z"^^xsd:dateTime] . # 
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-3> a fhir:uv .
 
 # -------------------------------------------------------------------------------------
 

@@ -6,7 +6,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/uv/cpg/anthrax/Condition/patient-4> a fhir:Condition ;
+<http://cqframework.org/cpg-example-anthrax/Condition/patient-4> a fhir:Condition ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "patient-4"] ; # 
   fhir:text [
@@ -35,12 +35,10 @@
      fhir:text [ fhir:v "Pregnancy (finding)" ]
   ] ; # 
   fhir:subject [
-     fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-3> ;
+     fhir:link <http://cqframework.org/cpg-example-anthrax/Patient/patient-3> ;
      fhir:reference [ fhir:v "Patient/patient-3" ]
   ] ; # 
   fhir:onset [ fhir:v "2017-06-03T15:00:00.000Z"^^xsd:dateTime] . # 
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-3> a fhir:uv .
 
 # -------------------------------------------------------------------------------------
 

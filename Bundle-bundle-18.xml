@@ -4,7 +4,7 @@
   <id value="bundle-18"/>
   <type value="collection"/>
   <entry>
-    <fullUrl value="http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-1"/>
+    <fullUrl value="http://cqframework.org/cpg-example-anthrax//Patient/patient-1"/>
     <resource>
       <Patient>
         <id value="patient-1"/>

@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/uv/cpg/anthrax/MedicationRequest/6> a fhir:MedicationRequest ;
+<http://cqframework.org/cpg-example-anthrax/MedicationRequest/6> a fhir:MedicationRequest ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "6"] ; # 
   fhir:text [
@@ -24,11 +24,9 @@
      fhir:text [ fhir:v "moxifloxacin HCl 400 MG Oral Tablet" ]
   ] ; # 
   fhir:subject [
-     fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-1> ;
+     fhir:link <http://cqframework.org/cpg-example-anthrax/Patient/patient-1> ;
      fhir:reference [ fhir:v "Patient/patient-1" ]
   ] . # 
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-1> a fhir:uv .
 
 # -------------------------------------------------------------------------------------
 

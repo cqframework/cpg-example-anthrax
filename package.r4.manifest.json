@@ -1,6 +1,6 @@
 {
   "version" : "1.1.0",
-  "date" : "20241118162931",
+  "date" : "20241118163805",
   "notForPublication" : true,
-  "name" : "hl7.fhir.uv.cpg.anthrax.r4"
+  "name" : "cqframework.cpg-example-anthrax.r4"
 }

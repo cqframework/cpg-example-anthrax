@@ -3,7 +3,7 @@
   "id" : "bundle-54",
   "type" : "collection",
   "entry" : [{
-    "fullUrl" : "http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-3",
+    "fullUrl" : "http://cqframework.org/cpg-example-anthrax//Patient/patient-3",
     "resource" : {
       "resourceType" : "Patient",
       "id" : "patient-3",
@@ -20,7 +20,7 @@
     }
   },
   {
-    "fullUrl" : "http://hl7.org/fhir/uv/cpg/anthrax/Condition/condition-8",
+    "fullUrl" : "http://cqframework.org/cpg-example-anthrax//Condition/condition-8",
     "resource" : {
       "resourceType" : "Condition",
       "id" : "condition-8",
@@ -55,7 +55,7 @@
     }
   },
   {
-    "fullUrl" : "http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-23",
+    "fullUrl" : "http://cqframework.org/cpg-example-anthrax//Observation/observation-23",
     "resource" : {
       "resourceType" : "Observation",
       "id" : "observation-23",
@@ -80,7 +80,7 @@
     }
   },
   {
-    "fullUrl" : "http://hl7.org/fhir/uv/cpg/anthrax/Procedure/procedure-14",
+    "fullUrl" : "http://cqframework.org/cpg-example-anthrax//Procedure/procedure-14",
     "resource" : {
       "resourceType" : "Procedure",
       "id" : "procedure-14",
@@ -104,7 +104,7 @@
     }
   },
   {
-    "fullUrl" : "http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-19",
+    "fullUrl" : "http://cqframework.org/cpg-example-anthrax//Observation/observation-19",
     "resource" : {
       "resourceType" : "Observation",
       "id" : "observation-19",

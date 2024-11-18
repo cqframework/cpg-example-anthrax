@@ -6,18 +6,18 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/uv/cpg/anthrax/Flag/no-asymptomatic-observation-flag> a fhir:Flag ;
+<http://cqframework.org/cpg-example-anthrax/Flag/no-asymptomatic-observation-flag> a fhir:Flag ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "no-asymptomatic-observation-flag"] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Flag no-asymptomatic-observation-flag</b></p><a name=\"no-asymptomatic-observation-flag\"> </a><a name=\"hcno-asymptomatic-observation-flag\"> </a><a name=\"no-asymptomatic-observation-flag-en-US\"> </a><p><b>Flag details</b>: <a href=\"Condition-condition-1.html\">Condition Contact with and (suspected) exposure to anthrax</a></p><p><b>status</b>: Active</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 223447008}\">Recommendation to document signs and symptoms (procedure)</span></p><p><b>subject</b>: <a href=\"Patient-patient-1.html\">John Smith  Male, DoB: 2000-01-01</a></p><p><b>author</b>: <a href=\"Device-anthrax-example-device.html\">Device: identifier = Anthrax_Post_Exposure_Prophylaxis_FHIRv400.cql; manufacturer = Centers for Disease Control and Prevention; type = Clinical data collection/management information system application software (physical object); url = http://hl7.org/fhir/uv/cpg/anthrax/Device/anthrax-example-device</a></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Flag no-asymptomatic-observation-flag</b></p><a name=\"no-asymptomatic-observation-flag\"> </a><a name=\"hcno-asymptomatic-observation-flag\"> </a><a name=\"no-asymptomatic-observation-flag-en-US\"> </a><p><b>Flag details</b>: <a href=\"Condition-condition-1.html\">Condition Contact with and (suspected) exposure to anthrax</a></p><p><b>status</b>: Active</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 223447008}\">Recommendation to document signs and symptoms (procedure)</span></p><p><b>subject</b>: <a href=\"Patient-patient-1.html\">John Smith  Male, DoB: 2000-01-01</a></p><p><b>author</b>: <a href=\"Device-anthrax-example-device.html\">Device: identifier = Anthrax_Post_Exposure_Prophylaxis_FHIRv400.cql; manufacturer = Centers for Disease Control and Prevention; type = Clinical data collection/management information system application software (physical object); url = http://cqframework.org/cpg-example-anthrax//Device/anthrax-example-device</a></p></div>"
   ] ; # 
   fhir:extension ( [
      fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/flag-detail"^^xsd:anyURI ] ;
      fhir:value [
        a fhir:Reference ;
-       fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Condition/condition-1> ;
+       fhir:link <http://cqframework.org/cpg-example-anthrax/Condition/condition-1> ;
        fhir:reference [ fhir:v "Condition/condition-1" ]
      ]
   ] ) ; # 
@@ -31,19 +31,13 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-1> ;
+     fhir:link <http://cqframework.org/cpg-example-anthrax/Patient/patient-1> ;
      fhir:reference [ fhir:v "Patient/patient-1" ]
   ] ; # 
   fhir:author [
-     fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Device/anthrax-example-device> ;
+     fhir:link <http://cqframework.org/cpg-example-anthrax/Device/anthrax-example-device> ;
      fhir:reference [ fhir:v "Device/anthrax-example-device" ]
   ] . # 
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Condition/condition-1> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-1> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Device/anthrax-example-device> a fhir:uv .
 
 # -------------------------------------------------------------------------------------
 

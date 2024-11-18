@@ -3,7 +3,7 @@
   "id" : "bundle-45",
   "type" : "collection",
   "entry" : [{
-    "fullUrl" : "http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-1",
+    "fullUrl" : "http://cqframework.org/cpg-example-anthrax//Patient/patient-1",
     "resource" : {
       "resourceType" : "Patient",
       "id" : "patient-1",

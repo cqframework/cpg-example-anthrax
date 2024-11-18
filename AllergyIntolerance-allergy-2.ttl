@@ -6,7 +6,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/uv/cpg/anthrax/AllergyIntolerance/allergy-2> a fhir:AllergyIntolerance ;
+<http://cqframework.org/cpg-example-anthrax/AllergyIntolerance/allergy-2> a fhir:AllergyIntolerance ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "allergy-2"] ; # 
   fhir:text [
@@ -36,12 +36,10 @@
      fhir:text [ fhir:v "Latex (substance)" ]
   ] ; # 
   fhir:patient [
-     fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-1> ;
+     fhir:link <http://cqframework.org/cpg-example-anthrax/Patient/patient-1> ;
      fhir:reference [ fhir:v "Patient/patient-1" ]
   ] ; # 
   fhir:recordedDate [ fhir:v "2016-05-28T15:00:00.000Z"^^xsd:dateTime] . # 
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-1> a fhir:uv .
 
 # -------------------------------------------------------------------------------------
 

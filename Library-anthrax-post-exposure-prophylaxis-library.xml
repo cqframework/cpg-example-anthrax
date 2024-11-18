@@ -1691,7 +1691,7 @@ define OrderSet:
   else null
 </code></pre><p><code>No Content</code> (<code>application/elm+xml</code>)</p></div>
   </text>
-  <url value="http://hl7.org/fhir/uv/cpg/anthrax/Library/anthrax-post-exposure-prophylaxis-library"/>
+  <url value="http://cqframework.org/cpg-example-anthrax/Library/anthrax-post-exposure-prophylaxis-library"/>
   <identifier>
     <use value="official"/>
     <value value="Anthrax_Post_Exposure_Prophylaxis_FHIRv400"/>
@@ -1707,7 +1707,7 @@ define OrderSet:
       <code value="logic-library"/>
     </coding>
   </type>
-  <date value="2024-11-18T16:30:23+00:00"/>
+  <date value="2024-11-18T16:39:04+00:00"/>
   <publisher value="HL7 International - Clinical Decision Support WG"/>
   <contact>
     <name value="HL7 International - Clinical Decision Support WG"/>

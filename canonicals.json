@@ -1,169 +1,169 @@
 [
   {
+    "id" : "cqframework.cpg-example-anthrax",
+    "type" : "ImplementationGuide",
+    "url" : "http://cqframework.org/cpg-example-anthrax//ImplementationGuide/cqframework.cpg-example-anthrax",
+    "version" : "1.1.0",
+    "name" : "CPGExampleAnthraxPostExposure"
+  },
+  {
     "id" : "CiprofloxacinRequest",
     "type" : "ActivityDefinition",
-    "url" : "http://hl7.org/fhir/uv/cpg/anthrax/ActivityDefinition/CiprofloxacinRequest",
+    "url" : "http://cqframework.org/cpg-example-anthrax/ActivityDefinition/CiprofloxacinRequest",
     "version" : "1.1.0",
     "name" : "Anthrax_Post_Exposure_Prophylaxis_Adults_Ciprofloxacin_Request"
   },
   {
     "id" : "ClindamycinRequest",
     "type" : "ActivityDefinition",
-    "url" : "http://hl7.org/fhir/uv/cpg/anthrax/ActivityDefinition/ClindamycinRequest",
+    "url" : "http://cqframework.org/cpg-example-anthrax/ActivityDefinition/ClindamycinRequest",
     "version" : "1.1.0",
     "name" : "Anthrax_Post_Exposure_Prophylaxis_Adults_Clindamycin_Request"
   },
   {
     "id" : "DoxycyclineRequest",
     "type" : "ActivityDefinition",
-    "url" : "http://hl7.org/fhir/uv/cpg/anthrax/ActivityDefinition/DoxycyclineRequest",
+    "url" : "http://cqframework.org/cpg-example-anthrax/ActivityDefinition/DoxycyclineRequest",
     "version" : "1.1.0",
     "name" : "Anthrax_Post_Exposure_Prophylaxis_Adults_Doxycycline_Request"
   },
   {
     "id" : "LevofloxacinRequest",
     "type" : "ActivityDefinition",
-    "url" : "http://hl7.org/fhir/uv/cpg/anthrax/ActivityDefinition/LevofloxacinRequest",
+    "url" : "http://cqframework.org/cpg-example-anthrax/ActivityDefinition/LevofloxacinRequest",
     "version" : "1.1.0",
     "name" : "Anthrax_Post_Exposure_Prophylaxis_Adults_Levofloxacin_Request"
   },
   {
     "id" : "MoxifloxacinRequest",
     "type" : "ActivityDefinition",
-    "url" : "http://hl7.org/fhir/uv/cpg/anthrax/ActivityDefinition/MoxifloxacinRequest",
+    "url" : "http://cqframework.org/cpg-example-anthrax/ActivityDefinition/MoxifloxacinRequest",
     "version" : "1.1.0",
     "name" : "Anthrax_Post_Exposure_Prophylaxis_Adults_Moxifloxacin_Request"
   },
   {
     "id" : "VaccineRequest",
     "type" : "ActivityDefinition",
-    "url" : "http://hl7.org/fhir/uv/cpg/anthrax/ActivityDefinition/VaccineRequest",
+    "url" : "http://cqframework.org/cpg-example-anthrax/ActivityDefinition/VaccineRequest",
     "version" : "1.1.0",
     "name" : "Anthrax_Post_Exposure_Prophylaxis_Adults_Vaccine_Request"
   },
   {
-    "id" : "hl7.fhir.uv.cpg.anthrax",
-    "type" : "ImplementationGuide",
-    "url" : "http://hl7.org/fhir/uv/cpg/anthrax/ImplementationGuide/hl7.fhir.uv.cpg.anthrax",
-    "version" : "1.1.0",
-    "name" : "CPGExampleAnthraxPostExposure"
-  },
-  {
     "id" : "anthrax-post-exposure-prophylaxis-library",
     "type" : "Library",
-    "url" : "http://hl7.org/fhir/uv/cpg/anthrax/Library/anthrax-post-exposure-prophylaxis-library",
+    "url" : "http://cqframework.org/cpg-example-anthrax/Library/anthrax-post-exposure-prophylaxis-library",
     "version" : "1.1.0",
     "name" : "Anthrax_Post_Exposure_Prophylaxis_FHIRv400_Library"
   },
   {
     "id" : "cdc-common-logic-library",
     "type" : "Library",
-    "url" : "http://hl7.org/fhir/uv/cpg/anthrax/Library/cdc-common-logic-library",
+    "url" : "http://cqframework.org/cpg-example-anthrax/Library/cdc-common-logic-library",
     "version" : "1.1.0",
     "name" : "CDC_Common_Logic_FHIRv400_Library"
   },
   {
     "id" : "cds-connect-commons-library",
     "type" : "Library",
-    "url" : "http://hl7.org/fhir/uv/cpg/anthrax/Library/cds-connect-commons-library",
+    "url" : "http://cqframework.org/cpg-example-anthrax/Library/cds-connect-commons-library",
     "version" : "1.1.0",
     "name" : "CDS_Connect_Commons_for_FHIRv400_Library"
   },
   {
     "id" : "antimicrobial-not-pregnant-pd",
     "type" : "PlanDefinition",
-    "url" : "http://hl7.org/fhir/uv/cpg/anthrax/PlanDefinition/antimicrobial-not-pregnant-pd",
+    "url" : "http://cqframework.org/cpg-example-anthrax/PlanDefinition/antimicrobial-not-pregnant-pd",
     "version" : "1.1.0",
     "name" : "Anthrax_Post_Exposure_Prophylaxis_Adults"
   },
   {
     "id" : "antimicrobial-pregnant-pd",
     "type" : "PlanDefinition",
-    "url" : "http://hl7.org/fhir/uv/cpg/anthrax/PlanDefinition/antimicrobial-pregnant-pd",
+    "url" : "http://cqframework.org/cpg-example-anthrax/PlanDefinition/antimicrobial-pregnant-pd",
     "version" : "1.1.0",
     "name" : "Anthrax_Post_Exposure_Prophylaxis_Adults"
   },
   {
     "id" : "first-vaccine-dose-antimicrobial-not-pregnant-pd",
     "type" : "PlanDefinition",
-    "url" : "http://hl7.org/fhir/uv/cpg/anthrax/PlanDefinition/first-vaccine-dose-antimicrobial-not-pregnant-pd",
+    "url" : "http://cqframework.org/cpg-example-anthrax/PlanDefinition/first-vaccine-dose-antimicrobial-not-pregnant-pd",
     "version" : "1.1.0",
     "name" : "Anthrax_Post_Exposure_Prophylaxis_Adults"
   },
   {
     "id" : "first-vaccine-dose-antimicrobial-pregnant-pd",
     "type" : "PlanDefinition",
-    "url" : "http://hl7.org/fhir/uv/cpg/anthrax/PlanDefinition/first-vaccine-dose-antimicrobial-pregnant-pd",
+    "url" : "http://cqframework.org/cpg-example-anthrax/PlanDefinition/first-vaccine-dose-antimicrobial-pregnant-pd",
     "version" : "1.1.0",
     "name" : "Anthrax_Post_Exposure_Prophylaxis_Adults"
   },
   {
     "id" : "first-vaccine-dose-not-pregnant-pd",
     "type" : "PlanDefinition",
-    "url" : "http://hl7.org/fhir/uv/cpg/anthrax/PlanDefinition/first-vaccine-dose-not-pregnant-pd",
+    "url" : "http://cqframework.org/cpg-example-anthrax/PlanDefinition/first-vaccine-dose-not-pregnant-pd",
     "version" : "1.1.0",
     "name" : "Anthrax_Post_Exposure_Prophylaxis_Adults"
   },
   {
     "id" : "first-vaccine-dose-pregnant-pd",
     "type" : "PlanDefinition",
-    "url" : "http://hl7.org/fhir/uv/cpg/anthrax/PlanDefinition/first-vaccine-dose-pregnant-pd",
+    "url" : "http://cqframework.org/cpg-example-anthrax/PlanDefinition/first-vaccine-dose-pregnant-pd",
     "version" : "1.1.0",
     "name" : "Anthrax_Post_Exposure_Prophylaxis_Adults"
   },
   {
     "id" : "second-vaccinedose-antimicrobial-notpregnant-pd",
     "type" : "PlanDefinition",
-    "url" : "http://hl7.org/fhir/uv/cpg/anthrax/PlanDefinition/second-vaccinedose-antimicrobial-notpregnant-pd",
+    "url" : "http://cqframework.org/cpg-example-anthrax/PlanDefinition/second-vaccinedose-antimicrobial-notpregnant-pd",
     "version" : "1.1.0",
     "name" : "Anthrax_Post_Exposure_Prophylaxis_Adults"
   },
   {
     "id" : "second-vaccinedose-antimicrobial-pregnant-pd",
     "type" : "PlanDefinition",
-    "url" : "http://hl7.org/fhir/uv/cpg/anthrax/PlanDefinition/second-vaccinedose-antimicrobial-pregnant-pd",
+    "url" : "http://cqframework.org/cpg-example-anthrax/PlanDefinition/second-vaccinedose-antimicrobial-pregnant-pd",
     "version" : "1.1.0",
     "name" : "Anthrax_Post_Exposure_Prophylaxis_Adults"
   },
   {
     "id" : "second-vaccinedose-notpregnant-pd",
     "type" : "PlanDefinition",
-    "url" : "http://hl7.org/fhir/uv/cpg/anthrax/PlanDefinition/second-vaccinedose-notpregnant-pd",
+    "url" : "http://cqframework.org/cpg-example-anthrax/PlanDefinition/second-vaccinedose-notpregnant-pd",
     "version" : "1.1.0",
     "name" : "Anthrax_Post_Exposure_Prophylaxis_Adults"
   },
   {
     "id" : "second-vaccinedose-pregnant-pd",
     "type" : "PlanDefinition",
-    "url" : "http://hl7.org/fhir/uv/cpg/anthrax/PlanDefinition/second-vaccinedose-pregnant-pd",
+    "url" : "http://cqframework.org/cpg-example-anthrax/PlanDefinition/second-vaccinedose-pregnant-pd",
     "version" : "1.1.0",
     "name" : "Anthrax_Post_Exposure_Prophylaxis_Adults"
   },
   {
     "id" : "third-vaccinedose-antimicrobial-notpregnant-pd",
     "type" : "PlanDefinition",
-    "url" : "http://hl7.org/fhir/uv/cpg/anthrax/PlanDefinition/third-vaccinedose-antimicrobial-notpregnant-pd",
+    "url" : "http://cqframework.org/cpg-example-anthrax/PlanDefinition/third-vaccinedose-antimicrobial-notpregnant-pd",
     "version" : "1.1.0",
     "name" : "Anthrax_Post_Exposure_Prophylaxis_Adults"
   },
   {
     "id" : "third-vaccinedose-antimicrobial-pregnant-pd",
     "type" : "PlanDefinition",
-    "url" : "http://hl7.org/fhir/uv/cpg/anthrax/PlanDefinition/third-vaccinedose-antimicrobial-pregnant-pd",
+    "url" : "http://cqframework.org/cpg-example-anthrax/PlanDefinition/third-vaccinedose-antimicrobial-pregnant-pd",
     "version" : "1.1.0",
     "name" : "Anthrax_Post_Exposure_Prophylaxis_Adults"
   },
   {
     "id" : "third-vaccinedose-notpregnant-pd",
     "type" : "PlanDefinition",
-    "url" : "http://hl7.org/fhir/uv/cpg/anthrax/PlanDefinition/third-vaccinedose-notpregnant-pd",
+    "url" : "http://cqframework.org/cpg-example-anthrax/PlanDefinition/third-vaccinedose-notpregnant-pd",
     "version" : "1.1.0",
     "name" : "Anthrax_Post_Exposure_Prophylaxis_Adults"
   },
   {
     "id" : "third-vaccinedose-pregnant-pd",
     "type" : "PlanDefinition",
-    "url" : "http://hl7.org/fhir/uv/cpg/anthrax/PlanDefinition/third-vaccinedose-pregnant-pd",
+    "url" : "http://cqframework.org/cpg-example-anthrax/PlanDefinition/third-vaccinedose-pregnant-pd",
     "version" : "1.1.0",
     "name" : "Anthrax_Post_Exposure_Prophylaxis_Adults"
   }

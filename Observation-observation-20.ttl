@@ -6,7 +6,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-20> a fhir:Observation ;
+<http://cqframework.org/cpg-example-anthrax/Observation/observation-20> a fhir:Observation ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "observation-20"] ; # 
   fhir:text [
@@ -24,13 +24,11 @@
      fhir:text [ fhir:v "Asymptomatic (finding)" ]
   ] ; # 
   fhir:subject [
-     fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-1> ;
+     fhir:link <http://cqframework.org/cpg-example-anthrax/Patient/patient-1> ;
      fhir:reference [ fhir:v "Patient/patient-1" ]
   ] ; # 
   fhir:effective [ fhir:v "2019-05-20T15:00:00.000Z"^^xsd:dateTime] ; # 
   fhir:issued [ fhir:v "2018-07-19T00:00:00.000Z"^^xsd:dateTime] . # 
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-1> a fhir:uv .
 
 # -------------------------------------------------------------------------------------
 

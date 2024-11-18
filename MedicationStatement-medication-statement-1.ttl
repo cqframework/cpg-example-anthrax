@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/uv/cpg/anthrax/MedicationStatement/medication-statement-1> a fhir:MedicationStatement ;
+<http://cqframework.org/cpg-example-anthrax/MedicationStatement/medication-statement-1> a fhir:MedicationStatement ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "medication-statement-1"] ; # 
   fhir:text [
@@ -23,12 +23,10 @@
      fhir:text [ fhir:v "Ciprofloxacin 500 MG Oral Tablet" ]
   ] ; # 
   fhir:subject [
-     fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-1> ;
+     fhir:link <http://cqframework.org/cpg-example-anthrax/Patient/patient-1> ;
      fhir:reference [ fhir:v "Patient/patient-1" ]
   ] ; # 
   fhir:effective [ fhir:v "2019-05-03T15:00:00.000Z"^^xsd:dateTime] . # 
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-1> a fhir:uv .
 
 # -------------------------------------------------------------------------------------
 

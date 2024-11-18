@@ -1,16 +1,16 @@
 {
   "resourceType" : "ImplementationGuide",
-  "id" : "hl7.fhir.uv.cpg.anthrax",
+  "id" : "cqframework.cpg-example-anthrax",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.uv.cpg.anthrax</b></p><a name=\"hl7.fhir.uv.cpg.anthrax\"> </a><a name=\"hchl7.fhir.uv.cpg.anthrax\"> </a><a name=\"hl7.fhir.uv.cpg.anthrax-en-US\"> </a><h2>CPGExampleAnthraxPostExposure</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/uv/cpg/anthrax/ImplementationGuide/hl7.fhir.uv.cpg.anthrax</pre><div><p>Example of CPG computable content representing CDC guidelines for patients exposed to Anthrax</p>\n</div></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide cqframework.cpg-example-anthrax</b></p><a name=\"cqframework.cpg-example-anthrax\"> </a><a name=\"hccqframework.cpg-example-anthrax\"> </a><a name=\"cqframework.cpg-example-anthrax-en-US\"> </a><h2>CPGExampleAnthraxPostExposure</h2><p>The official URL for this implementation guide is: </p><pre>http://cqframework.org/cpg-example-anthrax//ImplementationGuide/cqframework.cpg-example-anthrax</pre><div><p>Example of CPG computable content representing CDC guidelines for patients exposed to Anthrax</p>\n</div></div>"
   },
-  "url" : "http://hl7.org/fhir/uv/cpg/anthrax/ImplementationGuide/hl7.fhir.uv.cpg.anthrax",
+  "url" : "http://cqframework.org/cpg-example-anthrax//ImplementationGuide/cqframework.cpg-example-anthrax",
   "version" : "1.1.0",
   "name" : "CPGExampleAnthraxPostExposure",
   "title" : "Clinical Practice Guidelines Example Implementation Guide - Anthrax Post-Exposure Prophylaxis",
   "status" : "active",
-  "date" : "2024-11-18T16:30:23+00:00",
+  "date" : "2024-11-18T16:39:04+00:00",
   "publisher" : "HL7 International - Clinical Decision Support WG",
   "contact" : [{
     "name" : "HL7 International - Clinical Decision Support WG",
@@ -27,7 +27,7 @@
       "display" : "World"
     }]
   }],
-  "packageId" : "hl7.fhir.uv.cpg.anthrax",
+  "packageId" : "cqframework.cpg-example-anthrax",
   "license" : "CC0-1.0",
   "fhirVersion" : ["4.0.1"],
   "dependsOn" : [{
@@ -159,17 +159,6 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "path-history"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://hl7.org/fhir/uv/cpg/anthrax/history.html"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
         "valueString" : "autoload-resources"
       },
       {
@@ -241,6 +230,17 @@
       {
         "url" : "value",
         "valueString" : "input/ignoreWarnings.txt"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-history"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://cqframework.org/cpg-example-anthrax//history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -449,17 +449,6 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueCode" : "path-history"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://hl7.org/fhir/uv/cpg/anthrax/history.html"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
         "valueCode" : "autoload-resources"
       },
       {
@@ -531,6 +520,17 @@
       {
         "url" : "value",
         "valueString" : "input/ignoreWarnings.txt"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-history"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://cqframework.org/cpg-example-anthrax//history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },

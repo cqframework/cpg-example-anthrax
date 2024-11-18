@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/uv/cpg/anthrax/AllergyIntolerance/allergy-14> a fhir:AllergyIntolerance ;
+<http://cqframework.org/cpg-example-anthrax/AllergyIntolerance/allergy-14> a fhir:AllergyIntolerance ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "allergy-14"] ; # 
   fhir:text [
@@ -34,11 +34,9 @@
      fhir:text [ fhir:v "Anthrax Vaccine Absorbed (substance/ingredient)" ]
   ] ; # 
   fhir:patient [
-     fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-1> ;
+     fhir:link <http://cqframework.org/cpg-example-anthrax/Patient/patient-1> ;
      fhir:reference [ fhir:v "Patient/patient-1" ]
   ] . # 
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-1> a fhir:uv .
 
 # -------------------------------------------------------------------------------------
 

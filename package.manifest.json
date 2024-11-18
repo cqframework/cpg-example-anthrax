@@ -1,7 +1,7 @@
 {
   "version" : "1.1.0",
   "fhirVersion" : ["4.0.1"],
-  "date" : "20241118162931",
-  "name" : "hl7.fhir.uv.cpg.anthrax",
+  "date" : "20241118163805",
+  "name" : "cqframework.cpg-example-anthrax",
   "jurisdiction" : "http://unstats.un.org/unsd/methods/m49/m49.htm#001"
 }

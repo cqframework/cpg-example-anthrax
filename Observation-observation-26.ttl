@@ -7,7 +7,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-26> a fhir:Observation ;
+<http://cqframework.org/cpg-example-anthrax/Observation/observation-26> a fhir:Observation ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "observation-26"] ; # 
   fhir:text [
@@ -25,7 +25,7 @@
      fhir:text [ fhir:v "Pregnancy status" ]
   ] ; # 
   fhir:subject [
-     fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-3> ;
+     fhir:link <http://cqframework.org/cpg-example-anthrax/Patient/patient-3> ;
      fhir:reference [ fhir:v "Patient/patient-3" ]
   ] ; # 
   fhir:effective [ fhir:v "2017-06-03T15:00:00.000Z"^^xsd:dateTime] ; # 
@@ -40,8 +40,6 @@
      ] ) ;
      fhir:text [ fhir:v "Patient currently pregnant" ]
   ] . # 
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-3> a fhir:uv .
 
 # -------------------------------------------------------------------------------------
 

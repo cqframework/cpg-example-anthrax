@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/uv/cpg/anthrax/ImplementationGuide/hl7.fhir.uv.cpg.anthrax> a fhir:ImplementationGuide ;
+<http://cqframework.org/cpg-example-anthrax/ImplementationGuide/cqframework.cpg-example-anthrax> a fhir:ImplementationGuide ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "hl7.fhir.uv.cpg.anthrax"] ; # 
+  fhir:id [ fhir:v "cqframework.cpg-example-anthrax"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.uv.cpg.anthrax</b></p><a name=\"hl7.fhir.uv.cpg.anthrax\"> </a><a name=\"hchl7.fhir.uv.cpg.anthrax\"> </a><a name=\"hl7.fhir.uv.cpg.anthrax-en-US\"> </a><h2>CPGExampleAnthraxPostExposure</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/uv/cpg/anthrax/ImplementationGuide/hl7.fhir.uv.cpg.anthrax</pre><div><p>Example of CPG computable content representing CDC guidelines for patients exposed to Anthrax</p>\n</div></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide cqframework.cpg-example-anthrax</b></p><a name=\"cqframework.cpg-example-anthrax\"> </a><a name=\"hccqframework.cpg-example-anthrax\"> </a><a name=\"cqframework.cpg-example-anthrax-en-US\"> </a><h2>CPGExampleAnthraxPostExposure</h2><p>The official URL for this implementation guide is: </p><pre>http://cqframework.org/cpg-example-anthrax//ImplementationGuide/cqframework.cpg-example-anthrax</pre><div><p>Example of CPG computable content representing CDC guidelines for patients exposed to Anthrax</p>\n</div></div>"
   ] ; # 
-  fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/anthrax/ImplementationGuide/hl7.fhir.uv.cpg.anthrax"^^xsd:anyURI] ; # 
+  fhir:url [ fhir:v "http://cqframework.org/cpg-example-anthrax//ImplementationGuide/cqframework.cpg-example-anthrax"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "1.1.0"] ; # 
   fhir:name [ fhir:v "CPGExampleAnthraxPostExposure"] ; # 
   fhir:title [ fhir:v "Clinical Practice Guidelines Example Implementation Guide - Anthrax Post-Exposure Prophylaxis"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-11-18T16:30:23+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-11-18T16:39:04+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 International - Clinical Decision Support WG"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 International - Clinical Decision Support WG" ] ;
@@ -34,7 +34,7 @@
        fhir:display [ fhir:v "World" ]
      ] )
   ] ) ; # 
-  fhir:packageId [ fhir:v "hl7.fhir.uv.cpg.anthrax"] ; # 
+  fhir:packageId [ fhir:v "cqframework.cpg-example-anthrax"] ; # 
   fhir:license [ fhir:v "CC0-1.0"] ; # 
   fhir:fhirVersion ( [ fhir:v "4.0.1"] ) ; # 
   fhir:dependsOn ( [
@@ -155,15 +155,6 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "path-history" ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "http://hl7.org/fhir/uv/cpg/anthrax/history.html" ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "autoload-resources" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
@@ -222,6 +213,15 @@
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "input/ignoreWarnings.txt" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-history" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "http://cqframework.org/cpg-example-anthrax//history.html" ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
@@ -392,15 +392,6 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "path-history" ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "http://hl7.org/fhir/uv/cpg/anthrax/history.html" ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "autoload-resources" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
@@ -459,6 +450,15 @@
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "input/ignoreWarnings.txt" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-history" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "http://cqframework.org/cpg-example-anthrax//history.html" ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
@@ -549,7 +549,7 @@
          fhir:value [ fhir:v "AllergyIntolerance" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/AllergyIntolerance/allergy-1> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/AllergyIntolerance/allergy-1> ;
          fhir:reference [ fhir:v "AllergyIntolerance/allergy-1" ]
        ] ;
        fhir:name [ fhir:v "allergy-1" ] ;
@@ -561,7 +561,7 @@
          fhir:value [ fhir:v "AllergyIntolerance" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/AllergyIntolerance/allergy-10> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/AllergyIntolerance/allergy-10> ;
          fhir:reference [ fhir:v "AllergyIntolerance/allergy-10" ]
        ] ;
        fhir:name [ fhir:v "allergy-10" ] ;
@@ -573,7 +573,7 @@
          fhir:value [ fhir:v "AllergyIntolerance" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/AllergyIntolerance/allergy-11> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/AllergyIntolerance/allergy-11> ;
          fhir:reference [ fhir:v "AllergyIntolerance/allergy-11" ]
        ] ;
        fhir:name [ fhir:v "allergy-11" ] ;
@@ -585,7 +585,7 @@
          fhir:value [ fhir:v "AllergyIntolerance" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/AllergyIntolerance/allergy-12> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/AllergyIntolerance/allergy-12> ;
          fhir:reference [ fhir:v "AllergyIntolerance/allergy-12" ]
        ] ;
        fhir:name [ fhir:v "allergy-12" ] ;
@@ -597,7 +597,7 @@
          fhir:value [ fhir:v "AllergyIntolerance" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/AllergyIntolerance/allergy-13> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/AllergyIntolerance/allergy-13> ;
          fhir:reference [ fhir:v "AllergyIntolerance/allergy-13" ]
        ] ;
        fhir:name [ fhir:v "allergy-13" ] ;
@@ -609,7 +609,7 @@
          fhir:value [ fhir:v "AllergyIntolerance" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/AllergyIntolerance/allergy-14> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/AllergyIntolerance/allergy-14> ;
          fhir:reference [ fhir:v "AllergyIntolerance/allergy-14" ]
        ] ;
        fhir:name [ fhir:v "allergy-14" ] ;
@@ -621,7 +621,7 @@
          fhir:value [ fhir:v "AllergyIntolerance" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/AllergyIntolerance/allergy-2> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/AllergyIntolerance/allergy-2> ;
          fhir:reference [ fhir:v "AllergyIntolerance/allergy-2" ]
        ] ;
        fhir:name [ fhir:v "allergy-2" ] ;
@@ -633,7 +633,7 @@
          fhir:value [ fhir:v "AllergyIntolerance" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/AllergyIntolerance/allergy-3> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/AllergyIntolerance/allergy-3> ;
          fhir:reference [ fhir:v "AllergyIntolerance/allergy-3" ]
        ] ;
        fhir:name [ fhir:v "allergy-3" ] ;
@@ -645,7 +645,7 @@
          fhir:value [ fhir:v "AllergyIntolerance" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/AllergyIntolerance/allergy-4> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/AllergyIntolerance/allergy-4> ;
          fhir:reference [ fhir:v "AllergyIntolerance/allergy-4" ]
        ] ;
        fhir:name [ fhir:v "allergy-4" ] ;
@@ -657,7 +657,7 @@
          fhir:value [ fhir:v "AllergyIntolerance" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/AllergyIntolerance/allergy-5> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/AllergyIntolerance/allergy-5> ;
          fhir:reference [ fhir:v "AllergyIntolerance/allergy-5" ]
        ] ;
        fhir:name [ fhir:v "allergy-5" ] ;
@@ -669,7 +669,7 @@
          fhir:value [ fhir:v "AllergyIntolerance" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/AllergyIntolerance/allergy-6> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/AllergyIntolerance/allergy-6> ;
          fhir:reference [ fhir:v "AllergyIntolerance/allergy-6" ]
        ] ;
        fhir:name [ fhir:v "allergy-6" ] ;
@@ -681,7 +681,7 @@
          fhir:value [ fhir:v "AllergyIntolerance" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/AllergyIntolerance/allergy-7> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/AllergyIntolerance/allergy-7> ;
          fhir:reference [ fhir:v "AllergyIntolerance/allergy-7" ]
        ] ;
        fhir:name [ fhir:v "allergy-7" ] ;
@@ -693,7 +693,7 @@
          fhir:value [ fhir:v "AllergyIntolerance" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/AllergyIntolerance/allergy-8> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/AllergyIntolerance/allergy-8> ;
          fhir:reference [ fhir:v "AllergyIntolerance/allergy-8" ]
        ] ;
        fhir:name [ fhir:v "allergy-8" ] ;
@@ -705,7 +705,7 @@
          fhir:value [ fhir:v "AllergyIntolerance" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/AllergyIntolerance/allergy-9> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/AllergyIntolerance/allergy-9> ;
          fhir:reference [ fhir:v "AllergyIntolerance/allergy-9" ]
        ] ;
        fhir:name [ fhir:v "allergy-9" ] ;
@@ -717,7 +717,7 @@
          fhir:value [ fhir:v "Device" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Device/anthrax-example-device> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Device/anthrax-example-device> ;
          fhir:reference [ fhir:v "Device/anthrax-example-device" ]
        ] ;
        fhir:name [ fhir:v "Anthrax Example Device" ] ;
@@ -729,7 +729,7 @@
          fhir:value [ fhir:v "Library" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Library/anthrax-post-exposure-prophylaxis-library> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Library/anthrax-post-exposure-prophylaxis-library> ;
          fhir:reference [ fhir:v "Library/anthrax-post-exposure-prophylaxis-library" ]
        ] ;
        fhir:name [ fhir:v "Anthrax Post Exposure Prophylaxis (PEP) for Adults FHIRv400 Logic" ] ;
@@ -741,7 +741,7 @@
          fhir:value [ fhir:v "Flag" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Flag/antimicrobial-allergy-flag> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Flag/antimicrobial-allergy-flag> ;
          fhir:reference [ fhir:v "Flag/antimicrobial-allergy-flag" ]
        ] ;
        fhir:name [ fhir:v "Antimicrobial Allergy Flag" ] ;
@@ -753,7 +753,7 @@
          fhir:value [ fhir:v "PlanDefinition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/PlanDefinition/antimicrobial-not-pregnant-pd> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/PlanDefinition/antimicrobial-not-pregnant-pd> ;
          fhir:reference [ fhir:v "PlanDefinition/antimicrobial-not-pregnant-pd" ]
        ] ;
        fhir:name [ fhir:v "Antimicrobial not pregnant" ] ;
@@ -765,7 +765,7 @@
          fhir:value [ fhir:v "PlanDefinition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/PlanDefinition/antimicrobial-pregnant-pd> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/PlanDefinition/antimicrobial-pregnant-pd> ;
          fhir:reference [ fhir:v "PlanDefinition/antimicrobial-pregnant-pd" ]
        ] ;
        fhir:name [ fhir:v "Antimicrobial pregnant" ] ;
@@ -777,7 +777,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-1> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-1> ;
          fhir:reference [ fhir:v "Bundle/bundle-1" ]
        ] ;
        fhir:name [ fhir:v "bundle-1" ] ;
@@ -789,7 +789,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-10> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-10> ;
          fhir:reference [ fhir:v "Bundle/bundle-10" ]
        ] ;
        fhir:name [ fhir:v "bundle-10" ] ;
@@ -801,7 +801,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-11> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-11> ;
          fhir:reference [ fhir:v "Bundle/bundle-11" ]
        ] ;
        fhir:name [ fhir:v "bundle-11" ] ;
@@ -813,7 +813,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-12> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-12> ;
          fhir:reference [ fhir:v "Bundle/bundle-12" ]
        ] ;
        fhir:name [ fhir:v "bundle-12" ] ;
@@ -825,7 +825,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-13> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-13> ;
          fhir:reference [ fhir:v "Bundle/bundle-13" ]
        ] ;
        fhir:name [ fhir:v "bundle-13" ] ;
@@ -837,7 +837,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-14> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-14> ;
          fhir:reference [ fhir:v "Bundle/bundle-14" ]
        ] ;
        fhir:name [ fhir:v "bundle-14" ] ;
@@ -849,7 +849,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-15> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-15> ;
          fhir:reference [ fhir:v "Bundle/bundle-15" ]
        ] ;
        fhir:name [ fhir:v "bundle-15" ] ;
@@ -861,7 +861,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-16> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-16> ;
          fhir:reference [ fhir:v "Bundle/bundle-16" ]
        ] ;
        fhir:name [ fhir:v "bundle-16" ] ;
@@ -873,7 +873,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-17> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-17> ;
          fhir:reference [ fhir:v "Bundle/bundle-17" ]
        ] ;
        fhir:name [ fhir:v "bundle-17" ] ;
@@ -885,7 +885,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-18> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-18> ;
          fhir:reference [ fhir:v "Bundle/bundle-18" ]
        ] ;
        fhir:name [ fhir:v "bundle-18" ] ;
@@ -897,7 +897,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-19> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-19> ;
          fhir:reference [ fhir:v "Bundle/bundle-19" ]
        ] ;
        fhir:name [ fhir:v "bundle-19" ] ;
@@ -909,7 +909,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-2> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-2> ;
          fhir:reference [ fhir:v "Bundle/bundle-2" ]
        ] ;
        fhir:name [ fhir:v "bundle-2" ] ;
@@ -921,7 +921,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-20> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-20> ;
          fhir:reference [ fhir:v "Bundle/bundle-20" ]
        ] ;
        fhir:name [ fhir:v "bundle-20" ] ;
@@ -933,7 +933,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-21> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-21> ;
          fhir:reference [ fhir:v "Bundle/bundle-21" ]
        ] ;
        fhir:name [ fhir:v "bundle-21" ] ;
@@ -945,7 +945,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-22> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-22> ;
          fhir:reference [ fhir:v "Bundle/bundle-22" ]
        ] ;
        fhir:name [ fhir:v "bundle-22" ] ;
@@ -957,7 +957,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-23> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-23> ;
          fhir:reference [ fhir:v "Bundle/bundle-23" ]
        ] ;
        fhir:name [ fhir:v "bundle-23" ] ;
@@ -969,7 +969,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-24> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-24> ;
          fhir:reference [ fhir:v "Bundle/bundle-24" ]
        ] ;
        fhir:name [ fhir:v "bundle-24" ] ;
@@ -981,7 +981,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-25> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-25> ;
          fhir:reference [ fhir:v "Bundle/bundle-25" ]
        ] ;
        fhir:name [ fhir:v "bundle-25" ] ;
@@ -993,7 +993,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-26> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-26> ;
          fhir:reference [ fhir:v "Bundle/bundle-26" ]
        ] ;
        fhir:name [ fhir:v "bundle-26" ] ;
@@ -1005,7 +1005,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-27> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-27> ;
          fhir:reference [ fhir:v "Bundle/bundle-27" ]
        ] ;
        fhir:name [ fhir:v "bundle-27" ] ;
@@ -1017,7 +1017,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-28> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-28> ;
          fhir:reference [ fhir:v "Bundle/bundle-28" ]
        ] ;
        fhir:name [ fhir:v "bundle-28" ] ;
@@ -1029,7 +1029,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-29> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-29> ;
          fhir:reference [ fhir:v "Bundle/bundle-29" ]
        ] ;
        fhir:name [ fhir:v "bundle-29" ] ;
@@ -1041,7 +1041,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-3> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-3> ;
          fhir:reference [ fhir:v "Bundle/bundle-3" ]
        ] ;
        fhir:name [ fhir:v "bundle-3" ] ;
@@ -1053,7 +1053,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-30> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-30> ;
          fhir:reference [ fhir:v "Bundle/bundle-30" ]
        ] ;
        fhir:name [ fhir:v "bundle-30" ] ;
@@ -1065,7 +1065,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-31> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-31> ;
          fhir:reference [ fhir:v "Bundle/bundle-31" ]
        ] ;
        fhir:name [ fhir:v "bundle-31" ] ;
@@ -1077,7 +1077,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-32> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-32> ;
          fhir:reference [ fhir:v "Bundle/bundle-32" ]
        ] ;
        fhir:name [ fhir:v "bundle-32" ] ;
@@ -1089,7 +1089,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-33> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-33> ;
          fhir:reference [ fhir:v "Bundle/bundle-33" ]
        ] ;
        fhir:name [ fhir:v "bundle-33" ] ;
@@ -1101,7 +1101,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-34> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-34> ;
          fhir:reference [ fhir:v "Bundle/bundle-34" ]
        ] ;
        fhir:name [ fhir:v "bundle-34" ] ;
@@ -1113,7 +1113,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-35> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-35> ;
          fhir:reference [ fhir:v "Bundle/bundle-35" ]
        ] ;
        fhir:name [ fhir:v "bundle-35" ] ;
@@ -1125,7 +1125,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-36> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-36> ;
          fhir:reference [ fhir:v "Bundle/bundle-36" ]
        ] ;
        fhir:name [ fhir:v "bundle-36" ] ;
@@ -1137,7 +1137,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-37> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-37> ;
          fhir:reference [ fhir:v "Bundle/bundle-37" ]
        ] ;
        fhir:name [ fhir:v "bundle-37" ] ;
@@ -1149,7 +1149,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-38> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-38> ;
          fhir:reference [ fhir:v "Bundle/bundle-38" ]
        ] ;
        fhir:name [ fhir:v "bundle-38" ] ;
@@ -1161,7 +1161,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-39> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-39> ;
          fhir:reference [ fhir:v "Bundle/bundle-39" ]
        ] ;
        fhir:name [ fhir:v "bundle-39" ] ;
@@ -1173,7 +1173,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-4> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-4> ;
          fhir:reference [ fhir:v "Bundle/bundle-4" ]
        ] ;
        fhir:name [ fhir:v "bundle-4" ] ;
@@ -1185,7 +1185,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-40> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-40> ;
          fhir:reference [ fhir:v "Bundle/bundle-40" ]
        ] ;
        fhir:name [ fhir:v "bundle-40" ] ;
@@ -1197,7 +1197,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-41> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-41> ;
          fhir:reference [ fhir:v "Bundle/bundle-41" ]
        ] ;
        fhir:name [ fhir:v "bundle-41" ] ;
@@ -1209,7 +1209,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-42> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-42> ;
          fhir:reference [ fhir:v "Bundle/bundle-42" ]
        ] ;
        fhir:name [ fhir:v "bundle-42" ] ;
@@ -1221,7 +1221,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-44> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-44> ;
          fhir:reference [ fhir:v "Bundle/bundle-44" ]
        ] ;
        fhir:name [ fhir:v "bundle-44" ] ;
@@ -1233,7 +1233,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-45> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-45> ;
          fhir:reference [ fhir:v "Bundle/bundle-45" ]
        ] ;
        fhir:name [ fhir:v "bundle-45" ] ;
@@ -1245,7 +1245,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-46> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-46> ;
          fhir:reference [ fhir:v "Bundle/bundle-46" ]
        ] ;
        fhir:name [ fhir:v "bundle-46" ] ;
@@ -1257,7 +1257,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-47> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-47> ;
          fhir:reference [ fhir:v "Bundle/bundle-47" ]
        ] ;
        fhir:name [ fhir:v "bundle-47" ] ;
@@ -1269,7 +1269,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-48> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-48> ;
          fhir:reference [ fhir:v "Bundle/bundle-48" ]
        ] ;
        fhir:name [ fhir:v "bundle-48" ] ;
@@ -1281,7 +1281,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-49> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-49> ;
          fhir:reference [ fhir:v "Bundle/bundle-49" ]
        ] ;
        fhir:name [ fhir:v "bundle-49" ] ;
@@ -1293,7 +1293,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-5> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-5> ;
          fhir:reference [ fhir:v "Bundle/bundle-5" ]
        ] ;
        fhir:name [ fhir:v "bundle-5" ] ;
@@ -1305,7 +1305,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-50> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-50> ;
          fhir:reference [ fhir:v "Bundle/bundle-50" ]
        ] ;
        fhir:name [ fhir:v "bundle-50" ] ;
@@ -1317,7 +1317,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-51> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-51> ;
          fhir:reference [ fhir:v "Bundle/bundle-51" ]
        ] ;
        fhir:name [ fhir:v "bundle-51" ] ;
@@ -1329,7 +1329,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-52> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-52> ;
          fhir:reference [ fhir:v "Bundle/bundle-52" ]
        ] ;
        fhir:name [ fhir:v "bundle-52" ] ;
@@ -1341,7 +1341,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-53> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-53> ;
          fhir:reference [ fhir:v "Bundle/bundle-53" ]
        ] ;
        fhir:name [ fhir:v "bundle-53" ] ;
@@ -1353,7 +1353,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-54> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-54> ;
          fhir:reference [ fhir:v "Bundle/bundle-54" ]
        ] ;
        fhir:name [ fhir:v "bundle-54" ] ;
@@ -1365,7 +1365,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-55> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-55> ;
          fhir:reference [ fhir:v "Bundle/bundle-55" ]
        ] ;
        fhir:name [ fhir:v "bundle-55" ] ;
@@ -1377,7 +1377,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-56> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-56> ;
          fhir:reference [ fhir:v "Bundle/bundle-56" ]
        ] ;
        fhir:name [ fhir:v "bundle-56" ] ;
@@ -1389,7 +1389,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-57> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-57> ;
          fhir:reference [ fhir:v "Bundle/bundle-57" ]
        ] ;
        fhir:name [ fhir:v "bundle-57" ] ;
@@ -1401,7 +1401,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-58> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-58> ;
          fhir:reference [ fhir:v "Bundle/bundle-58" ]
        ] ;
        fhir:name [ fhir:v "bundle-58" ] ;
@@ -1413,7 +1413,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-59> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-59> ;
          fhir:reference [ fhir:v "Bundle/bundle-59" ]
        ] ;
        fhir:name [ fhir:v "bundle-59" ] ;
@@ -1425,7 +1425,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-6> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-6> ;
          fhir:reference [ fhir:v "Bundle/bundle-6" ]
        ] ;
        fhir:name [ fhir:v "bundle-6" ] ;
@@ -1437,7 +1437,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-60> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-60> ;
          fhir:reference [ fhir:v "Bundle/bundle-60" ]
        ] ;
        fhir:name [ fhir:v "bundle-60" ] ;
@@ -1449,7 +1449,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-61> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-61> ;
          fhir:reference [ fhir:v "Bundle/bundle-61" ]
        ] ;
        fhir:name [ fhir:v "bundle-61" ] ;
@@ -1461,7 +1461,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-62> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-62> ;
          fhir:reference [ fhir:v "Bundle/bundle-62" ]
        ] ;
        fhir:name [ fhir:v "bundle-62" ] ;
@@ -1473,7 +1473,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-7> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-7> ;
          fhir:reference [ fhir:v "Bundle/bundle-7" ]
        ] ;
        fhir:name [ fhir:v "bundle-7" ] ;
@@ -1485,7 +1485,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-8> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-8> ;
          fhir:reference [ fhir:v "Bundle/bundle-8" ]
        ] ;
        fhir:name [ fhir:v "bundle-8" ] ;
@@ -1497,7 +1497,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-9> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Bundle/bundle-9> ;
          fhir:reference [ fhir:v "Bundle/bundle-9" ]
        ] ;
        fhir:name [ fhir:v "bundle-9" ] ;
@@ -1509,7 +1509,7 @@
          fhir:value [ fhir:v "Library" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Library/cdc-common-logic-library> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Library/cdc-common-logic-library> ;
          fhir:reference [ fhir:v "Library/cdc-common-logic-library" ]
        ] ;
        fhir:name [ fhir:v "CDC Common Logic for FHIRv400" ] ;
@@ -1521,7 +1521,7 @@
          fhir:value [ fhir:v "Library" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Library/cds-connect-commons-library> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Library/cds-connect-commons-library> ;
          fhir:reference [ fhir:v "Library/cds-connect-commons-library" ]
        ] ;
        fhir:name [ fhir:v "CDS Connect Commons for FHIRv400" ] ;
@@ -1533,7 +1533,7 @@
          fhir:value [ fhir:v "ActivityDefinition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/ActivityDefinition/CiprofloxacinRequest> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/ActivityDefinition/CiprofloxacinRequest> ;
          fhir:reference [ fhir:v "ActivityDefinition/CiprofloxacinRequest" ]
        ] ;
        fhir:name [ fhir:v "Ciprofloxacin Request" ] ;
@@ -1545,7 +1545,7 @@
          fhir:value [ fhir:v "ActivityDefinition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/ActivityDefinition/ClindamycinRequest> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/ActivityDefinition/ClindamycinRequest> ;
          fhir:reference [ fhir:v "ActivityDefinition/ClindamycinRequest" ]
        ] ;
        fhir:name [ fhir:v "Clindamycin Request" ] ;
@@ -1557,7 +1557,7 @@
          fhir:value [ fhir:v "Condition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Condition/condition-1> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Condition/condition-1> ;
          fhir:reference [ fhir:v "Condition/condition-1" ]
        ] ;
        fhir:name [ fhir:v "condition-1" ] ;
@@ -1569,7 +1569,7 @@
          fhir:value [ fhir:v "Condition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Condition/condition-10> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Condition/condition-10> ;
          fhir:reference [ fhir:v "Condition/condition-10" ]
        ] ;
        fhir:name [ fhir:v "condition-10" ] ;
@@ -1581,7 +1581,7 @@
          fhir:value [ fhir:v "Condition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Condition/condition-11> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Condition/condition-11> ;
          fhir:reference [ fhir:v "Condition/condition-11" ]
        ] ;
        fhir:name [ fhir:v "condition-11" ] ;
@@ -1593,7 +1593,7 @@
          fhir:value [ fhir:v "Condition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Condition/condition-12> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Condition/condition-12> ;
          fhir:reference [ fhir:v "Condition/condition-12" ]
        ] ;
        fhir:name [ fhir:v "condition-12" ] ;
@@ -1605,7 +1605,7 @@
          fhir:value [ fhir:v "Condition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Condition/condition-2> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Condition/condition-2> ;
          fhir:reference [ fhir:v "Condition/condition-2" ]
        ] ;
        fhir:name [ fhir:v "condition-2" ] ;
@@ -1617,7 +1617,7 @@
          fhir:value [ fhir:v "Condition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Condition/condition-3> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Condition/condition-3> ;
          fhir:reference [ fhir:v "Condition/condition-3" ]
        ] ;
        fhir:name [ fhir:v "condition-3" ] ;
@@ -1629,7 +1629,7 @@
          fhir:value [ fhir:v "Condition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Condition/condition-4> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Condition/condition-4> ;
          fhir:reference [ fhir:v "Condition/condition-4" ]
        ] ;
        fhir:name [ fhir:v "condition-4" ] ;
@@ -1641,7 +1641,7 @@
          fhir:value [ fhir:v "Condition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Condition/condition-5> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Condition/condition-5> ;
          fhir:reference [ fhir:v "Condition/condition-5" ]
        ] ;
        fhir:name [ fhir:v "condition-5" ] ;
@@ -1653,7 +1653,7 @@
          fhir:value [ fhir:v "Condition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Condition/condition-6> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Condition/condition-6> ;
          fhir:reference [ fhir:v "Condition/condition-6" ]
        ] ;
        fhir:name [ fhir:v "condition-6" ] ;
@@ -1665,7 +1665,7 @@
          fhir:value [ fhir:v "Condition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Condition/condition-7> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Condition/condition-7> ;
          fhir:reference [ fhir:v "Condition/condition-7" ]
        ] ;
        fhir:name [ fhir:v "condition-7" ] ;
@@ -1677,7 +1677,7 @@
          fhir:value [ fhir:v "Condition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Condition/condition-8> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Condition/condition-8> ;
          fhir:reference [ fhir:v "Condition/condition-8" ]
        ] ;
        fhir:name [ fhir:v "condition-8" ] ;
@@ -1689,7 +1689,7 @@
          fhir:value [ fhir:v "Condition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Condition/condition-9> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Condition/condition-9> ;
          fhir:reference [ fhir:v "Condition/condition-9" ]
        ] ;
        fhir:name [ fhir:v "condition-9" ] ;
@@ -1701,7 +1701,7 @@
          fhir:value [ fhir:v "ActivityDefinition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/ActivityDefinition/DoxycyclineRequest> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/ActivityDefinition/DoxycyclineRequest> ;
          fhir:reference [ fhir:v "ActivityDefinition/DoxycyclineRequest" ]
        ] ;
        fhir:name [ fhir:v "Doxycycline Request" ] ;
@@ -1713,7 +1713,7 @@
          fhir:value [ fhir:v "DetectedIssue" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/DetectedIssue/existing-antimicrobial-detected-issue> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/DetectedIssue/existing-antimicrobial-detected-issue> ;
          fhir:reference [ fhir:v "DetectedIssue/existing-antimicrobial-detected-issue" ]
        ] ;
        fhir:name [ fhir:v "Existing Antimicrobial Detected Issue" ] ;
@@ -1725,7 +1725,7 @@
          fhir:value [ fhir:v "PlanDefinition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/PlanDefinition/first-vaccine-dose-antimicrobial-not-pregnant-pd> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/PlanDefinition/first-vaccine-dose-antimicrobial-not-pregnant-pd> ;
          fhir:reference [ fhir:v "PlanDefinition/first-vaccine-dose-antimicrobial-not-pregnant-pd" ]
        ] ;
        fhir:name [ fhir:v "First vaccine antimicrobial not pregnant" ] ;
@@ -1737,7 +1737,7 @@
          fhir:value [ fhir:v "PlanDefinition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/PlanDefinition/first-vaccine-dose-antimicrobial-pregnant-pd> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/PlanDefinition/first-vaccine-dose-antimicrobial-pregnant-pd> ;
          fhir:reference [ fhir:v "PlanDefinition/first-vaccine-dose-antimicrobial-pregnant-pd" ]
        ] ;
        fhir:name [ fhir:v "First vaccine antimicrobial pregnant" ] ;
@@ -1749,7 +1749,7 @@
          fhir:value [ fhir:v "PlanDefinition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/PlanDefinition/first-vaccine-dose-not-pregnant-pd> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/PlanDefinition/first-vaccine-dose-not-pregnant-pd> ;
          fhir:reference [ fhir:v "PlanDefinition/first-vaccine-dose-not-pregnant-pd" ]
        ] ;
        fhir:name [ fhir:v "First vaccine not pregnant" ] ;
@@ -1761,7 +1761,7 @@
          fhir:value [ fhir:v "PlanDefinition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/PlanDefinition/second-vaccinedose-notpregnant-pd> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/PlanDefinition/second-vaccinedose-notpregnant-pd> ;
          fhir:reference [ fhir:v "PlanDefinition/second-vaccinedose-notpregnant-pd" ]
        ] ;
        fhir:name [ fhir:v "First vaccine not pregnant" ] ;
@@ -1773,7 +1773,7 @@
          fhir:value [ fhir:v "PlanDefinition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/PlanDefinition/first-vaccine-dose-pregnant-pd> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/PlanDefinition/first-vaccine-dose-pregnant-pd> ;
          fhir:reference [ fhir:v "PlanDefinition/first-vaccine-dose-pregnant-pd" ]
        ] ;
        fhir:name [ fhir:v "First vaccine pregnant" ] ;
@@ -1785,7 +1785,7 @@
          fhir:value [ fhir:v "Flag" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Flag/latex-allergy-flag> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Flag/latex-allergy-flag> ;
          fhir:reference [ fhir:v "Flag/latex-allergy-flag" ]
        ] ;
        fhir:name [ fhir:v "Latex Allergy Flag" ] ;
@@ -1797,7 +1797,7 @@
          fhir:value [ fhir:v "ActivityDefinition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/ActivityDefinition/LevofloxacinRequest> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/ActivityDefinition/LevofloxacinRequest> ;
          fhir:reference [ fhir:v "ActivityDefinition/LevofloxacinRequest" ]
        ] ;
        fhir:name [ fhir:v "Levofloxacin Request" ] ;
@@ -1809,7 +1809,7 @@
          fhir:value [ fhir:v "MedicationRequest" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/MedicationRequest/med-request-1> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/MedicationRequest/med-request-1> ;
          fhir:reference [ fhir:v "MedicationRequest/med-request-1" ]
        ] ;
        fhir:name [ fhir:v "med-request-1" ] ;
@@ -1821,7 +1821,7 @@
          fhir:value [ fhir:v "MedicationRequest" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/MedicationRequest/med-request-2> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/MedicationRequest/med-request-2> ;
          fhir:reference [ fhir:v "MedicationRequest/med-request-2" ]
        ] ;
        fhir:name [ fhir:v "med-request-2" ] ;
@@ -1833,7 +1833,7 @@
          fhir:value [ fhir:v "MedicationRequest" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/MedicationRequest/med-request-3> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/MedicationRequest/med-request-3> ;
          fhir:reference [ fhir:v "MedicationRequest/med-request-3" ]
        ] ;
        fhir:name [ fhir:v "med-request-3" ] ;
@@ -1845,7 +1845,7 @@
          fhir:value [ fhir:v "MedicationRequest" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/MedicationRequest/5> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/MedicationRequest/5> ;
          fhir:reference [ fhir:v "MedicationRequest/5" ]
        ] ;
        fhir:name [ fhir:v "med-request-4" ] ;
@@ -1857,7 +1857,7 @@
          fhir:value [ fhir:v "MedicationRequest" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/MedicationRequest/6> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/MedicationRequest/6> ;
          fhir:reference [ fhir:v "MedicationRequest/6" ]
        ] ;
        fhir:name [ fhir:v "med-request-5" ] ;
@@ -1869,7 +1869,7 @@
          fhir:value [ fhir:v "MedicationStatement" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/MedicationStatement/medication-statement-1> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/MedicationStatement/medication-statement-1> ;
          fhir:reference [ fhir:v "MedicationStatement/medication-statement-1" ]
        ] ;
        fhir:name [ fhir:v "medication-statement-1" ] ;
@@ -1881,7 +1881,7 @@
          fhir:value [ fhir:v "ActivityDefinition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/ActivityDefinition/MoxifloxacinRequest> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/ActivityDefinition/MoxifloxacinRequest> ;
          fhir:reference [ fhir:v "ActivityDefinition/MoxifloxacinRequest" ]
        ] ;
        fhir:name [ fhir:v "Moxifloxacin Request" ] ;
@@ -1893,7 +1893,7 @@
          fhir:value [ fhir:v "Flag" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Flag/no-asymptomatic-observation-flag> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Flag/no-asymptomatic-observation-flag> ;
          fhir:reference [ fhir:v "Flag/no-asymptomatic-observation-flag" ]
        ] ;
        fhir:name [ fhir:v "No Asymptomatic Observation Flag" ] ;
@@ -1905,7 +1905,7 @@
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-1> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Observation/observation-1> ;
          fhir:reference [ fhir:v "Observation/observation-1" ]
        ] ;
        fhir:name [ fhir:v "observation-1" ] ;
@@ -1917,7 +1917,7 @@
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-10> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Observation/observation-10> ;
          fhir:reference [ fhir:v "Observation/observation-10" ]
        ] ;
        fhir:name [ fhir:v "observation-10" ] ;
@@ -1929,7 +1929,7 @@
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-11> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Observation/observation-11> ;
          fhir:reference [ fhir:v "Observation/observation-11" ]
        ] ;
        fhir:name [ fhir:v "observation-11" ] ;
@@ -1941,7 +1941,7 @@
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-12> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Observation/observation-12> ;
          fhir:reference [ fhir:v "Observation/observation-12" ]
        ] ;
        fhir:name [ fhir:v "observation-12" ] ;
@@ -1953,7 +1953,7 @@
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-13> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Observation/observation-13> ;
          fhir:reference [ fhir:v "Observation/observation-13" ]
        ] ;
        fhir:name [ fhir:v "observation-13" ] ;
@@ -1965,7 +1965,7 @@
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-14> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Observation/observation-14> ;
          fhir:reference [ fhir:v "Observation/observation-14" ]
        ] ;
        fhir:name [ fhir:v "observation-14" ] ;
@@ -1977,7 +1977,7 @@
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-15> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Observation/observation-15> ;
          fhir:reference [ fhir:v "Observation/observation-15" ]
        ] ;
        fhir:name [ fhir:v "observation-15" ] ;
@@ -1989,7 +1989,7 @@
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-16> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Observation/observation-16> ;
          fhir:reference [ fhir:v "Observation/observation-16" ]
        ] ;
        fhir:name [ fhir:v "observation-16" ] ;
@@ -2001,7 +2001,7 @@
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-17> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Observation/observation-17> ;
          fhir:reference [ fhir:v "Observation/observation-17" ]
        ] ;
        fhir:name [ fhir:v "observation-17" ] ;
@@ -2013,7 +2013,7 @@
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-18> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Observation/observation-18> ;
          fhir:reference [ fhir:v "Observation/observation-18" ]
        ] ;
        fhir:name [ fhir:v "observation-18" ] ;
@@ -2025,7 +2025,7 @@
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-19> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Observation/observation-19> ;
          fhir:reference [ fhir:v "Observation/observation-19" ]
        ] ;
        fhir:name [ fhir:v "observation-19" ] ;
@@ -2037,7 +2037,7 @@
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-2> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Observation/observation-2> ;
          fhir:reference [ fhir:v "Observation/observation-2" ]
        ] ;
        fhir:name [ fhir:v "observation-2" ] ;
@@ -2049,7 +2049,7 @@
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-20> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Observation/observation-20> ;
          fhir:reference [ fhir:v "Observation/observation-20" ]
        ] ;
        fhir:name [ fhir:v "observation-20" ] ;
@@ -2061,7 +2061,7 @@
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-21> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Observation/observation-21> ;
          fhir:reference [ fhir:v "Observation/observation-21" ]
        ] ;
        fhir:name [ fhir:v "observation-21" ] ;
@@ -2073,7 +2073,7 @@
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-22> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Observation/observation-22> ;
          fhir:reference [ fhir:v "Observation/observation-22" ]
        ] ;
        fhir:name [ fhir:v "observation-22" ] ;
@@ -2085,7 +2085,7 @@
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-23> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Observation/observation-23> ;
          fhir:reference [ fhir:v "Observation/observation-23" ]
        ] ;
        fhir:name [ fhir:v "observation-23" ] ;
@@ -2097,7 +2097,7 @@
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-24> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Observation/observation-24> ;
          fhir:reference [ fhir:v "Observation/observation-24" ]
        ] ;
        fhir:name [ fhir:v "observation-24" ] ;
@@ -2109,7 +2109,7 @@
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-25> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Observation/observation-25> ;
          fhir:reference [ fhir:v "Observation/observation-25" ]
        ] ;
        fhir:name [ fhir:v "observation-25" ] ;
@@ -2121,7 +2121,7 @@
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-26> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Observation/observation-26> ;
          fhir:reference [ fhir:v "Observation/observation-26" ]
        ] ;
        fhir:name [ fhir:v "observation-26" ] ;
@@ -2133,7 +2133,7 @@
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-3> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Observation/observation-3> ;
          fhir:reference [ fhir:v "Observation/observation-3" ]
        ] ;
        fhir:name [ fhir:v "observation-3" ] ;
@@ -2145,7 +2145,7 @@
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-4> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Observation/observation-4> ;
          fhir:reference [ fhir:v "Observation/observation-4" ]
        ] ;
        fhir:name [ fhir:v "observation-4" ] ;
@@ -2157,7 +2157,7 @@
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-5> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Observation/observation-5> ;
          fhir:reference [ fhir:v "Observation/observation-5" ]
        ] ;
        fhir:name [ fhir:v "observation-5" ] ;
@@ -2169,7 +2169,7 @@
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-6> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Observation/observation-6> ;
          fhir:reference [ fhir:v "Observation/observation-6" ]
        ] ;
        fhir:name [ fhir:v "observation-6" ] ;
@@ -2181,7 +2181,7 @@
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-7> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Observation/observation-7> ;
          fhir:reference [ fhir:v "Observation/observation-7" ]
        ] ;
        fhir:name [ fhir:v "observation-7" ] ;
@@ -2193,7 +2193,7 @@
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-8> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Observation/observation-8> ;
          fhir:reference [ fhir:v "Observation/observation-8" ]
        ] ;
        fhir:name [ fhir:v "observation-8" ] ;
@@ -2205,7 +2205,7 @@
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-9> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Observation/observation-9> ;
          fhir:reference [ fhir:v "Observation/observation-9" ]
        ] ;
        fhir:name [ fhir:v "observation-9" ] ;
@@ -2217,7 +2217,7 @@
          fhir:value [ fhir:v "Patient" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-1> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Patient/patient-1> ;
          fhir:reference [ fhir:v "Patient/patient-1" ]
        ] ;
        fhir:name [ fhir:v "patient-1" ] ;
@@ -2229,7 +2229,7 @@
          fhir:value [ fhir:v "Patient" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-2> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Patient/patient-2> ;
          fhir:reference [ fhir:v "Patient/patient-2" ]
        ] ;
        fhir:name [ fhir:v "patient-2" ] ;
@@ -2241,7 +2241,7 @@
          fhir:value [ fhir:v "Patient" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-3> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Patient/patient-3> ;
          fhir:reference [ fhir:v "Patient/patient-3" ]
        ] ;
        fhir:name [ fhir:v "patient-3" ] ;
@@ -2253,7 +2253,7 @@
          fhir:value [ fhir:v "Condition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Condition/patient-4> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Condition/patient-4> ;
          fhir:reference [ fhir:v "Condition/patient-4" ]
        ] ;
        fhir:name [ fhir:v "patient-4" ] ;
@@ -2265,7 +2265,7 @@
          fhir:value [ fhir:v "Procedure" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Procedure/procedure-1> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Procedure/procedure-1> ;
          fhir:reference [ fhir:v "Procedure/procedure-1" ]
        ] ;
        fhir:name [ fhir:v "procedure-1" ] ;
@@ -2277,7 +2277,7 @@
          fhir:value [ fhir:v "Procedure" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Procedure/procedure-10> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Procedure/procedure-10> ;
          fhir:reference [ fhir:v "Procedure/procedure-10" ]
        ] ;
        fhir:name [ fhir:v "procedure-10" ] ;
@@ -2289,7 +2289,7 @@
          fhir:value [ fhir:v "Procedure" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Procedure/procedure-11> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Procedure/procedure-11> ;
          fhir:reference [ fhir:v "Procedure/procedure-11" ]
        ] ;
        fhir:name [ fhir:v "procedure-11" ] ;
@@ -2301,7 +2301,7 @@
          fhir:value [ fhir:v "Procedure" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Procedure/procedure-12> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Procedure/procedure-12> ;
          fhir:reference [ fhir:v "Procedure/procedure-12" ]
        ] ;
        fhir:name [ fhir:v "procedure-12" ] ;
@@ -2313,7 +2313,7 @@
          fhir:value [ fhir:v "Procedure" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Procedure/procedure-13> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Procedure/procedure-13> ;
          fhir:reference [ fhir:v "Procedure/procedure-13" ]
        ] ;
        fhir:name [ fhir:v "procedure-13" ] ;
@@ -2325,7 +2325,7 @@
          fhir:value [ fhir:v "Procedure" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Procedure/procedure-14> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Procedure/procedure-14> ;
          fhir:reference [ fhir:v "Procedure/procedure-14" ]
        ] ;
        fhir:name [ fhir:v "procedure-14" ] ;
@@ -2337,7 +2337,7 @@
          fhir:value [ fhir:v "Procedure" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Procedure/procedure-2> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Procedure/procedure-2> ;
          fhir:reference [ fhir:v "Procedure/procedure-2" ]
        ] ;
        fhir:name [ fhir:v "procedure-2" ] ;
@@ -2349,7 +2349,7 @@
          fhir:value [ fhir:v "Procedure" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Procedure/procedure-3> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Procedure/procedure-3> ;
          fhir:reference [ fhir:v "Procedure/procedure-3" ]
        ] ;
        fhir:name [ fhir:v "procedure-3" ] ;
@@ -2361,7 +2361,7 @@
          fhir:value [ fhir:v "Procedure" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Procedure/procedure-4> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Procedure/procedure-4> ;
          fhir:reference [ fhir:v "Procedure/procedure-4" ]
        ] ;
        fhir:name [ fhir:v "procedure-4" ] ;
@@ -2373,7 +2373,7 @@
          fhir:value [ fhir:v "Procedure" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Procedure/procedure-5> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Procedure/procedure-5> ;
          fhir:reference [ fhir:v "Procedure/procedure-5" ]
        ] ;
        fhir:name [ fhir:v "procedure-5" ] ;
@@ -2385,7 +2385,7 @@
          fhir:value [ fhir:v "Procedure" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Procedure/procedure-6> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Procedure/procedure-6> ;
          fhir:reference [ fhir:v "Procedure/procedure-6" ]
        ] ;
        fhir:name [ fhir:v "procedure-6" ] ;
@@ -2397,7 +2397,7 @@
          fhir:value [ fhir:v "Procedure" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Procedure/procedure-7> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Procedure/procedure-7> ;
          fhir:reference [ fhir:v "Procedure/procedure-7" ]
        ] ;
        fhir:name [ fhir:v "procedure-7" ] ;
@@ -2409,7 +2409,7 @@
          fhir:value [ fhir:v "Procedure" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Procedure/procedure-8> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Procedure/procedure-8> ;
          fhir:reference [ fhir:v "Procedure/procedure-8" ]
        ] ;
        fhir:name [ fhir:v "procedure-8" ] ;
@@ -2421,7 +2421,7 @@
          fhir:value [ fhir:v "Procedure" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Procedure/procedure-9> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Procedure/procedure-9> ;
          fhir:reference [ fhir:v "Procedure/procedure-9" ]
        ] ;
        fhir:name [ fhir:v "procedure-9" ] ;
@@ -2433,7 +2433,7 @@
          fhir:value [ fhir:v "PlanDefinition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/PlanDefinition/second-vaccinedose-antimicrobial-notpregnant-pd> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/PlanDefinition/second-vaccinedose-antimicrobial-notpregnant-pd> ;
          fhir:reference [ fhir:v "PlanDefinition/second-vaccinedose-antimicrobial-notpregnant-pd" ]
        ] ;
        fhir:name [ fhir:v "Second vaccine antimicrobial not pregnant" ] ;
@@ -2445,7 +2445,7 @@
          fhir:value [ fhir:v "PlanDefinition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/PlanDefinition/second-vaccinedose-antimicrobial-pregnant-pd> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/PlanDefinition/second-vaccinedose-antimicrobial-pregnant-pd> ;
          fhir:reference [ fhir:v "PlanDefinition/second-vaccinedose-antimicrobial-pregnant-pd" ]
        ] ;
        fhir:name [ fhir:v "Second vaccine antimicrobial pregnant" ] ;
@@ -2457,7 +2457,7 @@
          fhir:value [ fhir:v "PlanDefinition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/PlanDefinition/second-vaccinedose-pregnant-pd> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/PlanDefinition/second-vaccinedose-pregnant-pd> ;
          fhir:reference [ fhir:v "PlanDefinition/second-vaccinedose-pregnant-pd" ]
        ] ;
        fhir:name [ fhir:v "Second vaccine pregnant" ] ;
@@ -2469,7 +2469,7 @@
          fhir:value [ fhir:v "PlanDefinition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/PlanDefinition/third-vaccinedose-antimicrobial-notpregnant-pd> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/PlanDefinition/third-vaccinedose-antimicrobial-notpregnant-pd> ;
          fhir:reference [ fhir:v "PlanDefinition/third-vaccinedose-antimicrobial-notpregnant-pd" ]
        ] ;
        fhir:name [ fhir:v "Third vaccine antimicrobial not pregnant" ] ;
@@ -2481,7 +2481,7 @@
          fhir:value [ fhir:v "PlanDefinition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/PlanDefinition/third-vaccinedose-antimicrobial-pregnant-pd> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/PlanDefinition/third-vaccinedose-antimicrobial-pregnant-pd> ;
          fhir:reference [ fhir:v "PlanDefinition/third-vaccinedose-antimicrobial-pregnant-pd" ]
        ] ;
        fhir:name [ fhir:v "Third vaccine antimicrobial pregnant" ] ;
@@ -2493,7 +2493,7 @@
          fhir:value [ fhir:v "PlanDefinition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/PlanDefinition/third-vaccinedose-notpregnant-pd> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/PlanDefinition/third-vaccinedose-notpregnant-pd> ;
          fhir:reference [ fhir:v "PlanDefinition/third-vaccinedose-notpregnant-pd" ]
        ] ;
        fhir:name [ fhir:v "Third vaccine not pregnant" ] ;
@@ -2505,7 +2505,7 @@
          fhir:value [ fhir:v "PlanDefinition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/PlanDefinition/third-vaccinedose-pregnant-pd> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/PlanDefinition/third-vaccinedose-pregnant-pd> ;
          fhir:reference [ fhir:v "PlanDefinition/third-vaccinedose-pregnant-pd" ]
        ] ;
        fhir:name [ fhir:v "Third vaccine pregnant" ] ;
@@ -2517,7 +2517,7 @@
          fhir:value [ fhir:v "Flag" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Flag/vaccine-allergy-flag> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/Flag/vaccine-allergy-flag> ;
          fhir:reference [ fhir:v "Flag/vaccine-allergy-flag" ]
        ] ;
        fhir:name [ fhir:v "Vaccine Allergy Flag" ] ;
@@ -2529,7 +2529,7 @@
          fhir:value [ fhir:v "DetectedIssue" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/DetectedIssue/vaccine-history-inconsistencies-detected-issue> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/DetectedIssue/vaccine-history-inconsistencies-detected-issue> ;
          fhir:reference [ fhir:v "DetectedIssue/vaccine-history-inconsistencies-detected-issue" ]
        ] ;
        fhir:name [ fhir:v "Vaccine History Inconsistencies Detected Issue" ] ;
@@ -2541,7 +2541,7 @@
          fhir:value [ fhir:v "ActivityDefinition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/ActivityDefinition/VaccineRequest> ;
+         fhir:link <http://cqframework.org/cpg-example-anthrax/ActivityDefinition/VaccineRequest> ;
          fhir:reference [ fhir:v "ActivityDefinition/VaccineRequest" ]
        ] ;
        fhir:name [ fhir:v "Vaccine Request" ] ;
@@ -2621,340 +2621,6 @@
        fhir:value [ fhir:v "input-cache/txcache" ]
      ] )
   ] . # 
-
-<http://hl7.org/fhir/uv/cpg/anthrax/AllergyIntolerance/allergy-1> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/AllergyIntolerance/allergy-10> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/AllergyIntolerance/allergy-11> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/AllergyIntolerance/allergy-12> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/AllergyIntolerance/allergy-13> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/AllergyIntolerance/allergy-14> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/AllergyIntolerance/allergy-2> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/AllergyIntolerance/allergy-3> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/AllergyIntolerance/allergy-4> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/AllergyIntolerance/allergy-5> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/AllergyIntolerance/allergy-6> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/AllergyIntolerance/allergy-7> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/AllergyIntolerance/allergy-8> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/AllergyIntolerance/allergy-9> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Device/anthrax-example-device> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Library/anthrax-post-exposure-prophylaxis-library> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Flag/antimicrobial-allergy-flag> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/PlanDefinition/antimicrobial-not-pregnant-pd> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/PlanDefinition/antimicrobial-pregnant-pd> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-1> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-10> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-11> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-12> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-13> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-14> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-15> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-16> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-17> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-18> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-19> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-2> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-20> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-21> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-22> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-23> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-24> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-25> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-26> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-27> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-28> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-29> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-3> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-30> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-31> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-32> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-33> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-34> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-35> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-36> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-37> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-38> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-39> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-4> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-40> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-41> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-42> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-44> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-45> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-46> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-47> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-48> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-49> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-5> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-50> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-51> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-52> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-53> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-54> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-55> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-56> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-57> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-58> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-59> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-6> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-60> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-61> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-62> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-7> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-8> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-9> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Library/cdc-common-logic-library> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Library/cds-connect-commons-library> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/ActivityDefinition/CiprofloxacinRequest> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/ActivityDefinition/ClindamycinRequest> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Condition/condition-1> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Condition/condition-10> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Condition/condition-11> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Condition/condition-12> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Condition/condition-2> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Condition/condition-3> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Condition/condition-4> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Condition/condition-5> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Condition/condition-6> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Condition/condition-7> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Condition/condition-8> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Condition/condition-9> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/ActivityDefinition/DoxycyclineRequest> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/DetectedIssue/existing-antimicrobial-detected-issue> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/PlanDefinition/first-vaccine-dose-antimicrobial-not-pregnant-pd> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/PlanDefinition/first-vaccine-dose-antimicrobial-pregnant-pd> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/PlanDefinition/first-vaccine-dose-not-pregnant-pd> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/PlanDefinition/second-vaccinedose-notpregnant-pd> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/PlanDefinition/first-vaccine-dose-pregnant-pd> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Flag/latex-allergy-flag> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/ActivityDefinition/LevofloxacinRequest> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/MedicationRequest/med-request-1> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/MedicationRequest/med-request-2> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/MedicationRequest/med-request-3> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/MedicationRequest/5> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/MedicationRequest/6> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/MedicationStatement/medication-statement-1> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/ActivityDefinition/MoxifloxacinRequest> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Flag/no-asymptomatic-observation-flag> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-1> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-10> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-11> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-12> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-13> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-14> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-15> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-16> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-17> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-18> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-19> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-2> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-20> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-21> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-22> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-23> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-24> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-25> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-26> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-3> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-4> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-5> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-6> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-7> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-8> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-9> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-1> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-2> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-3> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Condition/patient-4> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Procedure/procedure-1> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Procedure/procedure-10> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Procedure/procedure-11> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Procedure/procedure-12> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Procedure/procedure-13> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Procedure/procedure-14> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Procedure/procedure-2> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Procedure/procedure-3> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Procedure/procedure-4> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Procedure/procedure-5> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Procedure/procedure-6> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Procedure/procedure-7> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Procedure/procedure-8> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Procedure/procedure-9> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/PlanDefinition/second-vaccinedose-antimicrobial-notpregnant-pd> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/PlanDefinition/second-vaccinedose-antimicrobial-pregnant-pd> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/PlanDefinition/second-vaccinedose-pregnant-pd> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/PlanDefinition/third-vaccinedose-antimicrobial-notpregnant-pd> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/PlanDefinition/third-vaccinedose-antimicrobial-pregnant-pd> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/PlanDefinition/third-vaccinedose-notpregnant-pd> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/PlanDefinition/third-vaccinedose-pregnant-pd> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/Flag/vaccine-allergy-flag> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/DetectedIssue/vaccine-history-inconsistencies-detected-issue> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/anthrax/ActivityDefinition/VaccineRequest> a fhir:uv .
 
 # -------------------------------------------------------------------------------------
 

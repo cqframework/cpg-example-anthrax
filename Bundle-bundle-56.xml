@@ -4,7 +4,7 @@
   <id value="bundle-56"/>
   <type value="collection"/>
   <entry>
-    <fullUrl value="http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-3"/>
+    <fullUrl value="http://cqframework.org/cpg-example-anthrax//Patient/patient-3"/>
     <resource>
       <Patient>
         <id value="patient-3"/>
@@ -21,7 +21,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://hl7.org/fhir/uv/cpg/anthrax/Condition/condition-9"/>
+    <fullUrl value="http://cqframework.org/cpg-example-anthrax//Condition/condition-9"/>
     <resource>
       <Condition>
         <id value="condition-9"/>
@@ -56,7 +56,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-14"/>
+    <fullUrl value="http://cqframework.org/cpg-example-anthrax//Observation/observation-14"/>
     <resource>
       <Observation>
         <id value="observation-14"/>
@@ -81,7 +81,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-24"/>
+    <fullUrl value="http://cqframework.org/cpg-example-anthrax//Observation/observation-24"/>
     <resource>
       <Observation>
         <id value="observation-24"/>
@@ -106,7 +106,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://hl7.org/fhir/uv/cpg/anthrax/Procedure/procedure-12"/>
+    <fullUrl value="http://cqframework.org/cpg-example-anthrax//Procedure/procedure-12"/>
     <resource>
       <Procedure>
         <id value="procedure-12"/>
@@ -130,7 +130,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://hl7.org/fhir/uv/cpg/anthrax/Procedure/procedure-11"/>
+    <fullUrl value="http://cqframework.org/cpg-example-anthrax//Procedure/procedure-11"/>
     <resource>
       <Procedure>
         <id value="procedure-11"/>
@@ -154,7 +154,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-19"/>
+    <fullUrl value="http://cqframework.org/cpg-example-anthrax//Observation/observation-19"/>
     <resource>
       <Observation>
         <id value="observation-19"/>

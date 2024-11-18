@@ -3,7 +3,7 @@
   "id" : "bundle-35",
   "type" : "collection",
   "entry" : [{
-    "fullUrl" : "http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-1",
+    "fullUrl" : "http://cqframework.org/cpg-example-anthrax//Patient/patient-1",
     "resource" : {
       "resourceType" : "Patient",
       "id" : "patient-1",
@@ -20,7 +20,7 @@
     }
   },
   {
-    "fullUrl" : "http://hl7.org/fhir/uv/cpg/anthrax/Condition/condition-12",
+    "fullUrl" : "http://cqframework.org/cpg-example-anthrax//Condition/condition-12",
     "resource" : {
       "resourceType" : "Condition",
       "id" : "condition-12",
@@ -55,7 +55,7 @@
     }
   },
   {
-    "fullUrl" : "http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-4",
+    "fullUrl" : "http://cqframework.org/cpg-example-anthrax//Observation/observation-4",
     "resource" : {
       "resourceType" : "Observation",
       "id" : "observation-4",

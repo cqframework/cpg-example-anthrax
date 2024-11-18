@@ -7,28 +7,28 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/uv/cpg/anthrax/Bundle/bundle-54> a fhir:Bundle ;
+<http://cqframework.org/cpg-example-anthrax/Bundle/bundle-54> a fhir:Bundle ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "bundle-54"] ; # 
   fhir:type [ fhir:v "collection"] ; # 
   fhir:entry ( [
-     fhir:fullUrl [ fhir:v "http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-3"^^xsd:anyURI ] ;
-     fhir:resource ( <http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-3> )
+     fhir:fullUrl [ fhir:v "http://cqframework.org/cpg-example-anthrax//Patient/patient-3"^^xsd:anyURI ] ;
+     fhir:resource ( <http://cqframework.org/cpg-example-anthrax//Patient/patient-3> )
   ] [
-     fhir:fullUrl [ fhir:v "http://hl7.org/fhir/uv/cpg/anthrax/Condition/condition-8"^^xsd:anyURI ] ;
-     fhir:resource ( <http://hl7.org/fhir/uv/cpg/anthrax/Condition/condition-8> )
+     fhir:fullUrl [ fhir:v "http://cqframework.org/cpg-example-anthrax//Condition/condition-8"^^xsd:anyURI ] ;
+     fhir:resource ( <http://cqframework.org/cpg-example-anthrax//Condition/condition-8> )
   ] [
-     fhir:fullUrl [ fhir:v "http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-23"^^xsd:anyURI ] ;
-     fhir:resource ( <http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-23> )
+     fhir:fullUrl [ fhir:v "http://cqframework.org/cpg-example-anthrax//Observation/observation-23"^^xsd:anyURI ] ;
+     fhir:resource ( <http://cqframework.org/cpg-example-anthrax//Observation/observation-23> )
   ] [
-     fhir:fullUrl [ fhir:v "http://hl7.org/fhir/uv/cpg/anthrax/Procedure/procedure-14"^^xsd:anyURI ] ;
-     fhir:resource ( <http://hl7.org/fhir/uv/cpg/anthrax/Procedure/procedure-14> )
+     fhir:fullUrl [ fhir:v "http://cqframework.org/cpg-example-anthrax//Procedure/procedure-14"^^xsd:anyURI ] ;
+     fhir:resource ( <http://cqframework.org/cpg-example-anthrax//Procedure/procedure-14> )
   ] [
-     fhir:fullUrl [ fhir:v "http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-19"^^xsd:anyURI ] ;
-     fhir:resource ( <http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-19> )
+     fhir:fullUrl [ fhir:v "http://cqframework.org/cpg-example-anthrax//Observation/observation-19"^^xsd:anyURI ] ;
+     fhir:resource ( <http://cqframework.org/cpg-example-anthrax//Observation/observation-19> )
   ] ) . # 
 
-<http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-3> a fhir:Patient ;
+<http://cqframework.org/cpg-example-anthrax//Patient/patient-3> a fhir:Patient ;
   fhir:id [ fhir:v "patient-3"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
@@ -41,7 +41,7 @@
   fhir:gender [ fhir:v "female"] ; # 
   fhir:birthDate [ fhir:v "2000-01-01"^^xsd:date] . # 
 
-<http://hl7.org/fhir/uv/cpg/anthrax/Condition/condition-8> a fhir:Condition ;
+<http://cqframework.org/cpg-example-anthrax//Condition/condition-8> a fhir:Condition ;
   fhir:id [ fhir:v "condition-8"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
@@ -68,12 +68,12 @@
      fhir:text [ fhir:v "Contact with and (suspected) exposure to anthrax" ]
   ] ; # 
   fhir:subject [
-     fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-3> ;
+     fhir:link <http://cqframework.org/cpg-example-anthrax/Patient/patient-3> ;
      fhir:reference [ fhir:v "Patient/patient-3" ]
   ] ; # 
   fhir:onset [ fhir:v "2019-05-20T15:00:00.000Z"^^xsd:dateTime] . # 
 
-<http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-23> a fhir:Observation ;
+<http://cqframework.org/cpg-example-anthrax//Observation/observation-23> a fhir:Observation ;
   fhir:id [ fhir:v "observation-23"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
@@ -90,13 +90,13 @@
      fhir:text [ fhir:v "Asymptomatic (finding)" ]
   ] ; # 
   fhir:subject [
-     fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-3> ;
+     fhir:link <http://cqframework.org/cpg-example-anthrax/Patient/patient-3> ;
      fhir:reference [ fhir:v "Patient/patient-3" ]
   ] ; # 
   fhir:effective [ fhir:v "2019-05-20T15:00:00.000Z"^^xsd:dateTime] ; # 
   fhir:issued [ fhir:v "2018-07-19T00:00:00.000Z"^^xsd:dateTime] . # 
 
-<http://hl7.org/fhir/uv/cpg/anthrax/Procedure/procedure-14> a fhir:Procedure ;
+<http://cqframework.org/cpg-example-anthrax//Procedure/procedure-14> a fhir:Procedure ;
   fhir:id [ fhir:v "procedure-14"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
@@ -113,12 +113,12 @@
      fhir:text [ fhir:v "First anthrax vaccination" ]
   ] ; # 
   fhir:subject [
-     fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-3> ;
+     fhir:link <http://cqframework.org/cpg-example-anthrax/Patient/patient-3> ;
      fhir:reference [ fhir:v "Patient/patient-3" ]
   ] ; # 
   fhir:performed [ fhir:v "2019-05-20T15:00:00.000Z"^^xsd:dateTime] . # 
 
-<http://hl7.org/fhir/uv/cpg/anthrax/Observation/observation-19> a fhir:Observation ;
+<http://cqframework.org/cpg-example-anthrax//Observation/observation-19> a fhir:Observation ;
   fhir:id [ fhir:v "observation-19"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
@@ -135,7 +135,7 @@
      fhir:text [ fhir:v "Pregnancy status" ]
   ] ; # 
   fhir:subject [
-     fhir:link <http://hl7.org/fhir/uv/cpg/anthrax/Patient/patient-3> ;
+     fhir:link <http://cqframework.org/cpg-example-anthrax/Patient/patient-3> ;
      fhir:reference [ fhir:v "Patient/patient-3" ]
   ] ; # 
   fhir:effective [ fhir:v "2019-04-03T15:00:00.000Z"^^xsd:dateTime] ; # 
