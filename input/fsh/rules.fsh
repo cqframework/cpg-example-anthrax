@@ -12,7 +12,7 @@ RuleSet: PlanDefinitionMetadata(id)
 * endorser.name = "Centers for Disease Control and Prevention"
 * experimental = true
 * status = #draft
-* url = "http://hl7.org/fhir/uv/cpg/anthrax/PlanDefinition/{id}"
+* url = "http://cqframework.org/cpg-example-anthrax/PlanDefinition/{id}"
 * library = Canonical(anthrax-post-exposure-prophylaxis-library)
 
 RuleSet: RequestMetadata(id)
@@ -29,7 +29,7 @@ RuleSet: RequestMetadata(id)
 * endorser.name = "Centers for Disease Control and Prevention"
 * experimental = true
 * status = #draft
-* url = "http://hl7.org/fhir/uv/cpg/anthrax/ActivityDefinition/{id}"
+* url = "http://cqframework.org/cpg-example-anthrax/ActivityDefinition/{id}"
 
 RuleSet: UseContext
 * useContext[0]
@@ -56,7 +56,7 @@ RuleSet: LibraryMetadata(id)
 * endorser.name = "Centers for Disease Control and Prevention"
 * experimental = true
 * status = #draft
-* url = "http://hl7.org/fhir/uv/cpg/anthrax/Library/{id}"
+* url = "http://cqframework.org/cpg-example-anthrax/Library/{id}"
 
 RuleSet: AntrhaxExposureDescriptionAndUsage
 * description = "Clinical decision support logic for Anthrax Post Exposure Prophylaxis (PEP) for Adults based on the following Centers for Disease Control and Prevention reports: \\n- Hendricks, K.A. et al., Centers for Disease Control and Prevention Expert Panel Meetings on Prevention and Treatment of Anthrax in Adults. Emerg Infect Dis, 20(20), Feb 2014. \\n - Hendricks, K.A. et al., Centers for Disease Control and Prevention Expert Panel Meetings on Prevention and Treatment of Anthrax in Adults: Technical Report. Emerg Infect Dis. 20(20), Feb 2014. \\n- Emergent BioSolutions, BioThrax Anthrax Vaccine Adsorbed (http://www.biothrax.com/whatisbiothrax/). \\n- Centers for Disease Control and Prevention, Ciprofloxacin for Post-Exposure Prophylaxis of Anthrax: Emergency Use Instructions for Healthcare Providers, 2017. \\n- Centers for Disease Control and Prevention. Doxycyxcline for Post-Exposure Prophylaxis of Anthrax: Emergency Use Instructions for Healthcare Providers, 2017. \\n- Public Health Information Network Vocabulary Access and Distribution System (PHIN VADS), PHVS_SignsSymptoms_Anthrax (OID 2.16.840.1.114222.4.11.3212), 2009. \\n- Meanye-Delman D et al., Special Considerations for Prophylaxis for and Treatment of Anthrax in Pregnant and Postpartum Women, Emerg Infect Dis, 20(2), 2014. \\n- Meanye-Delman D et al., Special Considerations for Prophylaxis for and Treatment of Anthrax in Pregnant and Postpartum Women: Technical Report, Emerg Infect Dis, 20(2), 2014. \\n- Wright, J.G et al., Use of Anthrax Vaccine in the United States: Recommendations of the Advisory Committee on Immunization Practices (ACIP), 2009, Morbidity and Mortality Weeklly Report, July 23, 2010 / 59(RR06); 1-30."
